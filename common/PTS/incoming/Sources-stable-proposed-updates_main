@@ -1,0 +1,1800 @@
+Package: apache2
+Binary: apache2, apache2-data, apache2-bin, apache2-utils, apache2-suexec-pristine, apache2-suexec-custom, apache2-doc, apache2-dev, apache2-ssl-dev, apache2-dbg
+Version: 2.4.25-3+deb9u2
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Uploaders: Stefan Fritsch <sf@debian.org>, Arno Töll <arno@debian.org>
+Build-Depends: debhelper (>= 9.20131213~), lsb-release, dpkg-dev (>= 1.16.1~), libaprutil1-dev (>= 1.5.0), libapr1-dev (>= 1.5.0), libpcre3-dev, zlib1g-dev, libnghttp2-dev, libssl1.0-dev | libssl-dev (<< 1.1), perl, liblua5.2-dev, libxml2-dev, autotools-dev, gawk | awk, dh-systemd
+Build-Conflicts: autoconf2.13
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ aafd418429e6c61e269f7cfbd4c8e37e 2986 apache2_2.4.25-3+deb9u2.dsc
+ 2826f49619112ad5813c0be5afcc7ddb 6398218 apache2_2.4.25.orig.tar.bz2
+ 2cb1813a314d59fce038f6cd3f88631f 697952 apache2_2.4.25-3+deb9u2.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-apache/apache2.git/
+Vcs-Git: git://anonscm.debian.org/pkg-apache/apache2.git
+Checksums-Sha256:
+ c919d5adbd5027a3401a1768bc1e73587366fea8e16ac687a292b296336a5f87 2986 apache2_2.4.25-3+deb9u2.dsc
+ f87ec2df1c9fee3e6bfde3c8b855a3ddb7ca1ab20ca877bd0e2b6bf3f05c80b2 6398218 apache2_2.4.25.orig.tar.bz2
+ 47137850b92ea03285e0f57b2ce64c2749612995a1a9b284b1c1abbb375ccfe4 697952 apache2_2.4.25-3+deb9u2.debian.tar.xz
+Homepage: http://httpd.apache.org/
+Package-List: 
+ apache2 deb httpd optional arch=any
+ apache2-bin deb httpd optional arch=any
+ apache2-data deb httpd optional arch=all
+ apache2-dbg deb debug extra arch=any
+ apache2-dev deb httpd optional arch=any
+ apache2-doc deb doc optional arch=all
+ apache2-ssl-dev deb httpd optional arch=any
+ apache2-suexec-custom deb httpd extra arch=any
+ apache2-suexec-pristine deb httpd optional arch=any
+ apache2-utils deb httpd optional arch=any
+Testsuite: autopkgtest
+Testsuite-Triggers: build-essential, curl, dpkg-dev, expect, libanyevent-perl, libcrypt-ssleay-perl, libdatetime-perl, libhttp-dav-perl, libnet-ssleay-perl, libwww-perl, ssl-cert, wget
+Directory: pool/main/a/apache2
+Priority: source
+Section: httpd
+
+Package: atril
+Binary: atril, atril-common, libatrilview3, libatrilview-dev, libatrildocument3, libatrildocument-dev, gir1.2-atril
+Version: 1.16.1-2+deb9u1
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>, John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>, Stefano Karapetsas <stefano@karapetsas.com>, Vangelis Mouhtsis <vangelis@gnugr.org>, Martin Wimpress <code@flexion.org>,
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1.1), gobject-introspection, intltool, libcaja-extension-dev (>= 1.16), libdjvulibre-dev, libgail-3-dev, libgirepository1.0-dev, libglib2.0-dev, libgtk-3-dev, libgxps-dev (>= 0.2.0), libkpathsea-dev, libpoppler-glib-dev (>= 0.22.0), libsecret-1-dev, libsm-dev, libspectre-dev, libtiff-dev, libwebkit2gtk-4.0-dev, libx11-dev, libxml2-dev, lsb-release, mate-common (>= 1.16), xsltproc, yelp-tools, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ a34072c83c2f8bd616632d7e73d8b786 2890 atril_1.16.1-2+deb9u1.dsc
+ 5b420e04cf3eabc8fbe50ad02743c956 1305180 atril_1.16.1.orig.tar.xz
+ 8141a230b45676265d84ee0798052a64 15332 atril_1.16.1-2+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/git/pkg-mate/atril.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-mate/atril.git
+Checksums-Sha256:
+ aa61dec257dbca8b9fe578220448f9cbb1c087838dc3fb7e0e6198db789cf692 2890 atril_1.16.1-2+deb9u1.dsc
+ 7d0017af51933411466785a342bcc8b216df45b6a934d73d5773dae211bae4a3 1305180 atril_1.16.1.orig.tar.xz
+ 4a9a2a6a8cbe4dc45642257f55511f2525615a5cc163672b21c0d72cbc5fa3f2 15332 atril_1.16.1-2+deb9u1.debian.tar.xz
+Homepage: http://www.mate-desktop.org/
+Package-List: 
+ atril deb x11 optional arch=any
+ atril-common deb x11 optional arch=all
+ gir1.2-atril deb x11 optional arch=any
+ libatrildocument-dev deb libdevel optional arch=any
+ libatrildocument3 deb libs optional arch=any
+ libatrilview-dev deb libdevel optional arch=any
+ libatrilview3 deb libs optional arch=any
+Directory: pool/main/a/atril
+Priority: extra
+Section: misc
+
+Package: augeas
+Binary: augeas-tools, libaugeas-dev, libaugeas0, augeas-dbg, augeas-lenses, augeas-doc
+Version: 1.8.0-1+deb9u1
+Maintainer: Hilko Bengen <bengen@debian.org>
+Uploaders: Marc Haber <mh+debian-packages@zugschlus.de>, Micah Anderson <micah@debian.org>
+Build-Depends: debhelper (>= 9), dh-autoreconf, libreadline-dev, libselinux1-dev [linux-any], libxml2-dev, naturaldocs (>= 1.51), pkg-config, texlive-latex-base
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ dfa52571831df621834207251a3e231b 2337 augeas_1.8.0-1+deb9u1.dsc
+ cc99cf86ec5f5c4dac71f2800bde2758 2164146 augeas_1.8.0.orig.tar.gz
+ a28660bc019efe2b32872bdf024f87d7 11252 augeas_1.8.0-1+deb9u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/cgit/collab-maint/augeas.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/augeas.git
+Checksums-Sha256:
+ 92e80698341f3870d302e6f92e03b8b411a1ab91d3c25512ac97023b9e0e1268 2337 augeas_1.8.0-1+deb9u1.dsc
+ 515ce904138d99ff51d45ba7ed0d809bdee6c42d3bc538c8c820e010392d4cc5 2164146 augeas_1.8.0.orig.tar.gz
+ a2f70082f851f126b39d7fdeb835e769de0bb207a85a0bf8598b94797823f84b 11252 augeas_1.8.0-1+deb9u1.debian.tar.xz
+Homepage: http://augeas.net/
+Package-List: 
+ augeas-dbg deb debug extra arch=any
+ augeas-doc deb doc optional arch=all
+ augeas-lenses deb misc optional arch=all
+ augeas-tools deb admin optional arch=any
+ libaugeas-dev deb libdevel optional arch=any
+ libaugeas0 deb libs optional arch=any
+Directory: pool/main/a/augeas
+Priority: source
+Section: libs
+
+Package: bind9
+Binary: bind9, bind9utils, bind9-doc, host, bind9-host, libbind-dev, libbind9-140, libdns162, libirs141, libisc160, liblwres141, libisccc140, libisccfg140, dnsutils, lwresd, libbind-export-dev, libdns-export162, libdns-export162-udeb, libisc-export160, libisc-export160-udeb, libisccfg-export140, libisccc-export140, libisccc-export140-udeb, libisccfg-export140-udeb, libirs-export141, libirs-export141-udeb
+Version: 1:9.10.3.dfsg.P4-12.3+deb9u2
+Maintainer: LaMont Jones <lamont@debian.org>
+Uploaders: Michael Gilbert <mgilbert@debian.org>, Robie Basak <robie.basak@canonical.com>
+Build-Depends: debhelper (>= 9), dh-exec, libkrb5-dev, libssl1.0-dev, libtool, bison, libdb-dev (>> 4.6), libldap2-dev, libxml2-dev, libcap2-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libgeoip-dev (>= 1.4.6.dfsg-5), dpkg-dev (>= 1.16.1~), python3, dh-systemd, autotools-dev, dh-autoreconf
+Build-Conflicts: libdb4.2-dev
+Architecture: any all
+Standards-Version: 3.9.7
+Format: 3.0 (quilt)
+Files:
+ 8c8693e86573ced55fa6a96517f2aab2 3441 bind9_9.10.3.dfsg.P4-12.3+deb9u2.dsc
+ 909aa9f0c48b7c2d0d604ea78d9fc607 8641072 bind9_9.10.3.dfsg.P4.orig.tar.gz
+ 81fe5a3984d167636ac7c16fc52dedc6 86776 bind9_9.10.3.dfsg.P4-12.3+deb9u2.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/git/pkg-bind/pkg-bind.git
+Vcs-Git: git://anonscm.debian.org/git/pkg-bind/pkg-bind.git
+Checksums-Sha256:
+ a7cf3c1a4c81ed75f8105ba9e895dd6c7edb675d5332638cebafaacc6a5d021f 3441 bind9_9.10.3.dfsg.P4-12.3+deb9u2.dsc
+ 895077c868d06eea39c1526624f2278a3b51a3358b5aa50f48a0f1c16a7ab6e6 8641072 bind9_9.10.3.dfsg.P4.orig.tar.gz
+ b75a7f286e13f4b0d728a133fc1ea981e0ffedeab86ff3f40a0991f1b04fb29e 86776 bind9_9.10.3.dfsg.P4-12.3+deb9u2.debian.tar.xz
+Package-List: 
+ bind9 deb net optional arch=any
+ bind9-doc deb doc optional arch=all
+ bind9-host deb net standard arch=any
+ bind9utils deb net optional arch=any
+ dnsutils deb net standard arch=any
+ host deb net standard arch=all
+ libbind-dev deb libdevel optional arch=any
+ libbind-export-dev deb libdevel optional arch=any
+ libbind9-140 deb libs standard arch=any
+ libdns-export162 deb libs optional arch=any
+ libdns-export162-udeb udeb debian-installer optional arch=any
+ libdns162 deb libs standard arch=any
+ libirs-export141 deb libs optional arch=any
+ libirs-export141-udeb udeb debian-installer optional arch=any
+ libirs141 deb libs standard arch=any
+ libisc-export160 deb libs optional arch=any
+ libisc-export160-udeb udeb debian-installer optional arch=any
+ libisc160 deb libs standard arch=any
+ libisccc-export140 deb libs optional arch=any
+ libisccc-export140-udeb udeb debian-installer optional arch=any
+ libisccc140 deb libs optional arch=any
+ libisccfg-export140 deb libs optional arch=any
+ libisccfg-export140-udeb udeb debian-installer optional arch=any
+ libisccfg140 deb libs standard arch=any
+ liblwres141 deb libs standard arch=any
+ lwresd deb net optional arch=any
+Directory: pool/main/b/bind9
+Priority: source
+Section: net
+
+Package: catdoc
+Binary: catdoc
+Version: 1:0.94.3~git20160113.dbc9ec6+dfsg-1+deb9u1
+Maintainer: Martín Ferrari <tincho@debian.org>
+Build-Depends: debhelper (>> 9.0.0), tk
+Architecture: any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 99bda9a60f2dbaa66b996170f8c7aac1 2148 catdoc_0.94.3~git20160113.dbc9ec6+dfsg-1+deb9u1.dsc
+ 86d8e0308681817904a3cb68d6b62771 141753 catdoc_0.94.3~git20160113.dbc9ec6+dfsg.orig.tar.gz
+ 6f2c69d79fef810332d90c23e247a382 52752 catdoc_0.94.3~git20160113.dbc9ec6+dfsg-1+deb9u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/git/collab-maint/catdoc.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/catdoc.git
+Checksums-Sha256:
+ 35c69500d0ead9335789b222304c74c267102916218876a25b26ed275abb5916 2148 catdoc_0.94.3~git20160113.dbc9ec6+dfsg-1+deb9u1.dsc
+ 3f98fb577a45925f853257f2a4b4caeab258f06c1056941335c9fb8d9eb712b6 141753 catdoc_0.94.3~git20160113.dbc9ec6+dfsg.orig.tar.gz
+ f7b5a6bcdaf0ec26d8acc65f73640cdeb00d0cbe7a10df7040cc55cde9bb052a 52752 catdoc_0.94.3~git20160113.dbc9ec6+dfsg-1+deb9u1.debian.tar.xz
+Package-List: 
+ catdoc deb text optional arch=any
+Directory: pool/main/c/catdoc
+Priority: source
+Section: text
+
+Package: chromium-browser
+Binary: chromium, chromium-l10n, chromium-shell, chromium-widevine, chromium-driver, chromedriver
+Version: 60.0.3112.78-1~deb9u1
+Maintainer: Debian Chromium Maintainers <pkg-chromium-maint@lists.alioth.debian.org>
+Uploaders: Michael Gilbert <mgilbert@debian.org>, Riku Voipio <riku.voipio@linaro.org>
+Build-Depends: debhelper (>= 9), python3, pkg-config, ninja-build, python-jinja2, ca-certificates, wget, flex, yasm, xvfb, wdiff, gperf, bison, valgrind, xz-utils, x11-apps, xfonts-base, libglewmx-dev, libgl1-mesa-dev, libglu1-mesa-dev, libegl1-mesa-dev, libgles2-mesa-dev, mesa-common-dev, libxt-dev, libre2-dev, libgbm-dev, libpng-dev, libxss-dev, libelf-dev, libvpx-dev, libpci-dev, libcap-dev, libdrm-dev, libicu-dev, libffi-dev, libkrb5-dev, libexif-dev, libflac-dev, libudev-dev, libopus-dev, libwebp-dev, libxtst-dev, libsrtp-dev, libjpeg-dev, libxml2-dev, libgtk-3-dev, libgtk2.0-dev, libxslt1-dev, libpulse-dev, libpam0g-dev, libsnappy-dev, libgconf2-dev, libavutil-dev, libavcodec-dev (>= 7:3.0), libavformat-dev, libglib2.0-dev, libasound2-dev, libsqlite3-dev, libjsoncpp-dev, libspeechd-dev (>= 0.8.4), libminizip-dev, libhunspell-dev, libharfbuzz-dev (>= 1.2.7), libusb-1.0-0-dev, libmodpbase64-dev, libgnome-keyring-dev, libnss3-dev (>= 3.12.3), libnspr4-dev (>= 2:4.9), libcups2-dev (>= 1.5.0), libevent-dev (>= 1.4.13), libjs-jquery, libjs-excanvas, libjs-jquery-flot, libgcrypt20-dev, fonts-ipafont-gothic, fonts-ipafont-mincho
+Architecture: i386 amd64 arm64 armhf all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ a50b5434be49fab960f6edc45de260f3 4352 chromium-browser_60.0.3112.78-1~deb9u1.dsc
+ 66dc14bd4000ef0d1ed861271f17c1d5 446448212 chromium-browser_60.0.3112.78.orig.tar.xz
+ 2e09e4952361797d6bbcabff9591c367 133696 chromium-browser_60.0.3112.78-1~deb9u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-chromium/pkg-chromium.git
+Vcs-Git: git://anonscm.debian.org/pkg-chromium/pkg-chromium.git
+Checksums-Sha256:
+ 36a346f101d2aa0488b1ea161899dc53b33ab959c1e1c1c7dd2fe73e2a62b285 4352 chromium-browser_60.0.3112.78-1~deb9u1.dsc
+ 89cad006ebdb9aa75fe0376aa40911fc57f71f7245aecbecc99c2443216ee8ca 446448212 chromium-browser_60.0.3112.78.orig.tar.xz
+ a643b0f50c127e8b2deb2573978913b6207675240f78a6f247af614d71886363 133696 chromium-browser_60.0.3112.78-1~deb9u1.debian.tar.xz
+Homepage: http://www.chromium.org/Home
+Package-List: 
+ chromedriver deb web optional arch=i386,amd64,arm64,armhf
+ chromium deb web optional arch=i386,amd64,arm64,armhf
+ chromium-driver deb web optional arch=i386,amd64,arm64,armhf
+ chromium-l10n deb localization optional arch=all
+ chromium-shell deb web optional arch=i386,amd64,arm64,armhf
+ chromium-widevine deb contrib/web optional arch=i386,amd64,arm64,armhf
+Directory: pool/main/c/chromium-browser
+Priority: source
+Section: web
+
+Package: chrony
+Binary: chrony
+Version: 3.0-4+deb9u1
+Maintainer: Vincent Blut <vincent.debian@free.fr>
+Uploaders: Joachim Wiedorn <joodebian@joonet.de>
+Build-Depends: debhelper (>= 10), bison, libedit-dev, libtomcrypt-dev, libcap-dev [linux-any], pps-tools (>= 0.20120406+g0deb9c7e-2) [linux-any], libseccomp-dev (>= 2.2.3-3~) [amd64 arm64 armel armhf hppa i386 mips mipsel mips64el powerpc powerpcspe ppc64 ppc64el s390x x32], pkg-config, asciidoctor (>= 1.5.3-1~)
+Architecture: linux-any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ d21132c217260389396b1fe94fb90f8f 1833 chrony_3.0-4+deb9u1.dsc
+ 09d99dfc6620d584e7c44b9d112601a0 421433 chrony_3.0.orig.tar.gz
+ 635845f2b19709731110aaeedf7a3217 26708 chrony_3.0-4+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/chrony.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/chrony.git
+Checksums-Sha256:
+ 57d92c3e0f387a88635a21c893b96288648ce0e25f175960092dd492b99ef04b 1833 chrony_3.0-4+deb9u1.dsc
+ a0387b91a20f047856a56d6541a1cf920c91b53b32f74c123bcb70f1a5d2cd6d 421433 chrony_3.0.orig.tar.gz
+ 5b92a7fb832c1a159e3188b1640068f960d8d06bf3cce0a747e75a7de55c65ab 26708 chrony_3.0-4+deb9u1.debian.tar.xz
+Homepage: https://chrony.tuxfamily.org
+Package-List: 
+ chrony deb net optional arch=linux-any
+Directory: pool/main/c/chrony
+Priority: source
+Section: net
+
+Package: cvs
+Binary: cvs
+Version: 2:1.12.13+real-22+deb9u1
+Maintainer: Thorsten Glaser <tg@mirbsd.de>
+Build-Depends: debhelper (>= 10), autotools-dev, bsdmainutils, ghostscript, groff, libbsd-dev, libkrb5-dev | heimdal-dev, procps, texinfo, texlive-latex-recommended, texlive-fonts-recommended, zlib1g-dev
+Architecture: any
+Standards-Version: 3.9.8
+Format: 1.0
+Files:
+ 5bfca3ba05f848def66403bc880a7b60 2054 cvs_1.12.13+real-22+deb9u1.dsc
+ 7a71a2e7a64973ecf255965956a1d338 4737137 cvs_1.12.13+real.orig.tar.gz
+ f579edf186184c3eff3a774f93952f82 114637 cvs_1.12.13+real-22+deb9u1.diff.gz
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/cvs.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/cvs.git
+Checksums-Sha256:
+ 6b949a1dfc77e523971a1607524718f6f5fe92c92fdc9fb022e34ed82e13dd96 2054 cvs_1.12.13+real-22+deb9u1.dsc
+ 4734971a59471744e4ad8665c1dca54cb3ebf9fc66ce9c2dff3d04670d3f7312 4737137 cvs_1.12.13+real.orig.tar.gz
+ d7baf701538a9e5b6f97d5248ef1b61867113622ebe4250f6bdd3772e2012596 114637 cvs_1.12.13+real-22+deb9u1.diff.gz
+Homepage: http://www.nongnu.org/cvs/
+Package-List: 
+ cvs deb vcs optional arch=any
+Directory: pool/main/c/cvs
+Priority: source
+Section: vcs
+
+Package: dbus
+Binary: dbus, dbus-1-dbg, dbus-1-doc, dbus-tests, dbus-udeb, dbus-user-session, dbus-x11, libdbus-1-3, libdbus-1-3-udeb, libdbus-1-dev
+Version: 1.10.22-0+deb9u1
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Uploaders: Sjoerd Simons <sjoerd@debian.org>, Sebastian Dröge <slomo@debian.org>, Michael Biebl <biebl@debian.org>, Loic Minier <lool@dooz.org>, Simon McVittie <smcv@debian.org>,
+Build-Depends: automake (>= 1:1.10), autotools-dev, debhelper (>= 10), dh-exec (>= 0.13), doxygen, dpkg-dev (>= 1.16.1), libapparmor-dev (>= 2.8.95) [linux-any], libaudit-dev [linux-any], libcap-ng-dev [linux-any], libexpat-dev, libglib2.0-dev, libselinux1-dev [linux-any], libsystemd-dev (>= 209) [linux-any], libx11-dev, python (>= 2.6), python-dbus, python-gobject, valgrind [amd64 arm64 armhf i386 mips64el mips mipsel powerpc ppc64 ppc64el s390x], xmlto, xsltproc
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 9f4d986452be3f23905d0576eeddf265 3101 dbus_1.10.22-0+deb9u1.dsc
+ baaa10b7cb49086ad91179a8decfadc5 1989350 dbus_1.10.22.orig.tar.gz
+ ef94f71f6ebf600683ed1d681b9afde1 56372 dbus_1.10.22-0+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-utopia/dbus.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-utopia/dbus.git
+Checksums-Sha256:
+ c6128b8750366aa6529ac3063fe83b18ec5d3b3f49ce8b1420c32ac3293c52e2 3101 dbus_1.10.22-0+deb9u1.dsc
+ e2b1401e3eedc7b5c9a2034d31254c886e1fcbc7858006e0a1c59158fe4b7b97 1989350 dbus_1.10.22.orig.tar.gz
+ da3a6af29e81a7ab37a7513bb9e2dac25fe00bd15cad239a15faa937da35c74d 56372 dbus_1.10.22-0+deb9u1.debian.tar.xz
+Homepage: http://dbus.freedesktop.org/
+Package-List: 
+ dbus deb admin standard arch=any
+ dbus-1-dbg deb debug extra arch=any
+ dbus-1-doc deb doc optional arch=all
+ dbus-tests deb misc extra arch=any
+ dbus-udeb udeb debian-installer extra arch=any
+ dbus-user-session deb admin optional arch=all
+ dbus-x11 deb x11 optional arch=any
+ libdbus-1-3 deb libs optional arch=any
+ libdbus-1-3-udeb udeb debian-installer extra arch=any
+ libdbus-1-dev deb libdevel optional arch=any
+Testsuite: autopkgtest
+Testsuite-Triggers: build-essential, dpkg-dev, gcc, gnome-desktop-testing
+Directory: pool/main/d/dbus
+Priority: source
+Section: admin
+
+Package: dietlibc
+Binary: dietlibc-dev, dietlibc-doc
+Version: 0.34~cvs20160606-6
+Maintainer: Christian Seiler <christian@iwakd.de>
+Uploaders: Thorsten Glaser <tg@mirbsd.de>
+Build-Depends: debhelper (>= 9), dh-exec
+Architecture: alpha amd64 arm arm64 armeb armel armhf hppa i386 ia64 mips mipsel mips64el powerpc powerpcspe ppc64 ppc64el s390 s390x sparc sparc64 x32 all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 699bdbf2aa0be609a7ba246477cbe0ed 2369 dietlibc_0.34~cvs20160606-6.dsc
+ 4267cb9fec7dc10630222e46bf494a1b 622616 dietlibc_0.34~cvs20160606.orig.tar.xz
+ 6c69a20ef37591fcebdb2483be4e146e 38160 dietlibc_0.34~cvs20160606-6.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/dietlibc.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/dietlibc.git
+Checksums-Sha256:
+ ad7bc1ad9a4a818bb8a6bc8bc40dcf490ac13ba2c045efccaa10e9b3178ccd12 2369 dietlibc_0.34~cvs20160606-6.dsc
+ 6d0d43846f58e53821407707b9c096e7ac4b0c582ce9e4c0126d1d3f959ffc25 622616 dietlibc_0.34~cvs20160606.orig.tar.xz
+ f3483fe9dfd5029d7dbbb20ceb4bb03d2430dfa0aff009b400285c445018fccf 38160 dietlibc_0.34~cvs20160606-6.debian.tar.xz
+Homepage: http://www.fefe.de/dietlibc/
+Package-List: 
+ dietlibc-dev deb libdevel optional arch=alpha,amd64,arm,arm64,armeb,armel,armhf,hppa,i386,ia64,mips,mipsel,mips64el,powerpc,powerpcspe,ppc64,ppc64el,s390,s390x,sparc,sparc64,x32
+ dietlibc-doc deb doc optional arch=all
+Testsuite: autopkgtest
+Testsuite-Triggers: build-essential
+Extra-Source-Only: yes
+Directory: pool/main/d/dietlibc
+Priority: source
+Section: devel
+
+Package: doxygen
+Binary: doxygen, doxygen-latex, doxygen-doc, doxygen-gui, doxygen-dbg
+Version: 1.8.13-4
+Maintainer: Matthias Klose <doko@debian.org>
+Uploaders: Helmut Grohne <helmut@subdivi.de>
+Build-Depends: debhelper (>= 9.20141010), dpkg-dev (>= 1.17.14), qtbase5-dev <!stage1>, flex, bison (>= 1.875a), python3, zlib1g-dev, libxapian-dev (>= 1.2.21-1.2), cmake, yui-compressor, ruby-compass, llvm-3.9-dev [alpha amd64 armel armhf arm64 i386 mips mipsel mips64el powerpc powerpcspe ppc64 ppc64el s390x sparc64], libclang-3.9-dev [alpha amd64 armel armhf arm64 i386 mips mipsel mips64el powerpc powerpcspe ppc64 ppc64el s390x sparc64]
+Build-Depends-Indep: texlive-fonts-recommended, texlive-generic-recommended, texlive-latex-extra, texlive-latex-recommended, texlive-extra-utils, texlive-font-utils, ghostscript, graphviz, latex-xcolor, rdfind
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 8ccc055822cd922e96dba7261d88a8c6 2706 doxygen_1.8.13-4.dsc
+ 0fa414975f8cd6d30e126c28327c1f7c 4893912 doxygen_1.8.13.orig.tar.gz
+ 8b0094c61652be8d757ca4d5b2f349c4 23332 doxygen_1.8.13-4.debian.tar.xz
+Checksums-Sha256:
+ 4f09cba25d6cd680a70424df4f1414d361efa5fe837bbc7639b8053c5e989ba3 2706 doxygen_1.8.13-4.dsc
+ af667887bd7a87dc0dbf9ac8d86c96b552dfb8ca9c790ed1cbffaa6131573f6b 4893912 doxygen_1.8.13.orig.tar.gz
+ a652ea7f30396f7b3b1878c0771e06a789d4b3e226d371473a926fe8f288d99d 23332 doxygen_1.8.13-4.debian.tar.xz
+Homepage: http://www.stack.nl/~dimitri/doxygen/
+Package-List: 
+ doxygen deb devel optional arch=any
+ doxygen-dbg deb debug extra arch=any
+ doxygen-doc deb doc optional arch=all
+ doxygen-gui deb devel optional arch=any profile=!stage1
+ doxygen-latex deb devel optional arch=all
+Testsuite: autopkgtest
+Testsuite-Triggers: apt, dpkg-dev, graphviz
+Extra-Source-Only: yes
+Directory: pool/main/d/doxygen
+Priority: source
+Section: devel
+
+Package: expect
+Binary: expect, tcl-expect, tcl-expect-dev
+Version: 5.45-7+deb9u1
+Maintainer: Sergei Golovan <sgolovan@debian.org>
+Build-Depends: debhelper (>= 9.0.0), dpkg-dev (>= 1.16.1~), autotools-dev, autoconf, tcl8.6-dev
+Build-Conflicts: autoconf2.13
+Architecture: any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ f6fcdc95aa5a214828811243c0072260 1941 expect_5.45-7+deb9u1.dsc
+ 44e1a4f4c877e9ddc5a542dfa7ecc92b 628808 expect_5.45.orig.tar.gz
+ 9648d3ac34b414e828d3fbd724ba126c 20676 expect_5.45-7+deb9u1.debian.tar.xz
+Checksums-Sha256:
+ 8daf151083327dac154fe513072745178b9098035293beaebb4614f6306174cb 1941 expect_5.45-7+deb9u1.dsc
+ b28dca90428a3b30e650525cdc16255d76bb6ccd65d448be53e620d95d5cc040 628808 expect_5.45.orig.tar.gz
+ 82d7f846d5a68de98dcb26d2f37203f97abf3228328c3d7bb7bbb41442a417ff 20676 expect_5.45-7+deb9u1.debian.tar.xz
+Homepage: http://sourceforge.net/projects/expect/
+Package-List: 
+ expect deb interpreters optional arch=any
+ tcl-expect deb interpreters optional arch=any
+ tcl-expect-dev deb devel optional arch=any
+Directory: pool/main/e/expect
+Priority: source
+Section: interpreters
+
+Package: flatpak
+Binary: flatpak, flatpak-builder, flatpak-tests, gir1.2-flatpak-1.0, libflatpak-dev, libflatpak-doc, libflatpak0
+Version: 0.8.7-2~deb9u1
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Uploaders: Matthias Klumpp <mak@debian.org>, Simon McVittie <smcv@debian.org>,
+Build-Depends: attr, automake (>= 1.14.1), bubblewrap (>= 0.1.5), ca-certificates, dbus, debhelper (>= 10~), desktop-file-utils, dh-exec, docbook-xml, docbook-xsl, fuse, git, gnome-desktop-testing, gobject-introspection, gtk-doc-tools, gtk-update-icon-cache, hicolor-icon-theme, libarchive-dev (>= 2.8.0), libattr1-dev, libcap-dev, libdw-dev, libelf-dev, libfuse-dev, libgirepository1.0-dev, libglib2.0-dev (>= 2.44), libjson-glib-dev, libostree-dev (>= 2016.15), libpolkit-gobject-1-dev, libseccomp-dev, libsoup2.4-dev, libxau-dev, libxml2-utils, ostree, procps, shared-mime-info, xmlto, xsltproc
+Architecture: linux-any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 5967030e8817258db0158834ea654a3c 3050 flatpak_0.8.7-2~deb9u1.dsc
+ b399c93dcd1602750f0c78219b256dd5 751020 flatpak_0.8.7.orig.tar.xz
+ 4dbc7353dffcd0b41c93d2c029c934aa 21256 flatpak_0.8.7-2~deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/flatpak.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/flatpak.git
+Checksums-Sha256:
+ a556448359256ad168d315440515bec81c676233d1810c754993b4466160e1de 3050 flatpak_0.8.7-2~deb9u1.dsc
+ ddd2b1d5b291b55a12bee1ef802d2e36ca7c830e2164d38996fa62460196f311 751020 flatpak_0.8.7.orig.tar.xz
+ 0e798e52588f0b52edbb170af915e46c181bae2ccd48c9af70d41404364cce9a 21256 flatpak_0.8.7-2~deb9u1.debian.tar.xz
+Homepage: http://flatpak.org/
+Package-List: 
+ flatpak deb admin optional arch=linux-any
+ flatpak-builder deb devel optional arch=linux-any
+ flatpak-tests deb misc optional arch=linux-any
+ gir1.2-flatpak-1.0 deb introspection optional arch=linux-any
+ libflatpak-dev deb libdevel optional arch=linux-any
+ libflatpak-doc deb doc optional arch=all
+ libflatpak0 deb libs optional arch=linux-any
+Testsuite: autopkgtest
+Testsuite-Triggers: build-essential, git, gnome-desktop-testing, make, python
+Directory: pool/main/f/flatpak
+Priority: extra
+Section: misc
+
+Package: flot
+Binary: libjs-jquery-flot, libjs-jquery-flot-docs, libjs-flot
+Version: 0.8.3+dfsg-1
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Marcelo Jorge Vieira <metal@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), node-uglify, libjs-jquery-mousewheel, libjs-jquery-event-drag, libjs-jquery-resize
+Architecture: all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 2ebc9cb428617a0d6264ee5db9f33e25 2153 flot_0.8.3+dfsg-1.dsc
+ 6b922076b1d0122d91a28c78f30e67ee 376899 flot_0.8.3+dfsg.orig.tar.gz
+ c8ec595d988416b1dfb7440b084e4662 31968 flot_0.8.3+dfsg-1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-javascript/flot.git
+Vcs-Git: git://anonscm.debian.org/pkg-javascript/flot.git
+Checksums-Sha256:
+ 0d41be3eaadc5221e5a6cd04ca01d809dcdcf8685ee8270804e471e82017b466 2153 flot_0.8.3+dfsg-1.dsc
+ aef16273d38cea65d5b6c7a63e2c8b173ffa3031d827e6d03676a02cf055656b 376899 flot_0.8.3+dfsg.orig.tar.gz
+ 97e682c0394846a0287276528d9144e15fde710a4691f793f1d034eacf7e1454 31968 flot_0.8.3+dfsg-1.debian.tar.xz
+Homepage: http://code.google.com/p/flot/
+Package-List: 
+ libjs-flot deb oldlibs optional arch=all
+ libjs-jquery-flot deb web optional arch=all
+ libjs-jquery-flot-docs deb doc optional arch=all
+Extra-Source-Only: yes
+Directory: pool/main/f/flot
+Priority: source
+Section: web
+
+Package: freeradius
+Binary: freeradius, freeradius-common, freeradius-config, freeradius-utils, libfreeradius3, libfreeradius-dev, freeradius-dhcp, freeradius-krb5, freeradius-ldap, freeradius-rest, freeradius-postgresql, freeradius-mysql, freeradius-iodbc, freeradius-redis, freeradius-memcached, freeradius-yubikey
+Version: 3.0.12+dfsg-5+deb9u1
+Maintainer: Debian FreeRADIUS Packaging Team <pkg-freeradius-maintainers@lists.alioth.debian.org>
+Uploaders: Josip Rodin <joy-packages@debian.org>, Stephen Gran <sgran@debian.org>, Mark Hymers <mhy@debian.org>, Sam Hartman <hartmans@debian.org>, Michael Stapelberg <stapelberg@debian.org>
+Build-Depends: debhelper (>= 9.20160114), quilt, dpkg-dev (>= 1.13.19), autotools-dev, libcurl4-openssl-dev | libcurl4-gnutls-dev, libcap-dev, libgdbm-dev, libiodbc2-dev, libjson-c-dev, libkrb5-dev | heimdal-dev, libldap2-dev, libpam0g-dev, libpcap-dev, libperl-dev, default-libmysqlclient-dev | libmysqlclient-dev, libpq-dev, libreadline-dev, libsasl2-dev, libsqlite3-dev, libssl-dev, libtalloc-dev, libwbclient-dev, libyubikey-dev, libykclient-dev, libmemcached-dev, libhiredis-dev, python-dev, samba-dev | samba4-dev, libpcre3-dev, libcollectdclient-dev [!mips64el], snmp, dh-autoreconf
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ de7dc70368db8d28b0217db9ed0245f9 3755 freeradius_3.0.12+dfsg-5+deb9u1.dsc
+ bb55416c0cd1283cf377fd3911a55730 3776884 freeradius_3.0.12+dfsg.orig.tar.gz
+ d8cc117277338d4d518ce36f35955206 74444 freeradius_3.0.12+dfsg-5+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-freeradius/freeradius.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-freeradius/freeradius.git
+Checksums-Sha256:
+ 7fb4db737beb3a31d41fb5d009a252d72eae80e28baefecbb22c2151eabb2481 3755 freeradius_3.0.12+dfsg-5+deb9u1.dsc
+ 07e158ed9d15bf6e1f20cf70c7dce7d54f3218ad3e022b92c3a6a8e414834c17 3776884 freeradius_3.0.12+dfsg.orig.tar.gz
+ 23b23c64da28eb9eaa8ceef60cc0fe34ab98e23539822f32de31f86e4b4fa6b7 74444 freeradius_3.0.12+dfsg-5+deb9u1.debian.tar.xz
+Homepage: http://www.freeradius.org/
+Package-List: 
+ freeradius deb net optional arch=any
+ freeradius-common deb net optional arch=all
+ freeradius-config deb net optional arch=any
+ freeradius-dhcp deb net optional arch=any
+ freeradius-iodbc deb net optional arch=any
+ freeradius-krb5 deb net optional arch=any
+ freeradius-ldap deb net optional arch=any
+ freeradius-memcached deb net optional arch=any
+ freeradius-mysql deb net optional arch=any
+ freeradius-postgresql deb net optional arch=any
+ freeradius-redis deb net optional arch=any
+ freeradius-rest deb net optional arch=any
+ freeradius-utils deb net optional arch=any
+ freeradius-yubikey deb net optional arch=any
+ libfreeradius-dev deb libdevel optional arch=any
+ libfreeradius3 deb net optional arch=any
+Testsuite: autopkgtest
+Testsuite-Triggers: lsb-release, python
+Directory: pool/main/f/freeradius
+Priority: source
+Section: net
+
+Package: freerdp
+Binary: freerdp-x11, libfreerdp-cache1.1, libfreerdp-client1.1, libfreerdp-codec1.1, libfreerdp-common1.1.0, libfreerdp-core1.1, libfreerdp-crypto1.1, libfreerdp-gdi1.1, libfreerdp-locale1.1, libfreerdp-primitives1.1, libfreerdp-rail1.1, libfreerdp-utils1.1, libwinpr-asn1-0.1, libwinpr-bcrypt0.1, libwinpr-credentials0.1, libwinpr-credui0.1, libwinpr-crt0.1, libwinpr-crypto0.1, libwinpr-dsparse0.1, libwinpr-environment0.1, libwinpr-error0.1, libwinpr-file0.1, libwinpr-handle0.1, libwinpr-heap0.1, libwinpr-input0.1, libwinpr-interlocked0.1, libwinpr-io0.1, libwinpr-library0.1, libwinpr-path0.1, libwinpr-pipe0.1, libwinpr-pool0.1, libwinpr-registry0.1, libwinpr-rpc0.1, libwinpr-sspi0.1, libwinpr-sspicli0.1, libwinpr-synch0.1, libwinpr-sysinfo0.1, libwinpr-thread0.1, libwinpr-timezone0.1, libwinpr-utils0.1, libwinpr-winhttp0.1, libwinpr-winsock0.1, libxfreerdp-client1.1, libfreerdp-plugins-standard, libfreerdp-dev, libwinpr-dev, freerdp-x11-dbg, libxfreerdp-client-dbg,
+ libfreerdp-dbg, libwinpr-dbg,
+ libfreerdp-plugins-standard-dbg
+Version: 1.1.0~git20140921.1.440916e+dfsg1-13+deb9u1
+Maintainer: Debian Remote Maintainers <pkg-remote-team@lists.alioth.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>, Laszlo Boszormenyi (GCS) <gcs@debian.hu>,
+Build-Depends: debhelper (>= 9), cdbs, autotools-dev, cmake, dpkg-dev (>= 1.16.1.1), libasound2-dev, libcups2-dev, libpcsclite-dev, libpulse-dev, libssl1.0-dev, libx11-dev, libxcursor-dev, libxdamage-dev, libxext-dev, libxkbfile-dev, libxinerama-dev, libxrandr-dev, libxv-dev, libjpeg-dev, pkg-config, xmlto, libavcodec-dev, libxi-dev, libusb-1.0-0-dev [linux-any], libudev-dev [linux-any], libdbus-glib-1-dev, uuid-dev
+Architecture: any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ b779e0b97fb8a344f0815fb06c6d5c72 5993 freerdp_1.1.0~git20140921.1.440916e+dfsg1-13+deb9u1.dsc
+ b37fd56cfd3093f861a7aab37e9fa78c 2699372 freerdp_1.1.0~git20140921.1.440916e+dfsg1.orig.tar.xz
+ d94391cfcdbb1dcaacfc47f20f4f1489 57272 freerdp_1.1.0~git20140921.1.440916e+dfsg1-13+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/git/pkg-remote/freerdp.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-remote/freerdp.git
+Checksums-Sha256:
+ 9874565855ccd5c79e7ddc7dd2487cd00c09fc1955985ca6c876fffdb343b457 5993 freerdp_1.1.0~git20140921.1.440916e+dfsg1-13+deb9u1.dsc
+ 7bd635fd0ece5c938f30f54b3cb22bdecddaf54be3ee7065f019bbef00ab83d8 2699372 freerdp_1.1.0~git20140921.1.440916e+dfsg1.orig.tar.xz
+ ca82c2490c384e1361de512db728a70a3343e55bac30bf3556ac68ba21f98719 57272 freerdp_1.1.0~git20140921.1.440916e+dfsg1-13+deb9u1.debian.tar.xz
+Homepage: http://www.freerdp.com/
+Package-List: 
+ freerdp-x11 deb x11 optional arch=any
+ freerdp-x11-dbg deb debug extra arch=any
+ libfreerdp-cache1.1 deb libs optional arch=any
+ libfreerdp-client1.1 deb libs optional arch=any
+ libfreerdp-codec1.1 deb libs optional arch=any
+ libfreerdp-common1.1.0 deb libs optional arch=any
+ libfreerdp-core1.1 deb libs optional arch=any
+ libfreerdp-crypto1.1 deb libs optional arch=any
+ libfreerdp-dbg deb debug extra arch=any
+ libfreerdp-dev deb libdevel optional arch=any
+ libfreerdp-gdi1.1 deb libs optional arch=any
+ libfreerdp-locale1.1 deb libs optional arch=any
+ libfreerdp-plugins-standard deb libs optional arch=any
+ libfreerdp-plugins-standard-dbg deb debug extra arch=any
+ libfreerdp-primitives1.1 deb libs optional arch=any
+ libfreerdp-rail1.1 deb libs optional arch=any
+ libfreerdp-utils1.1 deb libs optional arch=any
+ libwinpr-asn1-0.1 deb libs optional arch=any
+ libwinpr-bcrypt0.1 deb libs optional arch=any
+ libwinpr-credentials0.1 deb libs optional arch=any
+ libwinpr-credui0.1 deb libs optional arch=any
+ libwinpr-crt0.1 deb libs optional arch=any
+ libwinpr-crypto0.1 deb libs optional arch=any
+ libwinpr-dbg deb debug extra arch=any
+ libwinpr-dev deb libdevel optional arch=any
+ libwinpr-dsparse0.1 deb libs optional arch=any
+ libwinpr-environment0.1 deb libs optional arch=any
+ libwinpr-error0.1 deb libs optional arch=any
+ libwinpr-file0.1 deb libs optional arch=any
+ libwinpr-handle0.1 deb libs optional arch=any
+ libwinpr-heap0.1 deb libs optional arch=any
+ libwinpr-input0.1 deb libs optional arch=any
+ libwinpr-interlocked0.1 deb libs optional arch=any
+ libwinpr-io0.1 deb libs optional arch=any
+ libwinpr-library0.1 deb libs optional arch=any
+ libwinpr-path0.1 deb libs optional arch=any
+ libwinpr-pipe0.1 deb libs optional arch=any
+ libwinpr-pool0.1 deb libs optional arch=any
+ libwinpr-registry0.1 deb libs optional arch=any
+ libwinpr-rpc0.1 deb libs optional arch=any
+ libwinpr-sspi0.1 deb libs optional arch=any
+ libwinpr-sspicli0.1 deb libs optional arch=any
+ libwinpr-synch0.1 deb libs optional arch=any
+ libwinpr-sysinfo0.1 deb libs optional arch=any
+ libwinpr-thread0.1 deb libs optional arch=any
+ libwinpr-timezone0.1 deb libs optional arch=any
+ libwinpr-utils0.1 deb libs optional arch=any
+ libwinpr-winhttp0.1 deb libs optional arch=any
+ libwinpr-winsock0.1 deb libs optional arch=any
+ libxfreerdp-client-dbg deb debug extra arch=any
+ libxfreerdp-client1.1 deb libs optional arch=any
+Directory: pool/main/f/freerdp
+Priority: source
+Section: x11
+
+Package: git
+Binary: git, git-man, git-core, git-doc, git-arch, git-cvs, git-svn, git-mediawiki, git-email, git-daemon-run, git-daemon-sysvinit, git-gui, gitk, git-el, gitweb, git-all
+Version: 1:2.11.0-3+deb9u1
+Maintainer: Gerrit Pape <pape@smarden.org>
+Uploaders: Jonathan Nieder <jrnieder@gmail.com>, Anders Kaseorg <andersk@mit.edu>
+Build-Depends: libz-dev, libpcre3-dev, gettext, libcurl4-gnutls-dev, libexpat1-dev, subversion, libsvn-perl, libyaml-perl, tcl, libhttp-date-perl | libtime-modules-perl, libcgi-pm-perl, python, cvs, cvsps, libdbd-sqlite3-perl, unzip, libio-pty-perl, debhelper (>= 9), dh-exec (>= 0.7), dh-apache2, dpkg-dev (>= 1.16.2~)
+Build-Depends-Indep: asciidoc, xmlto, docbook-xsl
+Architecture: any all
+Standards-Version: 3.9.6.0
+Format: 3.0 (quilt)
+Files:
+ ccc76c996aa260ba4d08c5c3da2e8f6d 2901 git_2.11.0-3+deb9u1.dsc
+ dd4e3360e28aec5bb902fb34dd7fce3b 4197984 git_2.11.0.orig.tar.xz
+ f4b9140e2b512e6702004ef5dc370661 523448 git_2.11.0-3+deb9u1.debian.tar.xz
+Vcs-Browser: http://repo.or.cz/w/git/debian.git/
+Vcs-Git: https://repo.or.cz/r/git/debian.git/
+Checksums-Sha256:
+ 1b2244ce374d402ae6c4389be8e19d7189bc075f7790798dc8159901a4684a36 2901 git_2.11.0-3+deb9u1.dsc
+ 7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b 4197984 git_2.11.0.orig.tar.xz
+ c6f95ed3a3a1804c1ee17e554d42c1a0203d16dd9a30647a798128e9f242cc3b 523448 git_2.11.0-3+deb9u1.debian.tar.xz
+Homepage: https://git-scm.com/
+Package-List: 
+ git deb vcs optional arch=any
+ git-all deb vcs optional arch=all
+ git-arch deb vcs optional arch=all
+ git-core deb vcs optional arch=all
+ git-cvs deb vcs optional arch=all
+ git-daemon-run deb vcs optional arch=all
+ git-daemon-sysvinit deb vcs extra arch=all
+ git-doc deb doc optional arch=all
+ git-el deb vcs optional arch=all
+ git-email deb vcs optional arch=all
+ git-gui deb vcs optional arch=all
+ git-man deb doc optional arch=all
+ git-mediawiki deb vcs optional arch=all
+ git-svn deb vcs optional arch=all
+ gitk deb vcs optional arch=all
+ gitweb deb vcs optional arch=all
+Directory: pool/main/g/git
+Priority: source
+Section: vcs
+
+Package: gnome-exe-thumbnailer
+Binary: gnome-exe-thumbnailer
+Version: 0.9.4-2+deb9u1
+Maintainer: Debian Wine Party <pkg-wine-party@lists.alioth.debian.org>
+Uploaders: James Lu <bitflip3@gmail.com>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 1ca70c81c6a39c13ccfcf8370b98baaf 2099 gnome-exe-thumbnailer_0.9.4-2+deb9u1.dsc
+ 82c8194d399d888d71c3145ba3b7a39b 55909 gnome-exe-thumbnailer_0.9.4.orig.tar.gz
+ 8410682d3965ab6082aad5673c4a106f 6096 gnome-exe-thumbnailer_0.9.4-2+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-wine/gnome-exe-thumbnailer.git/
+Vcs-Git: https://anonscm.debian.org/git/pkg-wine/gnome-exe-thumbnailer.git
+Checksums-Sha256:
+ 5999ec0cb78928404927cbe660ee26a6a9cb3b3d0d2b7d89bf2b48bd22385dc7 2099 gnome-exe-thumbnailer_0.9.4-2+deb9u1.dsc
+ 66258a1c68f06d56e3a35336b21778eb1eb10f06ee757c4f54bf5a0a646d2bce 55909 gnome-exe-thumbnailer_0.9.4.orig.tar.gz
+ c40e8c596aefd2ef1ffdf6eb08d938fae12b2edc46455cf46fba520bf237e9a6 6096 gnome-exe-thumbnailer_0.9.4-2+deb9u1.debian.tar.xz
+Homepage: https://github.com/gnome-exe-thumbnailer/gnome-exe-thumbnailer
+Package-List: 
+ gnome-exe-thumbnailer deb gnome optional arch=all
+Directory: pool/main/g/gnome-exe-thumbnailer
+Priority: extra
+Section: misc
+
+Package: gnutls28
+Binary: libgnutls28-dev, libgnutls30, gnutls-bin, gnutls-doc, libgnutlsxx28, libgnutls-openssl27, libgnutls-dane0
+Version: 3.5.8-5+deb9u3
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Uploaders: Andreas Metzler <ametzler@debian.org>, Eric Dorland <eric@debian.org>, James Westby <jw+debian@jameswestby.net>, Simon Josefsson <simon@josefsson.org>
+Build-Depends: debhelper (>= 9.20150628), nettle-dev (>= 3.1), zlib1g-dev, libtasn1-6-dev (>= 4.9), autotools-dev, datefudge <!nocheck>, dpkg-dev (>= 1.17.14), libp11-kit-dev (>= 0.23.1), pkg-config, chrpath, libidn11-dev (>= 1.31), autogen (>= 1:5.16-0), bison, dh-autoreconf, libcmocka-dev <!nocheck>, libgmp-dev (>= 2:6), libopts25-dev, automake (>= 1:1.12.2), libunbound-dev (>= 1.5.10-1), net-tools [!kfreebsd-i386 !kfreebsd-amd64] <!nocheck>, freebsd-net-tools [kfreebsd-i386 kfreebsd-amd64] <!nocheck>, libssl-dev <!nocheck>, openssl <!nocheck>, softhsm2 <!nocheck>
+Build-Depends-Indep: gtk-doc-tools, texinfo (>= 4.8)
+Build-Conflicts: libgnutls-dev
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 768fbfa71def3535de4d2363ef4b4ea0 3286 gnutls28_3.5.8-5+deb9u3.dsc
+ 113e892e51acdb11b81804cd355adfee 7264448 gnutls28_3.5.8.orig.tar.xz
+ 02647c990bd24fd3fa55b9be17d684d2 287 gnutls28_3.5.8.orig.tar.xz.asc
+ ab8c4fb573e21f3df7ee320fdbc81b3c 108300 gnutls28_3.5.8-5+deb9u3.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-gnutls/gnutls.git/
+Vcs-Git: https://anonscm.debian.org/git/pkg-gnutls/gnutls.git
+Checksums-Sha256:
+ 1e5c25f95b60f8320ec34dcaa0cd91fb0738ee51398ed885f56f8265acc21112 3286 gnutls28_3.5.8-5+deb9u3.dsc
+ 0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff 7264448 gnutls28_3.5.8.orig.tar.xz
+ 417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82 287 gnutls28_3.5.8.orig.tar.xz.asc
+ 73c4ac104115bee72e4acf253eac01306426d3687d7a883acf0265cdd3eac12f 108300 gnutls28_3.5.8-5+deb9u3.debian.tar.xz
+Homepage: http://www.gnutls.org/
+Package-List: 
+ gnutls-bin deb net optional arch=any
+ gnutls-doc deb doc optional arch=all
+ libgnutls-dane0 deb libs extra arch=any
+ libgnutls-openssl27 deb libs standard arch=any
+ libgnutls28-dev deb libdevel optional arch=any
+ libgnutls30 deb libs standard arch=any
+ libgnutlsxx28 deb libs extra arch=any
+Directory: pool/main/g/gnutls28
+Priority: source
+Section: libs
+
+Package: gosa-plugin-mailaddress
+Binary: gosa-plugin-mailaddress
+Version: 0.99.5-2+deb9u1
+Maintainer: Debian Edu Packaging Team <debian-edu-pkg-team@lists.alioth.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+Build-Depends: debhelper (>= 9), cdbs
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 7610a29dc87bacd889412cb33feb3fa2 2194 gosa-plugin-mailaddress_0.99.5-2+deb9u1.dsc
+ ff8e6c952e51486199e339276c85ee59 22711 gosa-plugin-mailaddress_0.99.5.orig.tar.gz
+ a7674d3384950fb2c526c31a33b63999 3336 gosa-plugin-mailaddress_0.99.5-2+deb9u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=debian-edu/pkg-team/gosa-plugin-mailaddress.git
+Vcs-Git: git://anonscm.debian.org/debian-edu/pkg-team/gosa-plugin-mailaddress.git
+Checksums-Sha256:
+ d7efc0a2f9611221f5335a433df409f7dc1854b0de28f5e8867a3c860e8b6234 2194 gosa-plugin-mailaddress_0.99.5-2+deb9u1.dsc
+ 5de8784b15998909b1d51e9bc4a9ac2afa9746944ea8197227d91e7730fe44f2 22711 gosa-plugin-mailaddress_0.99.5.orig.tar.gz
+ ed48f9c345ca25f58e8d2662c51d98538173e499050e89fc5e7e1cc4c4c87e6c 3336 gosa-plugin-mailaddress_0.99.5-2+deb9u1.debian.tar.xz
+Homepage: https://github.com/gosa-project/gosa-plugin-mailaddress
+Package-List: 
+ gosa-plugin-mailaddress deb web optional arch=all
+Directory: pool/main/g/gosa-plugin-mailaddress
+Priority: extra
+Section: misc
+
+Package: haveged
+Binary: haveged, libhavege1, libhavege1-dbg, libhavege-dev
+Version: 1.9.1-5+deb9u1
+Maintainer: Jérémy Bobbio <lunar@debian.org>
+Build-Depends: debhelper (>= 9), dh-apparmor, dh-autoreconf, dh-systemd
+Architecture: linux-any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 52de9fffeee5f95f3f70c8680517d6e4 2179 haveged_1.9.1-5+deb9u1.dsc
+ d468e219d3143b5f5110228b69c19d85 469947 haveged_1.9.1.orig.tar.gz
+ b37615c91def896bdf9f7e2e13f53d50 11892 haveged_1.9.1-5+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/haveged.git
+Vcs-Git: https://alioth.debian.org/anonscm/git/collab-maint/haveged.git
+Checksums-Sha256:
+ 184fff57b6aaf3b4bc185df7dbb743af5225751ded2b609da48f8d49e9ae3392 2179 haveged_1.9.1-5+deb9u1.dsc
+ 3cc8b5a4dd23ae228bc3c93a7e2452765b11341ff6e59a0473053d92126001db 469947 haveged_1.9.1.orig.tar.gz
+ 45a2276f9d7c18f5c6d6f7f373bb8240d134822fa61b84f49f3fd40a6307ba55 11892 haveged_1.9.1-5+deb9u1.debian.tar.xz
+Homepage: http://issihosts.com/haveged/
+Package-List: 
+ haveged deb misc extra arch=linux-any
+ libhavege-dev deb libdevel extra arch=linux-any
+ libhavege1 deb libs extra arch=linux-any
+ libhavege1-dbg deb debug extra arch=linux-any
+Testsuite: autopkgtest
+Testsuite-Triggers: dieharder
+Directory: pool/main/h/haveged
+Priority: source
+Section: misc
+
+Package: imagemagick
+Binary: imagemagick-6-common, imagemagick-6-doc, libmagickcore-6-headers, libmagickwand-6-headers, libmagick++-6-headers, libimage-magick-perl, libmagickcore-6-arch-config, imagemagick-6.q16, libmagickcore-6.q16-3, libmagickcore-6.q16-3-extra, libmagickcore-6.q16-dev, libmagickwand-6.q16-3, libmagickwand-6.q16-dev, libmagick++-6.q16-7, libmagick++-6.q16-dev, libimage-magick-q16-perl, imagemagick-6.q16hdri, libmagickcore-6.q16hdri-3, libmagickcore-6.q16hdri-3-extra, libmagickcore-6.q16hdri-dev, libmagickwand-6.q16hdri-3, libmagickwand-6.q16hdri-dev, libmagick++-6.q16hdri-7, libmagick++-6.q16hdri-dev, libimage-magick-q16hdri-perl, imagemagick-common, imagemagick-doc, perlmagick, libmagickcore-dev, libmagickwand-dev, libmagick++-dev, imagemagick
+Version: 8:6.9.7.4+dfsg-11+deb9u1
+Maintainer: ImageMagick Packaging Team <pkg-gmagick-im-team@lists.alioth.debian.org>
+Uploaders: Luciano Bello <luciano@debian.org>, Nelson A. de Oliveira <naoliv@debian.org>, Bastien Roucariès <rouca@debian.org>, Vincent Fourmond <fourmond@debian.org>
+Build-Depends: debhelper (>= 10), dh-exec, dh-autoreconf, pkg-config, libltdl-dev, chrpath, libfftw3-dev, liblcms2-dev, liblqr-1-0-dev, libfreetype6-dev, libfontconfig1-dev, gsfonts, zlib1g-dev, liblzma-dev, libbz2-dev, libx11-dev, libxext-dev, libxt-dev, ghostscript, libdjvulibre-dev, libexif-dev, libjpeg-dev, libopenjp2-7-dev, libopenexr-dev, libperl-dev, libpng-dev, libtiff-dev, libwmf-dev, libpango1.0-dev, librsvg2-bin, librsvg2-dev, libxml2-dev, pkg-kde-tools, dpkg-dev (>= 1.17.6), libtool-bin
+Build-Depends-Indep: doxygen, doxygen-latex, graphviz, libxml2-utils, xsltproc
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ b9a04fd67d8d254e3bb05bb0f33b2a1d 5165 imagemagick_6.9.7.4+dfsg-11+deb9u1.dsc
+ a43e39ad84d37e9ffcec5346bf12e446 8929800 imagemagick_6.9.7.4+dfsg.orig.tar.xz
+ 7c20fcea588eb77293a1000f289d36f5 230280 imagemagick_6.9.7.4+dfsg-11+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/git/collab-maint/imagemagick.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/imagemagick.git
+Checksums-Sha256:
+ 0d21c5f12c9bf494291114133859b4325cdfc36632d1859c32feadb36b0fbbc8 5165 imagemagick_6.9.7.4+dfsg-11+deb9u1.dsc
+ 47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026 8929800 imagemagick_6.9.7.4+dfsg.orig.tar.xz
+ a68636c822d2782ea0567c92eac903381b12223d75b01b77e64a79cb7182e90f 230280 imagemagick_6.9.7.4+dfsg-11+deb9u1.debian.tar.xz
+Homepage: http://www.imagemagick.org/
+Package-List: 
+ imagemagick deb oldlibs extra arch=any
+ imagemagick-6-common deb graphics optional arch=all
+ imagemagick-6-doc deb doc optional arch=all
+ imagemagick-6.q16 deb graphics optional arch=any
+ imagemagick-6.q16hdri deb graphics optional arch=any
+ imagemagick-common deb oldlibs extra arch=all
+ imagemagick-doc deb oldlibs extra arch=all
+ libimage-magick-perl deb perl optional arch=all
+ libimage-magick-q16-perl deb perl optional arch=any
+ libimage-magick-q16hdri-perl deb perl optional arch=any
+ libmagick++-6-headers deb libdevel optional arch=all
+ libmagick++-6.q16-7 deb libs optional arch=any
+ libmagick++-6.q16-dev deb libdevel optional arch=any
+ libmagick++-6.q16hdri-7 deb libs optional arch=any
+ libmagick++-6.q16hdri-dev deb libdevel optional arch=any
+ libmagick++-dev deb oldlibs extra arch=all
+ libmagickcore-6-arch-config deb libdevel optional arch=any
+ libmagickcore-6-headers deb libdevel optional arch=all
+ libmagickcore-6.q16-3 deb libs optional arch=any
+ libmagickcore-6.q16-3-extra deb libs optional arch=any
+ libmagickcore-6.q16-dev deb libdevel optional arch=any
+ libmagickcore-6.q16hdri-3 deb libs optional arch=any
+ libmagickcore-6.q16hdri-3-extra deb libs optional arch=any
+ libmagickcore-6.q16hdri-dev deb libdevel optional arch=any
+ libmagickcore-dev deb oldlibs extra arch=all
+ libmagickwand-6-headers deb libdevel optional arch=all
+ libmagickwand-6.q16-3 deb libs optional arch=any
+ libmagickwand-6.q16-dev deb libdevel optional arch=any
+ libmagickwand-6.q16hdri-3 deb libs optional arch=any
+ libmagickwand-6.q16hdri-dev deb libdevel optional arch=any
+ libmagickwand-dev deb oldlibs extra arch=all
+ perlmagick deb oldlibs extra arch=all
+Testsuite: autopkgtest
+Testsuite-Triggers: ghostscript, gsfonts, libaliased-perl, netpbm
+Directory: pool/main/i/imagemagick
+Priority: source
+Section: graphics
+
+Package: ioquake3
+Binary: ioquake3, ioquake3-server
+Version: 1.36+u20161101+dfsg1-2+deb9u1
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Bruno "Fuddl" Kleinert <fuddl@debian.org>, Simon McVittie <smcv@debian.org>,
+Build-Depends: debhelper (>= 10), dh-apparmor [linux-any], dpkg-dev (>= 1.16.1), libcurl4-gnutls-dev, libjpeg-dev, libopenal-dev, libopus-dev, libopusfile-dev, libsdl2-dev (>= 2.0.4), libvorbis-dev
+Architecture: any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 6e7b750d4288a9a7388e96c2f45ed3ac 2310 ioquake3_1.36+u20161101+dfsg1-2+deb9u1.dsc
+ d14b0fca7af5ebc86688acd874e49b44 1886888 ioquake3_1.36+u20161101+dfsg1.orig.tar.xz
+ 81a330e471f12813df4ca9207d6417d1 25268 ioquake3_1.36+u20161101+dfsg1-2+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-games/ioquake3.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-games/ioquake3.git
+Checksums-Sha256:
+ 61bd336200f9cee4b02f23aa1231cb272bb04cbd711b40e5ec16295ff92b8b4b 2310 ioquake3_1.36+u20161101+dfsg1-2+deb9u1.dsc
+ 16c071721387a37b592aad30ed3eddba66cdea87ad808af85f465396a51f4d0b 1886888 ioquake3_1.36+u20161101+dfsg1.orig.tar.xz
+ f2fc89d979a84088a08f81debd341a4905dc2149185874d17943d2c2044be151 25268 ioquake3_1.36+u20161101+dfsg1-2+deb9u1.debian.tar.xz
+Homepage: http://www.ioquake3.org/
+Package-List: 
+ ioquake3 deb games optional arch=any
+ ioquake3-server deb games optional arch=any
+Directory: pool/main/i/ioquake3
+Priority: source
+Section: games
+
+Package: ipsec-tools
+Binary: ipsec-tools, racoon
+Version: 1:0.8.2+20140711-8+deb9u1
+Maintainer: pkg-ipsec-tools team <pkg-ipsec-tools-devel@lists.alioth.debian.org>
+Uploaders: Noah Meyerhans <noahm@debian.org>, Matt Grant <matt@mattgrant.net.nz>, Christian Hofstaedtler <zeha@debian.org>
+Build-Depends: bison, debhelper (>= 7.0.50~), dh-autoreconf, dh-systemd, flex, libfl-dev, libkrb5-dev, libldap2-dev, libpam0g-dev, libssl1.0-dev | libssl-dev (<< 1.1.0~), po-debconf
+Architecture: any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 7f7ac93028172e95d66730c3b9afba26 2331 ipsec-tools_0.8.2+20140711-8+deb9u1.dsc
+ 8c222aedb897820e946aac203113b650 1102890 ipsec-tools_0.8.2+20140711.orig.tar.gz
+ 51ee3d75d737c8243b33a69394f3b28f 63800 ipsec-tools_0.8.2+20140711-8+deb9u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ipsec-tools/pkg-ipsec-tools.git
+Vcs-Git: git://anonscm.debian.org/pkg-ipsec-tools/pkg-ipsec-tools.git
+Checksums-Sha256:
+ 5d8af46094541a6d09302591f19b062f78118ccfca7e525797a6e1b01b7306ba 2331 ipsec-tools_0.8.2+20140711-8+deb9u1.dsc
+ 5e702549103d4cffb73d5bcd3a9b4cb75c398e7988f2421b2901cc0e15915785 1102890 ipsec-tools_0.8.2+20140711.orig.tar.gz
+ 98f47c37e5d58ae75acc3e55561783414fa47355d8b964e29ddc8408253e9bc0 63800 ipsec-tools_0.8.2+20140711-8+deb9u1.debian.tar.xz
+Homepage: http://ipsec-tools.sourceforge.net/
+Package-List: 
+ ipsec-tools deb net extra arch=any
+ racoon deb net extra arch=any
+Directory: pool/main/i/ipsec-tools
+Priority: source
+Section: net
+
+Package: irssi
+Binary: irssi, irssi-dev
+Version: 1.0.2-1+deb9u2
+Maintainer: Rhonda D'Vine <rhonda@debian.org>
+Build-Depends: debhelper (>= 9~), autotools-dev, libglib2.0-dev, perl (>= 5.8.1), libperl-dev (>= 5.8.1), libncurses5-dev, libssl-dev, openssl
+Architecture: any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ af33e66af4333672ed9c2efec46670c2 1938 irssi_1.0.2-1+deb9u2.dsc
+ 6de949527c07f0930f0c6c95a8d8b99a 1027912 irssi_1.0.2.orig.tar.xz
+ c2201fb282d6382dc140f4671ca38bec 20944 irssi_1.0.2-1+deb9u2.debian.tar.xz
+Vcs-Browser: http://git.deb.at/w/pkg/irssi.git
+Vcs-Git: git://git.deb.at/pkg/irssi.git
+Checksums-Sha256:
+ 094de63b3e9bce8fc3fc185717cc55ed5647c6b3113dca85134c7eb00950fdd1 1938 irssi_1.0.2-1+deb9u2.dsc
+ 5c1c3cc2caf103aad073fadeb000e0f8cb3b416833a7f43ceb8bd9fcf275fbe9 1027912 irssi_1.0.2.orig.tar.xz
+ 56b90c5a4d4d37c28e1930df2e444f3e83b7f6a601701ba7d4cc8e63ea4e8c3a 20944 irssi_1.0.2-1+deb9u2.debian.tar.xz
+Homepage: http://irssi.org/
+Package-List: 
+ irssi deb net optional arch=any
+ irssi-dev deb net extra arch=any
+Directory: pool/main/i/irssi
+Priority: source
+Section: net
+
+Package: jquery
+Binary: libjs-jquery
+Version: 3.1.1-2
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Marcelo Jorge Vieira (metal) <metal@debian.org>, Steve Kemp <skx@debian.org>, Antonio Terceiro <terceiro@debian.org>
+Build-Depends: debhelper (>= 9~), node-requirejs, node-source-map, node-uglify, nodejs
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 8b812e89d064969e363a693d9fcca921 2111 jquery_3.1.1-2.dsc
+ f359eee12b83a34baaa971b925803c7f 410492 jquery_3.1.1.orig.tar.gz
+ 50c34de4078a7534735f2bbc849fd27e 8652 jquery_3.1.1-2.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/jquery.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/jquery.git
+Checksums-Sha256:
+ 55c20d0637a4d3fd17c5c4b4a47edbda930c06865023277cfad74ab23004dd0d 2111 jquery_3.1.1-2.dsc
+ 9fa7fe0ff812732dbef26e53431091e260f457fb56abf3964b92e521343268f3 410492 jquery_3.1.1.orig.tar.gz
+ 53ef4bd5f274373099885467fc7aec725acca37eaf898bbf766715a161918cb7 8652 jquery_3.1.1-2.debian.tar.xz
+Homepage: http://jquery.com/
+Package-List: 
+ libjs-jquery deb web optional arch=all
+Testsuite: autopkgtest
+Testsuite-Triggers: ca-certificates, wget
+Extra-Source-Only: yes
+Directory: pool/main/j/jquery
+Priority: source
+Section: web
+
+Package: kanatest
+Binary: kanatest
+Version: 0.4.8-3+deb9u1
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Sam Hocevar <sho@debian.org>, Barry deFreese <bdefreese@debian.org>, Evgeni Golov <evgeni@debian.org>
+Build-Depends: debhelper (>= 9), libgtk2.0-dev (>= 2.0), libxml2-dev, gettext, autotools-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Files:
+ f60323f991b061de8aad294a9d44d62f 2237 kanatest_0.4.8-3+deb9u1.dsc
+ b97b0521314f634e454354cb7ba2013d 302154 kanatest_0.4.8.orig.tar.gz
+ 8a9b4c5c2f758e9b5fa520895cf1459c 11712 kanatest_0.4.8-3+deb9u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-games/packages/trunk/kanatest/?op=log
+Vcs-Svn: svn://anonscm.debian.org/pkg-games/packages/trunk/kanatest/
+Checksums-Sha256:
+ 11651214f3bdfe3d696d42ff1515d5f5bba57c4aaed05ea6d6ff5d0e4eb0f494 2237 kanatest_0.4.8-3+deb9u1.dsc
+ a31682604bc6db9c0cb2e15429b8a5b64c04f1ed96df912cab71d4337567c513 302154 kanatest_0.4.8.orig.tar.gz
+ dcc1d6d91160fc6a9d87e4ef89a81cf9fac48bbff9c247639d0af57ec5b35936 11712 kanatest_0.4.8-3+deb9u1.debian.tar.xz
+Homepage: http://clayo.org/kanatest/
+Package-List: 
+ kanatest deb text optional arch=any
+Directory: pool/main/k/kanatest
+Priority: source
+Section: text
+
+Package: krb5
+Binary: krb5-user, krb5-kdc, krb5-kdc-ldap, krb5-admin-server, krb5-kpropd, krb5-multidev, libkrb5-dev, libkrb5-dbg, krb5-pkinit, krb5-otp, krb5-k5tls, krb5-doc, libkrb5-3, libgssapi-krb5-2, libgssrpc4, libkadm5srv-mit11, libkadm5clnt-mit11, libk5crypto3, libkdb5-8, libkrb5support0, libkrad0, krb5-gss-samples, krb5-locales, libkrad-dev
+Version: 1.15-1+deb9u1
+Maintainer: Sam Hartman <hartmans@debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Benjamin Kaduk <kaduk@mit.edu>
+Build-Depends: debhelper (>= 9), byacc | bison, comerr-dev, docbook-to-man, doxygen, libkeyutils-dev [linux-any], libldap2-dev, libncurses5-dev, libssl-dev, ss-dev, libverto-dev (>= 0.2.4), pkg-config, dh-systemd
+Build-Depends-Indep: python, python-cheetah, python-lxml, python-sphinx, doxygen-latex, texlive-generic-extra
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 03dd0ab3bfb4c70bd8bea0437db65194 3373 krb5_1.15-1+deb9u1.dsc
+ cd43a3316ebbb86b2a9020b485b1a819 9327157 krb5_1.15.orig.tar.gz
+ 981da9e09bcd891263f0a05d4789e7fe 144944 krb5_1.15-1+deb9u1.debian.tar.xz
+Vcs-Browser: http://git.debian.org/?p=pkg-k5-afs/debian-krb5-2013.git
+Vcs-Git: git://git.debian.org/git/pkg-k5-afs/debian-krb5-2013.git
+Checksums-Sha256:
+ cb69444c826f380c9d3ea7c5e6bf04105ca2fceb26ecc14b293f458f337f34c2 3373 krb5_1.15-1+deb9u1.dsc
+ fd34752774c808ab4f6f864f935c49945f5a56b62240b1ad4ab1af7b4ded127c 9327157 krb5_1.15.orig.tar.gz
+ f04183b2ecfd0fe488975338eb4f900d5f605c81a9ae279451ceda948d99a21c 144944 krb5_1.15-1+deb9u1.debian.tar.xz
+Homepage: http://web.mit.edu/kerberos/
+Dgit: 46d7b68453db32bc00a8b3a2d4a79ea15f6e1771 debian archive/debian/1.15-1+deb9u1 https://git.dgit.debian.org/krb5
+Package-List: 
+ krb5-admin-server deb net optional arch=any
+ krb5-doc deb doc optional arch=all
+ krb5-gss-samples deb net extra arch=any
+ krb5-k5tls deb net extra arch=any
+ krb5-kdc deb net optional arch=any
+ krb5-kdc-ldap deb net extra arch=any
+ krb5-kpropd deb net optional arch=any
+ krb5-locales deb localization standard arch=all
+ krb5-multidev deb libdevel optional arch=any
+ krb5-otp deb net extra arch=any
+ krb5-pkinit deb net extra arch=any
+ krb5-user deb net optional arch=any
+ libgssapi-krb5-2 deb libs standard arch=any
+ libgssrpc4 deb libs standard arch=any
+ libk5crypto3 deb libs standard arch=any
+ libkadm5clnt-mit11 deb libs standard arch=any
+ libkadm5srv-mit11 deb libs standard arch=any
+ libkdb5-8 deb libs standard arch=any
+ libkrad-dev deb libdevel extra arch=any
+ libkrad0 deb libs standard arch=any
+ libkrb5-3 deb libs standard arch=any
+ libkrb5-dbg deb debug extra arch=any
+ libkrb5-dev deb libdevel extra arch=any
+ libkrb5support0 deb libs standard arch=any
+Directory: pool/main/k/krb5
+Priority: source
+Section: net
+
+Package: libgd2
+Binary: libgd-tools, libgd-dev, libgd3
+Version: 2.2.4-2+deb9u1
+Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+Uploaders: Ondřej Surý <ondrej@debian.org>
+Build-Depends: autotools-dev, debhelper (>= 9), libpng-dev, libz-dev, libjpeg-dev, libfreetype6-dev, libxpm-dev, libx11-dev, libxt-dev, libfontconfig-dev, libwebp-dev, libtiff-dev, dh-autoreconf, html2text
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Files:
+ 0312a1c353520cfa53f569a1243687d6 2346 libgd2_2.2.4-2+deb9u1.dsc
+ a244855a323a3ea1975d708eb1e12b7a 2478528 libgd2_2.2.4.orig.tar.xz
+ d0fbe980f85008522df7b49ce6a70d49 25408 libgd2_2.2.4-2+deb9u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=collab-maint/libgd2.git;a=summary
+Vcs-Git: git://anonscm.debian.org/collab-maint/libgd2.git
+Checksums-Sha256:
+ 59270d7fd871175c1222a19e0a7444fed9c1724df7ceaf9ec817cd49bc51cc1a 2346 libgd2_2.2.4-2+deb9u1.dsc
+ 137f13a7eb93ce72e32ccd7cebdab6874f8cf7ddf31d3a455a68e016ecd9e4e6 2478528 libgd2_2.2.4.orig.tar.xz
+ d7570a7365c923fb0b00966d1a937a9a63d5fce013bd05f427f3bcc48730c5b7 25408 libgd2_2.2.4-2+deb9u1.debian.tar.xz
+Homepage: http://www.libgd.org/
+Package-List: 
+ libgd-dev deb libdevel optional arch=any
+ libgd-tools deb graphics optional arch=any
+ libgd3 deb libs optional arch=any
+Directory: pool/main/libg/libgd2
+Priority: source
+Section: oldlibs
+
+Package: libmspack
+Binary: libmspack0, libmspack-dev, libmspack-dbg, libmspack-doc
+Version: 0.5-1+deb9u1
+Maintainer: Marc Dequènes (Duck) <Duck@DuckCorp.org>
+Build-Depends: dpkg-dev (>= 1.16.1.1), debhelper (>= 9), dh-autoreconf, autotools-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Files:
+ 396bdf2547bb0b30d16b472e83d6a3b0 2106 libmspack_0.5-1+deb9u1.dsc
+ 3aa3f6b9ef101463270c085478fda1da 654193 libmspack_0.5.orig.tar.gz
+ 9ff4024c162377ea097e4bb2ae44d85f 5144 libmspack_0.5-1+deb9u1.debian.tar.xz
+Vcs-Browser: http://git.debian.org/?p=collab-maint/libmspack.git;a=summary
+Vcs-Git: git://git.debian.org/collab-maint/libmspack.git
+Checksums-Sha256:
+ 310bd4b82727a872fe4501178858384843047b6068eca999d95d079f57d76499 2106 libmspack_0.5-1+deb9u1.dsc
+ 8967f275525f5067b364cee43b73e44d0433668c39f9376dfff19f653d1c8110 654193 libmspack_0.5.orig.tar.gz
+ 5684fef2fb4dcef3440a04bfb2fcb2add4eb1cafab157b7e0f6fe623d7a2c484 5144 libmspack_0.5-1+deb9u1.debian.tar.xz
+Homepage: http://www.cabextract.org.uk/libmspack/
+Package-List: 
+ libmspack-dbg deb debug extra arch=any
+ libmspack-dev deb libdevel optional arch=any
+ libmspack-doc deb doc optional arch=all
+ libmspack0 deb libs optional arch=any
+Directory: pool/main/libm/libmspack
+Priority: extra
+Section: misc
+
+Package: libraw
+Binary: libraw15, libraw-bin, libraw-dev, libraw-doc
+Version: 0.17.2-6+deb9u1
+Maintainer: Debian PhotoTools Maintainers <pkg-phototools-devel@lists.alioth.debian.org>
+Uploaders: Matteo F. Vescovi <mfv@debian.org>
+Build-Depends: debhelper (>= 9), autotools-dev, dh-autoreconf, pkg-config, liblcms2-dev, libjpeg-dev
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ ac3223d2f09cfba78da51e65d357531f 2236 libraw_0.17.2-6+deb9u1.dsc
+ 7de042bcffb58864fd93d5209620e08d 689343 libraw_0.17.2.orig.tar.gz
+ 14c8674264e3deb01e19c69acbf3bc44 27924 libraw_0.17.2-6+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-phototools/libraw.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-phototools/libraw.git
+Checksums-Sha256:
+ 467e70f148ec98c50f03e78e58f04c1c756f1885ce93a691cc751dc5e67e82c5 2236 libraw_0.17.2-6+deb9u1.dsc
+ 170b8788cc2580b1889e5b67fbd5b9ad1146f3618046feb7c1cb267e17adc91c 689343 libraw_0.17.2.orig.tar.gz
+ dab82f7b9ab0b03c73905da89e9822dbd429126a0f31755de13f4b1b6b8e6061 27924 libraw_0.17.2-6+deb9u1.debian.tar.xz
+Homepage: http://www.libraw.org/
+Package-List: 
+ libraw-bin deb graphics optional arch=any
+ libraw-dev deb libdevel optional arch=any
+ libraw-doc deb doc optional arch=all
+ libraw15 deb libs optional arch=any
+Testsuite: autopkgtest
+Testsuite-Triggers: build-essential
+Directory: pool/main/libr/libraw
+Priority: source
+Section: libs
+
+Package: librsb
+Binary: librsb0, librsb-dev, librsb-doc
+Version: 1.2.0-rc5-3+deb9u1
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: Rafael Laboissiere <rafael@debian.org>
+Build-Depends: debhelper (>= 10), autotools-dev, libhwloc-dev, zlib1g-dev, dh-exec, doxygen, gfortran
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ a71922e848a03655a39dca794336da68 2174 librsb_1.2.0-rc5-3+deb9u1.dsc
+ a8144ce30621939c05ea6d328a00a35b 2217657 librsb_1.2.0-rc5.orig.tar.gz
+ 406e2c7cbed3ec8429d83ddbd3fb25a1 6876 librsb_1.2.0-rc5-3+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/debian-science/packages/librsb.git
+Vcs-Git: https://anonscm.debian.org/git/debian-science/packages/librsb.git
+Checksums-Sha256:
+ c1341b46424c5d21a92219ed4c8f1b4aa4b92f883c1345bec9d4692890d19e09 2174 librsb_1.2.0-rc5-3+deb9u1.dsc
+ fa2a8a3e1fddb2418e44aa2cb159fc895354550588b6a7b62b0b80bc522e1fbf 2217657 librsb_1.2.0-rc5.orig.tar.gz
+ b8345228a345bdc6415f9c7bfb905e1a3d7efcdbcb109d3d4f61664519bf9bfa 6876 librsb_1.2.0-rc5-3+deb9u1.debian.tar.xz
+Homepage: http://librsb.sourceforge.net
+Package-List: 
+ librsb-dev deb libdevel optional arch=any
+ librsb-doc deb doc optional arch=all
+ librsb0 deb libs optional arch=any
+Directory: pool/main/libr/librsb
+Priority: extra
+Section: misc
+
+Package: libsoup2.4
+Binary: libsoup2.4-dev, libsoup2.4-1, libsoup-gnome2.4-1, libsoup-gnome2.4-dev, libsoup2.4-doc, gir1.2-soup-2.4
+Version: 2.56.0-2+deb9u1
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: Andreas Henriksson <andreas@fatal.se>, Emilio Pozuelo Monfort <pochu@debian.org>, Michael Biebl <biebl@debian.org>
+Build-Depends: debhelper (>= 10), gnome-pkg-tools, intltool (>= 0.35.0), libglib2.0-dev (>= 2.39.90), glib-networking (>= 2.32.0), libsqlite3-dev, libxml2-dev, libkrb5-dev, gtk-doc-tools, shared-mime-info, libgirepository1.0-dev (>= 0.9.5), gobject-introspection (>= 0.9.12-4~), dbus, curl, valac
+Build-Depends-Indep: libglib2.0-doc
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 449572ed8dda782a3e9f7615195ec45f 2889 libsoup2.4_2.56.0-2+deb9u1.dsc
+ 465083f74b7bb035959ddb0599313986 1821412 libsoup2.4_2.56.0.orig.tar.xz
+ 465ae6e21078a9467daeb89ac9e5571b 19592 libsoup2.4_2.56.0-2+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-gnome/desktop/unstable/libsoup2.4
+Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/desktop/unstable/libsoup2.4
+Checksums-Sha256:
+ 58af1b03d44a2a05d710f27564c68552937eb3141dd3c5b601f908dad36a1a99 2889 libsoup2.4_2.56.0-2+deb9u1.dsc
+ d8216b71de8247bc6f274ec054c08547b2e04369c1f8add713e9350c8ef81fe5 1821412 libsoup2.4_2.56.0.orig.tar.xz
+ ae39ccfa0f7849b7b081c9b009e852925c3c22e4f0e954fd24d555002da79253 19592 libsoup2.4_2.56.0-2+deb9u1.debian.tar.xz
+Homepage: https://wiki.gnome.org/Projects/libsoup
+Package-List: 
+ gir1.2-soup-2.4 deb introspection optional arch=any
+ libsoup-gnome2.4-1 deb libs optional arch=any
+ libsoup-gnome2.4-dev deb libdevel optional arch=any
+ libsoup2.4-1 deb libs optional arch=any
+ libsoup2.4-dev deb libdevel optional arch=any
+ libsoup2.4-doc deb doc optional arch=all
+Directory: pool/main/libs/libsoup2.4
+Priority: source
+Section: devel
+
+Package: mate-themes
+Binary: mate-themes
+Version: 3.22.11-1+deb9u1
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>, Stefano Karapetsas <stefano@karapetsas.com>, Mike Gabriel <sunweaver@debian.org>, Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: debhelper (>= 9), mate-common (>= 1.16)
+Build-Depends-Indep: icon-naming-utils, intltool, libgtk2.0-dev, libxml-parser-perl, pkg-config
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ f9de66f683cc4bb416065e294455444f 2273 mate-themes_3.22.11-1+deb9u1.dsc
+ 79a34ec3cd555ca31ba97f8542698eaf 4341056 mate-themes_3.22.11.orig.tar.xz
+ 0f9ee80bfe2ea4be41ac548ac792d5a9 12848 mate-themes_3.22.11-1+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/git/pkg-mate/mate-themes.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-mate/mate-themes.git
+Checksums-Sha256:
+ 42669b1922b7ca6cab7e7d60ac67f39067e9b025ca8ac0e214c6a0edf62ba58b 2273 mate-themes_3.22.11-1+deb9u1.dsc
+ b98749e5655a24e42b48ab30c2701ec70a15eb11bd044a53c00ed0522afbdbcc 4341056 mate-themes_3.22.11.orig.tar.xz
+ 90dca4d5281abff9f314f0a999f7224dd90f1bceb59e10313b4207158e2e36cb 12848 mate-themes_3.22.11-1+deb9u1.debian.tar.xz
+Homepage: http://www.mate-desktop.org/
+Package-List: 
+ mate-themes deb x11 optional arch=all
+Directory: pool/main/m/mate-themes
+Priority: extra
+Section: misc
+
+Package: newsbeuter
+Binary: newsbeuter
+Version: 2.9-5+deb9u1
+Maintainer: Nikos Tsipinakis <nikos@tsipinakis.com>
+Build-Depends: libncursesw5-dev, debhelper (>= 9), libxml2-dev, libstfl-dev (>= 0.19), libsqlite3-dev, perl, pkg-config, libcurl4-gnutls-dev, libjson-c-dev, dpkg-dev (>= 1.16.1~), asciidoc, libxml2-utils, xsltproc, docbook-xml, docbook-xsl
+Architecture: any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ ad2ee7c4f8c9f14f9b5a44bc2daff90a 1601 newsbeuter_2.9-5+deb9u1.dsc
+ 9cf332dc7e591023147bda7add430835 432763 newsbeuter_2.9.orig.tar.gz
+ 824c9374c86cf2cbef4a72fe8b54956a 25724 newsbeuter_2.9-5+deb9u1.debian.tar.xz
+Checksums-Sha256:
+ e3eb527064e87171dde3e274a7af343398b9226d9e6f8e543dfc9bf05582586a 1601 newsbeuter_2.9-5+deb9u1.dsc
+ 74a8bf019b09c3b270ba95adc29f2bbe48ea1f55cc0634276b21fcce1f043dc8 432763 newsbeuter_2.9.orig.tar.gz
+ 2494fa07e4a9f4d574e37ae64573185f35d69f92d6d982dce90df51b616f08fe 25724 newsbeuter_2.9-5+deb9u1.debian.tar.xz
+Homepage: https://www.newsbeuter.org
+Package-List: 
+ newsbeuter deb net optional arch=any
+Directory: pool/main/n/newsbeuter
+Priority: source
+Section: net
+
+Package: node-brace-expansion
+Binary: node-brace-expansion
+Version: 1.1.6-1+deb9u1
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Build-Depends: debhelper (>= 9), dh-buildinfo, nodejs
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ e4aba5c4b9cd498cda5dba1bb9496443 2144 node-brace-expansion_1.1.6-1+deb9u1.dsc
+ 098d6d8db3173c75687cb48273645589 9344 node-brace-expansion_1.1.6.orig.tar.gz
+ c884f988e4685949f7fec08a79fbdeb6 3072 node-brace-expansion_1.1.6-1+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-brace-expansion.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-brace-expansion.git
+Checksums-Sha256:
+ c8066a041b20e8b61471a517fce9f30ea33be238903f51d975a48c6425d5c04f 2144 node-brace-expansion_1.1.6-1+deb9u1.dsc
+ 8de0f7028901b5fb37f7be9e29a203b50e0cdd6cb37c9acd72bce26506ae55d3 9344 node-brace-expansion_1.1.6.orig.tar.gz
+ c8d9d5c1aaaa9043819cf8bab66d343e102e90b81896c70a44b99366e2ba7db1 3072 node-brace-expansion_1.1.6-1+deb9u1.debian.tar.xz
+Homepage: https://github.com/juliangruber/brace-expansion
+Package-List: 
+ node-brace-expansion deb web extra arch=all
+Testsuite: autopkgtest
+Directory: pool/main/n/node-brace-expansion
+Priority: extra
+Section: javascript
+
+Package: node-dateformat
+Binary: node-dateformat, libjs-dateformat
+Version: 1.0.11-3+deb9u1
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Marcelo Jorge Vieira <metal@debian.org>, Gustavo Noronha Silva <kov@debian.org>, Sruthi Chandran <srud@disroot.org>
+Build-Depends: debhelper (>= 9), dh-buildinfo, nodejs, mocha, node-underscore, node-get-stdin, node-meow
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 4128ca00e0a4b64f12d355d29c297d17 2288 node-dateformat_1.0.11-3+deb9u1.dsc
+ ab9236c6efa75658ea6d716426c839f8 7461 node-dateformat_1.0.11.orig.tar.gz
+ be7fc7c368560e4548e5743665e29f4b 2344 node-dateformat_1.0.11-3+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/git/pkg-javascript/node-dateformat.git
+Vcs-Git: https://anonscm.debian.org/cgit/pkg-javascript/node-dateformat.git
+Checksums-Sha256:
+ f387644af6dfb1e1f24cbe5d28d00637fce877443dc1a2402b6a7db85224c126 2288 node-dateformat_1.0.11-3+deb9u1.dsc
+ 5103445fecce322cddb86a94ef46110d5df0fbf62ef83ba1935b250c7d27927d 7461 node-dateformat_1.0.11.orig.tar.gz
+ ddb447c4ddfb5a20565e86b36689c5dd90d5b778f47764546646327c97a6e055 2344 node-dateformat_1.0.11-3+deb9u1.debian.tar.xz
+Homepage: https://github.com/felixge/node-dateformat
+Package-List: 
+ libjs-dateformat deb web optional arch=all
+ node-dateformat deb web optional arch=all
+Testsuite: autopkgtest
+Directory: pool/main/n/node-dateformat
+Priority: extra
+Section: javascript
+
+Package: openjdk-8
+Binary: openjdk-8-jdk-headless, openjdk-8-jre-headless, openjdk-8-jdk, openjdk-8-jre, openjdk-8-demo, openjdk-8-source, openjdk-8-doc, openjdk-8-dbg, openjdk-8-jre-zero
+Version: 8u141-b15-1~deb9u1
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Uploaders: Matthias Klose <doko@ubuntu.com>
+Build-Depends: debhelper (>= 9), quilt, m4, lsb-release, zip, unzip, sharutils, gawk, cpio, pkg-config, procps, wdiff, tzdata, fastjar (>= 2:0.96-0ubuntu2), autoconf (>= 2.69), automake, autotools-dev, ant, ant-optional, g++-6, openjdk-8-jdk | openjdk-7-jdk, libxtst-dev, libxi-dev, libxt-dev, libxaw7-dev, libxrender-dev, libcups2-dev, libasound2-dev, liblcms2-dev, libfreetype6-dev (>= 2.2.1), libgtk2.0-dev, libxinerama-dev, libkrb5-dev, xsltproc, libpcsclite-dev, libffi-dev, zlib1g-dev, libattr1-dev, libpng-dev, libjpeg-dev, libgif-dev, libpulse-dev (>= 0.9.12) [!alpha], systemtap-sdt-dev [!sh4], libnss3-dev (>= 2:3.17.1), mauve, jtreg, xvfb, xauth, xfonts-base, libgl1-mesa-dri [!x32], twm | metacity, twm | dbus-x11, x11-xkb-utils, time, openjdk-8-jdk-headless <cross>, dpkg-dev (>= 1.17.14)
+Architecture: alpha amd64 armel armhf arm64 i386 ia64 mips mipsel mips64 mips64el powerpc powerpcspe ppc64 ppc64el m68k sh4 sparc sparc64 s390x x32 kfreebsd-i386 kfreebsd-amd64 all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 074ef09dfd27e5b94287efc205221ef4 4486 openjdk-8_8u141-b15-1~deb9u1.dsc
+ 406746c8a52a9561784c4e2645b599db 64099346 openjdk-8_8u141-b15.orig.tar.gz
+ ce9c20cee45afe9b15ab997b42647d0d 244640 openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz
+Vcs-Browser: https://code.launchpad.net/~openjdk/openjdk/openjdk8
+Vcs-Bzr: http://bazaar.launchpad.net/~openjdk/openjdk/openjdk8
+Checksums-Sha256:
+ deaca5cb2c51cd0c5b1938ce866b0833e021da48ead87b9fc538bc9e835bb44e 4486 openjdk-8_8u141-b15-1~deb9u1.dsc
+ 906bcbecce35e0bda53d6c431c22282cf5aba9367e842efa82426c7e9214cf64 64099346 openjdk-8_8u141-b15.orig.tar.gz
+ f6f095413a07b92aa48f22405f803424a28abf66a3fb4adc137fc490f978d156 244640 openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz
+Homepage: http://openjdk.java.net/
+Package-List: 
+ openjdk-8-dbg deb debug extra arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,powerpcspe,ppc64,ppc64el,m68k,sh4,sparc,sparc64,s390x,x32,kfreebsd-i386,kfreebsd-amd64
+ openjdk-8-demo deb java extra arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,powerpcspe,ppc64,ppc64el,m68k,sh4,sparc,sparc64,s390x,x32,kfreebsd-i386,kfreebsd-amd64
+ openjdk-8-doc deb doc extra arch=all
+ openjdk-8-jdk deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,powerpcspe,ppc64,ppc64el,m68k,sh4,sparc,sparc64,s390x,x32,kfreebsd-i386,kfreebsd-amd64
+ openjdk-8-jdk-headless deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,powerpcspe,ppc64,ppc64el,m68k,sh4,sparc,sparc64,s390x,x32,kfreebsd-i386,kfreebsd-amd64
+ openjdk-8-jre deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,powerpcspe,ppc64,ppc64el,m68k,sh4,sparc,sparc64,s390x,x32,kfreebsd-i386,kfreebsd-amd64
+ openjdk-8-jre-headless deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,powerpcspe,ppc64,ppc64el,m68k,sh4,sparc,sparc64,s390x,x32,kfreebsd-i386,kfreebsd-amd64
+ openjdk-8-jre-zero deb java extra arch=amd64,i386,arm64,ppc64,ppc64el,sparc64,kfreebsd-amd64,kfreebsd-i386
+ openjdk-8-source deb java extra arch=all
+Testsuite: autopkgtest
+Testsuite-Triggers: dpkg-dev, gcc, jtreg, xfwm4, xvfb
+Directory: pool/main/o/openjdk-8
+Priority: extra
+Section: misc
+
+Package: openldap
+Binary: slapd, slapd-smbk5pwd, ldap-utils, libldap-2.4-2, libldap-common, libldap-2.4-2-dbg, libldap2-dev, slapd-dbg
+Version: 2.4.44+dfsg-5+deb9u1
+Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>
+Uploaders: Roland Bauerschmidt <rb@debian.org>, Steve Langasek <vorlon@debian.org>, Torsten Landschoff <torsten@debian.org>, Matthijs Möhlmann <matthijs@cacholong.nl>, Timo Aaltonen <tjaalton@ubuntu.com>, Ryan Tandy <ryan@nardis.ca>
+Build-Depends: debhelper (>= 9.20150501), dh-autoreconf, dpkg-dev (>= 1.17.14), groff-base, heimdal-multidev <!stage1>, libdb5.3-dev <!stage1>, libgnutls28-dev, libltdl-dev <!stage1>, libperl-dev (>= 5.8.0) <!stage1>, libsasl2-dev, libwrap0-dev <!stage1>, nettle-dev <!stage1>, perl:any, po-debconf, time <!stage1>, unixodbc-dev <!stage1>
+Build-Conflicts: autoconf2.13, bind-dev, libbind-dev, libicu-dev
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ d243ee69c455d1433e9fd35db5fc04f0 3009 openldap_2.4.44+dfsg-5+deb9u1.dsc
+ 7c6887479d87e1500906181f8d98668c 4826590 openldap_2.4.44+dfsg.orig.tar.gz
+ 5823b2c03024bb2fbad10cd9537239df 165640 openldap_2.4.44+dfsg-5+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/git/pkg-openldap/openldap.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-openldap/openldap.git
+Checksums-Sha256:
+ 49a6e5b8c90cd3743d29854e2c07a31cfc420075d3368832a7c4e16e47c6aaae 3009 openldap_2.4.44+dfsg-5+deb9u1.dsc
+ d5187c229bec163c5d97845846e1b87917755f85b04f444c08836384f4bd7ffe 4826590 openldap_2.4.44+dfsg.orig.tar.gz
+ 06c3aa004b251b5acd036f26db245bfc5207811acf42d20dc02850eb60afb6bd 165640 openldap_2.4.44+dfsg-5+deb9u1.debian.tar.xz
+Homepage: http://www.openldap.org/
+Package-List: 
+ ldap-utils deb net optional arch=any
+ libldap-2.4-2 deb libs standard arch=any
+ libldap-2.4-2-dbg deb debug extra arch=any
+ libldap-common deb libs standard arch=all
+ libldap2-dev deb libdevel extra arch=any
+ slapd deb net optional arch=any profile=!stage1
+ slapd-dbg deb debug extra arch=any profile=!stage1
+ slapd-smbk5pwd deb net extra arch=any profile=!stage1
+Directory: pool/main/o/openldap
+Priority: source
+Section: net
+
+Package: openvpn
+Binary: openvpn
+Version: 2.4.0-6+deb9u2
+Maintainer: Alberto Gonzalez Iniesta <agi@inittab.org>
+Build-Depends: debhelper (>= 7.0.50~), libssl1.0-dev, liblzo2-dev, libpam0g-dev, libpkcs11-helper1-dev, pkg-config, dpkg-dev (>= 1.16.1), iproute2 [linux-any], net-tools [!linux-any], dh-systemd (>= 1.5), libsystemd-dev [linux-any], systemd [linux-any], liblz4-dev
+Architecture: any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 536591aeef529fdfa414f26142a385c3 2120 openvpn_2.4.0-6+deb9u2.dsc
+ e4b3932000a17d782b72e094752619ec 1409019 openvpn_2.4.0.orig.tar.gz
+ c63e13af0c0099cd10c64e3c7bdfaf68 60688 openvpn_2.4.0-6+deb9u2.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/openvpn.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/openvpn.git
+Checksums-Sha256:
+ c69da23755b553507bb3892a03ac681c1223aa98a65605e8742e62e02696c331 2120 openvpn_2.4.0-6+deb9u2.dsc
+ f21db525b3c03a9bbd0a7ab6d0e4fbaf8902f238bf53b8bc4e04f834e4e7caa4 1409019 openvpn_2.4.0.orig.tar.gz
+ 1334d6faffb2be1fb23306f381f3cc8c5af6ef03eca2954e69a1051741fe0618 60688 openvpn_2.4.0-6+deb9u2.debian.tar.xz
+Homepage: http://www.openvpn.net/
+Package-List: 
+ openvpn deb net optional arch=any
+Directory: pool/main/o/openvpn
+Priority: source
+Section: net
+
+Package: postgresql-9.6
+Binary: libpq-dev, libpq5, libecpg6, libecpg-dev, libecpg-compat3, libpgtypes3, postgresql-9.6, postgresql-9.6-dbg, postgresql-client-9.6, postgresql-server-dev-9.6, postgresql-doc-9.6, postgresql-contrib-9.6, postgresql-plperl-9.6, postgresql-plpython-9.6, postgresql-plpython3-9.6, postgresql-pltcl-9.6
+Version: 9.6.4-0+deb9u1
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Uploaders: Martin Pitt <mpitt@debian.org>, Peter Eisentraut <petere@debian.org>, Christoph Berg <myon@debian.org>
+Build-Depends: bison, debhelper (>= 9~), dh-exec (>= 0.13~), docbook, docbook-dsssl, docbook-xml, docbook-xsl, dpkg-dev (>= 1.16.1~), flex, gettext, krb5-multidev, libedit-dev, libipc-run-perl, libldap2-dev, libpam0g-dev | libpam-dev, libperl-dev, libselinux1-dev [linux-any], libssl-dev, libsystemd-dev [linux-any], libxml2-dev, libxml2-utils, libxslt1-dev, openjade, opensp, perl (>= 5.8), python-dev, python3-dev, tcl8.6-dev | tcl8.5-dev, uuid-dev, xsltproc, zlib1g-dev | libz-dev
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ e86989df07a6b417c20cf8c15317d130 3694 postgresql-9.6_9.6.4-0+deb9u1.dsc
+ 67b01523a75271fd6cb2638eb2b55795 19566875 postgresql-9.6_9.6.4.orig.tar.bz2
+ 953acb9c7f987d50a5e9a7a731d05a3f 21072 postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-postgresql/postgresql.git/
+Vcs-Git: https://anonscm.debian.org/git/pkg-postgresql/postgresql.git -b 9.6
+Checksums-Sha256:
+ baf59e5e050f2ae3108226fcd5937e323da34828231fec1eb3d8a58c99d724c0 3694 postgresql-9.6_9.6.4-0+deb9u1.dsc
+ 2b3ab16d82e21cead54c08b95ce3ac480696944a68603b6c11b3205b7376ce13 19566875 postgresql-9.6_9.6.4.orig.tar.bz2
+ d2aee3d5cf7d150c0117f0a0f5c3a65bcd47b9dd7a95387b6b9aad166f770f44 21072 postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz
+Homepage: http://www.postgresql.org/
+Package-List: 
+ libecpg-compat3 deb libs optional arch=any
+ libecpg-dev deb libdevel optional arch=any
+ libecpg6 deb libs optional arch=any
+ libpgtypes3 deb libs optional arch=any
+ libpq-dev deb libdevel optional arch=any
+ libpq5 deb libs optional arch=any
+ postgresql-9.6 deb database optional arch=any
+ postgresql-9.6-dbg deb debug extra arch=any
+ postgresql-client-9.6 deb database optional arch=any
+ postgresql-contrib-9.6 deb database optional arch=any
+ postgresql-doc-9.6 deb doc optional arch=all
+ postgresql-plperl-9.6 deb database optional arch=any
+ postgresql-plpython-9.6 deb database optional arch=any
+ postgresql-plpython3-9.6 deb database optional arch=any
+ postgresql-pltcl-9.6 deb database optional arch=any
+ postgresql-server-dev-9.6 deb libdevel optional arch=any
+Testsuite: autopkgtest
+Testsuite-Triggers: build-essential, hunspell-en-us, locales, logrotate, net-tools, netcat-openbsd, perl
+Directory: pool/main/p/postgresql-9.6
+Priority: extra
+Section: misc
+
+Package: ruby-mixlib-archive
+Binary: ruby-mixlib-archive
+Version: 0.2.0-1+deb9u1
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Hleb Valoshka <375gnu@gmail.com>
+Build-Depends: debhelper (>= 9~), gem2deb, ruby-mixlib-log, ruby-rspec, rake
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 970012f0cb67efb746ef1997663d919f 2164 ruby-mixlib-archive_0.2.0-1+deb9u1.dsc
+ 7d13c5b0835c17b88595a9231b09a68d 8207 ruby-mixlib-archive_0.2.0.orig.tar.gz
+ b39ad56eda34de7b67a75dab3b6cde2c 2604 ruby-mixlib-archive_0.2.0-1+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-mixlib-archive.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-mixlib-archive.git
+Checksums-Sha256:
+ e5444ea0f13e51c2a95bcbe7221bce43ea5c710294b25cedcee844fc958d5cb1 2164 ruby-mixlib-archive_0.2.0-1+deb9u1.dsc
+ f29b7c00bb698e2d18fb67b13bf12eb4ab12ede74e0470d4f368d31499602105 8207 ruby-mixlib-archive_0.2.0.orig.tar.gz
+ ca5638a2a8d2fa9b3166ead0c8c77d1646186b6d90de2cc9100cff6aebc7f185 2604 ruby-mixlib-archive_0.2.0-1+deb9u1.debian.tar.xz
+Homepage: https://chef.io
+Package-List: 
+ ruby-mixlib-archive deb ruby optional arch=all
+Ruby-Versions: all
+Testsuite: autopkgtest-pkg-ruby
+Directory: pool/main/r/ruby-mixlib-archive
+Priority: extra
+Section: misc
+
+Package: ruby-rack-cors
+Binary: ruby-rack-cors
+Version: 0.4.0-1+deb9u1
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.7.5~), ruby-rack-test, ruby-shoulda, ruby-mocha
+Architecture: all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 24e9a068382d34c85cb7e8acb31d3865 2124 ruby-rack-cors_0.4.0-1+deb9u1.dsc
+ 723761bd5664421c46851bd07a630c90 47596 ruby-rack-cors_0.4.0.orig.tar.gz
+ 3516de1ae736fb838a5b8c8ef402b23c 3112 ruby-rack-cors_0.4.0-1+deb9u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/?p=pkg-ruby-extras/ruby-rack-cors.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-rack-cors.git
+Checksums-Sha256:
+ 521e31df1011ed1f6b426e49f2cd95a57416e8cd5fb3084a3dcb21524af2df12 2124 ruby-rack-cors_0.4.0-1+deb9u1.dsc
+ 1fa07dfdda85cb1eb0787b52f083c3aa4f264e1105cd5355650a38e2891705cb 47596 ruby-rack-cors_0.4.0.orig.tar.gz
+ d36faa0ed5e394d066719bb2dbbd7bfc833c0cd16bf02d6781ccf22d048cce85 3112 ruby-rack-cors_0.4.0-1+deb9u1.debian.tar.xz
+Homepage: http://github.com/cyu/rack-cors
+Package-List: 
+ ruby-rack-cors deb ruby optional arch=all
+Ruby-Versions: all
+Directory: pool/main/r/ruby-rack-cors
+Priority: source
+Section: misc
+
+Package: samba
+Binary: samba, samba-libs, samba-common, samba-common-bin, smbclient, samba-testsuite, registry-tools, libparse-pidl-perl, samba-dev, python-samba, samba-dsdb-modules, samba-vfs-modules, libsmbclient, libsmbclient-dev, winbind, libpam-winbind, libnss-winbind, libwbclient0, libwbclient-dev, ctdb
+Version: 2:4.5.8+dfsg-2+deb9u1
+Maintainer: Debian Samba Maintainers <pkg-samba-maint@lists.alioth.debian.org>
+Uploaders: Steve Langasek <vorlon@debian.org>, Jelmer Vernooĳ <jelmer@debian.org>, Ivo De Decker <ivodd@debian.org>, Mathieu Parent <sathieu@debian.org>, Andrew Bartlett <abartlet+debian@catalyst.net.nz>
+Build-Depends: bison, debhelper (>> 9), dh-python, dh-systemd (>= 1.5), docbook-xml, docbook-xsl, faketime, flex, libacl1-dev, libaio-dev [linux-any], libarchive-dev, libattr1-dev, libblkid-dev, libbsd-dev, libcap-dev [linux-any], libcups2-dev, libgnutls28-dev, libgpgme11-dev, libldap2-dev, libldb-dev (>= 2:1.1.27~), libncurses5-dev, libpam0g-dev, libparse-yapp-perl, libpcap-dev [hurd-i386 kfreebsd-any], libpopt-dev, libreadline-dev, libsystemd-dev [linux-any], libtalloc-dev (>= 2.1.8~), libtdb-dev (>= 1.3.10~), libtevent-dev (>= 0.9.29~), perl, pkg-config, po-debconf, python-all-dev (>= 2.6.6-3), python-dnspython, python-ldb (>= 2:1.1.26~), python-ldb-dev (>= 2:1.1.26~), python-talloc-dev (>= 2.1.8~), python-tdb (>= 1.3.8~), python-testtools, python3, xsltproc, zlib1g-dev (>= 1:1.2.3)
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ e6bbe4b84638d3f05f4c8273cb33364a 3971 samba_4.5.8+dfsg-2+deb9u1.dsc
+ 0c9517553c78a05cf75558ff12125153 20970903 samba_4.5.8+dfsg.orig.tar.gz
+ 259032c7d2528f4922d603da0511de83 226904 samba_4.5.8+dfsg-2+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-samba/samba.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-samba/samba.git
+Checksums-Sha256:
+ 4fe56ee7114324725679959efc9976233a2e1916b7b18ea1395d49a4f556f09e 3971 samba_4.5.8+dfsg-2+deb9u1.dsc
+ e36607eaae16cff5725e616d9a3450dc0b34a1f968c49a3af019fd97a095d965 20970903 samba_4.5.8+dfsg.orig.tar.gz
+ 83ec874f67b949180b2aef460f21c767fe65985feebcd41f8f24702dfea0a681 226904 samba_4.5.8+dfsg-2+deb9u1.debian.tar.xz
+Homepage: http://www.samba.org
+Package-List: 
+ ctdb deb net optional arch=any
+ libnss-winbind deb net optional arch=any
+ libpam-winbind deb net optional arch=any
+ libparse-pidl-perl deb perl optional arch=any
+ libsmbclient deb libs optional arch=any
+ libsmbclient-dev deb libdevel extra arch=any
+ libwbclient-dev deb libdevel optional arch=any
+ libwbclient0 deb libs optional arch=any
+ python-samba deb python optional arch=any
+ registry-tools deb net optional arch=any
+ samba deb net optional arch=any
+ samba-common deb net optional arch=all
+ samba-common-bin deb net optional arch=any
+ samba-dev deb devel optional arch=any
+ samba-dsdb-modules deb libs optional arch=any
+ samba-libs deb libs optional arch=any
+ samba-testsuite deb net optional arch=any
+ samba-vfs-modules deb net optional arch=any
+ smbclient deb net optional arch=any
+ winbind deb net optional arch=any
+Testsuite: autopkgtest
+Directory: pool/main/s/samba
+Priority: source
+Section: net
+
+Package: smplayer
+Binary: smplayer, smplayer-l10n
+Version: 16.11.0~ds0-1+deb9u1
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Uploaders: Reinhard Tartler <siretart@tauware.de>, Mateusz Łukasik <mati75@linuxmint.pl>
+Build-Depends: debhelper (>= 10), qtbase5-dev (>= 5.1), qtbase5-private-dev, qt5-qmake, qtscript5-dev, qttools5-dev-tools, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 682772ec0de586179d9fae26db95159f 2197 smplayer_16.11.0~ds0-1+deb9u1.dsc
+ d7e0f2744088a9d05c534d2c31928bf2 3778870 smplayer_16.11.0~ds0.orig.tar.bz2
+ 3a7654919cd0337ba61697296a5532fd 13240 smplayer_16.11.0~ds0-1+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-multimedia/smplayer.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-multimedia/smplayer.git
+Checksums-Sha256:
+ 28a3266affe162e45caff050dc2ff73e3843ecf76c1ef703288c59bdd25ec24e 2197 smplayer_16.11.0~ds0-1+deb9u1.dsc
+ 6546ec573f2e719d8ad5f0ae7bdd2fdda491d645805267855d042485ee725760 3778870 smplayer_16.11.0~ds0.orig.tar.bz2
+ 978a67eb48cfa273f8acc958d4649b0b9aaab0d973358b4ad438d69b1556c1ff 13240 smplayer_16.11.0~ds0-1+deb9u1.debian.tar.xz
+Homepage: http://smplayer.sourceforge.net/
+Package-List: 
+ smplayer deb video optional arch=any
+ smplayer-l10n deb video optional arch=all
+Directory: pool/main/s/smplayer
+Priority: source
+Section: video
+
+Package: speech-dispatcher
+Binary: speech-dispatcher, libspeechd2, libspeechd-dev, cl-speech-dispatcher, python3-speechd, speech-dispatcher-festival, speech-dispatcher-doc-cs, speech-dispatcher-audio-plugins, speech-dispatcher-flite, speech-dispatcher-cicero, speech-dispatcher-espeak, speech-dispatcher-espeak-ng
+Version: 0.8.6-4+deb9u1
+Maintainer: Debian TTS Team <tts-project@lists.alioth.debian.org>
+Uploaders: Paul Gevers <elbrus@debian.org>, Samuel Thibault <sthibault@debian.org>
+Build-Depends: automake, autotools-dev, debhelper (>= 9.20150628), dh-autoreconf, flite1-dev (>= 1.4), intltool, libao-dev, libasound2-dev [linux-any], libaudio-dev, libdotconf-dev (>= 1.3), libespeak-dev, libespeak-ng-dev, libglib2.0-dev, libltdl-dev, libpulse-dev, libtool, libxau-dev, libsndfile1-dev, python3, texinfo
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 56e44c2564338c37c002a9d0ee097497 3183 speech-dispatcher_0.8.6-4+deb9u1.dsc
+ a4230e59c31e954862dfe44392f31408 1327500 speech-dispatcher_0.8.6.orig.tar.gz
+ 515e80b457012437a848196cb6109ebb 20896 speech-dispatcher_0.8.6-4+deb9u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=tts/speech-dispatcher.git;a=summary
+Vcs-Git: git://anonscm.debian.org/tts/speech-dispatcher.git
+Checksums-Sha256:
+ e0b6c1123b1927f621b15e1768ad08a58878f268d99e3dcb596dd1d6a10a909c 3183 speech-dispatcher_0.8.6-4+deb9u1.dsc
+ c233dc3757c1f0d3676480d1052d42d88d18d29ab0cb0c8b5ce8edc3e7386ff8 1327500 speech-dispatcher_0.8.6.orig.tar.gz
+ 4fadb2012c430b37312fdf2332881230e18819bcd8452cfa03d1b2cc552f9698 20896 speech-dispatcher_0.8.6-4+deb9u1.debian.tar.xz
+Homepage: http://devel.freebsoft.org/speechd
+Package-List: 
+ cl-speech-dispatcher deb lisp extra arch=all
+ libspeechd-dev deb libdevel extra arch=any
+ libspeechd2 deb libs optional arch=any
+ python3-speechd deb python extra arch=all
+ speech-dispatcher deb sound optional arch=any
+ speech-dispatcher-audio-plugins deb sound optional arch=any
+ speech-dispatcher-cicero deb sound optional arch=any
+ speech-dispatcher-doc-cs deb doc extra arch=all
+ speech-dispatcher-espeak deb sound optional arch=any
+ speech-dispatcher-espeak-ng deb sound optional arch=any
+ speech-dispatcher-festival deb sound optional arch=any
+ speech-dispatcher-flite deb sound optional arch=any
+Directory: pool/main/s/speech-dispatcher
+Priority: source
+Section: sound
+
+Package: subversion
+Binary: subversion, libsvn1, libsvn-dev, libsvn-doc, libapache2-mod-svn, python-subversion, subversion-tools, libsvn-java, libsvn-perl, ruby-svn
+Version: 1.9.5-1+deb9u1
+Maintainer: Peter Samuelson <peter@p12n.org>
+Uploaders: James McCoy <jamessan@debian.org>
+Build-Depends: apache2-dev (>= 2.4.16), autoconf, autotools-dev, bash-completion, debhelper (>= 9), default-jdk (>= 2:1.6) [!hurd-i386 !hppa !sparc], dh-apache2, dh-python, doxygen, junit [!hurd-i386 !hppa !sparc], kdelibs5-dev, libapr1-dev, libaprutil1-dev, libdb5.3-dev, libdbus-1-dev, libgnome-keyring-dev, libperl-dev, libsasl2-dev, libserf-dev (>= 1.3.4), libsqlite3-dev (>= 3.7.12), libtool, perl, python-all-dev (>= 2.7), quilt, rename, ruby, ruby-dev, swig, zlib1g-dev
+Build-Conflicts: libsvn-dev (<< 1.9~)
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 1.0
+Files:
+ 78c6a52b1d259e1733296b97806c6058 3077 subversion_1.9.5-1+deb9u1.dsc
+ 8fb42396b9d16d96755dc7e2375f1163 10615674 subversion_1.9.5.orig.tar.gz
+ ac98ce63b767a826e873b9d793b63e62 2535701 subversion_1.9.5-1+deb9u1.diff.gz
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-subversion/src/1.9.x/
+Vcs-Svn: svn://anonscm.debian.org/pkg-subversion/src/1.9.x/
+Checksums-Sha256:
+ 343fda8307ee3d0238303dc5c07fe394000058446bad56d800e5583a62c6b5fd 3077 subversion_1.9.5-1+deb9u1.dsc
+ 280ba586c5d51d7b976b65d22d5e8e42f3908ed1c968d71120dcf534ce857a83 10615674 subversion_1.9.5.orig.tar.gz
+ 2bb2797c058e1ca671dcf219c2fb7317ec106078ce496ea00a921c0eb37299a7 2535701 subversion_1.9.5-1+deb9u1.diff.gz
+Homepage: http://subversion.apache.org/
+Package-List: 
+ libapache2-mod-svn deb httpd optional arch=any
+ libsvn-dev deb libdevel extra arch=any
+ libsvn-doc deb doc extra arch=all
+ libsvn-java deb java optional arch=any
+ libsvn-perl deb perl optional arch=any
+ libsvn1 deb libs optional arch=any
+ python-subversion deb python optional arch=any
+ ruby-svn deb ruby optional arch=any
+ subversion deb vcs optional arch=any
+ subversion-tools deb vcs extra arch=any
+Testsuite: autopkgtest
+Testsuite-Triggers: apache2, wget
+Directory: pool/main/s/subversion
+Priority: source
+Section: vcs
+
+Package: swift
+Binary: python-swift, swift, swift-proxy, swift-object, swift-container, swift-account, swift-object-expirer, swift-doc, swift-drive-audit
+Version: 2.10.2-1~deb9u1
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>, Ondřej Nový <onovy@debian.org>,
+Build-Depends: debhelper (>= 10), dh-exec, dh-python, dh-systemd, openstack-pkg-tools (>= 48~), python-all, python-pbr, python-setuptools (>= 20.6.8), python-sphinx
+Build-Depends-Indep: python-coverage, python-cryptography (>= 1.0), python-dnspython (>= 1.14.0), python-eventlet (>= 0.17.4), python-greenlet (>= 0.3.1), python-keystoneclient (>= 1:1.3.0), python-mock, python-netifaces (>> 0.10.1), python-nose, python-nose-exclude, python-nosehtmloutput, python-nosexcover, python-openssl, python-openstack.nose-plugin, python-openstackdocstheme (>= 1.0.3), python-os-api-ref, python-os-testr (>= 0.4.1), python-oslosphinx, python-pastedeploy (>= 1.3.3), python-pyeclib (>= 1.2.0), python-six (>= 1.9.0), python-swiftclient, python-xattr (>= 0.4)
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ a4c5043e73cb924677a3fa8629669973 3211 swift_2.10.2-1~deb9u1.dsc
+ c8e1c34256f813d53fb630632dd0abd6 1348376 swift_2.10.2.orig.tar.xz
+ bb37b1cc26e78dedc27850150af42712 17596 swift_2.10.2-1~deb9u1.debian.tar.xz
+Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-swift?h=debian%2Fnewton
+Vcs-Git: https://git.openstack.org/openstack/deb-swift -b debian/newton
+Checksums-Sha256:
+ dbad3c28448b48798fee86d34c9bec1292bef40e7eb0bbcdd99eff9bb65cc45d 3211 swift_2.10.2-1~deb9u1.dsc
+ 69b99d1945f8f45be089c5d396de2f023dd70879c95058a6ed9cbd2001d4088b 1348376 swift_2.10.2.orig.tar.xz
+ 61cf9dac5817ebd8db4281c6dd270e4eddb6a49cf2654fffaefff8f5b43fb966 17596 swift_2.10.2-1~deb9u1.debian.tar.xz
+Homepage: https://github.com/openstack/swift
+Package-List: 
+ python-swift deb python optional arch=all
+ swift deb net optional arch=all
+ swift-account deb net optional arch=all
+ swift-container deb net optional arch=all
+ swift-doc deb doc optional arch=all
+ swift-drive-audit deb net optional arch=all
+ swift-object deb net optional arch=all
+ swift-object-expirer deb net optional arch=all
+ swift-proxy deb net optional arch=all
+Testsuite: autopkgtest
+Testsuite-Triggers: python-all, wget
+Directory: pool/main/s/swift
+Priority: source
+Section: net
+
+Package: tbdialout
+Binary: xul-ext-tbdialout
+Version: 1.7.2-1+deb9u1
+Maintainer: Debian Mozilla Extension Maintainers <pkg-mozext-maintainers@lists.alioth.debian.org>
+Uploaders: Daniel Pocock <daniel@pocock.pro>
+Build-Depends: debhelper (>= 9), mozilla-devscripts (>= 0.19~)
+Build-Depends-Indep: zip
+Architecture: all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ 8fd754568e625c162ae88fbd0118de36 2070 tbdialout_1.7.2-1+deb9u1.dsc
+ 1283b153a68a14e1f6dff7eb73a92a69 45676 tbdialout_1.7.2.orig.tar.gz
+ f92081a71a9818e5d072c3a162fb4e72 11452 tbdialout_1.7.2-1+deb9u1.debian.tar.xz
+Vcs-Browser: http://git.debian.org/?p=pkg-mozext/tbdialout.git;a=summary
+Vcs-Git: git://git.debian.org/pkg-mozext/tbdialout.git
+Checksums-Sha256:
+ a0f7c66327b63d408f92f9179d496e9439d374ee4504d4141f15e8c6d9300595 2070 tbdialout_1.7.2-1+deb9u1.dsc
+ 12a701f3af58b9a914df4ff62c961fa8bbc4e107b91f5c1decc2c4bf148a319a 45676 tbdialout_1.7.2.orig.tar.gz
+ ec84948bd19f0faf7ab769164c12d3f68f5bbf8fd9d8d36f8e6bbcb8aea2ce15 11452 tbdialout_1.7.2-1+deb9u1.debian.tar.xz
+Homepage: http://www.oak-wood.co.uk/oss/tbdialout
+Package-List: 
+ xul-ext-tbdialout deb mail optional arch=all
+Directory: pool/main/t/tbdialout
+Priority: extra
+Section: misc
+
+Package: tiny-initramfs
+Binary: tiny-initramfs, tiny-initramfs-core
+Version: 0.1-4~deb9u1
+Maintainer: Christian Seiler <christian@iwakd.de>
+Build-Depends: debhelper (>= 10~), dietlibc-dev (>= 0.33)
+Architecture: linux-any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 879b16e4e6d587bfdbdad00cf95fb626 2063 tiny-initramfs_0.1-4~deb9u1.dsc
+ 5bcf9f168332bf97892c2c35ac3aaf9d 93916 tiny-initramfs_0.1.orig.tar.xz
+ 9ae6f4f2c3b99492ebe642b3c6a5afa7 16172 tiny-initramfs_0.1-4~deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/tiny-initramfs.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/tiny-initramfs.git -b debian/master
+Checksums-Sha256:
+ 3dd5bef76aa244ffe4bb0bd55cf0f0925568652399d59f401f829f5095c7bc80 2063 tiny-initramfs_0.1-4~deb9u1.dsc
+ 321c34bd492b2328f5bbfb718fe7a0d99b6d1281060bcb794fe33eff737c6452 93916 tiny-initramfs_0.1.orig.tar.xz
+ b0b6cee2a8d8738e95806c8af282e7ad24f57a8b8a18b2306d488f3d4cd44720 16172 tiny-initramfs_0.1-4~deb9u1.debian.tar.xz
+Homepage: https://github.com/chris-se/tiny-initramfs/
+Package-List: 
+ tiny-initramfs deb utils extra arch=all
+ tiny-initramfs-core deb utils optional arch=linux-any
+Directory: pool/main/t/tiny-initramfs
+Priority: extra
+Section: misc
+
+Package: torsocks
+Binary: torsocks
+Version: 2.2.0-1+deb9u1
+Maintainer: Debian Privacy Tools Maintainers <pkg-privacy-maintainers@lists.alioth.debian.org>
+Uploaders: intrigeri <intrigeri@debian.org>, Jérémy Bobbio <lunar@debian.org>
+Build-Depends: debhelper (>= 9), dh-autoreconf, dpkg-dev (>= 1.16.1.1~), bash-completion
+Architecture: any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 96c37de7e16bf34602137e19f04a3366 2083 torsocks_2.2.0-1+deb9u1.dsc
+ 512bab466f2c026b3c478dee14861ccb 309916 torsocks_2.2.0.orig.tar.xz
+ bcdddf7520e453656ceceb88e4bf9138 11320 torsocks_2.2.0-1+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-privacy/packages/torsocks.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-privacy/packages/torsocks.git
+Checksums-Sha256:
+ 9530a38c754249285bb11fd21eb2de9e82bcef1ef9e0b88931d196e841b661a9 2083 torsocks_2.2.0-1+deb9u1.dsc
+ 29e8c8cefa677dfb493ea6f2449576a7a9abebd221547037f9381d9ed44bd92f 309916 torsocks_2.2.0.orig.tar.xz
+ 6a9f2024e285aa5a6bc2e4700096d9d3c75713c25aa8cf9a8b2adf130eacaaa2 11320 torsocks_2.2.0-1+deb9u1.debian.tar.xz
+Homepage: https://gitweb.torproject.org/torsocks.git
+Package-List: 
+ torsocks deb net optional arch=any
+Directory: pool/main/t/torsocks
+Priority: source
+Section: net
+
+Package: varnish
+Binary: varnish, varnish-doc, libvarnishapi1, libvarnishapi-dev
+Version: 5.0.0-7+deb9u1
+Maintainer: Varnish Package Maintainers <pkg-varnish-devel@lists.alioth.debian.org>
+Uploaders: Jan Wagner <waja@cyconet.org>, Lars Bahner <bahner@debian.org>, Stig Sandbeck Mathisen <ssm@debian.org>, Tollef Fog Heen <tfheen@debian.org>, Emanuele Rocca <ema@debian.org>
+Build-Depends: automake, autotools-dev, debhelper (>= 10), dh-autoreconf, dh-systemd, graphviz, libedit-dev, libjemalloc-dev, libncurses-dev, libpcre3-dev, libtool, pkg-config, python-docutils, xsltproc
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ ba6ae30cc51aa177d9c3b37ec1af5666 2659 varnish_5.0.0-7+deb9u1.dsc
+ 6c76ff181d21be595a18ae969a692ae7 2472963 varnish_5.0.0.orig.tar.gz
+ f93031c7c8b9668038127b3b3c15b574 21756 varnish_5.0.0-7+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-varnish/pkg-varnish.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-varnish/pkg-varnish.git
+Checksums-Sha256:
+ d335ca812e8c3fb44389a187cbb462a52c390ce58dd8e748e0cb6d4b6ebc793f 2659 varnish_5.0.0-7+deb9u1.dsc
+ 5101ad72b29d288a07e2e5ded4c2abe850b70ff000c13ceb1764625e83823f4a 2472963 varnish_5.0.0.orig.tar.gz
+ c773ab8e977625e30fae13ad0a1c0b1a0325fd5187ac0e45cad10aa7bc3f8f4a 21756 varnish_5.0.0-7+deb9u1.debian.tar.xz
+Homepage: https://www.varnish-cache.org/
+Package-List: 
+ libvarnishapi-dev deb libdevel optional arch=any
+ libvarnishapi1 deb libs optional arch=any
+ varnish deb web optional arch=any
+ varnish-doc deb doc optional arch=all
+Testsuite: autopkgtest
+Testsuite-Triggers: ruby-serverspec
+Directory: pool/main/v/varnish
+Priority: source
+Section: web
+
+Package: webkit2gtk
+Binary: libjavascriptcoregtk-4.0-18, libjavascriptcoregtk-4.0-dev, libjavascriptcoregtk-4.0-bin, gir1.2-javascriptcoregtk-4.0, libwebkit2gtk-4.0-37, libwebkit2gtk-4.0-dev, libwebkit2gtk-4.0-doc, gir1.2-webkit2-4.0, libwebkit2gtk-4.0-37-gtk2
+Version: 2.16.6-0+deb9u1
+Maintainer: Debian WebKit Maintainers <pkg-webkit-maintainers@lists.alioth.debian.org>
+Uploaders: Gustavo Noronha Silva <kov@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Alberto Garcia <berto@igalia.com>
+Build-Depends: gawk, cmake, debhelper (>= 9), libglib2.0-dev (>= 2.36.0), libgtk2.0-dev (>= 2.24.10), libgtk-3-dev (>= 3.10.0), libpango1.0-dev (>= 1.30.0), libharfbuzz-dev (>= 0.9.18), libcairo2-dev (>= 1.10), libfontconfig1-dev (>= 2.5), libfreetype6-dev, libicu-dev, libgcrypt20-dev, libgeoclue-2-dev, libhyphen-dev, libnotify-dev, libxslt1-dev (>= 1.1.7), libxml2-dev (>= 2.6), libsoup2.4-dev (>= 2.42.0), libsqlite3-dev (>= 3.0), libgudev-1.0-dev [linux-any], gperf, bison, flex, ruby, libjpeg-dev, libpng-dev, libwebp-dev, libxt-dev, libgstreamer1.0-dev (>= 1.0.3), libgstreamer-plugins-base1.0-dev (>= 1.0.3), libenchant-dev (>= 0.22), gtk-doc-tools, geoclue-2.0, libsecret-1-dev, gobject-introspection (>= 1.32.0), libgirepository1.0-dev (>= 0.9.12-4), libegl1-mesa-dev, libgl1-mesa-dev [!armel !armhf !arm64], libgles2-mesa-dev [armel armhf arm64]
+Build-Conflicts: gir-repository-dev
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 8963007b639d9f2cb41f3e19ca4eafd6 3858 webkit2gtk_2.16.6-0+deb9u1.dsc
+ 0e2d142a586e4ff79cf0324f4fdbf20c 14658120 webkit2gtk_2.16.6.orig.tar.xz
+ c8c6c1979161063c1a49e53106773a24 195 webkit2gtk_2.16.6.orig.tar.xz.asc
+ 181b3f135f15c793de15ee793aa69ce9 53684 webkit2gtk_2.16.6-0+deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/git/pkg-webkit/webkit.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-webkit/webkit.git
+Checksums-Sha256:
+ df42c8ddb4ebc344375387e7f2a1a31f816dbe90c5e155593cde7362b6fb6590 3858 webkit2gtk_2.16.6-0+deb9u1.dsc
+ fc23650df953123c59b9c0edf3855e7bd55bd107820997fc72375811e1ea4b21 14658120 webkit2gtk_2.16.6.orig.tar.xz
+ 04dbc2c1cb4f154fb67cfaea67cc85b91f8557f69e28ba7fe80dcca7defa2852 195 webkit2gtk_2.16.6.orig.tar.xz.asc
+ 459b77f7e5c8bad690c1f0a9f27f6cfaaaa70e3c41f2d00ae87f980038c5ebd1 53684 webkit2gtk_2.16.6-0+deb9u1.debian.tar.xz
+Homepage: https://webkitgtk.org/
+Package-List: 
+ gir1.2-javascriptcoregtk-4.0 deb introspection optional arch=any
+ gir1.2-webkit2-4.0 deb introspection optional arch=any
+ libjavascriptcoregtk-4.0-18 deb libs optional arch=any
+ libjavascriptcoregtk-4.0-bin deb interpreters optional arch=any
+ libjavascriptcoregtk-4.0-dev deb libdevel extra arch=any
+ libwebkit2gtk-4.0-37 deb libs optional arch=any
+ libwebkit2gtk-4.0-37-gtk2 deb libs optional arch=any
+ libwebkit2gtk-4.0-dev deb libdevel extra arch=any
+ libwebkit2gtk-4.0-doc deb doc extra arch=all
+Directory: pool/main/w/webkit2gtk
+Priority: extra
+Section: misc
+
+Package: wrk
+Binary: wrk
+Version: 4.0.2-2~deb9u1
+Maintainer: Robert Edmonds <edmonds@debian.org>
+Build-Depends: debhelper (>= 9~), libluajit-5.1-dev, libssl-dev, luajit, pkg-config
+Architecture: any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 58e234e691eaf462231cd430a50d194c 1857 wrk_4.0.2-2~deb9u1.dsc
+ 2419ef0ddaefb3e68d462a86129d0359 52803 wrk_4.0.2.orig.tar.gz
+ d1e1fe531214d77af120c023ac78ec65 8109 wrk_4.0.2-2~deb9u1.debian.tar.gz
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/wrk.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/wrk.git
+Checksums-Sha256:
+ 041c76cc5a95646717bc269a0513ad755f3e479286e6688b62894e136b9f7630 1857 wrk_4.0.2-2~deb9u1.dsc
+ 333484a127869eac272ccfa2c9678cb10929435a983ac4d3abde6fb2f483d40d 52803 wrk_4.0.2.orig.tar.gz
+ b0d7ccca3c7efef1d9c4c611a801a08c9daadb3924a791abd4707bd73253a0c3 8109 wrk_4.0.2-2~deb9u1.debian.tar.gz
+Homepage: https://github.com/wg/wrk
+Package-List: 
+ wrk deb web optional arch=any
+Directory: pool/main/w/wrk
+Priority: extra
+Section: misc
+
+Package: xfonts-ayu
+Binary: xfonts-ayu
+Version: 1:1.7a-1+deb9u1
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Uploaders: Hideki Yamane <henrich@debian.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: xfonts-utils, gawk
+Architecture: all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 6dc85524e1f0ace3151aedb37890fd31 1887 xfonts-ayu_1.7a-1+deb9u1.dsc
+ 2637ca3a9369ec57584c2e1eb3c352e7 416008 xfonts-ayu_1.7a.orig.tar.xz
+ b303c53bc69f982afec7f28b6c960894 7332 xfonts-ayu_1.7a-1+deb9u1.debian.tar.xz
+Checksums-Sha256:
+ 01e6d8f2e96e085d50ae0a48040de455079ad3ae3b410fb8edbe2f2a609489b5 1887 xfonts-ayu_1.7a-1+deb9u1.dsc
+ 490e7ddcdee354754d82f5fddaf405a2a588d5fe94d82033f2d144716f870c34 416008 xfonts-ayu_1.7a.orig.tar.xz
+ f7158be6dded68d627fafbf86180cbbb90284536abcd225fa80a897b8690d11b 7332 xfonts-ayu_1.7a-1+deb9u1.debian.tar.xz
+Homepage: http://x-tt.osdn.jp/ayu.html
+Package-List: 
+ xfonts-ayu deb x11 optional arch=all
+Directory: pool/main/x/xfonts-ayu
+Priority: source
+Section: fonts
+

@@ -1,0 +1,76 @@
+Package: grr-client-templates
+Binary: grr-client-templates
+Version: 3.1.0.2-1~bpo9+1
+Maintainer: Debian Forensics <forensics-devel@lists.alioth.debian.org>
+Uploaders: Hilko Bengen <bengen@debian.org>, Sascha Steinbiss <satta@debian.org>,
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 68253007ea3c8d14d1d611251ac427e1 1784 grr-client-templates_3.1.0.2-1~bpo9+1.dsc
+ dabf80224be12dfc79dbb0c27a49c9ee 96324364 grr-client-templates_3.1.0.2.orig.tar.xz
+ 4889be777e3dcecd2f520538914422f9 3880 grr-client-templates_3.1.0.2-1~bpo9+1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/forensics/grr-client-templates.git
+Vcs-Git: https://anonscm.debian.org/git/forensics/grr-client-templates.git
+Checksums-Sha256:
+ 4a772e8a18301dededa9bdba60fe2ee7ab35d7eedc0b969cf47e534c19182dbd 1784 grr-client-templates_3.1.0.2-1~bpo9+1.dsc
+ 403a3ed339a606f9f6b3f745a11566f177a68526dcbfb58ea38785b8a6824701 96324364 grr-client-templates_3.1.0.2.orig.tar.xz
+ b2e6da8de94d457d8769024a43f474d614dfeb570e488ca54657fa78d14e4cad 3880 grr-client-templates_3.1.0.2-1~bpo9+1.debian.tar.xz
+Homepage: https://github.com/google/grr
+Package-List: 
+ grr-client-templates deb non-free/utils optional arch=all
+Directory: pool/non-free/g/grr-client-templates
+Priority: extra
+Section: non-free/misc
+
+Package: intel-microcode
+Binary: intel-microcode
+Version: 3.20170707.1~bpo9+1
+Maintainer: Henrique de Moraes Holschuh <hmh@debian.org>
+Uploaders: Giacomo Catenazzi <cate@debian.org>
+Build-Depends: debhelper (>= 9), iucode-tool (>= 0.9)
+Architecture: i386 amd64 x32
+Standards-Version: 3.9.8
+Format: 3.0 (native)
+Files:
+ e285549a90fc6d741f1682d9abdfa0a6 1811 intel-microcode_3.20170707.1~bpo9+1.dsc
+ 8aceaeddcecc9382c479829fd975e4f0 1493208 intel-microcode_3.20170707.1~bpo9+1.tar.xz
+Vcs-Browser: http://git.debian.org/?p=users/hmh/intel-microcode.git
+Vcs-Git: git://git.debian.org/users/hmh/intel-microcode.git
+Checksums-Sha256:
+ 2993c35f79da0401e10d2a93cfa79a0010ee41e856d6dde4660987f2e7301d73 1811 intel-microcode_3.20170707.1~bpo9+1.dsc
+ 2e28e9fc3d54934477e8670921cad1101e685fa42dee9104cd44a78973792372 1493208 intel-microcode_3.20170707.1~bpo9+1.tar.xz
+Homepage: https://downloadcenter.intel.com/search?keyword=linux+microcode
+Autobuild: yes
+Package-List: 
+ intel-microcode deb non-free/admin standard arch=i386,amd64,x32
+Directory: pool/non-free/i/intel-microcode
+Priority: extra
+Section: non-free/misc
+
+Package: otrs2
+Binary: otrs2, otrs
+Version: 5.0.21-1~bpo9+1
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Uploaders: Thomas Mueller <thomas@chaschperli.ch>
+Build-Depends: debhelper (>= 9), yui-compressor
+Architecture: all
+Standards-Version: 4.0.0
+Format: 3.0 (quilt)
+Files:
+ bab710ad7bafffd4a078aff65b916c8b 1838 otrs2_5.0.21-1~bpo9+1.dsc
+ 919861b494447170d9231bb8e088bfce 20603118 otrs2_5.0.21.orig.tar.bz2
+ c3447ef8fbb02006aaa202138514fa41 45128 otrs2_5.0.21-1~bpo9+1.debian.tar.xz
+Checksums-Sha256:
+ ade431b17ef80b75588135cf110c488b2f7ff50acd7dc04af899745a4e478d15 1838 otrs2_5.0.21-1~bpo9+1.dsc
+ 51e0050528bb477ce2ef4e11ec99e21486e93e48eb8ca9b35689be83a4f448ff 20603118 otrs2_5.0.21.orig.tar.bz2
+ c224aaf874d541de75cb265e4cd213b87896deef8f131359e4c430493bccb7ef 45128 otrs2_5.0.21-1~bpo9+1.debian.tar.xz
+Homepage: http://www.otrs.org
+Package-List: 
+ otrs deb non-free/web optional arch=all
+ otrs2 deb non-free/web optional arch=all
+Directory: pool/non-free/o/otrs2
+Priority: extra
+Section: non-free/misc
+

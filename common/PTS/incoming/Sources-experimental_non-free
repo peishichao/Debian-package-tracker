@@ -1,0 +1,238 @@
+Package: bugsx
+Binary: bugsx
+Version: 1.08-13
+Maintainer: Marcin Owsiany <porridge@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), libx11-dev, libxext-dev, xutils-dev, quilt (>= 0.46-7~)
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Files:
+ ac1304327d38a0ef813efbc5873c0789 1309 bugsx_1.08-13.dsc
+ b8dbd93fdf93185f6a6404092ea433b2 342170 bugsx_1.08.orig.tar.gz
+ ae38f33e36f80d6b57a561f7b18e952a 6128 bugsx_1.08-13.debian.tar.gz
+Checksums-Sha256:
+ 7568a66176659956cf3df36634494db7cc60b5a36019751d05c888264a49e0f8 1309 bugsx_1.08-13.dsc
+ 4b3f06f8d318e16896788a18d79ff3604d21696b911e3b55677219151e15efa1 342170 bugsx_1.08.orig.tar.gz
+ 3e76790f9a1e6025a08950e8d28c99792d64c8fca1d4cb074d4510df5945478c 6128 bugsx_1.08-13.debian.tar.gz
+Directory: pool/non-free/b/bugsx
+Priority: source
+Section: non-free/math
+
+Package: elmer-doc
+Binary: elmer-doc
+Version: 2014.10.23-1
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: "Adam C. Powell, IV" <hazelsct@debian.org>, Boris Pek <tehnick@debian.org>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 49718a49ab0419c4f8f6aa491093d44d 2019 elmer-doc_2014.10.23-1.dsc
+ 949867904fba0a1735bb132b4932f246 84131775 elmer-doc_2014.10.23.orig.tar.gz
+ f9ce2af344503231d0308ff54a9192c2 3484 elmer-doc_2014.10.23-1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=debian-science/packages/elmer-doc.git
+Vcs-Git: git://anonscm.debian.org/debian-science/packages/elmer-doc.git
+Checksums-Sha256:
+ 0dfc782e9202a080656f548b90ccae630e1deaff6734289f2eacf00f7126bc22 2019 elmer-doc_2014.10.23-1.dsc
+ 63ce0e33cefe0d614d6c9a6b2b51e62960eede43bd6ee5c735071112ffd4b958 84131775 elmer-doc_2014.10.23.orig.tar.gz
+ f81f7abd64486d8a7b4b277ef7ec798a366045b3ee59080c1cdff89ba1a45c53 3484 elmer-doc_2014.10.23-1.debian.tar.xz
+Homepage: http://www.csc.fi/elmer/
+Package-List: 
+ elmer-doc deb non-free/doc extra arch=all
+Directory: pool/non-free/e/elmer-doc
+Priority: source
+Section: non-free/doc
+
+Package: mame-extra
+Binary: mame-extra
+Version: 0.184-1
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Cesare Falco <c.falco@ubuntu.com>, Emmanuel Kasper <emmanuel@libera.cc>, Jordi Mallach <jordi@debian.org>
+Build-Depends: debhelper (>= 10)
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 851ca9c57c4226205b8761c67f2416d6 1987 mame-extra_0.184-1.dsc
+ 0673b8e0e11fa12e95c7b0068faafe3f 4859580 mame-extra_0.184.orig.tar.xz
+ 90a5966f24814d684d3321589c4e911a 9528 mame-extra_0.184-1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-games/mame-extra.git/
+Vcs-Git: https://anonscm.debian.org/git/pkg-games/mame-extra.git
+Checksums-Sha256:
+ 5d8761397b3e56a22c4a44eb7deedc9905606ad2cc9abc2723dcb0ac5b46e82b 1987 mame-extra_0.184-1.dsc
+ 07b3cd1795a5c2319c4d916eaaf002a010fda5af20288873273871701dbf26e8 4859580 mame-extra_0.184.orig.tar.xz
+ 747e0e134f3daad241220d88ceac7e763b1aa5428c36223643bff94f6aebe2a6 9528 mame-extra_0.184-1.debian.tar.xz
+Autobuild: yes
+Package-List: 
+ mame-extra deb non-free/games optional arch=all
+Directory: pool/non-free/m/mame-extra
+Priority: optional
+Section: non-free/games
+
+Package: nvidia-graphics-drivers
+Binary: nvidia-driver, nvidia-driver-bin, nvidia-driver-libs, nvidia-driver-libs-i386, xserver-xorg-video-nvidia, nvidia-legacy-check, libgldispatch0-nvidia, libopengl0-glvnd-nvidia, libglx0-glvnd-nvidia, libglx-nvidia0, libgl1-glvnd-nvidia-glx, libgl1-nvidia-glvnd-glx, libgl1-nvidia-glx, libnvidia-glcore, libegl1-glvnd-nvidia, libegl1-nvidia, libegl-nvidia0, libgles1-glvnd-nvidia, libgles1-nvidia, libgles-nvidia1, libgles2-glvnd-nvidia, libgles2-nvidia, libgles-nvidia2, libnvidia-eglcore, nvidia-egl-common, nvidia-egl-icd, libnvidia-egl-wayland1, nvidia-egl-wayland-common, nvidia-egl-wayland-icd, nvidia-vulkan-common, nvidia-vulkan-icd, libnvidia-cfg1, nvidia-alternative, nvidia-kernel-support, nvidia-kernel-dkms, nvidia-kernel-source, nvidia-vdpau-driver, nvidia-smi, nvidia-cuda-mps, libcuda1, libcuda1-i386, libnvidia-compiler, libnvidia-fatbinaryloader, libnvidia-ptxjitcompiler, libnvcuvid1, libnvidia-encode1, libnvidia-ifr1, libnvidia-fbc1, libnvidia-ml1,
+ nvidia-opencl-common, nvidia-opencl-icd, nvidia-libopencl1,
+ nvidia-detect
+Version: 378.13-2
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>, Vincent Cheng <vcheng@debian.org>, Luca Boccassi <luca.boccassi@gmail.com>,
+Build-Depends: debhelper (>= 10), dpkg-dev (>= 1.17), xz-utils, dkms, libwayland-client0, libwayland-server0, libxext6 [!ppc64el], quilt, po-debconf
+Build-Conflicts: libglvnd-dev
+Architecture: i386 amd64 armhf ppc64el
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 958bc3c8d31286d4fd40cca55a54d347 7949 nvidia-graphics-drivers_378.13-2.dsc
+ afb18c58e8ef40dbab0070976b31f051 76202818 nvidia-graphics-drivers_378.13.orig-amd64.tar.gz
+ b1dcc0c4dc209ec2a76375fbb5ccc6f4 26474445 nvidia-graphics-drivers_378.13.orig-armhf.tar.gz
+ b03cc89a35d852d78a5ce4a9abd76498 44360302 nvidia-graphics-drivers_378.13.orig-i386.tar.gz
+ baf823550032b92517859c4deb764951 137 nvidia-graphics-drivers_378.13.orig.tar.gz
+ b9e3f20180dfebbcb0c883c533fc90c7 174044 nvidia-graphics-drivers_378.13-2.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-graphics-drivers/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-graphics-drivers/trunk
+Checksums-Sha256:
+ cd74600f08d12ae2853e386ed15247054f510c67228f57c5f212db9222f45599 7949 nvidia-graphics-drivers_378.13-2.dsc
+ 4b1d00a9153a3bffa0cbcd3738b4a0d3145daa00cb86e24cb6c60dff7adcbe43 76202818 nvidia-graphics-drivers_378.13.orig-amd64.tar.gz
+ 8e585b6a0666d53fac5f803ee7b56e6d8fea09d043afc8c6eb3944aedfdad74a 26474445 nvidia-graphics-drivers_378.13.orig-armhf.tar.gz
+ d8b44163f98d323ff5bae1c7275e20cbc9c573da3c79eb5cdadf6148c01557e8 44360302 nvidia-graphics-drivers_378.13.orig-i386.tar.gz
+ 3c0766cccaf007ca2d3fb5b0f719778028913656242bbb81e46d32be8333f2ea 137 nvidia-graphics-drivers_378.13.orig.tar.gz
+ 3f99cf947b03db7b6220f9e0880651f377543875cd2b998e99bbe9580dd533ef 174044 nvidia-graphics-drivers_378.13-2.debian.tar.xz
+Homepage: http://www.nvidia.com
+Autobuild: yes
+Package-List: 
+ libcuda1 deb non-free/libs optional arch=i386,amd64,armhf,ppc64el
+ libcuda1-i386 deb non-free/libs optional arch=i386
+ libegl-nvidia0 deb non-free/libs optional arch=i386,amd64,armhf
+ libegl1-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libegl1-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgl1-glvnd-nvidia-glx deb non-free/libs optional arch=i386,amd64,armhf
+ libgl1-nvidia-glvnd-glx deb non-free/libs optional arch=i386,amd64,armhf
+ libgl1-nvidia-glx deb non-free/libs optional arch=i386,amd64,armhf
+ libgldispatch0-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgles-nvidia1 deb non-free/libs optional arch=i386,amd64,armhf
+ libgles-nvidia2 deb non-free/libs optional arch=i386,amd64,armhf
+ libgles1-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgles1-nvidia deb non-free/oldlibs extra arch=i386,amd64,armhf
+ libgles2-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgles2-nvidia deb non-free/oldlibs extra arch=i386,amd64,armhf
+ libglx-nvidia0 deb non-free/libs optional arch=i386,amd64,armhf
+ libglx0-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libnvcuvid1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-cfg1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-compiler deb non-free/libs optional arch=i386,amd64
+ libnvidia-egl-wayland1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-eglcore deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-encode1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-fatbinaryloader deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-fbc1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-glcore deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-ifr1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-ml1 deb non-free/libs optional arch=i386,amd64,armhf,ppc64el
+ libnvidia-ptxjitcompiler deb non-free/libs optional arch=i386,amd64,armhf
+ libopengl0-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-alternative deb non-free/libs optional arch=i386,amd64,armhf,ppc64el
+ nvidia-cuda-mps deb non-free/utils optional arch=i386,amd64,armhf,ppc64el
+ nvidia-detect deb non-free/x11 optional arch=i386,amd64,armhf
+ nvidia-driver deb non-free/x11 optional arch=i386,amd64,armhf
+ nvidia-driver-bin deb non-free/x11 optional arch=i386,amd64,armhf
+ nvidia-driver-libs deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-driver-libs-i386 deb non-free/libs optional arch=i386
+ nvidia-egl-common deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-egl-icd deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-egl-wayland-common deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-egl-wayland-icd deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-kernel-dkms deb non-free/kernel optional arch=i386,amd64,armhf,ppc64el
+ nvidia-kernel-source deb non-free/kernel optional arch=i386,amd64,armhf,ppc64el
+ nvidia-kernel-support deb non-free/kernel optional arch=i386,amd64,armhf,ppc64el
+ nvidia-legacy-check deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-libopencl1 deb non-free/libs optional arch=i386,amd64,ppc64el
+ nvidia-opencl-common deb non-free/libs optional arch=i386,amd64,ppc64el
+ nvidia-opencl-icd deb non-free/libs optional arch=i386,amd64,ppc64el
+ nvidia-smi deb non-free/utils optional arch=i386,amd64,armhf,ppc64el
+ nvidia-vdpau-driver deb non-free/video optional arch=i386,amd64,armhf
+ nvidia-vulkan-common deb non-free/libs optional arch=i386,amd64
+ nvidia-vulkan-icd deb non-free/libs optional arch=i386,amd64
+ xserver-xorg-video-nvidia deb non-free/x11 optional arch=i386,amd64,armhf
+Directory: pool/non-free/n/nvidia-graphics-drivers
+Priority: source
+Section: non-free/x11
+
+Package: ocaml-doc
+Binary: ocaml-doc
+Version: 4.05-1~exp1
+Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Uploaders: Mehdi Dogguy <mehdi@debian.org>, Samuel Mimram <smimram@debian.org>, Ralf Treinen <treinen@debian.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Files:
+ 6d8b592c7c39abab1426b30ef619bd3b 2064 ocaml-doc_4.05-1~exp1.dsc
+ 3fb6b4c5b91abf44b43106feb649831f 3431531 ocaml-doc_4.05.orig.tar.gz
+ 0ad84aeab79f9ad43fcc49ae640335df 5292 ocaml-doc_4.05-1~exp1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/git/pkg-ocaml-maint/packages/ocaml-doc.git/
+Vcs-Git: https://anonscm.debian.org/git/pkg-ocaml-maint/packages/ocaml-doc.git/
+Checksums-Sha256:
+ 7768794aa39d81fe3482186d57f7321b2d0b11ddb6a5afe451b0a505d2c4ad05 2064 ocaml-doc_4.05-1~exp1.dsc
+ 720aa14db896ddd7b36d87f4633f438959898a082a3ee90463817d71bd471b57 3431531 ocaml-doc_4.05.orig.tar.gz
+ 9df2f3301459694c738c1d31780832129cd16ea81162cf0ec3e1d43b73ed62eb 5292 ocaml-doc_4.05-1~exp1.debian.tar.xz
+Homepage: http://caml.inria.fr
+Package-List: 
+ ocaml-doc deb non-free/doc optional arch=all
+Directory: pool/non-free/o/ocaml-doc
+Priority: source
+Section: non-free/doc
+
+Package: raspi3-firmware
+Binary: raspi3-firmware
+Version: 1.20170317-4
+Maintainer: pkg-raspi <pkg-raspi-maintainers@lists.alioth.debian.org>
+Uploaders: Michael Stapelberg <stapelberg@debian.org>
+Build-Depends: debhelper (>= 10)
+Architecture: arm64
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 841c194c82d2e229e1c86ca53a21356e 2098 raspi3-firmware_1.20170317-4.dsc
+ 531c532ddeb42a0357a16b48d956f566 6919244 raspi3-firmware_1.20170317.orig.tar.gz
+ c11f365f2bef46906afa365021fe8a3d 6192 raspi3-firmware_1.20170317-4.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-raspi/raspi3-firmware.git/
+Vcs-Git: https://anonscm.debian.org/git/pkg-raspi/raspi3-firmware.git
+Checksums-Sha256:
+ beaee5819abeebb3b73d773e56bc76db539359c638e8f7d4d9a0aadc3f59691e 2098 raspi3-firmware_1.20170317-4.dsc
+ 0a162707b9c4bb86a7a807ce00c094be505504cd8510ff5fc8490bc1d027b03a 6919244 raspi3-firmware_1.20170317.orig.tar.gz
+ 26dc2d777814d12eef7d4ab134a00ed6d00d9c981bbd7cd9c15bd3b88931f5ee 6192 raspi3-firmware_1.20170317-4.debian.tar.xz
+Homepage: https://github.com/raspberrypi/firmware
+Autobuild: yes
+Package-List: 
+ raspi3-firmware deb non-free/misc optional arch=arm64
+Directory: pool/non-free/r/raspi3-firmware
+Priority: optional
+Section: non-free/misc
+
+Package: scribus-ng-doc
+Binary: scribus-ng-doc
+Version: 1.5.3-2
+Maintainer: Mattia Rizzolo <mattia@debian.org>
+Build-Depends: cmake, debhelper (>= 10)
+Architecture: all
+Standards-Version: 4.0.0
+Format: 3.0 (quilt)
+Files:
+ 8ab61d844a714863831db2d472e86085 1924 scribus-ng-doc_1.5.3-2.dsc
+ 7f3a1b07eb1f8fba35ff4e294f4c3840 52290348 scribus-ng-doc_1.5.3.orig.tar.xz
+ 13c413a215a4df6a0a7ef65db6c60551 11008 scribus-ng-doc_1.5.3-2.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/git/collab-maint/scribus-ng-doc.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/scribus-ng-doc.git
+Checksums-Sha256:
+ 31cc92846801f1f658c4d9edce58269aac272812ef6c1f15e95fe1c4f3eb9f6c 1924 scribus-ng-doc_1.5.3-2.dsc
+ 5154b52c0be5dc67de2cddda976707be9d4ab23a3c53f19c170e8657053a326b 52290348 scribus-ng-doc_1.5.3.orig.tar.xz
+ 9d9c068d263b1858b3f8df157fd259f555e2218a399f5fe2d946cdde7ba77331 11008 scribus-ng-doc_1.5.3-2.debian.tar.xz
+Homepage: http://docs.scribus.net/
+Package-List: 
+ scribus-ng-doc deb non-free/doc optional arch=all
+Directory: pool/non-free/s/scribus-ng-doc
+Priority: source
+Section: non-free/doc
+

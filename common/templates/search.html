@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Debian Package Tracker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link href="https://tracker.debian.org/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="https://tracker.debian.org/static/css/octicons.css" rel="stylesheet" media="screen">
+        <link href="https://tracker.debian.org/static/css/style.css" rel="stylesheet" media="screen">
+     	<link href="https://tracker.debian.org/static/css/dense.css" rel="stylesheet" media="screen">
+<script type="text/javascript">
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@")
+dotpos=value.lastIndexOf(".")
+if (apos<1||dotpos-apos<2) 
+  {alert(alerttxt);return false}
+else {return true}
+}
+}
+function validate_form(thisform)
+{
+with (thisform)
+{
+if (validate_email(email,"Not a valid e-mail address!")==false)
+  {email.focus();return false}
+}
+}
+</script>
+    </head>
+    <body>
+        
+        <header class="page-header">
+            <div class="container-fluid">
+                
+		<div class="row">
+		<div class="col-xs-12 text-xs-center">
+		    <div class="pull-xs-left">
+<a href=""><img src="https://tracker.debian.org/static/img/logo.png" alt="Debian Package Tracker"></a>
+</div>
+		    <div class="pull-xs-right">
+		    
+    <div class="m-b-1">
+    <div class="text-xs-left"><form class="form-inline" id="package-search-form" method="post" action="/search"><div class="form-group"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="form-control form-control-sm package-completion tt-input" name="src"  id="package-search-input" placeholder="Jump to package..." autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;DejaVu Sans&quot;, &quot;Bitstream Vera Sans&quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-source-packages"></div><div class="tt-dataset tt-dataset-binary-packages"></div><div class="tt-dataset tt-dataset-pseudo-packages"></div></div></span></div>
+<div class="form-group"><button type="submit" class="btn btn-default btn-sm">Go</button></div><input type=hidden value="{{ next or '' }}" name=next>
+</form></div>
+   
+ 	<div class="text-xs-left"><form class="form-inline" id="package-search-form" method="post" action="/subscribe" onsubmit="return validate_form(this);" ><div class="form-group"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="form-control form-control-sm package-completion tt-input" name="email"  id="package-search-input" placeholder="your email-address..." autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;DejaVu Sans&quot;, &quot;Bitstream Vera Sans&quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-source-packages"></div><div class="tt-dataset tt-dataset-binary-packages"></div><div class="tt-dataset tt-dataset-pseudo-packages"></div></div></span></div>
+<div class="form-group"><button type="submit" class="btn btn-primary btn-sm">Subscribe</button></div>
+<input type=hidden value="{{miles_dict_sources[0][0]}}" name=packagename>
+<input type=hidden value="{{ next or '' }}" name=next>
+</form></div>
+    <span>|</span>
+    <span><a id="subscriptions" href="{{ url_for('subscribe_information',email = session.get('email') ) }}">subscriptions  information</a></span>
+    <span>|</span>    
+
+</div>
+</div>	    
+<div>
+    <h1 >{{miles_dict_sources[0][0]}}</h1>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div id="choose-email-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3>Choose email to subscribe with</h3></div><div class="modal-body"></div><div class="modal-footer"><button class="btn btn-default" id="cancel-choose-email" data-dismiss="modal" aria-hidden="true">Cancel</button></div></div></div></div>
+ 
+
+<div class="container-fluid">
+ <p style="font-family:verdana;color:red;">      Tips: {{get_flashed_messages()[0]}}</p>
+ <p style="font-family:verdana;color:red;">   </p>	 
+    <div class="row">
+     {% if flag %}    
+     {% for i in range(size_sources ) %}
+        <div class="col-md-3" id="dtracker-package-left">
+            
+   
+                <div class="panel" role="complementary">
+    <div class="panel-heading" role="heading">
+        general
+    </div>
+    <div class="panel-body">
+        
+
+<ul class="list-group list-group-flush">
+    
+    <li class="list-group-item">
+     <span class="list-item-key"><b>source :</b></span>	
+	<a >{{miles_dict_sources[i][0]}}</a>
+    </li>
+    <li class="list-group-item">
+        <span class="list-item-key"><b>Binary-package :</b></span>
+       <a >{{miles_dict_sources[i][1] }}</a>
+    </li>
+     <li class="list-group-item">
+        <span class="list-item-key"><b>Version :</b></span>
+	<a >{{miles_dict_sources[i][2]}}</a>
+    </li> 
+     <li class="list-group-item">
+        <span class="list-item-key"><b>Maintainer :</b></span>
+	<a >{{miles_dict_sources[i][3].decode('UTF-8') }}</a>
+    </li> 
+     <li class="list-group-item">
+        <span class="list-item-key"><b>Uploaders :</b></span>
+	<a >{{miles_dict_sources[i][4].decode('UTF-8') }}</a>
+    </li> 
+     <li class="list-group-item">
+        <span class="list-item-key"><b>Build-Depends :</b></span>
+	<a >{{miles_dict_sources[i][5].decode('UTF-8') }}</a>
+    </li>  
+     <li class="list-group-item">
+        <span class="list-item-key"><b>Architecture :</b></span>
+	<a >{{miles_dict_sources[i][6]}}</a>
+    </li> 
+     <li class="list-group-item">
+        <span class="list-item-key"><b>Standards-Version :</b></span>
+	<a >{{miles_dict_sources[i][7]}}</a>
+    </li> 
+     <li class="list-group-item">
+        <span class="list-item-key"><b>Format :</b></span>
+	<a >{{miles_dict_sources[i][8]}}</a>
+    </li> 
+     <li class="list-group-item">
+        <span class="list-item-key"><b>Vcs-Browser :</b></span>
+	<a >{{miles_dict_sources[i][10]}}</a>
+    </li> 
+
+     <li class="list-group-item">
+        <span class="list-item-key"><b>Homepage :</b></span>
+	<a >{{miles_dict_sources[i][13]}}</a>
+    </li> 
+    <li class="list-group-item">
+        <span class="list-item-key"><b>Directory :</b></span>
+        <a >{{miles_dict_sources[i][15]}}</a>
+    </li>
+    <li class="list-group-item">
+        <span class="list-item-key"><b>Priority :</b></span>
+         <a >{{miles_dict_sources[i][16]}}</a>
+    </li>
+    <li class="list-group-item">
+        <span class="list-item-key"><b>Section :</b></span>
+         <a >{{miles_dict_sources[i][17]}}</a>
+    </li>
+  
+</ul>
+
+
+    </div>
+</div>  
+        </div>
+	{% endfor %}
+
+	{% endif  %} 
+        <div class="col-md-6 col-xl-7" id="dtracker-package-center">
+            
+            
+            
+
+            
+            
+            
+                <div class="panel" role="complementary">
+    <div class="panel-heading" role="heading">
+        
+<div class="row">
+    <div class="col-xs-12">
+	<a >vcswatch</a>
+	<div class="pull-xs-right">
+	    <a >
+	    </a>
+	</div>
+    </div>
+</div>
+
+    </div>
+    <div class="panel-body">
+        
+
+    <ul class="list-group list-group-flush">
+    
+    <li class="list-group-item">
+	 <span class="news-title">source :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[0] }}</span>
+        </a>
+    </li>
+    <li class="list-group-item">
+	 <span class="news-title">version :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[1] }}</span>
+        </a>
+    </li>    
+    <li class="list-group-item">
+	 <span class="news-title">vsc :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[2]}}</span>
+        </a>
+    </li> 
+     <li class="list-group-item">
+	 <span class="news-title">url :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[3] }}</span>
+        </a>
+    </li> 
+     <li class="list-group-item">
+	 <span class="news-title">branch :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[4] }}</span>
+        </a>
+    </li>
+     <li class="list-group-item">
+	 <span class="news-title">browser :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[5] }}</span>
+        </a>
+    </li>
+     <li class="list-group-item">
+	 <span class="news-title">last_scan :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[6] }}</span>
+        </a>
+    </li>
+     <li class="list-group-item">
+	 <span class="news-title">next_scan :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[7] }}</span>
+        </a>
+    </li>
+     <li class="list-group-item">
+	 <span class="news-title">status :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[8] }}</span>
+        </a>
+    </li>
+     <li class="list-group-item">
+	 <span class="news-title">debian_dir :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[9]  }}</span>
+        </a>
+    </li>
+     <li class="list-group-item">
+	 <span class="news-title">changelog_version :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[10]  }}</span>
+        </a>
+    </li>
+     <li class="list-group-item">
+	 <span class="news-title">changelog_distribution :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[11] }}</span>
+        </a>
+    </li>
+     <li class="list-group-item">
+	 <span class="news-title">changelog :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[12].decode('UTF-8')  }}</span>
+        </a>
+    </li>
+     <li class="list-group-item">
+	 <span class="news-title">error :</span>
+        <a >
+            <span class="news-title">{{miles_dict_vcswatch[13]}}</span>
+        </a>
+    </li>
+</ul>
+
+
+
+
+
+
+    </div>
+</div>
+
+            
+            
+        </div>
+        <div class="col-md-3 col-xl-2" id="dtracker-package-right">
+            
+            
+                <div class="panel" role="complementary">
+    <div class="panel-heading" role="heading">
+        
+</div>
+
+            
+            
+            
+                <div class="panel" role="complementary">
+    <div class="panel-heading" role="heading">
+        links
+    </div>
+    <div class="panel-body">
+        
+<ul class="list-group list-group-flush">
+    
+    <li class="list-group-item">
+        
+            <a href={{miles_dict_sources[0][13]}} title="upstream web homepage">homepage</a>
+        
+    </li>
+    
+   
+    
+  
+    
+   
+    <li class="list-group-item">
+        
+            <a href={{miles_dict_sources[0][10]}}>browse source code</a>
+        
+    </li>
+    
+
+</ul>
+
+    </div>
+</div>      
+            
+        </div>
+    </div>
+</div>
+
+
+        <hr>
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="text-xs-center">
+                         <div id="footer-title">
+			 <p>Made by Peishichao.</p>
+			 <p>Copyright © 2017-2018 <a>ISCAS</a></p>
+			</div>
+                </div>
+            </div>
+        </footer>
+
+
+        
+    
+
+</body></html>

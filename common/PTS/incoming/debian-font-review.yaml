@@ -1,0 +1,861 @@
+0ad-data:
+    url: http://pkg-fonts.alioth.debian.org/review/src-0ad-data.html
+
+a2ps:
+    url: http://pkg-fonts.alioth.debian.org/review/src-a2ps.html
+
+afterstep:
+    url: http://pkg-fonts.alioth.debian.org/review/src-afterstep.html
+
+aplus-fsf:
+    url: http://pkg-fonts.alioth.debian.org/review/src-aplus-fsf.html
+
+bglibs:
+    url: http://pkg-fonts.alioth.debian.org/review/src-bglibs.html
+
+calibre:
+    url: http://pkg-fonts.alioth.debian.org/review/src-calibre.html
+
+circos:
+    url: http://pkg-fonts.alioth.debian.org/review/src-circos.html
+
+cm-super:
+    url: http://pkg-fonts.alioth.debian.org/review/src-cm-super.html
+
+context:
+    url: http://pkg-fonts.alioth.debian.org/review/src-context.html
+
+crimson:
+    url: http://pkg-fonts.alioth.debian.org/review/src-crimson.html
+
+critterding:
+    url: http://pkg-fonts.alioth.debian.org/review/src-critterding.html
+
+culmus:
+    url: http://pkg-fonts.alioth.debian.org/review/src-culmus.html
+
+culmus-fancy:
+    url: http://pkg-fonts.alioth.debian.org/review/src-culmus-fancy.html
+
+denemo:
+    url: http://pkg-fonts.alioth.debian.org/review/src-denemo.html
+
+dkg-handwriting:
+    url: http://pkg-fonts.alioth.debian.org/review/src-dkg-handwriting.html
+
+emscripten:
+    url: http://pkg-fonts.alioth.debian.org/review/src-emscripten.html
+
+enscript:
+    url: http://pkg-fonts.alioth.debian.org/review/src-enscript.html
+
+essays1743:
+    url: http://pkg-fonts.alioth.debian.org/review/src-essays1743.html
+
+extremetuxracer:
+    url: http://pkg-fonts.alioth.debian.org/review/src-extremetuxracer.html
+
+feh:
+    url: http://pkg-fonts.alioth.debian.org/review/src-feh.html
+
+fofix-dfsg:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fofix-dfsg.html
+
+fonts-anonymous-pro:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-anonymous-pro.html
+
+fonts-aoyagi-kouzan-t:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-aoyagi-kouzan-t.html
+
+fonts-aoyagi-soseki:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-aoyagi-soseki.html
+
+fonts-arabeyes:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-arabeyes.html
+
+fonts-arphic-bkai00mp:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-arphic-bkai00mp.html
+
+fonts-arphic-bsmi00lp:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-arphic-bsmi00lp.html
+
+fonts-arphic-gbsn00lp:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-arphic-gbsn00lp.html
+
+fonts-arphic-gkai00mp:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-arphic-gkai00mp.html
+
+fonts-arphic-ukai:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-arphic-ukai.html
+
+fonts-arphic-uming:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-arphic-uming.html
+
+fonts-averia-gwf:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-averia-gwf.html
+
+fonts-averia-sans-gwf:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-averia-sans-gwf.html
+
+fonts-averia-serif-gwf:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-averia-serif-gwf.html
+
+fonts-baekmuk:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-baekmuk.html
+
+fonts-beng-extra:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-beng-extra.html
+
+fonts-beteckna:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-beteckna.html
+
+fonts-bpg-georgian:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-bpg-georgian.html
+
+fonts-breip:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-breip.html
+
+fonts-cabin:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-cabin.html
+
+fonts-cabinsketch:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-cabinsketch.html
+
+fonts-cantarell:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-cantarell.html
+
+fonts-century-catalogue:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-century-catalogue.html
+
+fonts-cmu:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-cmu.html
+
+fonts-comfortaa:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-comfortaa.html
+
+fonts-cwtex:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-cwtex.html
+
+fonts-dancingscript:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-dancingscript.html
+
+fonts-dejavu:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-dejavu.html
+
+fonts-dejima-mincho:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-dejima-mincho.html
+
+fonts-deva-extra:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-deva-extra.html
+
+fonts-dosis:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-dosis.html
+
+fonts-dustin:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-dustin.html
+
+fonts-dzongkha:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-dzongkha.html
+
+fonts-ebgaramond:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-ebgaramond.html
+
+fonts-ecolier-court:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-ecolier-court.html
+
+fonts-ecolier-lignes-court:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-ecolier-lignes-court.html
+
+fonts-eeyek:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-eeyek.html
+
+fonts-evertype-conakry:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-evertype-conakry.html
+
+fonts-f500:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-f500.html
+
+fonts-fanwood:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-fanwood.html
+
+fonts-farsiweb:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-farsiweb.html
+
+fonts-font-awesome:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-font-awesome.html
+
+fonts-freefarsi:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-freefarsi.html
+
+fonts-freefont:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-freefont.html
+
+fonts-gargi:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gargi.html
+
+fonts-gfs-artemisia:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-artemisia.html
+
+fonts-gfs-baskerville:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-baskerville.html
+
+fonts-gfs-bodoni-classic:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-bodoni-classic.html
+
+fonts-gfs-complutum:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-complutum.html
+
+fonts-gfs-didot:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-didot.html
+
+fonts-gfs-didot-classic:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-didot-classic.html
+
+fonts-gfs-gazis:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-gazis.html
+
+fonts-gfs-neohellenic:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-neohellenic.html
+
+fonts-gfs-olga:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-olga.html
+
+fonts-gfs-porson:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-porson.html
+
+fonts-gfs-solomos:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-solomos.html
+
+fonts-gfs-theokritos:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gfs-theokritos.html
+
+fonts-gubbi:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gubbi.html
+
+fonts-gujr-extra:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-gujr-extra.html
+
+fonts-guru-extra:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-guru-extra.html
+
+fonts-hanazono:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-hanazono.html
+
+fonts-horai-umefont:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-horai-umefont.html
+
+fonts-hosny-amiri:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-hosny-amiri.html
+
+fonts-hosny-thabit:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-hosny-thabit.html
+
+fonts-inconsolata:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-inconsolata.html
+
+fonts-ipaexfont:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-ipaexfont.html
+
+fonts-ipafont:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-ipafont.html
+
+fonts-ipamj-mincho:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-ipamj-mincho.html
+
+fonts-johnsmith-induni:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-johnsmith-induni.html
+
+fonts-jsmath:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-jsmath.html
+
+fonts-junction:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-junction.html
+
+fonts-junicode:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-junicode.html
+
+fonts-jura:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-jura.html
+
+fonts-kacst:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-kacst.html
+
+fonts-kacst-one:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-kacst-one.html
+
+fonts-kalapi:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-kalapi.html
+
+fonts-kanjistrokeorders:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-kanjistrokeorders.html
+
+fonts-kaushanscript:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-kaushanscript.html
+
+fonts-khmeros:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-khmeros.html
+
+fonts-kiloji:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-kiloji.html
+
+fonts-klaudia-berenika:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-klaudia-berenika.html
+
+fonts-komatuna:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-komatuna.html
+
+fonts-konatu:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-konatu.html
+
+fonts-kouzan-mouhitsu:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-kouzan-mouhitsu.html
+
+fonts-lao:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lao.html
+
+fonts-lato:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lato.html
+
+fonts-levien-museum:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-levien-museum.html
+
+fonts-levien-typoscript:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-levien-typoscript.html
+
+fonts-lg-aboriginal:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lg-aboriginal.html
+
+fonts-liberation:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-liberation.html
+
+fonts-lindenhill:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lindenhill.html
+
+fonts-linex:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-linex.html
+
+fonts-linuxlibertine:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-linuxlibertine.html
+
+fonts-lklug-sinhala:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lklug-sinhala.html
+
+fonts-lobstertwo:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lobstertwo.html
+
+fonts-lohit-beng-assamese:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lohit-beng-assamese.html
+
+fonts-lohit-beng-bengali:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lohit-beng-bengali.html
+
+fonts-lohit-deva:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lohit-deva.html
+
+fonts-lohit-gujr:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lohit-gujr.html
+
+fonts-lohit-guru:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lohit-guru.html
+
+fonts-lohit-knda:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lohit-knda.html
+
+fonts-lohit-mlym:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lohit-mlym.html
+
+fonts-lohit-orya:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lohit-orya.html
+
+fonts-lohit-taml:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lohit-taml.html
+
+fonts-lohit-taml-classical:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lohit-taml-classical.html
+
+fonts-lohit-telu:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-lohit-telu.html
+
+fonts-manchufont:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-manchufont.html
+
+fonts-migmix:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-migmix.html
+
+fonts-misaki:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-misaki.html
+
+fonts-mmcedar:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-mmcedar.html
+
+fonts-monapo:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-monapo.html
+
+fonts-motoya-l-cedar:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-motoya-l-cedar.html
+
+fonts-motoya-l-maruberi:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-motoya-l-maruberi.html
+
+fonts-mph-2b-damase:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-mph-2b-damase.html
+
+fonts-mplus:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-mplus.html
+
+fonts-nafees:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-nafees.html
+
+fonts-nakula:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-nakula.html
+
+fonts-nanum:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-nanum.html
+
+fonts-nanum-coding:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-nanum-coding.html
+
+fonts-nanum-eco:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-nanum-eco.html
+
+fonts-navilu:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-navilu.html
+
+fonts-ocr-a:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-ocr-a.html
+
+fonts-oflb-asana-math:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-oflb-asana-math.html
+
+fonts-oflb-euterpe:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-oflb-euterpe.html
+
+fonts-okolaks:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-okolaks.html
+
+fonts-oldstandard:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-oldstandard.html
+
+fonts-opendin:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-opendin.html
+
+fonts-opendyslexic:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-opendyslexic.html
+
+fonts-orya-extra:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-orya-extra.html
+
+fonts-pagul:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-pagul.html
+
+fonts-paktype:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-paktype.html
+
+fonts-pecita:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-pecita.html
+
+fonts-play:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-play.html
+
+fonts-prociono:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-prociono.html
+
+fonts-quattrocento:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-quattrocento.html
+
+fonts-rufscript:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-rufscript.html
+
+fonts-sahadeva:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sahadeva.html
+
+fonts-samyak:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-samyak.html
+
+fonts-sarai:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sarai.html
+
+fonts-sawarabi-gothic:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sawarabi-gothic.html
+
+fonts-sawarabi-mincho:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sawarabi-mincho.html
+
+fonts-senamirmir-washra:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-senamirmir-washra.html
+
+fonts-sil-abyssinica:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-abyssinica.html
+
+fonts-sil-andika:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-andika.html
+
+fonts-sil-charis:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-charis.html
+
+fonts-sil-dai-banna:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-dai-banna.html
+
+fonts-sil-doulos:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-doulos.html
+
+fonts-sil-ezra:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-ezra.html
+
+fonts-sil-galatia:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-galatia.html
+
+fonts-sil-gentium:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-gentium.html
+
+fonts-sil-gentium-basic:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-gentium-basic.html
+
+fonts-sil-nuosusil:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-nuosusil.html
+
+fonts-sil-padauk:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-padauk.html
+
+fonts-sil-scheherazade:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-scheherazade.html
+
+fonts-sil-sophia-nubian:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-sophia-nubian.html
+
+fonts-sil-zaghawa-beria:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sil-zaghawa-beria.html
+
+fonts-sipa-arundina:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-sipa-arundina.html
+
+fonts-smc:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-smc.html
+
+fonts-stix:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-stix.html
+
+fonts-takao:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-takao.html
+
+fonts-taml-tamu:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-taml-tamu.html
+
+fonts-taml-tscu:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-taml-tscu.html
+
+fonts-telu-extra:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-telu-extra.html
+
+fonts-teluguvijayam:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-teluguvijayam.html
+
+fonts-tibetan-machine:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-tibetan-machine.html
+
+fonts-tomsontalks:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-tomsontalks.html
+
+fonts-tuffy:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-tuffy.html
+
+fonts-ubuntu-title:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-ubuntu-title.html
+
+fonts-ukij-uyghur:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-ukij-uyghur.html
+
+fonts-umeplus:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-umeplus.html
+
+fonts-unfonts-core:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-unfonts-core.html
+
+fonts-unfonts-extra:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-unfonts-extra.html
+
+fonts-unikurdweb:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-unikurdweb.html
+
+fonts-uralic:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-uralic.html
+
+fonts-vlgothic:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-vlgothic.html
+
+fonts-vollkorn:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-vollkorn.html
+
+fonts-wqy-zenhei:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-wqy-zenhei.html
+
+fonts-yanone-kaffeesatz:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-yanone-kaffeesatz.html
+
+fonts-yozvox-yozfont:
+    url: http://pkg-fonts.alioth.debian.org/review/src-fonts-yozvox-yozfont.html
+
+foobillardplus:
+    url: http://pkg-fonts.alioth.debian.org/review/src-foobillardplus.html
+
+freecol:
+    url: http://pkg-fonts.alioth.debian.org/review/src-freecol.html
+
+freevial:
+    url: http://pkg-fonts.alioth.debian.org/review/src-freevial.html
+
+freevo:
+    url: http://pkg-fonts.alioth.debian.org/review/src-freevo.html
+
+glob2:
+    url: http://pkg-fonts.alioth.debian.org/review/src-glob2.html
+
+gmerlin:
+    url: http://pkg-fonts.alioth.debian.org/review/src-gmerlin.html
+
+grafx2:
+    url: http://pkg-fonts.alioth.debian.org/review/src-grafx2.html
+
+gregorio:
+    url: http://pkg-fonts.alioth.debian.org/review/src-gregorio.html
+
+groff:
+    url: http://pkg-fonts.alioth.debian.org/review/src-groff.html
+
+gsfonts:
+    url: http://pkg-fonts.alioth.debian.org/review/src-gsfonts.html
+
+hannah:
+    url: http://pkg-fonts.alioth.debian.org/review/src-hannah.html
+
+holotz-castle:
+    url: http://pkg-fonts.alioth.debian.org/review/src-holotz-castle.html
+
+htmldoc:
+    url: http://pkg-fonts.alioth.debian.org/review/src-htmldoc.html
+
+ircmarkers:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ircmarkers.html
+
+jaxe:
+    url: http://pkg-fonts.alioth.debian.org/review/src-jaxe.html
+
+k3d:
+    url: http://pkg-fonts.alioth.debian.org/review/src-k3d.html
+
+kiten:
+    url: http://pkg-fonts.alioth.debian.org/review/src-kiten.html
+
+kivy:
+    url: http://pkg-fonts.alioth.debian.org/review/src-kivy.html
+
+ko.tex-extra-hlfont:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ko.tex-extra-hlfont.html
+
+ko.tex-unfonts:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ko.tex-unfonts.html
+
+latex-cjk-chinese-arphic:
+    url: http://pkg-fonts.alioth.debian.org/review/src-latex-cjk-chinese-arphic.html
+
+latex-cjk-japanese-wadalab:
+    url: http://pkg-fonts.alioth.debian.org/review/src-latex-cjk-japanese-wadalab.html
+
+libreoffice:
+    url: http://pkg-fonts.alioth.debian.org/review/src-libreoffice.html
+
+lilypond:
+    url: http://pkg-fonts.alioth.debian.org/review/src-lilypond.html
+
+lmodern:
+    url: http://pkg-fonts.alioth.debian.org/review/src-lmodern.html
+
+lyx:
+    url: http://pkg-fonts.alioth.debian.org/review/src-lyx.html
+
+maitreya:
+    url: http://pkg-fonts.alioth.debian.org/review/src-maitreya.html
+
+mathjax:
+    url: http://pkg-fonts.alioth.debian.org/review/src-mathjax.html
+
+matplotlib:
+    url: http://pkg-fonts.alioth.debian.org/review/src-matplotlib.html
+
+minetest:
+    url: http://pkg-fonts.alioth.debian.org/review/src-minetest.html
+
+monafont-ttf:
+    url: http://pkg-fonts.alioth.debian.org/review/src-monafont-ttf.html
+
+moodle:
+    url: http://pkg-fonts.alioth.debian.org/review/src-moodle.html
+
+nted:
+    url: http://pkg-fonts.alioth.debian.org/review/src-nted.html
+
+octave-epstk:
+    url: http://pkg-fonts.alioth.debian.org/review/src-octave-epstk.html
+
+opensesame:
+    url: http://pkg-fonts.alioth.debian.org/review/src-opensesame.html
+
+pink-pony:
+    url: http://pkg-fonts.alioth.debian.org/review/src-pink-pony.html
+
+pmw:
+    url: http://pkg-fonts.alioth.debian.org/review/src-pmw.html
+
+psychopy:
+    url: http://pkg-fonts.alioth.debian.org/review/src-psychopy.html
+
+pychess:
+    url: http://pkg-fonts.alioth.debian.org/review/src-pychess.html
+
+pyracerz:
+    url: http://pkg-fonts.alioth.debian.org/review/src-pyracerz.html
+
+pysiogame:
+    url: http://pkg-fonts.alioth.debian.org/review/src-pysiogame.html
+
+python-box2d:
+    url: http://pkg-fonts.alioth.debian.org/review/src-python-box2d.html
+
+qingy:
+    url: http://pkg-fonts.alioth.debian.org/review/src-qingy.html
+
+qt4-x11:
+    url: http://pkg-fonts.alioth.debian.org/review/src-qt4-x11.html
+
+qtdeclarative-opensource-src:
+    url: http://pkg-fonts.alioth.debian.org/review/src-qtdeclarative-opensource-src.html
+
+rdkit:
+    url: http://pkg-fonts.alioth.debian.org/review/src-rdkit.html
+
+renpy:
+    url: http://pkg-fonts.alioth.debian.org/review/src-renpy.html
+
+rgl:
+    url: http://pkg-fonts.alioth.debian.org/review/src-rgl.html
+
+scalable-cyrfonts:
+    url: http://pkg-fonts.alioth.debian.org/review/src-scalable-cyrfonts.html
+
+scilab:
+    url: http://pkg-fonts.alioth.debian.org/review/src-scilab.html
+
+sdl-ball:
+    url: http://pkg-fonts.alioth.debian.org/review/src-sdl-ball.html
+
+singularity:
+    url: http://pkg-fonts.alioth.debian.org/review/src-singularity.html
+
+sjfonts:
+    url: http://pkg-fonts.alioth.debian.org/review/src-sjfonts.html
+
+slimevolley:
+    url: http://pkg-fonts.alioth.debian.org/review/src-slimevolley.html
+
+stellarium:
+    url: http://pkg-fonts.alioth.debian.org/review/src-stellarium.html
+
+tagua:
+    url: http://pkg-fonts.alioth.debian.org/review/src-tagua.html
+
+tex-gyre:
+    url: http://pkg-fonts.alioth.debian.org/review/src-tex-gyre.html
+
+texlive-base:
+    url: http://pkg-fonts.alioth.debian.org/review/src-texlive-base.html
+
+texlive-extra:
+    url: http://pkg-fonts.alioth.debian.org/review/src-texlive-extra.html
+
+texlive-lang:
+    url: http://pkg-fonts.alioth.debian.org/review/src-texlive-lang.html
+
+tipa:
+    url: http://pkg-fonts.alioth.debian.org/review/src-tipa.html
+
+trackballs:
+    url: http://pkg-fonts.alioth.debian.org/review/src-trackballs.html
+
+ttf-adf:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-adf.html
+
+ttf-aenigma:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-aenigma.html
+
+ttf-atarismall:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-atarismall.html
+
+ttf-bitstream-vera:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-bitstream-vera.html
+
+ttf-engadget:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-engadget.html
+
+ttf-femkeklaver:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-femkeklaver.html
+
+ttf-freefont:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-freefont.html
+
+ttf-goudybookletter:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-goudybookletter.html
+
+ttf-marvosym:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-marvosym.html
+
+ttf-staypuft:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-staypuft.html
+
+ttf-summersby:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-summersby.html
+
+ttf-tagbanwa:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-tagbanwa.html
+
+ttf-tiresias:
+    url: http://pkg-fonts.alioth.debian.org/review/src-ttf-tiresias.html
+
+tulip:
+    url: http://pkg-fonts.alioth.debian.org/review/src-tulip.html
+
+tuxpaint:
+    url: http://pkg-fonts.alioth.debian.org/review/src-tuxpaint.html
+
+tvtime:
+    url: http://pkg-fonts.alioth.debian.org/review/src-tvtime.html
+
+unifont:
+    url: http://pkg-fonts.alioth.debian.org/review/src-unifont.html
+
+unknown-horizons:
+    url: http://pkg-fonts.alioth.debian.org/review/src-unknown-horizons.html
+
+vtkdata:
+    url: http://pkg-fonts.alioth.debian.org/review/src-vtkdata.html
+
+widelands:
+    url: http://pkg-fonts.alioth.debian.org/review/src-widelands.html
+
+wordpress:
+    url: http://pkg-fonts.alioth.debian.org/review/src-wordpress.html
+
+writetype:
+    url: http://pkg-fonts.alioth.debian.org/review/src-writetype.html
+
+xbubble:
+    url: http://pkg-fonts.alioth.debian.org/review/src-xbubble.html
+
+xfonts-scalable:
+    url: http://pkg-fonts.alioth.debian.org/review/src-xfonts-scalable.html
+
+yudit:
+    url: http://pkg-fonts.alioth.debian.org/review/src-yudit.html
+
+zaz:
+    url: http://pkg-fonts.alioth.debian.org/review/src-zaz.html
+

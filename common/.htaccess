@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{HTTP_COOKIE} csspref=(compact.css|pts.css|revamp.css)
+RewriteRule default.css /common/%1 [L]
+
+RewriteRule default.css /common/revamp.css

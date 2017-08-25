@@ -1,0 +1,22 @@
+Package: intel-microcode
+Binary: intel-microcode
+Version: 3.20170707.1~bpo8+1
+Maintainer: Henrique de Moraes Holschuh <hmh@debian.org>
+Uploaders: Giacomo Catenazzi <cate@debian.org>
+Build-Depends: debhelper (>= 9), iucode-tool (>= 0.9)
+Architecture: i386 amd64 x32
+Standards-Version: 3.9.8
+Format: 3.0 (native)
+Vcs-Browser: http://git.debian.org/?p=users/hmh/intel-microcode.git
+Vcs-Git: git://git.debian.org/users/hmh/intel-microcode.git
+Checksums-Sha256:
+ 68a701b13fc6991b14c2018436cd6a4609bd51ae5321d3308b0d478ad95e900f 1811 intel-microcode_3.20170707.1~bpo8+1.dsc
+ 34b64b8a1c70c7de59b341aa1cfd104188988d9d6ba9b1417bc556d5450f31c4 1501016 intel-microcode_3.20170707.1~bpo8+1.tar.xz
+Homepage: https://downloadcenter.intel.com/search?keyword=linux+microcode
+Autobuild: yes
+Package-List: 
+ intel-microcode deb non-free/admin standard arch=i386,amd64,x32
+Directory: pool/non-free/i/intel-microcode
+Priority: extra
+Section: non-free/misc
+

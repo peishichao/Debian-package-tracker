@@ -1,0 +1,443 @@
+Package: cockpit
+Binary: cockpit, cockpit-bridge, cockpit-dashboard, cockpit-doc, cockpit-docker, cockpit-machines, cockpit-networkmanager, cockpit-pcp, cockpit-packagekit, cockpit-storaged, cockpit-system, cockpit-tests, cockpit-ws
+Version: 148-1~bpo8+1
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Uploaders: Michael Biebl <biebl@debian.org>, Martin Pitt <mpitt@debian.org>,
+Build-Depends: debhelper (>= 9.20141010), dh-systemd, dpkg-dev (>= 1.17.14), dh-autoreconf, autoconf, automake, git, intltool, libssh-dev, zlib1g-dev, libkrb5-dev, libxslt1-dev, libglib2.0-dev, libsystemd-dev, libpolkit-agent-1-dev, libjson-glib-dev, libpam0g-dev, systemd, xsltproc, xmlto, docbook-xsl, glib-networking, openssh-client <!nocheck>, python
+Architecture: any all
+Standards-Version: 4.0.0
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/cockpit.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/cockpit.git
+Checksums-Sha256:
+ 3657ff616a2480df915065b1157e1541c89eec8ac8fe777dbab1c401d699cf1e 3043 cockpit_148-1~bpo8+1.dsc
+ 5fbc148e1b5c08963bdbb70f44127dd26ba7997811ebc076bd2665bfff9e22d4 10563460 cockpit_148.orig.tar.xz
+ 878e3b7ad1b0a191cc486dcd4a4a402f7ced177586ee13c6d9a1f8ae37d4e012 11440 cockpit_148-1~bpo8+1.debian.tar.xz
+Homepage: http://cockpit-project.org/
+Package-List: 
+ cockpit deb admin optional arch=all
+ cockpit-bridge deb admin optional arch=any
+ cockpit-dashboard deb admin optional arch=any
+ cockpit-doc deb doc optional arch=all
+ cockpit-docker deb admin optional arch=all
+ cockpit-machines deb admin optional arch=all
+ cockpit-networkmanager deb admin optional arch=all
+ cockpit-packagekit deb admin optional arch=all
+ cockpit-pcp deb admin optional arch=any
+ cockpit-storaged deb admin optional arch=all
+ cockpit-system deb admin optional arch=all
+ cockpit-tests deb admin optional arch=any
+ cockpit-ws deb admin optional arch=any
+Testsuite: autopkgtest
+Directory: pool/main/c/cockpit
+Priority: extra
+Section: misc
+
+Package: gajim
+Binary: gajim
+Version: 0.16.8-3~bpo8+1
+Maintainer: Debian Gajim Maintainers <pkg-gajim-maintainers@lists.alioth.debian.org>
+Uploaders: Tanguy Ortolo <tanguy+debian@ortolo.eu>, Norbert Tretkowski <norbert@tretkowski.de>, W. Martin Borgert <debacle@debian.org>
+Build-Depends: autotools-dev, debhelper (>= 9), dh-python, gettext (>= 0.17-4), imagemagick, intltool (>= 0.40.1), libglib2.0-dev, python (>= 2.6.6-3~)
+Architecture: all
+Standards-Version: 4.0.0
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/gajim.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/gajim.git
+Checksums-Sha256:
+ 7472c0ba357b4a5d28e5208b206f4cfeb87a87ada5eb1116d114f9109997cf12 2131 gajim_0.16.8-3~bpo8+1.dsc
+ 46d4887857455b6e104d0478735edb51569bfa384578ffb4f4da81f1649b6a32 4465521 gajim_0.16.8.orig.tar.bz2
+ d40594bc9b4777672d4d9940418f6bce2ef11ae918c9c465122b102d6eba518f 10164 gajim_0.16.8-3~bpo8+1.debian.tar.xz
+Homepage: https://gajim.org/
+Package-List: 
+ gajim deb net optional arch=all
+Directory: pool/main/g/gajim
+Priority: extra
+Section: misc
+
+Package: gajim-antispam
+Binary: gajim-antispam
+Version: 0.4.3-1~bpo8+1
+Maintainer: Debian Gajim Maintainers <pkg-gajim-maintainers@lists.alioth.debian.org>
+Uploaders: W. Martin Borgert <debacle@debian.org>
+Build-Depends: debhelper (>= 9), dh-python, python (>= 2.7)
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/gajim-antispam.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/gajim-antispam.git
+Checksums-Sha256:
+ add271c929b189cee530e28c0813740734533208a03b3de7ac1dd771a69f1dd2 2075 gajim-antispam_0.4.3-1~bpo8+1.dsc
+ 566ace3cb0c60097350acf97d5a018bb69cfc015f79bd1e95353296d4f0acafc 5950 gajim-antispam_0.4.3.orig.tar.gz
+ 179fc4257c321729d586f489f9a61ac245efc5e14dbf5cf02754ce53ca4725bd 1708 gajim-antispam_0.4.3-1~bpo8+1.debian.tar.xz
+Homepage: https://dev.gajim.org/gajim/gajim-plugins/wikis/AntiSpamPlugin
+Package-List: 
+ gajim-antispam deb net optional arch=all
+Directory: pool/main/g/gajim-antispam
+Priority: extra
+Section: misc
+
+Package: golang-github-klauspost-reedsolomon
+Binary: golang-github-klauspost-reedsolomon-dev
+Version: 1.3-1~bpo8+1
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Free Ekanayaka <freee@debian.org>, Roger Shimizu <rogershimizu@gmail.com>
+Build-Depends: debhelper (>= 9), dh-golang (>= 1.19~), golang-any, golang-github-klauspost-cpuid-dev
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-klauspost-reedsolomon.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-github-klauspost-reedsolomon.git
+Checksums-Sha256:
+ 3a23c576f4b766a4dc2ef4be78d90b644551f815440a1241af31eb48857cb918 2441 golang-github-klauspost-reedsolomon_1.3-1~bpo8+1.dsc
+ 4db8cf7100ca05bc1c0f7aabb01c591d1c668404a66be4f68542311e827c9aa9 92548 golang-github-klauspost-reedsolomon_1.3.orig.tar.xz
+ cae66e2b80d184a412c182aeac326a3ee791e36a699d5a029e62f32a8d970680 3112 golang-github-klauspost-reedsolomon_1.3-1~bpo8+1.debian.tar.xz
+Homepage: https://github.com/klauspost/reedsolomon
+Go-Import-Path: github.com/klauspost/reedsolomon
+Package-List: 
+ golang-github-klauspost-reedsolomon-dev deb devel extra arch=all
+Directory: pool/main/g/golang-github-klauspost-reedsolomon
+Priority: extra
+Section: misc
+
+Package: golang-github-xtaci-kcp
+Binary: golang-github-xtaci-kcp-dev
+Version: 3.18+ds-1~bpo8+1
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Roger Shimizu <rogershimizu@gmail.com>
+Build-Depends: debhelper (>= 10), dh-golang (>= 1.19~), golang-any, golang-github-klauspost-reedsolomon-dev (>= 1.3), golang-github-pkg-errors-dev, golang-golang-x-crypto-dev, golang-golang-x-net-dev
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-xtaci-kcp.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-github-xtaci-kcp.git
+Checksums-Sha256:
+ 94a150fcce0d0fb3aaa9aadc90bc8f8bc59f95c9907580e6c82edbdc86f647f1 2383 golang-github-xtaci-kcp_3.18+ds-1~bpo8+1.dsc
+ ac3c223cb35bbe3911917ecf237af25e3c4033a0697ffcafbaeb1ce63e2d88e3 71056 golang-github-xtaci-kcp_3.18+ds.orig.tar.xz
+ 93e60ce503454651057344179f4b9b5d84abfc0a9c0652c67e531cc2d9a4c396 4364 golang-github-xtaci-kcp_3.18+ds-1~bpo8+1.debian.tar.xz
+Homepage: https://github.com/xtaci/kcp-go
+Go-Import-Path: github.com/xtaci/kcp-go
+Package-List: 
+ golang-github-xtaci-kcp-dev deb devel extra arch=all
+Directory: pool/main/g/golang-github-xtaci-kcp
+Priority: extra
+Section: misc
+
+Package: golang-github-xtaci-smux
+Binary: golang-github-xtaci-smux-dev
+Version: 1.0.5+ds-1~bpo8+1
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Roger Shimizu <rogershimizu@gmail.com>
+Build-Depends: debhelper (>= 10), dh-golang (>= 1.19~), golang-any, golang-github-pkg-errors-dev
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-xtaci-smux.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-github-xtaci-smux.git
+Checksums-Sha256:
+ 2939aff38d42e9b6ed3fe51c19b21a67c6a61d95a36c38e74cec12f98b5acb66 2294 golang-github-xtaci-smux_1.0.5+ds-1~bpo8+1.dsc
+ dca0591fbd0c38f8f9d1b7e1a22a130bd15e4dc7c3652af54b75f09d12c841ab 18980 golang-github-xtaci-smux_1.0.5+ds.orig.tar.xz
+ 4983bb47d24952cf8d0f95102c3d24fac35b4c1291f43b8fcf40a1fc8eabdca2 4540 golang-github-xtaci-smux_1.0.5+ds-1~bpo8+1.debian.tar.xz
+Homepage: https://github.com/xtaci/smux
+Go-Import-Path: github.com/xtaci/smux
+Package-List: 
+ golang-github-xtaci-smux-dev deb devel extra arch=all
+Directory: pool/main/g/golang-github-xtaci-smux
+Priority: extra
+Section: misc
+
+Package: haproxy
+Binary: haproxy, haproxy-dbg, haproxy-doc, vim-haproxy
+Version: 1.7.8-1~bpo8+1
+Maintainer: Debian HAProxy Maintainers <pkg-haproxy-maintainers@lists.alioth.debian.org>
+Uploaders: Apollon Oikonomopoulos <apoikos@debian.org>, Prach Pongpanich <prach@debian.org>, Vincent Bernat <bernat@debian.org>
+Build-Depends: debhelper (>= 9), libpcre3-dev, libssl-dev (>= 1.0.2), liblua5.3-dev, dh-systemd (>= 1.5), python-sphinx (>= 1.0.7+dfsg), zlib1g-dev
+Build-Depends-Indep: python, python-mako
+Architecture: any all
+Standards-Version: 4.0.0
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=pkg-haproxy/haproxy.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-haproxy/haproxy.git
+Checksums-Sha256:
+ 108145e2355442f937b6a4a21375d164d0427027654e04dddf79330e122e0d0d 2389 haproxy_1.7.8-1~bpo8+1.dsc
+ ec90153ccedd20ad4015d3eaf76b502ff1f61b431d54c22b8457b5784a9ae142 1746321 haproxy_1.7.8.orig.tar.gz
+ 892bc944a5ac4577ae6d896dfa89a68576196a226e8d5ee5a758ce9b68446f32 63796 haproxy_1.7.8-1~bpo8+1.debian.tar.xz
+Homepage: http://www.haproxy.org/
+Package-List: 
+ haproxy deb net optional arch=any
+ haproxy-dbg deb debug extra arch=any
+ haproxy-doc deb doc extra arch=all
+ vim-haproxy deb net optional arch=all
+Testsuite: autopkgtest
+Directory: pool/main/h/haproxy
+Priority: extra
+Section: misc
+
+Package: igtf-policy-bundle
+Binary: igtf-policy-classic, igtf-policy-mics, igtf-policy-slcs, igtf-policy-iota, igtf-policy-unaccredited, igtf-policy-experimental
+Version: 1.84-1~bpo8+1
+Maintainer: Dennis van Dok <dennisvd@nikhef.nl>
+Build-Depends: debhelper (>= 8.0.0), po-debconf
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Vcs-Browser: https://github.com/dvandok/igtf-policy-bundle
+Vcs-Git: https://github.com/dvandok/igtf-policy-bundle.git
+Checksums-Sha256:
+ a91f79bcaabb09779690cb6a101be7089c632dba22bf7cb1acc85c86b8ea640f 2273 igtf-policy-bundle_1.84-1~bpo8+1.dsc
+ 267a29fddaaec3de3e72e545890d3f78973c3f028aacffb44e07e734b96fb61e 184518 igtf-policy-bundle_1.84.orig.tar.gz
+ d49ac90c0236d9418e3203571c314b19ba9ede95db29ffaf36ab204270f2d42e 28940 igtf-policy-bundle_1.84-1~bpo8+1.debian.tar.xz
+Homepage: http://www.igtf.net/
+Package-List: 
+ igtf-policy-classic deb misc extra arch=all
+ igtf-policy-experimental deb misc extra arch=all
+ igtf-policy-iota deb misc extra arch=all
+ igtf-policy-mics deb misc extra arch=all
+ igtf-policy-slcs deb misc extra arch=all
+ igtf-policy-unaccredited deb misc extra arch=all
+Directory: pool/main/i/igtf-policy-bundle
+Priority: extra
+Section: misc
+
+Package: lava-dispatcher
+Binary: lava-dispatcher
+Version: 2017.7-1~bpo8+1
+Maintainer: Debian LAVA team <pkg-linaro-lava-devel@lists.alioth.debian.org>
+Uploaders: Antonio Terceiro <terceiro@debian.org>, Neil Williams <codehelp@debian.org>, Fathi Boudra <fabo@debian.org>, Jordi Mallach <jordi@debian.org>, Senthil Kumaran S (stylesen) <stylesen@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), dh-python, python | python-all | python-dev | python-all-dev, python-sphinx (>= 1.0.7+dfsg) | python3-sphinx, python-setuptools (>= 3)
+Architecture: amd64 arm64 armhf i386 mipsel powerpc ppc64el s390x ppc64
+Standards-Version: 4.0.0
+Format: 3.0 (quilt)
+Vcs-Browser: https://github.com/Linaro/pkg-lava-dispatcher
+Vcs-Git: https://github.com/Linaro/pkg-lava-dispatcher.git
+Checksums-Sha256:
+ bf7f601a230f511a9ada0840e166d37ac393435cd18d3137d7748a3eb1a0acb5 2443 lava-dispatcher_2017.7-1~bpo8+1.dsc
+ f06796f7025e02e782e1c9d18f62c7ff7fc6888cb6dc011073dd69c3a59f7e17 513601 lava-dispatcher_2017.7.orig.tar.gz
+ 16ae1521cbc7573ae8a3a2c9f57982d127875942c70524bf4fb65256b635397a 19544 lava-dispatcher_2017.7-1~bpo8+1.debian.tar.xz
+Homepage: http://www.linaro.org/projects/test-validation/
+Package-List: 
+ lava-dispatcher deb net optional arch=amd64,arm64,armhf,i386,mipsel,powerpc,ppc64el,s390x,ppc64
+Testsuite: autopkgtest
+Directory: pool/main/l/lava-dispatcher
+Priority: extra
+Section: misc
+
+Package: lava-server
+Binary: lava-server, lava, lava-dev, lava-server-doc
+Version: 2017.7-1~bpo8+1
+Maintainer: Debian LAVA team <pkg-linaro-lava-devel@lists.alioth.debian.org>
+Uploaders: Neil Williams <codehelp@debian.org>, Fathi Boudra <fabo@debian.org>, Jordi Mallach <jordi@debian.org>, Senthil Kumaran S (stylesen) <stylesen@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), dh-python, node-uglify, libjs-excanvas, libjs-jquery-cookie, libjs-jquery, libjs-jquery-watermark, libjs-jquery-flot (>= 0.8.2), libjs-jquery-ui, python | python-all | python-dev | python-all-dev, python-sphinx (>= 1.4), python-sphinx-bootstrap-theme, po-debconf, python-mocker, python-setuptools (>= 3), python-yaml
+Architecture: all
+Standards-Version: 4.0.0
+Format: 3.0 (quilt)
+Vcs-Browser: https://github.com/Linaro/pkg-lava-server
+Vcs-Git: https://github.com/Linaro/pkg-lava-server.git
+Checksums-Sha256:
+ 98b4f117916b949eff4e8e2150d4b017672515095bfbc27eb83bd1e8266f90af 2594 lava-server_2017.7-1~bpo8+1.dsc
+ 33a32184a421b08a4242af46cb054226d4ac083725c22df638024a5970eda0ba 12095635 lava-server_2017.7.orig.tar.gz
+ e8c16ee16953753d833b8f4342d03cd1d73329de6a878270890dc1884dbb735d 47468 lava-server_2017.7-1~bpo8+1.debian.tar.xz
+Homepage: http://www.linaro.org/projects/test-validation/
+Package-List: 
+ lava deb metapackages optional arch=all
+ lava-dev deb devel optional arch=all
+ lava-server deb net optional arch=all
+ lava-server-doc deb doc optional arch=all
+Testsuite: autopkgtest
+Directory: pool/main/l/lava-server
+Priority: extra
+Section: misc
+
+Package: libbloom
+Binary: libbloom-dev, libbloom1
+Version: 1.5-1~bpo8+1
+Maintainer: Roger Shimizu <rogershimizu@gmail.com>
+Build-Depends: debhelper (>= 10)
+Architecture: any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/libbloom.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/libbloom.git
+Checksums-Sha256:
+ 11b081382d3ae27b0ba9497666e7dc4094c0f65a1c02b105976e61127ec25e3f 1961 libbloom_1.5-1~bpo8+1.dsc
+ 59ebffebd13211da3a98dfa401741df1fc11da297e646ce77637cc1874160e75 1210081 libbloom_1.5.orig.tar.gz
+ 14f92b5a08675f95493a2f5379b81559bf8a72b167978fce1450d6ad99ab779d 3816 libbloom_1.5-1~bpo8+1.debian.tar.xz
+Homepage: https://github.com/jvirkki/libbloom
+Package-List: 
+ libbloom-dev deb libdevel optional arch=any
+ libbloom1 deb libs optional arch=any
+Directory: pool/main/libb/libbloom
+Priority: extra
+Section: misc
+
+Package: libsodium
+Binary: libsodium18, libsodium-dev, libsodium-dbg
+Version: 1.0.13-1~bpo8+1
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Build-Depends: debhelper (>= 10), pkg-config
+Architecture: any
+Standards-Version: 4.0.0
+Format: 3.0 (quilt)
+Vcs-Browser: https://github.com/gcsideal/debian-libsodium
+Vcs-Git: git://github.com/gcsideal/debian-libsodium
+Checksums-Sha256:
+ 79a491c001647663af84a18e70b4e9cbd7c417b36a02ccd58db135484ea7bb4e 2028 libsodium_1.0.13-1~bpo8+1.dsc
+ 83c3017600bf18b349bfcf97cb8bf07e97ee2793743e860a83a0f08a2c251593 1514062 libsodium_1.0.13.orig.tar.gz
+ 950263ba801b88fa9bee940b3f9f034f390d60e10e4a62d59b48315d7833ccfb 6768 libsodium_1.0.13-1~bpo8+1.debian.tar.xz
+Homepage: http://www.libsodium.org/
+Package-List: 
+ libsodium-dbg deb debug extra arch=any
+ libsodium-dev deb libdevel optional arch=any
+ libsodium18 deb libs optional arch=any
+Directory: pool/main/libs/libsodium
+Priority: extra
+Section: misc
+
+Package: open-vm-tools
+Binary: open-vm-tools, open-vm-tools-desktop, open-vm-tools-dev, open-vm-tools-dkms
+Version: 2:10.1.5-5055683-5~bpo8+1
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Build-Depends: debhelper (>= 9.20160402~), autotools-dev, dkms, doxygen, libcunit1-dev, libdumbnet-dev, libfuse-dev, libgtk2.0-dev, libgtkmm-2.4-dev, libicu-dev, libnotify-dev, libpam0g-dev, libprocps-dev, libx11-dev, libxinerama-dev, libxss-dev, libxtst-dev, dh-autoreconf, dh-systemd, libmspack-dev, libssl-dev, libxerces-c-dev, libxml-security-c-dev
+Architecture: amd64 i386 all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Vcs-Browser: https://github.com/bzed/pkg-open-vm-tools
+Vcs-Git: https://github.com/bzed/pkg-open-vm-tools.git
+Checksums-Sha256:
+ 1984dd6b76677f86c23d1775f7c424ddc187b7ba6b35fcba1b305cb09b0f1f9b 2514 open-vm-tools_10.1.5-5055683-5~bpo8+1.dsc
+ c789f9b8053f9c5418bac4ce9547beb513e8eb2bbd3369821ca94a0d8cfade8f 5040610 open-vm-tools_10.1.5-5055683.orig.tar.gz
+ 784577605ff96023c9568e8e256a2c523618001e2ebaaa7ada65f1f36c3df209 29264 open-vm-tools_10.1.5-5055683-5~bpo8+1.debian.tar.xz
+Homepage: https://github.com/vmware/open-vm-tools
+Package-List: 
+ open-vm-tools deb admin extra arch=amd64,i386
+ open-vm-tools-desktop deb admin extra arch=amd64,i386
+ open-vm-tools-dev deb devel extra arch=amd64,i386
+ open-vm-tools-dkms deb kernel extra arch=all
+Directory: pool/main/o/open-vm-tools
+Priority: extra
+Section: misc
+
+Package: roary
+Binary: roary
+Version: 3.8.2+dfsg-2~bpo8+1
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Uploaders: Sascha Steinbiss <satta@debian.org>, Afif Elghraoui <afif@debian.org>
+Build-Depends: debhelper (>= 9), dh-dist-zilla, libdist-zilla-plugin-podweaver-perl, bioperl, libarray-utils-perl, libenv-path-perl, libexception-class-perl, libfile-find-rule-perl, libfile-grep-perl, libfile-slurper-perl, libfile-which-perl, libfindbin-libs-perl, libgraph-perl, libgraph-readwrite-perl, liblog-log4perl-perl, libmoose-perl, libperlio-utf8-strict-perl, libtest-most-perl, libtest-file-perl, libtest-files-perl, libtest-output-perl, libtext-csv-perl, bedtools, cd-hit, ncbi-blast+, mcl, parallel, prank, r-base-core, mafft, fasttree
+Build-Depends-Indep: perl
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/cgit/debian-med/roary.git
+Vcs-Git: https://anonscm.debian.org/git/debian-med/roary.git
+Checksums-Sha256:
+ f26f8c3257f64a63ee3561cc1aa692df071fadd264c5dfd73bd368fa7a83ad82 2219 roary_3.8.2+dfsg-2~bpo8+1.dsc
+ 5bd93dd91a990399d1ab4cfe931d3a02783b740c303c375d2363c87b547e642f 460258 roary_3.8.2+dfsg.orig.tar.gz
+ 8b5c0c1da15b0040b4e055da4bce270fb43b5078fcb1adc56141b52510979837 5728 roary_3.8.2+dfsg-2~bpo8+1.debian.tar.xz
+Homepage: http://sanger-pathogens.github.io/Roary/
+Package-List: 
+ roary deb science optional arch=all
+Testsuite: autopkgtest
+Directory: pool/main/r/roary
+Priority: extra
+Section: misc
+
+Package: shadowsocks-libev
+Binary: shadowsocks-libev, libshadowsocks-libev-dev, libshadowsocks-libev2
+Version: 3.0.8+ds-2~bpo8+1
+Maintainer: Roger Shimizu <rogershimizu@gmail.com>
+Uploaders: Max Lv <max.c.lv@gmail.com>, Boyuan Yang <073plan@gmail.com>
+Build-Depends: asciidoc-base | asciidoc, debhelper (>= 10), libbloom-dev, libcork-dev (>= 0.15.0+ds-8), libcorkipset-dev, libev-dev, libmbedtls-dev, libpcre3-dev, libsodium-dev (>= 1.0.12), libudns-dev, pkg-config, xmlto
+Architecture: any
+Standards-Version: 4.0.0
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/shadowsocks-libev.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/shadowsocks-libev.git
+Checksums-Sha256:
+ 1af10e5f833ddfd2752c1ce75841d177148c2268b899f54fe1fe5d04b70697dc 2432 shadowsocks-libev_3.0.8+ds-2~bpo8+1.dsc
+ 78e81510f7a72d44c8e5f4693e72f9ac6e8451b2398ef61d17e922232a856ad3 157988 shadowsocks-libev_3.0.8+ds.orig.tar.xz
+ f4e3f3af171afcb54d0a8eda2b86f0f8f64ebca3ffb9f42be48a31bdd2998a5b 20940 shadowsocks-libev_3.0.8+ds-2~bpo8+1.debian.tar.xz
+Homepage: https://www.shadowsocks.org
+Package-List: 
+ libshadowsocks-libev-dev deb libdevel extra arch=any
+ libshadowsocks-libev2 deb libs extra arch=any
+ shadowsocks-libev deb net extra arch=any
+Directory: pool/main/s/shadowsocks-libev
+Priority: extra
+Section: misc
+
+Package: simple-obfs
+Binary: simple-obfs
+Version: 0.0.3-4~bpo8+1
+Maintainer: Roger Shimizu <rogershimizu@gmail.com>
+Build-Depends: asciidoc-base | asciidoc, debhelper (>= 10), libcork-dev, libev-dev, libudns-dev, xmlto
+Architecture: any
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/simple-obfs.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/simple-obfs.git
+Checksums-Sha256:
+ 369d0ed48b8e959262bdf18dc229a639d45dd1c97b632e2998bd4bff6a0e2320 2023 simple-obfs_0.0.3-4~bpo8+1.dsc
+ 350c22e138202868d5726cb55e3d71e9962aad3306988a9f746b80d0e8998a75 118454 simple-obfs_0.0.3.orig.tar.gz
+ f779a1699d169237ab7fe7e97976c90926b82e715d69ca585429a2a13fc9521e 24384 simple-obfs_0.0.3-4~bpo8+1.debian.tar.xz
+Homepage: https://github.com/shadowsocks/simple-obfs
+Package-List: 
+ simple-obfs deb net optional arch=any
+Directory: pool/main/s/simple-obfs
+Priority: extra
+Section: misc
+
+Package: spl-linux
+Binary: spl-dkms, spl
+Version: 0.6.5.11-1~bpo8+1
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@lists.alioth.debian.org>
+Uploaders: Aron Xu <aron@debian.org>, Carlos Alberto Lopez Perez <clopez@igalia.com>
+Build-Depends: autogen, autotools-dev, debhelper (>= 9), dh-autoreconf, dkms (>> 2.2.0.2-1~), libtool
+Architecture: linux-any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-zfsonlinux/spl.git
+Vcs-Git: git://anonscm.debian.org/pkg-zfsonlinux/spl.git
+Checksums-Sha256:
+ 5d7c097eb0ecdd7ff0b858e7de838d61f0490db0e4a8b37173f1a1345ec74065 1818 spl-linux_0.6.5.11-1~bpo8+1.dsc
+ ebab87a064985f93122ad82721ca54569a5ef20dc3579f84d18075210cf316ac 531710 spl-linux_0.6.5.11.orig.tar.gz
+ 2796b1299b3c89d89cfc52c40efe7fda5f13349f7cbc4f4370822de82f73fbc4 9592 spl-linux_0.6.5.11-1~bpo8+1.debian.tar.xz
+Homepage: http://www.zfsonlinux.org/
+Package-List: 
+ spl deb kernel optional arch=linux-any
+ spl-dkms deb kernel optional arch=all
+Testsuite: autopkgtest
+Directory: pool/main/s/spl-linux
+Priority: extra
+Section: misc
+
+Package: webkit2gtk
+Binary: libjavascriptcoregtk-4.0-18, libjavascriptcoregtk-4.0-dev, libjavascriptcoregtk-4.0-bin, gir1.2-javascriptcoregtk-4.0, libwebkit2gtk-4.0-37, libwebkit2gtk-4.0-dev, libwebkit2gtk-4.0-doc, gir1.2-webkit2-4.0, libwebkit2gtk-4.0-37-gtk2
+Version: 2.16.6-1~bpo8+1
+Maintainer: Debian WebKit Maintainers <pkg-webkit-maintainers@lists.alioth.debian.org>
+Uploaders: Gustavo Noronha Silva <kov@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Alberto Garcia <berto@igalia.com>
+Build-Depends: gawk, cmake, debhelper (>= 9), libglib2.0-dev (>= 2.36.0), libgtk2.0-dev (>= 2.24.10), libgtk-3-dev (>= 3.10.0), libpango1.0-dev (>= 1.30.0), libharfbuzz-dev (>= 0.9.18), libcairo2-dev (>= 1.10), libfontconfig1-dev (>= 2.5), libfreetype6-dev, libicu-dev, libgcrypt20-dev, libgeoclue-dev, libhyphen-dev, libnotify-dev, libxslt1-dev (>= 1.1.7), libxml2-dev (>= 2.6), libsoup2.4-dev (>= 2.42.0), libsqlite3-dev (>= 3.0), libgudev-1.0-dev [linux-any], gperf, bison, flex, ruby, libjpeg-dev, libpng-dev, libwebp-dev, libxt-dev, libgstreamer1.0-dev (>= 1.0.3), libgstreamer-plugins-base1.0-dev (>= 1.0.3), libenchant-dev (>= 0.22), gtk-doc-tools, geoclue-2.0, libsecret-1-dev, gobject-introspection (>= 1.32.0), libgirepository1.0-dev (>= 0.9.12-4), libegl1-mesa-dev, libgl1-mesa-dev [!armel !armhf !arm64], libgles2-mesa-dev [armel armhf arm64]
+Build-Conflicts: gir-repository-dev
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Vcs-Browser: https://anonscm.debian.org/git/pkg-webkit/webkit.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-webkit/webkit.git
+Checksums-Sha256:
+ f4580408771145018270452ff10945fee252b2acfb76600b112ca1b42304b8a6 3600 webkit2gtk_2.16.6-1~bpo8+1.dsc
+ fc23650df953123c59b9c0edf3855e7bd55bd107820997fc72375811e1ea4b21 14658120 webkit2gtk_2.16.6.orig.tar.xz
+ 0b56bf21548530ebd09c72d735b025f30155b7900fd733b18d8ce5830d8f9851 54092 webkit2gtk_2.16.6-1~bpo8+1.debian.tar.xz
+Homepage: https://webkitgtk.org/
+Package-List: 
+ gir1.2-javascriptcoregtk-4.0 deb introspection optional arch=any
+ gir1.2-webkit2-4.0 deb introspection optional arch=any
+ libjavascriptcoregtk-4.0-18 deb libs optional arch=any
+ libjavascriptcoregtk-4.0-bin deb interpreters optional arch=any
+ libjavascriptcoregtk-4.0-dev deb libdevel extra arch=any
+ libwebkit2gtk-4.0-37 deb libs optional arch=any
+ libwebkit2gtk-4.0-37-gtk2 deb libs optional arch=any
+ libwebkit2gtk-4.0-dev deb libdevel extra arch=any
+ libwebkit2gtk-4.0-doc deb doc extra arch=all
+Directory: pool/main/w/webkit2gtk
+Priority: extra
+Section: misc
+

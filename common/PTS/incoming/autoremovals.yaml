@@ -1,0 +1,8020 @@
+---
+389-admin:
+  buggy_dependencies:
+  - 389-ds-base
+  bugs:
+  - '870032'
+  bugs_dependencies:
+  - '870752'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:04:58
+  rdeps:
+  - 389-ds-base
+  - 389-ds-console
+  - 389-dsgw
+  - slapi-nis
+  removal_date: 2017-09-11 05:03:01
+  source: 389-admin
+  version: 1.1.43-1
+389-ds-base:
+  buggy_dependencies:
+  - 389-admin
+  bugs:
+  - '870752'
+  bugs_dependencies:
+  - '870032'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:04:58
+  rdeps:
+  - 389-admin
+  - 389-ds-console
+  - 389-dsgw
+  - slapi-nis
+  removal_date: 2017-09-11 05:03:01
+  source: 389-ds-base
+  version: 1.3.5.17-2
+389-ds-console:
+  buggy_dependencies:
+  - 389-admin
+  - 389-ds-base
+  bugs: []
+  bugs_dependencies:
+  - '870032'
+  - '870752'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:04:58
+  removal_date: 2017-09-11 05:03:01
+  source: 389-ds-console
+  version: 1.2.16-1
+389-dsgw:
+  buggy_dependencies:
+  - 389-admin
+  - 389-ds-base
+  bugs: []
+  bugs_dependencies:
+  - '870032'
+  - '870752'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:04:58
+  removal_date: 2017-09-11 05:03:01
+  source: 389-dsgw
+  version: 1.1.11-2
+abiword:
+  bugs:
+  - '868537'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:56:06
+  rdeps:
+  - sugar
+  - sugar-pippy-activity
+  - sugar-write-activity
+  removal_date: 2017-09-04 01:03:25
+  source: abiword
+  version: 3.0.2-2
+acedb:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: acedb
+  version: 4.9.39+dfsg.02-1
+aces3:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: aces3
+  version: 3.0.8-5.1
+activemq:
+  bugs:
+  - '871346'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:21:10
+  removal_date: 2017-09-19 22:57:28
+  source: activemq
+  version: 5.14.5-2
+adblock-plus:
+  bugs:
+  - '868969'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:50:42
+  rdeps:
+  - adblock-plus-element-hiding-helper
+  removal_date: 2017-09-06 09:45:03
+  source: adblock-plus
+  version: 2.7.3+dfsg-1
+adblock-plus-element-hiding-helper:
+  buggy_dependencies:
+  - adblock-plus
+  bugs: []
+  bugs_dependencies:
+  - '868969'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:50:42
+  removal_date: 2017-09-06 09:45:03
+  source: adblock-plus-element-hiding-helper
+  version: 1.4-1
+alien-arena:
+  bugs:
+  - '871218'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:29:18
+  removal_date: 2017-09-05 00:09:02
+  source: alien-arena
+  version: 7.66+dfsg-3
+anjuta:
+  buggy_dependencies:
+  - libgda5
+  bugs: []
+  bugs_dependencies:
+  - '870741'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:30
+  removal_date: 2017-09-17 17:27:02
+  source: anjuta
+  version: 2:3.22.0-3
+anjuta-extras:
+  buggy_dependencies:
+  - libgda5
+  bugs: []
+  bugs_dependencies:
+  - '870741'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:30
+  removal_date: 2017-09-17 17:27:02
+  source: anjuta-extras
+  version: 3.10.0-5
+ansible:
+  bugs:
+  - '870599'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:58:33
+  removal_date: 2017-09-05 08:21:04
+  source: ansible
+  version: 2.2.1.0-2
+apertium:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium
+  version: 3.4.2~r68466-1
+apertium-af-nl:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-af-nl
+  version: 0.2.0~r58256-1
+apertium-arg:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-arg
+  version: 0.1.2~r65494-1
+apertium-arg-cat:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-arg-cat
+  version: 0.1.0~r64925-1
+apertium-br-fr:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-br-fr
+  version: 0.5.0~r61325-2
+apertium-ca-it:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-ca-it
+  version: 0.1.1~r57554-1
+apertium-cat:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-cat
+  version: 2.2.0~r79715-1
+apertium-cy-en:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-cy-en
+  version: 0.1.1~r57554-3
+apertium-dan:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-dan
+  version: 0.5.0~r67099-1
+apertium-dan-nor:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-dan-nor
+  version: 1.3.0~r67099-1
+apertium-en-ca:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-en-ca
+  version: 0.9.3~r61328-1
+apertium-en-es:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-en-es
+  version: 0.8.0~r57502-2
+apertium-en-gl:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-en-gl
+  version: 0.5.2~r57551-1
+apertium-eo-ca:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-eo-ca
+  version: 1:0.9.1~r60655-2
+apertium-eo-en:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-eo-en
+  version: 1.0.0~r63833-1
+apertium-eo-es:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-eo-es
+  version: 1:0.9.1~r60655-2
+apertium-eo-fr:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-eo-fr
+  version: 0.9.0~r57551-1
+apertium-es-ast:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-es-ast
+  version: 1.1.0~r51165-1
+apertium-es-gl:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-es-gl
+  version: 1.0.8~r57542-2
+apertium-es-pt:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-es-pt
+  version: 1.1.5+svn~57507-3
+apertium-es-ro:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-es-ro
+  version: 0.7.3~r57551-2
+apertium-eu-en:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-eu-en
+  version: 0.3.1~r56205-1
+apertium-eu-es:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-eu-es
+  version: 0.3.3~r56159-2
+apertium-fr-es:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-fr-es
+  version: 0.9.2~r61322-2
+apertium-fra:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-fra
+  version: 1.1.0~r78695-1
+apertium-fra-cat:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-fra-cat
+  version: 1.2.0~r78602-1
+apertium-hbs:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-hbs
+  version: 0.5.0~r68212-2
+apertium-hbs-eng:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-hbs-eng
+  version: 0.1.0~r57598-1
+apertium-hbs-mkd:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-hbs-mkd
+  version: 0.1.0~r76450-1
+apertium-hbs-slv:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-hbs-slv
+  version: 0.1.0~r59294-1
+apertium-hin:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-hin
+  version: 0.1.0~r59158-1
+apertium-id-ms:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-id-ms
+  version: 0.1.1~r57551-1
+apertium-is-sv:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-is-sv
+  version: 0.1.0~r76450-1
+apertium-isl:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-isl
+  version: 0.1.0~r65494-1
+apertium-isl-eng:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-isl-eng
+  version: 0.1.0~r66083-1
+apertium-ita:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-ita
+  version: 0.9.0~r78828-1
+apertium-kaz:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-kaz
+  version: 0.1.0~r61338-1
+apertium-kaz-tat:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-kaz-tat
+  version: 0.2.1~r57554-1
+apertium-lex-tools:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-lex-tools
+  version: 0.1.1~r66150-1
+apertium-mk-bg:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-mk-bg
+  version: 0.2.0~r49489-1
+apertium-mk-en:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-mk-en
+  version: 0.1.1~r57554-1
+apertium-mlt-ara:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-mlt-ara
+  version: 0.2.0~r62623-1
+apertium-nno:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-nno
+  version: 0.9.0~r69513-2
+apertium-nno-nob:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-nno-nob
+  version: 1.1.0~r66076-1
+apertium-nob:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-nob
+  version: 0.9.0~r69513-1
+apertium-oc-ca:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-oc-ca
+  version: 1.0.6~r57551-2
+apertium-oc-es:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-oc-es
+  version: 1.0.6~r57551-2
+apertium-pt-ca:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-pt-ca
+  version: 0.8.2+svn~57507-3
+apertium-pt-gl:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-pt-gl
+  version: 0.9.2~r57551-2
+apertium-sme-nob:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-sme-nob
+  version: 0.6.0~r61921-1
+apertium-spa:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-spa
+  version: 1.1.0~r79716-1
+apertium-spa-arg:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-spa-arg
+  version: 0.4.0~r64399-1
+apertium-spa-cat:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-spa-cat
+  version: 2.1.0~r79717-1
+apertium-spa-ita:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-spa-ita
+  version: 0.2.0~r78826-1
+apertium-srd:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-srd
+  version: 0.9.0~r72792-1
+apertium-srd-ita:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-srd-ita
+  version: 0.9.0~r72554-1
+apertium-swe:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-swe
+  version: 0.7.0~r69513-1
+apertium-swe-dan:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-swe-dan
+  version: 0.7.0~r66063-1
+apertium-swe-nor:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-swe-nor
+  version: 0.2.0~r69544-1
+apertium-tat:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-tat
+  version: 0.1.0~r60887-1
+apertium-urd:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-urd
+  version: 0.1.0~r61311-1
+apertium-urd-hin:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: apertium-urd-hin
+  version: 0.1.0~r64379-1
+apitrace:
+  bugs:
+  - '871158'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:50:34
+  removal_date: 2017-09-04 22:24:18
+  source: apitrace
+  version: 7.1+git20170623.d38a69d6+repack-1
+aplus-fsf:
+  bugs:
+  - '871171'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:04:04
+  removal_date: 2017-09-04 22:25:02
+  source: aplus-fsf
+  version: 4.22.1-9
+apt-offline:
+  bugs:
+  - '871656'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:53:20
+  removal_date: 2017-09-08 13:21:02
+  source: apt-offline
+  version: 1.8.1
+ariba:
+  buggy_dependencies:
+  - capnproto
+  bugs: []
+  bugs_dependencies:
+  - '853342'
+  - '853440'
+  - '853539'
+  - '871118'
+  - '871175'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:34:45
+  removal_date: 2017-09-06 00:31:18
+  source: ariba
+  version: 2.10.1+ds-1
+asn1c:
+  bugs:
+  - '867065'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:20:52
+  removal_date: 2017-08-24 15:09:08
+  source: asn1c
+  version: 0.9.27+dfsg-5
+atlas-cpp:
+  bugs:
+  - '853323'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:30:49
+  removal_date: 2017-09-04 00:42:04
+  source: atlas-cpp
+  version: 0.6.3-3
+aufs:
+  bugs:
+  - '865614'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:05:01
+  rdeps:
+  - aufs-tools
+  - fsprotect
+  removal_date: 2017-09-20 09:21:03
+  source: aufs
+  version: 4.9+20161219-2
+aufs-tools:
+  buggy_dependencies:
+  - aufs
+  bugs: []
+  bugs_dependencies:
+  - '865614'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:05:01
+  removal_date: 2017-09-20 09:21:03
+  source: aufs-tools
+  version: 1:4.1+20161219-1
+autobahn-cpp:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: autobahn-cpp
+  version: 0.2.1-2
+avro-java:
+  bugs:
+  - '871340'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:22:32
+  removal_date: 2017-09-05 16:09:54
+  source: avro-java
+  version: 1.7.7-2
+awesome:
+  buggy_dependencies:
+  - lua-lgi
+  bugs: []
+  bugs_dependencies:
+  - '870834'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:36:54
+  removal_date: 2017-09-18 17:09:05
+  source: awesome
+  version: 4.0-1
+banshee:
+  bugs:
+  - '790198'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:30:52
+  rdeps:
+  - banshee-community-extensions
+  - gnome-do-plugins
+  - tangerine
+  removal_date: 2017-09-14 10:27:03
+  source: banshee
+  version: 2.6.2-6.1
+banshee-community-extensions:
+  buggy_dependencies:
+  - banshee
+  bugs: []
+  bugs_dependencies:
+  - '790198'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:52
+  removal_date: 2017-09-14 10:27:03
+  source: banshee-community-extensions
+  version: 2.4.0-4
+berkshelf-api:
+  bugs:
+  - '870744'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:52:30
+  removal_date: 2017-09-06 03:06:06
+  source: berkshelf-api
+  version: 2.2.0-1
+bind-dyndb-ldap:
+  bugs:
+  - '853326'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:23:54
+  removal_date: 2017-09-02 07:57:03
+  source: bind-dyndb-ldap
+  version: 10.1-1
+binutils-msp430:
+  bugs:
+  - '853329'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:26:53
+  rdeps:
+  - gcc-msp430
+  - gdb-msp430
+  - msp430-libc
+  removal_date: 2017-09-04 00:42:04
+  source: binutils-msp430
+  version: 2.22~msp20120406-5.1
+birdfont:
+  bugs:
+  - '871963'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:52:29
+  removal_date: 2017-09-19 22:58:04
+  source: birdfont
+  version: 2.19.0-1
+blam:
+  bugs:
+  - '871829'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:52:20
+  removal_date: 2017-09-10 03:39:01
+  source: blam
+  version: 1.8.9-4
+borgbackup:
+  buggy_dependencies:
+  - pytest-catchlog
+  bugs: []
+  bugs_dependencies:
+  - '871998'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:36:53
+  removal_date: 2017-09-26 12:42:02
+  source: borgbackup
+  version: 1.0.11-3
+bppphyview:
+  buggy_dependencies:
+  - libbpp-phyl
+  bugs: []
+  bugs_dependencies:
+  - '871085'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:11:41
+  removal_date: 2017-09-19 22:19:31
+  source: bppphyview
+  version: 0.3.0-1.1
+bppsuite:
+  buggy_dependencies:
+  - libbpp-phyl
+  bugs:
+  - '871098'
+  bugs_dependencies:
+  - '871085'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:11:41
+  removal_date: 2017-09-04 22:19:31
+  source: bppsuite
+  version: 2.3.1-3
+bugwarrior:
+  buggy_dependencies:
+  - kitchen
+  bugs: []
+  bugs_dependencies:
+  - '868680'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:57:06
+  removal_date: 2017-09-20 19:09:03
+  source: bugwarrior
+  version: 1.4.0+git2017010601-1
+bwm-ng:
+  bugs:
+  - '853339'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:31:48
+  removal_date: 2017-09-06 15:09:06
+  source: bwm-ng
+  version: 0.6.1-2
+caffe:
+  buggy_dependencies:
+  - skimage
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  - '871095'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:10:18
+  removal_date: 2017-09-17 21:39:05
+  source: caffe
+  version: 1.0.0-3
+caffe-contrib:
+  buggy_dependencies:
+  - skimage
+  - statsmodels
+  bugs:
+  - '871232'
+  bugs_dependencies:
+  - '868977'
+  - '871095'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:10:18
+  removal_date: 2017-09-02 21:39:05
+  source: caffe-contrib
+  version: 1.0.0-3
+cairo-dock:
+  buggy_dependencies:
+  - cairo-dock-plug-ins
+  bugs: []
+  bugs_dependencies:
+  - '866634'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:04:05
+  removal_date: 2017-09-20 06:42:05
+  source: cairo-dock
+  version: 3.4.1-1.1
+cairo-dock-plug-ins:
+  bugs:
+  - '866634'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:04:05
+  rdeps:
+  - cairo-dock
+  removal_date: 2017-09-18 18:42:04
+  source: cairo-dock-plug-ins
+  version: 3.4.1-1
+caneda:
+  bugs:
+  - '871168'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:55:15
+  removal_date: 2017-09-04 22:24:52
+  source: caneda
+  version: 0.3.0-1
+capnproto:
+  bugs:
+  - '853342'
+  - '853440'
+  - '853539'
+  - '871118'
+  - '871175'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:34:45
+  rdeps:
+  - ariba
+  - harvest-tools
+  - mash
+  removal_date: 2017-09-06 00:31:18
+  source: capnproto
+  version: 0.5.3-2
+cbmc:
+  bugs:
+  - '871068'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:10:34
+  removal_date: 2017-09-04 22:18:34
+  source: cbmc
+  version: 5.6-1
+ccdproc:
+  buggy_dependencies:
+  - pytest-catchlog
+  - skimage
+  bugs: []
+  bugs_dependencies:
+  - '871095'
+  - '871998'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:10:18
+  removal_date: 2017-09-19 22:20:05
+  source: ccdproc
+  version: 1.2.0-2
+celery:
+  bugs:
+  - '867481'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:22:24
+  rdeps:
+  - celery-haystack
+  - django-celery
+  - django-celery-transactions
+  - flower
+  - prospector
+  - pylint-celery
+  - python-raven
+  removal_date: 2017-08-31 10:27:02
+  source: celery
+  version: 3.1.23-7
+celery-haystack:
+  buggy_dependencies:
+  - celery
+  bugs: []
+  bugs_dependencies:
+  - '867481'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:24
+  removal_date: 2017-08-31 10:27:02
+  source: celery-haystack
+  version: 0.10-1
+certmonger:
+  buggy_dependencies:
+  - xmlrpc-c
+  bugs: []
+  bugs_dependencies:
+  - '871290'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:00:45
+  removal_date: 2017-09-20 14:57:17
+  source: certmonger
+  version: 0.79.3-1
+chemfp:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: chemfp
+  version: 1.1p1-2.1
+cinfony:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-18 18:42:04
+  source: cinfony
+  version: 1.2-1
+clj-http-clojure:
+  buggy_dependencies:
+  - clj-tuple-clojure
+  bugs: []
+  bugs_dependencies:
+  - '872228'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:38:59
+  removal_date: 2017-09-28 09:15:01
+  source: clj-http-clojure
+  version: 2.3.0-1
+clj-tuple-clojure:
+  bugs:
+  - '872228'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:38:59
+  rdeps:
+  - clj-http-clojure
+  - potemkin-clojure
+  removal_date: 2017-09-28 09:15:01
+  source: clj-tuple-clojure
+  version: 0.2.2-1
+clustershell:
+  bugs:
+  - '870359'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:29:10
+  removal_date: 2017-09-06 15:09:09
+  source: clustershell
+  version: 1.7.3-1
+coinor-dylp:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: coinor-dylp
+  version: 1.6.0-1.1
+collectd:
+  buggy_dependencies:
+  - libwebsockets
+  - nut
+  bugs:
+  - '871062'
+  - '872276'
+  bugs_dependencies:
+  - '853515'
+  - '853579'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:39:30
+  rdeps:
+  - freeradius
+  - kcollectd
+  removal_date: 2017-09-22 16:36:22
+  source: collectd
+  version: 5.7.1-1.1
+comet-ms:
+  buggy_dependencies:
+  - libmstoolkit
+  bugs: []
+  bugs_dependencies:
+  - '853351'
+  - '853498'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:47:40
+  removal_date: 2017-09-16 17:06:05
+  source: comet-ms
+  version: 2014022-3
+condor:
+  bugs:
+  - '868905'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:10:33
+  removal_date: 2017-08-31 23:21:03
+  source: condor
+  version: 8.4.11~dfsg.1-1
+conky:
+  bugs:
+  - '853353'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:11:41
+  removal_date: 2017-09-03 18:06:06
+  source: conky
+  version: 1.10.6-1
+cookiecutter:
+  buggy_dependencies:
+  - pytest-catchlog
+  - pytest-mock
+  bugs: []
+  bugs_dependencies:
+  - '871127'
+  - '871998'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:36:53
+  removal_date: 2017-09-19 22:22:20
+  source: cookiecutter
+  version: 1.5.0-2
+courier:
+  buggy_dependencies:
+  - mgetty
+  bugs:
+  - '871586'
+  bugs_dependencies:
+  - '853548'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:04:35
+  rdeps:
+  - courier-filter-perl
+  - couriergrey
+  - mysqmail
+  - sqwebmail-de
+  removal_date: 2017-09-18 15:57:02
+  source: courier
+  version: 0.76.3-5
+courier-filter-perl:
+  buggy_dependencies:
+  - courier
+  - mgetty
+  bugs: []
+  bugs_dependencies:
+  - '853548'
+  - '871586'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:04:35
+  removal_date: 2017-09-18 15:57:02
+  source: courier-filter-perl
+  version: 0.200+ds-4
+couriergrey:
+  buggy_dependencies:
+  - courier
+  - mgetty
+  bugs: []
+  bugs_dependencies:
+  - '853548'
+  - '871586'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:04:35
+  removal_date: 2017-09-18 15:57:02
+  source: couriergrey
+  version: 0.3.2-5
+crac:
+  buggy_dependencies:
+  - jellyfish
+  bugs: []
+  bugs_dependencies:
+  - '872262'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:26:47
+  removal_date: 2017-09-28 13:00:01
+  source: crac
+  version: 2.5.0+dfsg-2
+csh:
+  bugs:
+  - '853361'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:41:48
+  rdeps:
+  - acedb
+  - aces3
+  - coinor-dylp
+  - ctn
+  - ctsim
+  - dicomnifti
+  - doris
+  - exodusii
+  - ferret-vis
+  - latex-mk
+  - magic
+  - pyferret
+  - qflow
+  - sift
+  removal_date: 2017-09-04 00:42:04
+  source: csh
+  version: 20110502-2.2
+ctn:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: ctn
+  version: 3.2.0~dfsg-5
+ctsim:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: ctsim
+  version: 5.2.0-4
+cufflinks:
+  bugs:
+  - '871234'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:28:47
+  removal_date: 2017-09-05 03:45:02
+  source: cufflinks
+  version: 2.2.1-3
+curlpp:
+  bugs:
+  - '871281'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:58:29
+  removal_date: 2017-09-05 14:51:40
+  source: curlpp
+  version: 0.8.1-1
+cwltool:
+  bugs:
+  - '868614'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:15:51
+  removal_date: 2017-08-25 18:21:02
+  source: cwltool
+  version: 1.0.20170810192106-1
+dadadodo:
+  bugs:
+  - '871166'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:53:34
+  removal_date: 2017-09-04 22:24:45
+  source: dadadodo
+  version: 1.04-6
+dbf2mysql:
+  bugs:
+  - '853368'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:32:10
+  removal_date: 2017-09-01 17:33:06
+  source: dbf2mysql
+  version: 1.14a-5
+debci:
+  buggy_dependencies:
+  - lxc
+  bugs: []
+  bugs_dependencies:
+  - '853531'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:35:11
+  removal_date: 2017-09-15 02:33:03
+  source: debci
+  version: 1.5.1
+debian-zh-faq:
+  bugs:
+  - '871818'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:10:29
+  removal_date: 2017-09-09 20:33:02
+  source: debian-zh-faq
+  version: '1.13'
+deluge:
+  bugs:
+  - '870737'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:53:00
+  removal_date: 2017-09-02 15:48:01
+  source: deluge
+  version: 1.3.15-2
+denemo:
+  buggy_dependencies:
+  - lilypond
+  bugs: []
+  bugs_dependencies:
+  - '866129'
+  - '871372'
+  - '871631'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:46:48
+  removal_date: 2017-09-20 16:11:47
+  source: denemo
+  version: 2.2.0-1
+dicomnifti:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: dicomnifti
+  version: 2.32.1-1
+dislocker:
+  bugs:
+  - '853374'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:16:11
+  rdeps:
+  - forensics-all
+  - forensics-extra
+  removal_date: 2017-09-21 21:57:03
+  source: dislocker
+  version: 0.6.1-7
+disulfinder:
+  bugs:
+  - '853375'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:04:29
+  rdeps:
+  - predictprotein
+  removal_date: 2017-09-04 00:42:04
+  source: disulfinder
+  version: 1.2.11-6
+django-celery:
+  buggy_dependencies:
+  - celery
+  bugs: []
+  bugs_dependencies:
+  - '867481'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:24
+  removal_date: 2017-08-31 10:27:02
+  source: django-celery
+  version: 3.1.17-4
+django-celery-transactions:
+  buggy_dependencies:
+  - celery
+  bugs: []
+  bugs_dependencies:
+  - '867481'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:24
+  removal_date: 2017-08-31 10:27:02
+  source: django-celery-transactions
+  version: 0.3.6-2
+django-uwsgi:
+  buggy_dependencies:
+  - mongo-cxx-driver-legacy
+  bugs: []
+  bugs_dependencies:
+  - '853554'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:40:32
+  removal_date: 2017-09-04 00:42:04
+  source: django-uwsgi
+  version: 0.2.1-1
+dolfin:
+  bugs:
+  - '871279'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:39:35
+  rdeps:
+  - fenics
+  removal_date: 2017-09-20 14:51:34
+  source: dolfin
+  version: 2016.2.0-5
+doodle:
+  buggy_dependencies:
+  - mp4v2
+  bugs: []
+  bugs_dependencies:
+  - '853560'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:32:37
+  removal_date: 2017-09-04 00:42:04
+  source: doodle
+  version: 0.7.0-9
+doris:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: doris
+  version: 5.0.3~beta+dfsg-1
+dosemu:
+  bugs:
+  - '866965'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:03:19
+  removal_date: 2017-08-23 18:45:04
+  source: dosemu
+  version: 1.4.0.7+20130105+b028d3f-2
+drbd-doc:
+  buggy_dependencies:
+  - gtkmathview
+  bugs: []
+  bugs_dependencies:
+  - '853436'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:52:33
+  removal_date: 2017-09-04 00:42:04
+  source: drbd-doc
+  version: 8.4~20151102-1
+drumgizmo:
+  bugs:
+  - '853378'
+  - '870400'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:57:06
+  removal_date: 2017-08-27 11:42:05
+  source: drumgizmo
+  version: 0.9.11-4
+ecere-sdk:
+  buggy_dependencies:
+  - upx-ucl
+  bugs: []
+  bugs_dependencies:
+  - '853694'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:17
+  removal_date: 2017-09-06 00:42:04
+  source: ecere-sdk
+  version: 0.44.15-1
+echolot:
+  bugs:
+  - '871558'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:58:58
+  removal_date: 2017-09-07 08:09:02
+  source: echolot
+  version: 2.1.9-1.1
+eclipse-anyedit:
+  bugs:
+  - '871209'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:24:27
+  removal_date: 2017-09-04 22:58:13
+  source: eclipse-anyedit
+  version: 2.4.4-1
+eclipse-cdt:
+  bugs:
+  - '871201'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:51:00
+  removal_date: 2017-09-19 22:57:17
+  source: eclipse-cdt
+  version: 8.6.0-2
+eclipse-cdt-pkg-config:
+  bugs:
+  - '871198'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:43:10
+  removal_date: 2017-09-04 22:57:39
+  source: eclipse-cdt-pkg-config
+  version: 1.0.0~git20130115-2
+eclipse-eclox:
+  bugs:
+  - '871200'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:41:27
+  removal_date: 2017-09-04 22:57:46
+  source: eclipse-eclox
+  version: 0.10.1-2
+eclipse-egit:
+  bugs:
+  - '871189'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:37:06
+  removal_date: 2017-09-04 22:57:07
+  source: eclipse-egit
+  version: 3.7.0-2
+eclipse-emf:
+  bugs:
+  - '871197'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:26:44
+  removal_date: 2017-09-19 22:57:36
+  source: eclipse-emf
+  version: 2.8.3-2
+eclipse-gef:
+  bugs:
+  - '869089'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:23:49
+  removal_date: 2017-09-02 12:27:01
+  source: eclipse-gef
+  version: 3.9.100-1
+eclipse-linuxtools:
+  bugs:
+  - '871193'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:30:14
+  removal_date: 2017-09-04 22:57:20
+  source: eclipse-linuxtools
+  version: 3.1.0-1
+eclipse-mercurialeclipse:
+  bugs:
+  - '871212'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:21:23
+  removal_date: 2017-09-04 22:58:23
+  source: eclipse-mercurialeclipse
+  version: 1.9.4-2
+eclipse-mylyn:
+  bugs:
+  - '871341'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:24:08
+  removal_date: 2017-09-19 22:57:17
+  source: eclipse-mylyn
+  version: 3.12.0-2
+eclipse-mylyn-tasks-github:
+  bugs:
+  - '871191'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:24:03
+  removal_date: 2017-09-04 22:57:14
+  source: eclipse-mylyn-tasks-github
+  version: 3.3.0-2
+eclipse-ptp:
+  bugs:
+  - '871205'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:45:02
+  removal_date: 2017-09-04 22:58:00
+  source: eclipse-ptp
+  version: 8.1.1-1
+eclipse-pydev:
+  bugs:
+  - '871211'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:26:53
+  removal_date: 2017-09-04 22:58:20
+  source: eclipse-pydev
+  version: 3.9.2-5
+eclipse-remote-services-api:
+  bugs:
+  - '871192'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:22:05
+  removal_date: 2017-09-19 22:57:17
+  source: eclipse-remote-services-api
+  version: 8.0.0-1
+eclipse-rse:
+  bugs:
+  - '871196'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:58:50
+  removal_date: 2017-09-19 22:57:32
+  source: eclipse-rse
+  version: 3.4.2-2
+eclipse-wtp:
+  bugs:
+  - '871359'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:31:44
+  removal_date: 2017-09-05 16:11:00
+  source: eclipse-wtp
+  version: 3.6.3-3
+eclipse-xsd:
+  bugs:
+  - '869221'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:04:47
+  removal_date: 2017-09-03 16:57:01
+  source: eclipse-xsd
+  version: 2.9.0-1
+eficas:
+  buggy_dependencies:
+  - openturns
+  bugs: []
+  bugs_dependencies:
+  - '871298'
+  - '871505'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:25
+  removal_date: 2017-09-20 14:57:39
+  source: eficas
+  version: 6.4.0-1-1.2
+ejabberd:
+  buggy_dependencies:
+  - erlang-p1-oauth2
+  bugs: []
+  bugs_dependencies:
+  - '871190'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:50:59
+  removal_date: 2017-09-19 22:57:10
+  source: ejabberd
+  version: 17.07-1
+ejabberd-contrib:
+  buggy_dependencies:
+  - erlang-p1-oauth2
+  bugs: []
+  bugs_dependencies:
+  - '871190'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:50:59
+  removal_date: 2017-09-19 22:57:10
+  source: ejabberd-contrib
+  version: 0.2017.07.17~dfsg0-1
+ekiga:
+  buggy_dependencies:
+  - opal
+  bugs: []
+  bugs_dependencies:
+  - '853585'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:43:09
+  removal_date: 2017-09-04 00:42:04
+  source: ekiga
+  version: 4.0.1-7
+elixir-lang:
+  bugs:
+  - '871120'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:30:01
+  removal_date: 2017-09-04 22:21:53
+  source: elixir-lang
+  version: 1.3.3-2
+encfs:
+  bugs:
+  - '853390'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:31:36
+  rdeps:
+  - libpam-encfs
+  removal_date: 2017-09-04 14:51:06
+  source: encfs
+  version: 1.9.1-4
+eris:
+  buggy_dependencies:
+  - wfmath
+  bugs:
+  - '853391'
+  bugs_dependencies:
+  - '853706'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:17:54
+  removal_date: 2017-09-04 00:42:04
+  source: eris
+  version: 1.3.23-5
+erlang-cuttlefish:
+  bugs:
+  - '871350'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:27:27
+  removal_date: 2017-09-05 16:10:27
+  source: erlang-cuttlefish
+  version: 2.0.11+dfsg-1
+erlang-p1-oauth2:
+  bugs:
+  - '871190'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:50:59
+  rdeps:
+  - ejabberd
+  - ejabberd-contrib
+  removal_date: 2017-09-19 22:57:10
+  source: erlang-p1-oauth2
+  version: 0.6.1-3
+etl:
+  bugs:
+  - '853674'
+  - '853675'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:35:04
+  rdeps:
+  - synfig
+  - synfigstudio
+  removal_date: 2017-09-16 18:42:06
+  source: etl
+  version: 0.04.19-1
+exactimage:
+  bugs:
+  - '853393'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:09:45
+  rdeps:
+  - pdfsandwich
+  removal_date: 2017-09-04 00:42:04
+  source: exactimage
+  version: 0.9.2-1
+exodusii:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: exodusii
+  version: 6.02.dfsg.1-7
+extsmail:
+  bugs:
+  - '871086'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:23:47
+  removal_date: 2017-09-04 22:19:34
+  source: extsmail
+  version: 2.0-2
+eztrace:
+  bugs:
+  - '871151'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:58:02
+  removal_date: 2017-09-19 22:23:54
+  source: eztrace
+  version: 1.1-5-5
+eztrace-contrib:
+  bugs:
+  - '871221'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:26:51
+  removal_date: 2017-09-19 22:23:54
+  source: eztrace-contrib
+  version: 1.1-5-5
+fenics:
+  buggy_dependencies:
+  - dolfin
+  bugs: []
+  bugs_dependencies:
+  - '871279'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:39:35
+  removal_date: 2017-09-20 14:51:34
+  source: fenics
+  version: 1:2016.2.0.1
+ferret-vis:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: ferret-vis
+  version: 7.1-1
+fetchmail:
+  bugs:
+  - '768843'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:58:37
+  removal_date: 2017-08-28 00:42:06
+  source: fetchmail
+  version: 6.3.26-3
+ffcall:
+  bugs:
+  - '871567'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:50:43
+  rdeps:
+  - mlpcap
+  removal_date: 2017-09-22 12:45:05
+  source: ffcall
+  version: 1.10+cvs20100619-4
+fflas-ffpack:
+  buggy_dependencies:
+  - givaro
+  bugs: []
+  bugs_dependencies:
+  - '871278'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:55:14
+  removal_date: 2017-09-20 14:51:32
+  source: fflas-ffpack
+  version: 2.2.2-5
+flmsg:
+  buggy_dependencies:
+  - xmlrpc-c
+  bugs: []
+  bugs_dependencies:
+  - '871290'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:00:45
+  removal_date: 2017-09-20 14:57:17
+  source: flmsg
+  version: 2.0.16.01-1
+flower:
+  buggy_dependencies:
+  - celery
+  bugs: []
+  bugs_dependencies:
+  - '867481'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:24
+  removal_date: 2017-08-31 10:27:02
+  source: flower
+  version: 0.8.3+dfsg-2
+flowgrind:
+  buggy_dependencies:
+  - xmlrpc-c
+  bugs: []
+  bugs_dependencies:
+  - '871290'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:00:45
+  removal_date: 2017-09-20 14:57:17
+  source: flowgrind
+  version: 0.8.0-1
+fmcs:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: fmcs
+  version: 1.0-1
+forensics-all:
+  buggy_dependencies:
+  - dislocker
+  bugs: []
+  bugs_dependencies:
+  - '853374'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:16:11
+  removal_date: 2017-09-21 21:57:03
+  source: forensics-all
+  version: '1.6'
+forensics-extra:
+  buggy_dependencies:
+  - dislocker
+  - ncrack
+  bugs: []
+  bugs_dependencies:
+  - '853374'
+  - '853570'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:16:11
+  removal_date: 2017-09-06 21:42:05
+  source: forensics-extra
+  version: '1.8'
+freedombox-setup:
+  buggy_dependencies:
+  - python-django-bootstrap-form
+  bugs: []
+  bugs_dependencies:
+  - '865938'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:33:48
+  removal_date: 2017-09-14 05:06:03
+  source: freedombox-setup
+  version: '0.10'
+freeradius:
+  buggy_dependencies:
+  - collectd
+  - libwebsockets
+  - nut
+  bugs: []
+  bugs_dependencies:
+  - '853515'
+  - '853579'
+  - '871062'
+  - '872276'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:39:30
+  removal_date: 2017-09-22 16:36:22
+  source: freeradius
+  version: 3.0.15+dfsg-2
+freerdp2:
+  bugs:
+  - '871150'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:05:49
+  removal_date: 2017-09-04 22:23:51
+  source: freerdp2
+  version: 2.0.0~git20161130.1.e60d0d5+dfsg1-1
+frobby:
+  bugs:
+  - '871280'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:13:47
+  removal_date: 2017-09-05 14:51:37
+  source: frobby
+  version: 0.9.0-2
+fsprotect:
+  buggy_dependencies:
+  - aufs
+  bugs: []
+  bugs_dependencies:
+  - '865614'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:05:01
+  removal_date: 2017-09-20 09:21:03
+  source: fsprotect
+  version: 1.0.7
+fw4spl:
+  bugs:
+  - '871111'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:16:01
+  removal_date: 2017-09-06 06:51:09
+  source: fw4spl
+  version: 11.0.4-1
+ganglia-nagios-bridge:
+  buggy_dependencies:
+  - icinga2
+  bugs: []
+  bugs_dependencies:
+  - '867884'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:26:54
+  removal_date: 2017-08-23 10:09:02
+  source: ganglia-nagios-bridge
+  version: 1.2.1-1
+gasic:
+  buggy_dependencies:
+  - t-coffee
+  bugs: []
+  bugs_dependencies:
+  - '853677'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-03 20:05:47
+  source: gasic
+  version: 0.0.r19-1
+gcc-6-doc:
+  buggy_dependencies:
+  - gcc-doc-defaults
+  bugs: []
+  bugs_dependencies:
+  - '871220'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:24:11
+  removal_date: 2017-09-22 03:09:05
+  source: gcc-6-doc
+  version: 6.3.0-1
+gcc-doc-defaults:
+  bugs:
+  - '871220'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:24:11
+  rdeps:
+  - gcc-6-doc
+  removal_date: 2017-09-22 03:09:05
+  source: gcc-doc-defaults
+  version: '5:16'
+gcc-msp430:
+  buggy_dependencies:
+  - binutils-msp430
+  bugs: []
+  bugs_dependencies:
+  - '853329'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:26:53
+  removal_date: 2017-09-04 00:42:04
+  source: gcc-msp430
+  version: 4.6.3~mspgcc-20120406-7.1
+gdb-msp430:
+  buggy_dependencies:
+  - binutils-msp430
+  bugs: []
+  bugs_dependencies:
+  - '853329'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:26:53
+  removal_date: 2017-09-04 00:42:04
+  source: gdb-msp430
+  version: 7.2a~mspgcc-20111205-3.1
+geany-plugins:
+  bugs:
+  - '790201'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:58:55
+  removal_date: 2017-08-29 06:42:06
+  source: geany-plugins
+  version: 1.31+dfsg-1
+gearmand:
+  bugs:
+  - '853414'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:56:01
+  rdeps:
+  - mod-gearman
+  - php-gearman
+  removal_date: 2017-09-04 00:42:04
+  source: gearmand
+  version: 1.0.6-9
+giella-sme:
+  buggy_dependencies:
+  - hfst
+  bugs: []
+  bugs_dependencies:
+  - '871145'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:10:41
+  removal_date: 2017-09-22 13:03:05
+  source: giella-sme
+  version: 0.0.20150917~r121176-2
+gitlab:
+  buggy_dependencies:
+  - ruby-flowdock
+  - ruby-gemnasium-gitlab-service
+  - ruby-influxdb
+  - ruby-omniauth-crowd
+  - ruby-sham-rack
+  bugs: []
+  bugs_dependencies:
+  - '867645'
+  - '867649'
+  - '867654'
+  - '867655'
+  - '868750'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:59:01
+  removal_date: 2017-09-13 12:27:03
+  source: gitlab
+  version: 8.13.11+dfsg1-11
+givaro:
+  bugs:
+  - '871278'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:55:14
+  rdeps:
+  - fflas-ffpack
+  - libm4rie
+  - linbox
+  removal_date: 2017-09-20 14:51:32
+  source: givaro
+  version: 4.0.2-6
+gkrelluim:
+  buggy_dependencies:
+  - uim
+  bugs: []
+  bugs_dependencies:
+  - '868031'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:45:32
+  removal_date: 2017-09-15 06:54:05
+  source: gkrelluim
+  version: 0.3.1-6
+glueviz:
+  buggy_dependencies:
+  - skimage
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  - '871095'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:10:18
+  removal_date: 2017-09-17 21:39:05
+  source: glueviz
+  version: 0.9.1+dfsg-1
+gmchess:
+  bugs:
+  - '853423'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:22:34
+  rdeps:
+  - pidgin-gmchess
+  removal_date: 2017-09-22 09:09:05
+  source: gmchess
+  version: 0.29.6-2.1
+gnome-do-plugins:
+  buggy_dependencies:
+  - banshee
+  bugs: []
+  bugs_dependencies:
+  - '790198'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:52
+  removal_date: 2017-09-14 10:27:03
+  source: gnome-do-plugins
+  version: 0.8.5-4
+gnome-flashback:
+  bugs:
+  - '870700'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:16:38
+  removal_date: 2017-09-02 10:39:01
+  source: gnome-flashback
+  version: 3.24.0-2
+gnome-video-arcade:
+  buggy_dependencies:
+  - mame
+  bugs: []
+  bugs_dependencies:
+  - '853535'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:47:29
+  removal_date: 2017-09-17 22:21:17
+  source: gnome-video-arcade
+  version: 0.8.6-2
+gnubiff:
+  bugs:
+  - '815632'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:56:29
+  removal_date: 2017-08-28 17:15:08
+  source: gnubiff
+  version: 2.2.16-3
+gnugk:
+  buggy_dependencies:
+  - mysql++
+  bugs: []
+  bugs_dependencies:
+  - '871302'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:50:05
+  removal_date: 2017-09-20 14:57:49
+  source: gnugk
+  version: 2:3.6-1
+gnuift:
+  buggy_dependencies:
+  - mysql++
+  bugs: []
+  bugs_dependencies:
+  - '871302'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:50:05
+  removal_date: 2017-09-20 14:57:49
+  source: gnuift
+  version: 0.1.14+ds-1
+gnunet:
+  buggy_dependencies:
+  - mp4v2
+  bugs: []
+  bugs_dependencies:
+  - '853560'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:32:37
+  removal_date: 2017-09-04 00:42:04
+  source: gnunet
+  version: 0.10.1-4
+gnunet-fuse:
+  buggy_dependencies:
+  - mp4v2
+  bugs: []
+  bugs_dependencies:
+  - '853560'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:32:37
+  removal_date: 2017-09-04 00:42:04
+  source: gnunet-fuse
+  version: 0.10.0-2
+gnunet-gtk:
+  buggy_dependencies:
+  - mp4v2
+  bugs: []
+  bugs_dependencies:
+  - '853560'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:32:37
+  removal_date: 2017-09-04 00:42:04
+  source: gnunet-gtk
+  version: 0.10.1-5
+golang-github-dop251-goja:
+  bugs:
+  - '871203'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:19:53
+  removal_date: 2017-09-04 22:57:54
+  source: golang-github-dop251-goja
+  version: 0.0~git20170430.0.d382686-1
+golang-github-rsc-letsencrypt:
+  buggy_dependencies:
+  - golang-github-xenolf-lego
+  bugs: []
+  bugs_dependencies:
+  - '869270'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:58:16
+  removal_date: 2017-09-04 09:18:01
+  source: golang-github-rsc-letsencrypt
+  version: 0.0~git20160929.0.76104d2-3
+golang-github-xenolf-lego:
+  bugs:
+  - '869270'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:58:16
+  rdeps:
+  - golang-github-rsc-letsencrypt
+  removal_date: 2017-09-04 09:18:01
+  source: golang-github-xenolf-lego
+  version: 0.3.1-4
+goldencheetah:
+  buggy_dependencies:
+  - qwtplot3d
+  bugs: []
+  bugs_dependencies:
+  - '853635'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:05
+  removal_date: 2017-09-04 00:42:04
+  source: goldencheetah
+  version: 4.0.0~DEV1607-2
+graphlan:
+  buggy_dependencies:
+  - t-coffee
+  bugs: []
+  bugs_dependencies:
+  - '853677'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-04 00:42:04
+  source: graphlan
+  version: 1.1-2
+grok:
+  bugs:
+  - '869594'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:39:49
+  removal_date: 2017-09-04 03:51:06
+  source: grok
+  version: 1.20110708.1-4.1
+groonga:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: groonga
+  version: 7.0.5-1
+groonga-normalizer-mysql:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: groonga-normalizer-mysql
+  version: 1.1.1-3
+gtkmathview:
+  bugs:
+  - '853436'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:52:33
+  rdeps:
+  - drbd-doc
+  - lablgtkmathview
+  removal_date: 2017-09-04 00:42:04
+  source: gtkmathview
+  version: 0.8.0-14
+gtkpod:
+  buggy_dependencies:
+  - libgda5
+  bugs: []
+  bugs_dependencies:
+  - '870741'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:30
+  removal_date: 2017-09-17 17:27:02
+  source: gtkpod
+  version: 2.1.5-6
+gtranslator:
+  buggy_dependencies:
+  - libgda5
+  bugs: []
+  bugs_dependencies:
+  - '870741'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:30
+  removal_date: 2017-09-17 17:27:02
+  source: gtranslator
+  version: 2.91.7-3
+gubbins:
+  buggy_dependencies:
+  - t-coffee
+  bugs: []
+  bugs_dependencies:
+  - '853677'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-04 00:42:04
+  source: gubbins
+  version: 2.2.0-1
+gyoto:
+  bugs:
+  - '871283'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:30:43
+  rdeps:
+  - python-pyorick
+  - yorick
+  - yorick-av
+  - yorick-cubeview
+  - yorick-curses
+  - yorick-gl
+  - yorick-gy
+  - yorick-hdf5
+  - yorick-imutil
+  - yorick-mira
+  - yorick-ml4
+  - yorick-mpeg
+  - yorick-optimpack
+  - yorick-soy
+  - yorick-spydr
+  - yorick-yao
+  - yorick-yeti
+  - yorick-ygsl
+  - yorick-ynfft
+  - yorick-yutils
+  - yorick-z
+  - yp-svipc
+  removal_date: 2017-09-20 14:51:46
+  source: gyoto
+  version: 1.2.0-2
+harvest-tools:
+  buggy_dependencies:
+  - capnproto
+  bugs: []
+  bugs_dependencies:
+  - '853342'
+  - '853440'
+  - '853539'
+  - '871118'
+  - '871175'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:34:45
+  removal_date: 2017-09-06 00:31:18
+  source: harvest-tools
+  version: 1.3-1
+haskell-dice:
+  buggy_dependencies:
+  - haskell-hashable-extras
+  bugs: []
+  bugs_dependencies:
+  - '868621'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:59:30
+  removal_date: 2017-08-30 00:45:01
+  source: haskell-dice
+  version: 0.1-4
+haskell-hashable-extras:
+  bugs:
+  - '868621'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:59:30
+  rdeps:
+  - haskell-dice
+  - haskell-log-domain
+  - haskell-misfortune
+  - haskell-random-fu
+  removal_date: 2017-08-30 00:45:01
+  source: haskell-hashable-extras
+  version: 0.2.3-3
+haskell-log-domain:
+  buggy_dependencies:
+  - haskell-hashable-extras
+  bugs: []
+  bugs_dependencies:
+  - '868621'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:59:30
+  removal_date: 2017-08-30 00:45:01
+  source: haskell-log-domain
+  version: 0.10.3.1-6
+haskell-misfortune:
+  buggy_dependencies:
+  - haskell-hashable-extras
+  bugs: []
+  bugs_dependencies:
+  - '868621'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:59:30
+  removal_date: 2017-08-30 00:45:01
+  source: haskell-misfortune
+  version: 0.1.1.2-5
+haskell-random-fu:
+  buggy_dependencies:
+  - haskell-hashable-extras
+  bugs: []
+  bugs_dependencies:
+  - '868621'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:59:30
+  removal_date: 2017-08-30 00:45:01
+  source: haskell-random-fu
+  version: 0.2.7.0-3
+hexcurse:
+  bugs:
+  - '853441'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:39:11
+  removal_date: 2017-09-01 17:42:06
+  source: hexcurse
+  version: 1.58-1
+hfst:
+  bugs:
+  - '871145'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:10:41
+  rdeps:
+  - apertium
+  - apertium-af-nl
+  - apertium-arg
+  - apertium-arg-cat
+  - apertium-br-fr
+  - apertium-ca-it
+  - apertium-cat
+  - apertium-cy-en
+  - apertium-dan
+  - apertium-dan-nor
+  - apertium-en-ca
+  - apertium-en-es
+  - apertium-en-gl
+  - apertium-eo-ca
+  - apertium-eo-en
+  - apertium-eo-es
+  - apertium-eo-fr
+  - apertium-es-ast
+  - apertium-es-gl
+  - apertium-es-pt
+  - apertium-es-ro
+  - apertium-eu-en
+  - apertium-eu-es
+  - apertium-fr-es
+  - apertium-fra
+  - apertium-fra-cat
+  - apertium-hbs
+  - apertium-hbs-eng
+  - apertium-hbs-mkd
+  - apertium-hbs-slv
+  - apertium-hin
+  - apertium-id-ms
+  - apertium-is-sv
+  - apertium-isl
+  - apertium-isl-eng
+  - apertium-ita
+  - apertium-kaz
+  - apertium-kaz-tat
+  - apertium-lex-tools
+  - apertium-mk-bg
+  - apertium-mk-en
+  - apertium-mlt-ara
+  - apertium-nno
+  - apertium-nno-nob
+  - apertium-nob
+  - apertium-oc-ca
+  - apertium-oc-es
+  - apertium-pt-ca
+  - apertium-pt-gl
+  - apertium-sme-nob
+  - apertium-spa
+  - apertium-spa-arg
+  - apertium-spa-cat
+  - apertium-spa-ita
+  - apertium-srd
+  - apertium-srd-ita
+  - apertium-swe
+  - apertium-swe-dan
+  - apertium-swe-nor
+  - apertium-tat
+  - apertium-urd
+  - apertium-urd-hin
+  - giella-sme
+  removal_date: 2017-09-22 13:03:05
+  source: hfst
+  version: 3.10.0~r2798-3
+hol88:
+  bugs:
+  - '871364'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:43:42
+  removal_date: 2017-09-05 16:11:19
+  source: hol88
+  version: 2.02.19940316-33
+htmlcxx:
+  bugs:
+  - '871295'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:19:30
+  rdeps:
+  - lgogdownloader
+  removal_date: 2017-09-20 14:57:31
+  source: htmlcxx
+  version: 0.86-1.1
+hylafax:
+  bugs:
+  - '853448'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:56:41
+  removal_date: 2017-08-31 09:45:08
+  source: hylafax
+  version: 3:6.0.6-7
+icinga2:
+  bugs:
+  - '867884'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:26:54
+  rdeps:
+  - ganglia-nagios-bridge
+  - syslog-nagios-bridge
+  removal_date: 2017-08-23 10:09:02
+  source: icinga2
+  version: 2.6.0-2
+impressive:
+  bugs:
+  - '867092'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:21:51
+  rdeps:
+  - impressive-display
+  removal_date: 2017-09-14 10:09:05
+  source: impressive
+  version: 0.11.1-1.1
+impressive-display:
+  buggy_dependencies:
+  - impressive
+  bugs: []
+  bugs_dependencies:
+  - '867092'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:21:51
+  removal_date: 2017-09-14 10:09:05
+  source: impressive-display
+  version: 0.3.2-1
+influxdb-python:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: influxdb-python
+  version: 4.1.1-1
+injeqt:
+  bugs:
+  - '853452'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:16:56
+  removal_date: 2017-09-07 15:09:08
+  source: injeqt
+  version: 1.1.0-1
+invesalius:
+  buggy_dependencies:
+  - skimage
+  bugs: []
+  bugs_dependencies:
+  - '871095'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:10:18
+  removal_date: 2017-09-19 22:20:05
+  source: invesalius
+  version: 3.0.1-1
+ipsec-tools:
+  bugs:
+  - '853457'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:56:08
+  rdeps:
+  - mininet
+  - openvswitch
+  removal_date: 2017-09-05 21:33:12
+  source: ipsec-tools
+  version: 1:0.8.2+20140711-9
+janus:
+  buggy_dependencies:
+  - libwebsockets
+  bugs: []
+  bugs_dependencies:
+  - '853515'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:04:06
+  removal_date: 2017-09-22 21:00:11
+  source: janus
+  version: 0.2.4-2
+jasypt:
+  bugs:
+  - '871195'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:45:26
+  removal_date: 2017-09-19 22:57:28
+  source: jasypt
+  version: 1.9.2-1
+jellyfish:
+  bugs:
+  - '872262'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:26:47
+  rdeps:
+  - crac
+  - quorum
+  - rapmap
+  - salmon
+  removal_date: 2017-09-28 13:00:01
+  source: jellyfish
+  version: 2.2.6-1
+kadu:
+  bugs:
+  - '853470'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:46:22
+  removal_date: 2017-09-07 21:42:04
+  source: kadu
+  version: 4.1-1
+kcollectd:
+  buggy_dependencies:
+  - collectd
+  - libwebsockets
+  - nut
+  bugs: []
+  bugs_dependencies:
+  - '853515'
+  - '853579'
+  - '871062'
+  - '872276'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:39:30
+  removal_date: 2017-09-22 16:36:22
+  source: kcollectd
+  version: 0.9-4
+kdb:
+  bugs:
+  - '871182'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:50:27
+  removal_date: 2017-09-04 22:25:41
+  source: kdb
+  version: 3.0.1.1-1
+kfreebsd-10:
+  bugs:
+  - '868929'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:52:59
+  removal_date: 2017-09-01 12:42:05
+  source: kfreebsd-10
+  version: 10.3~svn300087-3
+kitchen:
+  bugs:
+  - '868680'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:57:06
+  rdeps:
+  - bugwarrior
+  - moksha.common
+  - moksha.hub
+  - python-fedora
+  - rtv
+  - taskw
+  removal_date: 2017-09-20 19:09:03
+  source: kitchen
+  version: 1.2.4-2
+kmymoney:
+  bugs:
+  - '871373'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:21:20
+  removal_date: 2017-09-05 16:11:50
+  source: kmymoney
+  version: 4.8.0-2
+kodi:
+  buggy_dependencies:
+  - libcec
+  bugs:
+  - '853476'
+  bugs_dependencies:
+  - '853485'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:41:28
+  rdeps:
+  - kodi-pvr-argustv
+  - kodi-pvr-dvbviewer
+  - kodi-pvr-hdhomerun
+  - kodi-pvr-hts
+  - kodi-pvr-iptvsimple
+  - kodi-pvr-mediaportal-tvserver
+  - kodi-pvr-mythtv
+  - kodi-pvr-nextpvr
+  - kodi-pvr-njoy
+  - kodi-pvr-vdr-vnsi
+  - kodi-pvr-vuplus
+  - kodi-pvr-wmc
+  - kodi-visualization-spectrum
+  - kodiplatform
+  - xbmc-pvr-addons
+  removal_date: 2017-09-04 00:42:04
+  source: kodi
+  version: 2:17.3+dfsg1-2
+kodi-pvr-argustv:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-argustv
+  version: 2.5.0+git20160923-3
+kodi-pvr-dvbviewer:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-dvbviewer
+  version: 2.4.6+dfsg1-1
+kodi-pvr-hdhomerun:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-hdhomerun
+  version: 2.4.2+git20160820-2
+kodi-pvr-hts:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-hts
+  version: 3.4.13-1
+kodi-pvr-iptvsimple:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-iptvsimple
+  version: 2.4.4+git20161211-1
+kodi-pvr-mediaportal-tvserver:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-mediaportal-tvserver
+  version: 2.4.14+dfsg1-1
+kodi-pvr-mythtv:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-mythtv
+  version: 4.12.12+dfsg1-1
+kodi-pvr-nextpvr:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-nextpvr
+  version: 2.4.7+git20161017-2
+kodi-pvr-njoy:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-njoy
+  version: 2.4.0+git20160518-2
+kodi-pvr-vdr-vnsi:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-vdr-vnsi
+  version: 2.6.12-1
+kodi-pvr-vuplus:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-vuplus
+  version: 2.4.4+git20160820-2
+kodi-pvr-wmc:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-pvr-wmc
+  version: 1.4.4+git20160820-2
+kodi-visualization-spectrum:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodi-visualization-spectrum
+  version: 1.1.1-1
+kodiplatform:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: kodiplatform
+  version: 17.1.0-1
+kpmcore:
+  bugs:
+  - '870435'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:05:06
+  removal_date: 2017-08-30 22:51:01
+  source: kpmcore
+  version: 3.1.2-1
+ktp-approver:
+  buggy_dependencies:
+  - telepathy-logger-qt
+  bugs: []
+  bugs_dependencies:
+  - '869887'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:01
+  removal_date: 2017-09-09 11:54:04
+  source: ktp-approver
+  version: 15.08.3-1
+ktp-auth-handler:
+  buggy_dependencies:
+  - telepathy-logger-qt
+  bugs: []
+  bugs_dependencies:
+  - '869887'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:01
+  removal_date: 2017-09-09 11:54:04
+  source: ktp-auth-handler
+  version: 15.08.3-1
+ktp-common-internals:
+  buggy_dependencies:
+  - telepathy-logger-qt
+  bugs: []
+  bugs_dependencies:
+  - '869887'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:01
+  removal_date: 2017-09-09 11:54:04
+  source: ktp-common-internals
+  version: 15.08.3-1.1
+ktp-contact-list:
+  buggy_dependencies:
+  - telepathy-logger-qt
+  bugs: []
+  bugs_dependencies:
+  - '869887'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:01
+  removal_date: 2017-09-09 11:54:04
+  source: ktp-contact-list
+  version: 15.08.3-1
+ktp-contact-runner:
+  buggy_dependencies:
+  - telepathy-logger-qt
+  bugs: []
+  bugs_dependencies:
+  - '869887'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:01
+  removal_date: 2017-09-09 11:54:04
+  source: ktp-contact-runner
+  version: 15.08.3-1
+ktp-desktop-applets:
+  buggy_dependencies:
+  - telepathy-logger-qt
+  bugs: []
+  bugs_dependencies:
+  - '869887'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:01
+  removal_date: 2017-09-09 11:54:04
+  source: ktp-desktop-applets
+  version: 15.08.3-1
+ktp-filetransfer-handler:
+  buggy_dependencies:
+  - telepathy-logger-qt
+  bugs: []
+  bugs_dependencies:
+  - '869887'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:01
+  removal_date: 2017-09-09 11:54:04
+  source: ktp-filetransfer-handler
+  version: 15.08.3-1
+ktp-kded-integration-module:
+  buggy_dependencies:
+  - telepathy-logger-qt
+  bugs: []
+  bugs_dependencies:
+  - '869887'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:01
+  removal_date: 2017-09-09 11:54:04
+  source: ktp-kded-integration-module
+  version: 15.08.3-1
+ktp-send-file:
+  buggy_dependencies:
+  - telepathy-logger-qt
+  bugs: []
+  bugs_dependencies:
+  - '869887'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:01
+  removal_date: 2017-09-09 11:54:04
+  source: ktp-send-file
+  version: 15.08.3-1
+kvmtool:
+  bugs:
+  - '871486'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:59:06
+  removal_date: 2017-09-06 12:27:02
+  source: kvmtool
+  version: 0.20161128-1
+lablgtkmathview:
+  buggy_dependencies:
+  - gtkmathview
+  bugs: []
+  bugs_dependencies:
+  - '853436'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:52:33
+  removal_date: 2017-09-04 00:42:04
+  source: lablgtkmathview
+  version: 0.7.8-6
+latex-mk:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: latex-mk
+  version: 2.1-2
+lava-server:
+  buggy_dependencies:
+  - lxc
+  bugs: []
+  bugs_dependencies:
+  - '853531'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:35:11
+  removal_date: 2017-09-15 02:33:03
+  source: lava-server
+  version: 2017.7-1
+lgogdownloader:
+  buggy_dependencies:
+  - htmlcxx
+  bugs: []
+  bugs_dependencies:
+  - '871295'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:19:30
+  removal_date: 2017-09-20 14:57:31
+  source: lgogdownloader
+  version: 3.2-1
+libapache-mod-musicindex:
+  buggy_dependencies:
+  - mp4v2
+  bugs: []
+  bugs_dependencies:
+  - '853560'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:32:37
+  removal_date: 2017-09-04 00:42:04
+  source: libapache-mod-musicindex
+  version: 1.4.1-2
+libapp-perlrdf-command-query-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libapp-perlrdf-command-query-perl
+  version: 0.004-2
+libattean-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libattean-perl
+  version: 0.017-1
+libatteanx-endpoint-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libatteanx-endpoint-perl
+  version: 0.001-3
+libatteanx-store-ldf-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libatteanx-store-ldf-perl
+  version: 0.04-1
+libatteanx-store-sparql-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libatteanx-store-sparql-perl
+  version: 0.010-1
+libbio-primerdesigner-perl:
+  buggy_dependencies:
+  - primer3
+  bugs: []
+  bugs_dependencies:
+  - '853621'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:19:05
+  removal_date: 2017-09-04 00:42:04
+  source: libbio-primerdesigner-perl
+  version: 0.07-5
+libbpp-phyl:
+  bugs:
+  - '871085'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:11:41
+  rdeps:
+  - bppphyview
+  - bppsuite
+  - libbpp-phyl-omics
+  - libbpp-qt
+  - maffilter
+  removal_date: 2017-09-19 22:19:31
+  source: libbpp-phyl
+  version: 2.3.1-9
+libbpp-phyl-omics:
+  buggy_dependencies:
+  - libbpp-phyl
+  bugs: []
+  bugs_dependencies:
+  - '871085'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:11:41
+  removal_date: 2017-09-19 22:19:31
+  source: libbpp-phyl-omics
+  version: 2.3.1-4
+libbpp-qt:
+  buggy_dependencies:
+  - libbpp-phyl
+  bugs: []
+  bugs_dependencies:
+  - '871085'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:11:41
+  removal_date: 2017-09-19 22:19:31
+  source: libbpp-qt
+  version: 2.2.0-1
+libcatmandu-rdf-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libcatmandu-rdf-perl
+  version: 0.31-1
+libcatmandu-store-lucy-perl:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: libcatmandu-store-lucy-perl
+  version: 0.0101-5
+libccaudio2:
+  buggy_dependencies:
+  - ucommon
+  bugs: []
+  bugs_dependencies:
+  - '853691'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:13:21
+  removal_date: 2017-09-19 15:12:11
+  source: libccaudio2
+  version: 2.1.3-1.1
+libccrtp:
+  buggy_dependencies:
+  - ucommon
+  bugs: []
+  bugs_dependencies:
+  - '853691'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:13:21
+  removal_date: 2017-09-19 15:12:11
+  source: libccrtp
+  version: 2.0.9-2.2
+libcec:
+  bugs:
+  - '853485'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:41:28
+  rdeps:
+  - kodi
+  - kodi-pvr-argustv
+  - kodi-pvr-dvbviewer
+  - kodi-pvr-hdhomerun
+  - kodi-pvr-hts
+  - kodi-pvr-iptvsimple
+  - kodi-pvr-mediaportal-tvserver
+  - kodi-pvr-mythtv
+  - kodi-pvr-nextpvr
+  - kodi-pvr-njoy
+  - kodi-pvr-vdr-vnsi
+  - kodi-pvr-vuplus
+  - kodi-pvr-wmc
+  - kodi-visualization-spectrum
+  - kodiplatform
+  - xbmc-pvr-addons
+  removal_date: 2017-09-04 00:42:04
+  source: libcec
+  version: 4.0.1+dfsg1-1
+libcereal:
+  bugs:
+  - '853486'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:41:13
+  rdeps:
+  - rapmap
+  - salmon
+  removal_date: 2017-09-04 00:42:04
+  source: libcereal
+  version: 1.2.1-2
+libdata-hal-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libdata-hal-perl
+  version: 1.000-2
+libdata-messagepack-perl:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: libdata-messagepack-perl
+  version: 1.00-1
+libdata-messagepack-stream-perl:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: libdata-messagepack-stream-perl
+  version: 1.01+ds-1
+libdist-inkt-doap-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libdist-inkt-doap-perl
+  version: 0.022-1
+libdist-inkt-profile-tobyink-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libdist-inkt-profile-tobyink-perl
+  version: 0.024-1
+libextractor:
+  buggy_dependencies:
+  - mp4v2
+  bugs: []
+  bugs_dependencies:
+  - '853560'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:32:37
+  removal_date: 2017-09-04 00:42:04
+  source: libextractor
+  version: 1:1.3-4
+libextractor-java:
+  buggy_dependencies:
+  - mp4v2
+  bugs: []
+  bugs_dependencies:
+  - '853560'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:32:37
+  removal_date: 2017-09-04 00:42:04
+  source: libextractor-java
+  version: 1.0.0-1
+libextractor-python:
+  buggy_dependencies:
+  - mp4v2
+  bugs: []
+  bugs_dependencies:
+  - '853560'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:32:37
+  removal_date: 2017-09-04 00:42:04
+  source: libextractor-python
+  version: 1:0.6-7
+libgda5:
+  bugs:
+  - '870741'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:23:30
+  rdeps:
+  - anjuta
+  - anjuta-extras
+  - gtkpod
+  - gtranslator
+  removal_date: 2017-09-17 17:27:02
+  source: libgda5
+  version: 5.2.4-3
+libhtml-embedded-turtle-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libhtml-embedded-turtle-perl
+  version: 0.404-1
+libhtml-html5-microdata-parser-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libhtml-html5-microdata-parser-perl
+  version: 0.100-2
+libhtml-html5-outline-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libhtml-html5-outline-perl
+  version: 0.006-2
+libhtml-html5-parser-perl:
+  bugs:
+  - '750946'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:03:36
+  rdeps:
+  - libapp-perlrdf-command-query-perl
+  - libattean-perl
+  - libatteanx-endpoint-perl
+  - libatteanx-store-ldf-perl
+  - libatteanx-store-sparql-perl
+  - libcatmandu-rdf-perl
+  - libdata-hal-perl
+  - libdist-inkt-doap-perl
+  - libdist-inkt-profile-tobyink-perl
+  - libhtml-embedded-turtle-perl
+  - libhtml-html5-microdata-parser-perl
+  - libhtml-html5-outline-perl
+  - libhtml-microformats-perl
+  - libhttp-link-parser-perl
+  - libhttp-lrdd-perl
+  - liblwp-useragent-chicaching-perl
+  - libmodule-install-copyright-perl
+  - libmodule-install-doap-perl
+  - libmodule-install-doapchangesets-perl
+  - libmodule-install-rdf-perl
+  - libmodule-package-rdf-perl
+  - libowl-directsemantics-perl
+  - librdf-acl-perl
+  - librdf-aref-perl
+  - librdf-closure-perl
+  - librdf-doap-perl
+  - librdf-endpoint-perl
+  - librdf-generator-http-perl
+  - librdf-generator-void-perl
+  - librdf-helper-properties-perl
+  - librdf-icalendar-perl
+  - librdf-kml-exporter-perl
+  - librdf-ldf-perl
+  - librdf-linkeddata-perl
+  - librdf-ns-perl
+  - librdf-query-client-perl
+  - librdf-query-perl
+  - librdf-queryx-lazy-perl
+  - librdf-rdfa-generator-perl
+  - librdf-rdfa-parser-perl
+  - librdf-trin3-perl
+  - librdf-trine-node-literal-xml-perl
+  - librdf-trine-perl
+  - librdf-trinex-functions-perl
+  - librdf-trinex-serializer-mockturtlesoup-perl
+  - librdf-vcard-perl
+  - libtest-rdf-doap-version-perl
+  - libtest-rdf-perl
+  - libtypes-uri-perl
+  - liburi-namespacemap-perl
+  - libweb-id-perl
+  - libwww-finger-perl
+  - libxml-atom-fromowl-perl
+  - libxml-atom-microformats-perl
+  - libxml-atom-owl-perl
+  - libxml-grddl-perl
+  - libxrd-parser-perl
+  - perlrdf
+  removal_date: 2017-09-20 21:27:03
+  source: libhtml-html5-parser-perl
+  version: 0.301-1
+libhtml-microformats-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libhtml-microformats-perl
+  version: 0.105-4
+libhttp-link-parser-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libhttp-link-parser-perl
+  version: 0.200-1
+libhttp-lrdd-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libhttp-lrdd-perl
+  version: 0.106-2
+liblwp-useragent-chicaching-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: liblwp-useragent-chicaching-perl
+  version: 0.04-1
+libm4rie:
+  buggy_dependencies:
+  - givaro
+  bugs: []
+  bugs_dependencies:
+  - '871278'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:55:14
+  removal_date: 2017-09-20 14:51:32
+  source: libm4rie
+  version: 20150908-1
+libmodule-install-copyright-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libmodule-install-copyright-perl
+  version: 0.009-1
+libmodule-install-doap-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libmodule-install-doap-perl
+  version: 0.006-1
+libmodule-install-doapchangesets-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libmodule-install-doapchangesets-perl
+  version: 0.206-1
+libmodule-install-rdf-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libmodule-install-rdf-perl
+  version: 0.009-1
+libmodule-package-rdf-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libmodule-package-rdf-perl
+  version: 0.014-1
+libmstoolkit:
+  bugs:
+  - '853351'
+  - '853498'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:47:40
+  rdeps:
+  - comet-ms
+  removal_date: 2017-09-16 17:06:05
+  source: libmstoolkit
+  version: 77.0.0-1
+libowl-directsemantics-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libowl-directsemantics-perl
+  version: 0.001-2
+libpam-encfs:
+  buggy_dependencies:
+  - encfs
+  bugs: []
+  bugs_dependencies:
+  - '853390'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:31:36
+  removal_date: 2017-09-04 14:51:06
+  source: libpam-encfs
+  version: 0.1.4.4-8
+librdf-acl-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-acl-perl
+  version: 0.104-1
+librdf-aref-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-aref-perl
+  version: 0.27-1
+librdf-closure-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-closure-perl
+  version: 0.001-4
+librdf-doap-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-doap-perl
+  version: 0.012-1
+librdf-endpoint-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-endpoint-perl
+  version: 0.07-1
+librdf-generator-http-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-generator-http-perl
+  version: 0.003-2
+librdf-generator-void-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-generator-void-perl
+  version: 0.16-2
+librdf-helper-properties-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-helper-properties-perl
+  version: 0.24-1
+librdf-icalendar-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-icalendar-perl
+  version: 0.005-1
+librdf-kml-exporter-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-kml-exporter-perl
+  version: 0.003-1
+librdf-ldf-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-ldf-perl
+  version: 0.22-1
+librdf-linkeddata-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-linkeddata-perl
+  version: 0.76-1
+librdf-ns-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-ns-perl
+  version: 20170111-1
+librdf-query-client-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-query-client-perl
+  version: 0.114-1
+librdf-query-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-query-perl
+  version: 2.918-1
+librdf-queryx-lazy-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-queryx-lazy-perl
+  version: 0.003-1
+librdf-rdfa-generator-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-rdfa-generator-perl
+  version: 0.103-2
+librdf-rdfa-parser-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-rdfa-parser-perl
+  version: 1.097-1
+librdf-trin3-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-trin3-perl
+  version: 0.206-2
+librdf-trine-node-literal-xml-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-trine-node-literal-xml-perl
+  version: 0.16-2
+librdf-trine-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-trine-perl
+  version: 1.018-1
+librdf-trinex-functions-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-trinex-functions-perl
+  version: 0.005-1
+librdf-trinex-serializer-mockturtlesoup-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-trinex-serializer-mockturtlesoup-perl
+  version: 0.006-1
+librdf-vcard-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: librdf-vcard-perl
+  version: 0.012-1
+libreswan:
+  bugs:
+  - '871128'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:13:19
+  removal_date: 2017-09-04 22:22:24
+  source: libreswan
+  version: 3.20-7
+libtest-rdf-doap-version-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libtest-rdf-doap-version-perl
+  version: 0.010-1
+libtest-rdf-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libtest-rdf-perl
+  version: 1.20-1
+libtest-redisserver-perl:
+  bugs:
+  - '868945'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:50:44
+  removal_date: 2017-08-25 18:48:05
+  source: libtest-redisserver-perl
+  version: 0.20-1
+libtext-xslate-perl:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: libtext-xslate-perl
+  version: 3.4.0-1
+libtypes-uri-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libtypes-uri-perl
+  version: 0.006-1
+liburi-namespacemap-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: liburi-namespacemap-perl
+  version: 1.00-2
+libweb-id-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libweb-id-perl
+  version: 1.927-1
+libwebsockets:
+  bugs:
+  - '853515'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:04:06
+  rdeps:
+  - collectd
+  - freeradius
+  - janus
+  - kcollectd
+  - mosquitto
+  - mosquitto-auth-plugin
+  removal_date: 2017-09-22 21:00:11
+  source: libwebsockets
+  version: 2.0.3-2
+libwfut:
+  bugs:
+  - '853516'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:47:38
+  removal_date: 2017-09-04 00:42:04
+  source: libwfut
+  version: 0.2.3-4
+libwww-finger-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libwww-finger-perl
+  version: 0.105-1
+libxml-atom-fromowl-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libxml-atom-fromowl-perl
+  version: 0.102-1
+libxml-atom-microformats-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libxml-atom-microformats-perl
+  version: 0.004-3
+libxml-atom-owl-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libxml-atom-owl-perl
+  version: 0.104-1
+libxml-grddl-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libxml-grddl-perl
+  version: 0.004-2
+libxrd-parser-perl:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: libxrd-parser-perl
+  version: 0.201-3
+lierolibre:
+  bugs:
+  - '853517'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:23:56
+  removal_date: 2017-08-25 21:33:05
+  source: lierolibre
+  version: 0.5-2
+likwid:
+  bugs:
+  - '871065'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:11:23
+  removal_date: 2017-09-04 22:18:24
+  source: likwid
+  version: 4.2.0-2
+lilypond:
+  bugs:
+  - '866129'
+  - '871372'
+  - '871631'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:46:48
+  rdeps:
+  - denemo
+  removal_date: 2017-09-20 16:11:47
+  source: lilypond
+  version: 2.18.2-8
+linbox:
+  buggy_dependencies:
+  - givaro
+  bugs:
+  - '871713'
+  bugs_dependencies:
+  - '871278'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:55:14
+  removal_date: 2017-09-05 14:51:32
+  source: linbox
+  version: 1.4.2-4
+lmfit-py:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: lmfit-py
+  version: 0.9.5+dfsg-2
+lmms:
+  bugs:
+  - '853527'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:04:24
+  removal_date: 2017-09-01 10:27:03
+  source: lmms
+  version: 1.1.3-7
+lua-lgi:
+  bugs:
+  - '870834'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:36:54
+  rdeps:
+  - awesome
+  removal_date: 2017-09-18 17:09:05
+  source: lua-lgi
+  version: 0.9.1-1
+lua-nvim:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: lua-nvim
+  version: 0.0.1-26-2
+lxc:
+  bugs:
+  - '853531'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:35:11
+  rdeps:
+  - debci
+  - lava-server
+  - lxctl
+  - python-lxc
+  - vagrant-lxc
+  removal_date: 2017-09-15 02:33:03
+  source: lxc
+  version: 1:2.0.8-1
+lxctl:
+  buggy_dependencies:
+  - lxc
+  bugs: []
+  bugs_dependencies:
+  - '853531'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:35:11
+  removal_date: 2017-09-15 02:33:03
+  source: lxctl
+  version: 0.3.1+debian-3
+madness:
+  bugs:
+  - '869990'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:24:17
+  rdeps:
+  - mpqc3
+  - tiledarray
+  removal_date: 2017-09-10 13:45:02
+  source: madness
+  version: 0.10.1~gite4aa500e-10
+maffilter:
+  buggy_dependencies:
+  - libbpp-phyl
+  bugs: []
+  bugs_dependencies:
+  - '871085'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:11:41
+  removal_date: 2017-09-19 22:19:31
+  source: maffilter
+  version: 1.2.1+dfsg-1
+magic:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: magic
+  version: 8.0.210-2
+mame:
+  bugs:
+  - '853535'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:47:29
+  rdeps:
+  - gnome-video-arcade
+  - mame-extra
+  - mess-desktop-entries
+  removal_date: 2017-09-17 22:21:17
+  source: mame
+  version: 0.182-1
+mame-extra:
+  buggy_dependencies:
+  - mame
+  bugs: []
+  bugs_dependencies:
+  - '853535'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:47:29
+  removal_date: 2017-09-17 22:21:17
+  source: mame-extra
+  version: 0.182-1
+mash:
+  buggy_dependencies:
+  - capnproto
+  bugs: []
+  bugs_dependencies:
+  - '853342'
+  - '853440'
+  - '853539'
+  - '871118'
+  - '871175'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:34:45
+  removal_date: 2017-09-06 00:31:18
+  source: mash
+  version: 1.1.1-2
+matrix-synapse:
+  buggy_dependencies:
+  - pydenticon
+  bugs: []
+  bugs_dependencies:
+  - '871079'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:44
+  removal_date: 2017-09-19 22:19:11
+  source: matrix-synapse
+  version: 0.19.2+dfsg-6
+mercator:
+  buggy_dependencies:
+  - wfmath
+  bugs: []
+  bugs_dependencies:
+  - '853706'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:54
+  removal_date: 2017-09-04 00:42:04
+  source: mercator
+  version: 0.3.3-4
+mess-desktop-entries:
+  buggy_dependencies:
+  - mame
+  bugs: []
+  bugs_dependencies:
+  - '853535'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:47:29
+  removal_date: 2017-09-17 22:21:17
+  source: mess-desktop-entries
+  version: 0.2-2
+metaphlan2:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: metaphlan2
+  version: 2.6.0+ds-2
+mgba:
+  bugs:
+  - '853546'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:43:00
+  removal_date: 2017-09-01 21:12:20
+  source: mgba
+  version: 0.5.2+dfsg1-2
+mgetty:
+  bugs:
+  - '853548'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:04:35
+  rdeps:
+  - courier
+  - courier-filter-perl
+  - couriergrey
+  - mysqmail
+  - sqwebmail-de
+  removal_date: 2017-09-18 15:57:02
+  source: mgetty
+  version: 1.1.36-3
+milter-greylist:
+  buggy_dependencies:
+  - opendkim
+  bugs: []
+  bugs_dependencies:
+  - '864162'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:58:57
+  removal_date: 2017-08-24 04:24:03
+  source: milter-greylist
+  version: 4.5.11-1.1
+mininet:
+  buggy_dependencies:
+  - ipsec-tools
+  bugs: []
+  bugs_dependencies:
+  - '853457'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:56:08
+  removal_date: 2017-09-05 21:33:12
+  source: mininet
+  version: 2.2.2-1
+mlpcap:
+  buggy_dependencies:
+  - ffcall
+  bugs: []
+  bugs_dependencies:
+  - '871567'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:50:43
+  removal_date: 2017-09-22 12:45:05
+  source: mlpcap
+  version: 0.9-17
+mlterm:
+  buggy_dependencies:
+  - uim
+  bugs: []
+  bugs_dependencies:
+  - '868031'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:45:32
+  removal_date: 2017-09-15 06:54:05
+  source: mlterm
+  version: 3.5.0-1
+mobyle:
+  buggy_dependencies:
+  - t-coffee
+  bugs: []
+  bugs_dependencies:
+  - '853677'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-04 00:42:04
+  source: mobyle
+  version: 1.5.5+dfsg-2
+mobyle-programs:
+  buggy_dependencies:
+  - t-coffee
+  bugs: []
+  bugs_dependencies:
+  - '853677'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-04 00:42:04
+  source: mobyle-programs
+  version: 5.1.2-1
+mobyle-tutorials:
+  buggy_dependencies:
+  - t-coffee
+  bugs: []
+  bugs_dependencies:
+  - '853677'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-04 00:42:04
+  source: mobyle-tutorials
+  version: 1.5.0-2
+mod-gearman:
+  buggy_dependencies:
+  - gearmand
+  bugs: []
+  bugs_dependencies:
+  - '853414'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:56:01
+  removal_date: 2017-09-04 00:42:04
+  source: mod-gearman
+  version: 1.5.5-1
+moksha.common:
+  buggy_dependencies:
+  - kitchen
+  bugs: []
+  bugs_dependencies:
+  - '868680'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:57:06
+  removal_date: 2017-09-20 19:09:03
+  source: moksha.common
+  version: 1.2.3-3
+moksha.hub:
+  buggy_dependencies:
+  - kitchen
+  bugs: []
+  bugs_dependencies:
+  - '868680'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:57:06
+  removal_date: 2017-09-20 19:09:03
+  source: moksha.hub
+  version: 1.4.1-2
+mongo-cxx-driver-legacy:
+  bugs:
+  - '853554'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:40:32
+  rdeps:
+  - django-uwsgi
+  - uwsgi
+  removal_date: 2017-09-04 00:42:04
+  source: mongo-cxx-driver-legacy
+  version: 1.1.2-5
+mosh:
+  bugs:
+  - '871030'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:24:13
+  removal_date: 2017-09-04 18:39:04
+  source: mosh
+  version: 1.3.2-1
+mosquitto:
+  buggy_dependencies:
+  - libwebsockets
+  bugs: []
+  bugs_dependencies:
+  - '853515'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:04:06
+  removal_date: 2017-09-22 21:00:11
+  source: mosquitto
+  version: 1.4.10-3
+mosquitto-auth-plugin:
+  buggy_dependencies:
+  - libwebsockets
+  bugs: []
+  bugs_dependencies:
+  - '853515'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:04:06
+  removal_date: 2017-09-22 21:00:11
+  source: mosquitto-auth-plugin
+  version: 0.0.7-2.1
+mozc:
+  buggy_dependencies:
+  - uim
+  bugs: []
+  bugs_dependencies:
+  - '868031'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:45:32
+  removal_date: 2017-09-15 06:54:05
+  source: mozc
+  version: 2.20.2673.102+dfsg-1
+mp4v2:
+  bugs:
+  - '853560'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:32:37
+  rdeps:
+  - doodle
+  - gnunet
+  - gnunet-fuse
+  - gnunet-gtk
+  - libapache-mod-musicindex
+  - libextractor
+  - libextractor-java
+  - libextractor-python
+  - vdr-plugin-xineliboutput
+  removal_date: 2017-09-04 00:42:04
+  source: mp4v2
+  version: 2.0.0~dfsg0-5
+mpqc3:
+  buggy_dependencies:
+  - madness
+  - tiledarray
+  bugs: []
+  bugs_dependencies:
+  - '853682'
+  - '869990'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:04:39
+  removal_date: 2017-09-10 13:45:02
+  source: mpqc3
+  version: 0.0~git20170114-4
+mrpt:
+  bugs:
+  - '853563'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:04:00
+  removal_date: 2017-09-01 09:45:03
+  source: mrpt
+  version: 1:1.4.0-7
+msgpack-c:
+  bugs:
+  - '853564'
+  - '871140'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:18:28
+  rdeps:
+  - autobahn-cpp
+  - groonga
+  - groonga-normalizer-mysql
+  - libcatmandu-store-lucy-perl
+  - libdata-messagepack-perl
+  - libdata-messagepack-stream-perl
+  - libtext-xslate-perl
+  - lua-nvim
+  - neovim
+  - neovim-qt
+  - opendht
+  - ring
+  - ruby-neovim
+  - tmate
+  - webdis
+  removal_date: 2017-09-20 11:39:07
+  source: msgpack-c
+  version: 1.4.2-4
+msp430-libc:
+  buggy_dependencies:
+  - binutils-msp430
+  bugs: []
+  bugs_dependencies:
+  - '853329'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:26:53
+  removal_date: 2017-09-04 00:42:04
+  source: msp430-libc
+  version: 20120224-1
+mudlet:
+  bugs:
+  - '870208'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:50:28
+  removal_date: 2017-08-28 23:06:01
+  source: mudlet
+  version: 1:3.2.0-1
+mumble:
+  buggy_dependencies:
+  - zeroc-ice
+  bugs: []
+  bugs_dependencies:
+  - '871288'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:12:52
+  removal_date: 2017-09-20 14:57:12
+  source: mumble
+  version: 1.2.18-1
+munin-c:
+  bugs:
+  - '871108'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:05:03
+  removal_date: 2017-09-04 22:20:49
+  source: munin-c
+  version: 0.0.9-1
+murano-agent:
+  buggy_dependencies:
+  - python-oslo.service
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: murano-agent
+  version: 1:3.0.0-1
+mygui:
+  bugs:
+  - '871299'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:09:44
+  removal_date: 2017-09-05 14:57:41
+  source: mygui
+  version: 3.2.2-5
+mysql++:
+  bugs:
+  - '871302'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:50:05
+  rdeps:
+  - gnugk
+  - gnuift
+  removal_date: 2017-09-20 14:57:49
+  source: mysql++
+  version: 3.2.2+pristine-2
+mysqmail:
+  buggy_dependencies:
+  - courier
+  - mgetty
+  bugs: []
+  bugs_dependencies:
+  - '853548'
+  - '871586'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:04:35
+  removal_date: 2017-09-18 15:57:02
+  source: mysqmail
+  version: 0.4.9-10.2
+ncrack:
+  bugs:
+  - '853570'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:19:29
+  rdeps:
+  - forensics-extra
+  removal_date: 2017-09-06 21:42:05
+  source: ncrack
+  version: 0.5-3
+neovim:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: neovim
+  version: 0.2.0-3
+neovim-qt:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: neovim-qt
+  version: 0.2.7-3
+network-manager-l2tp:
+  buggy_dependencies:
+  - strongswan
+  bugs: []
+  bugs_dependencies:
+  - '872155'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:10:54
+  removal_date: 2017-09-27 17:12:02
+  source: network-manager-l2tp
+  version: 1.2.8-1
+network-manager-strongswan:
+  buggy_dependencies:
+  - strongswan
+  bugs: []
+  bugs_dependencies:
+  - '872155'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:10:54
+  removal_date: 2017-09-27 17:12:02
+  source: network-manager-strongswan
+  version: 1.4.2-1
+nixnote2:
+  buggy_dependencies:
+  - qevercloud
+  bugs: []
+  bugs_dependencies:
+  - '871202'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:22:04
+  removal_date: 2017-09-19 22:57:51
+  source: nixnote2
+  version: 2.0-1
+nuitka:
+  bugs:
+  - '871125'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:51:40
+  removal_date: 2017-09-04 22:22:12
+  source: nuitka
+  version: 0.5.27+ds-1
+nut:
+  bugs:
+  - '853579'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:04:06
+  rdeps:
+  - collectd
+  - freeradius
+  - kcollectd
+  - wmnut
+  removal_date: 2017-09-22 21:00:18
+  source: nut
+  version: 2.7.4-5
+odil:
+  bugs:
+  - '871301'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:05:09
+  removal_date: 2017-09-06 12:39:03
+  source: odil
+  version: 0.7.3-1
+onionbalance:
+  buggy_dependencies:
+  - pytest-mock
+  bugs: []
+  bugs_dependencies:
+  - '871127'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:10:20
+  removal_date: 2017-09-19 22:22:20
+  source: onionbalance
+  version: 0.1.6-1
+opal:
+  bugs:
+  - '853585'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:43:09
+  rdeps:
+  - ekiga
+  removal_date: 2017-09-04 00:42:04
+  source: opal
+  version: 3.10.10~dfsg2-2
+open-build-service:
+  buggy_dependencies:
+  - ruby-combustion
+  bugs: []
+  bugs_dependencies:
+  - '869034'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:46:40
+  removal_date: 2017-09-02 07:33:14
+  source: open-build-service
+  version: 2.7.4-2
+opendht:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: opendht
+  version: 1.3.5-1
+opendkim:
+  bugs:
+  - '864162'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:58:57
+  rdeps:
+  - milter-greylist
+  - opendmarc
+  removal_date: 2017-08-24 04:24:03
+  source: opendkim
+  version: 2.11.0~alpha-10
+opendmarc:
+  buggy_dependencies:
+  - opendkim
+  bugs: []
+  bugs_dependencies:
+  - '864162'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:58:57
+  removal_date: 2017-08-24 04:24:03
+  source: opendmarc
+  version: 1.3.2-2
+openfst:
+  bugs:
+  - '871170'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:29:04
+  removal_date: 2017-09-04 22:24:59
+  source: openfst
+  version: 1.5.3+r3-2
+opengrm-ngram:
+  bugs:
+  - '871061'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:04:39
+  removal_date: 2017-09-04 22:18:11
+  source: opengrm-ngram
+  version: 1.3.0-1
+openmw:
+  bugs:
+  - '871235'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:24:43
+  removal_date: 2017-09-05 04:03:02
+  source: openmw
+  version: 0.41.0-1
+openorienteering-mapper:
+  bugs:
+  - '871820'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:20:03
+  removal_date: 2017-09-09 21:15:01
+  source: openorienteering-mapper
+  version: 0.6.7-1
+opensaml2:
+  bugs:
+  - '853598'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:47:07
+  rdeps:
+  - shibboleth-resolver
+  - shibboleth-sp2
+  - wordpress-shibboleth
+  removal_date: 2017-09-04 00:42:04
+  source: opensaml2
+  version: 2.6.0-4
+opensmtpd-extras:
+  bugs:
+  - '866994'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:57:36
+  removal_date: 2017-08-29 09:21:08
+  source: opensmtpd-extras
+  version: 5.7.1-3
+openturns:
+  bugs:
+  - '871298'
+  - '871505'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:59:25
+  rdeps:
+  - eficas
+  removal_date: 2017-09-20 14:57:39
+  source: openturns
+  version: 1.7-3
+openvswitch:
+  buggy_dependencies:
+  - ipsec-tools
+  bugs: []
+  bugs_dependencies:
+  - '853457'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:56:08
+  removal_date: 2017-09-05 21:33:12
+  source: openvswitch
+  version: 2.6.2~pre+git20161223-3
+openzwave:
+  bugs:
+  - '871088'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:43:33
+  removal_date: 2017-09-05 18:09:03
+  source: openzwave
+  version: 1.5+ds-4
+openzwave-controlpanel:
+  bugs:
+  - '871217'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:16:17
+  removal_date: 2017-09-05 00:00:02
+  source: openzwave-controlpanel
+  version: 0.2a+git20161006.a390f35-1
+otb:
+  buggy_dependencies:
+  - shark
+  bugs: []
+  bugs_dependencies:
+  - '853658'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:35:43
+  removal_date: 2017-09-17 16:36:05
+  source: otb
+  version: 6.0.0+dfsg-4
+packer:
+  bugs:
+  - '869718'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:41:32
+  removal_date: 2017-09-06 17:21:05
+  source: packer
+  version: 0.10.2+dfsg-6
+palabos:
+  bugs:
+  - '871293'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:43:42
+  removal_date: 2017-09-05 14:57:25
+  source: palabos
+  version: 1.5~r1+repack1-2
+pandas:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: pandas
+  version: 0.19.2-5.1
+partd:
+  buggy_dependencies:
+  - python-blosc
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  - '869195'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-03 12:06:02
+  source: partd
+  version: 0.3.8-1
+patsy:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: patsy
+  version: 0.4.1+git34-ga5b54c2-1
+pdfsandwich:
+  buggy_dependencies:
+  - exactimage
+  bugs: []
+  bugs_dependencies:
+  - '853393'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:09:45
+  removal_date: 2017-09-04 00:42:04
+  source: pdfsandwich
+  version: 0.1.6-1
+perlrdf:
+  buggy_dependencies:
+  - libhtml-html5-parser-perl
+  bugs: []
+  bugs_dependencies:
+  - '750946'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:03:36
+  removal_date: 2017-09-20 21:27:03
+  source: perlrdf
+  version: 0.004-3
+php-gearman:
+  buggy_dependencies:
+  - gearmand
+  bugs: []
+  bugs_dependencies:
+  - '853414'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:56:01
+  removal_date: 2017-09-04 00:42:04
+  source: php-gearman
+  version: 2.0.3+1.1.2+-1
+physlock:
+  bugs:
+  - '869585'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:10:16
+  removal_date: 2017-09-06 11:39:06
+  source: physlock
+  version: 0.4.5-2
+pidgin-gmchess:
+  buggy_dependencies:
+  - gmchess
+  bugs: []
+  bugs_dependencies:
+  - '853423'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:22:34
+  removal_date: 2017-09-22 09:09:05
+  source: pidgin-gmchess
+  version: 0.02-1
+pinfo:
+  bugs:
+  - '853613'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:58:47
+  removal_date: 2017-08-25 17:48:32
+  source: pinfo
+  version: 0.6.9-5.1
+pingus:
+  bugs:
+  - '853614'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:28:30
+  removal_date: 2017-09-03 16:33:03
+  source: pingus
+  version: 0.7.6-3
+pkg-mozilla-archive-keyring:
+  bugs:
+  - '846892'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:39:59
+  removal_date: 2017-08-23 18:42:04
+  source: pkg-mozilla-archive-keyring
+  version: '1.1'
+plee-the-bear:
+  bugs:
+  - '853618'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:07:12
+  removal_date: 2017-09-02 17:24:05
+  source: plee-the-bear
+  version: 0.6.0-3.1
+plinth:
+  buggy_dependencies:
+  - python-django-bootstrap-form
+  bugs: []
+  bugs_dependencies:
+  - '865938'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:33:48
+  removal_date: 2017-09-14 05:06:03
+  source: plinth
+  version: 0.14.0+ds-1
+ploop:
+  bugs:
+  - '853619'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:00:22
+  rdeps:
+  - vzctl
+  - vzdump
+  removal_date: 2017-09-04 00:42:04
+  source: ploop
+  version: 1.15-2
+poretools:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: poretools
+  version: 0.6.0+dfsg-2
+postbooks:
+  bugs:
+  - '724305'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:47:18
+  rdeps:
+  - postbooks-updater
+  removal_date: 2017-09-20 12:42:06
+  source: postbooks
+  version: 4.10.1-1
+postbooks-updater:
+  buggy_dependencies:
+  - postbooks
+  bugs: []
+  bugs_dependencies:
+  - '724305'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:47:18
+  removal_date: 2017-09-20 12:42:06
+  source: postbooks-updater
+  version: 2.4.0-4
+potemkin-clojure:
+  buggy_dependencies:
+  - clj-tuple-clojure
+  bugs: []
+  bugs_dependencies:
+  - '872228'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:38:59
+  removal_date: 2017-09-28 09:15:01
+  source: potemkin-clojure
+  version: 0.4.3-1
+predictprotein:
+  buggy_dependencies:
+  - disulfinder
+  bugs: []
+  bugs_dependencies:
+  - '853375'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:04:29
+  removal_date: 2017-09-04 00:42:04
+  source: predictprotein
+  version: 1.1.07-2
+primer3:
+  bugs:
+  - '853621'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:19:05
+  rdeps:
+  - libbio-primerdesigner-perl
+  removal_date: 2017-09-04 00:42:04
+  source: primer3
+  version: 2.3.7-3
+prometheus-alertmanager:
+  bugs:
+  - '871330'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:26:51
+  removal_date: 2017-09-05 16:09:22
+  source: prometheus-alertmanager
+  version: 0.5.1+ds-7
+prospector:
+  buggy_dependencies:
+  - celery
+  - pylint-django
+  bugs: []
+  bugs_dependencies:
+  - '867413'
+  - '867481'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:24
+  removal_date: 2017-08-31 10:27:02
+  source: prospector
+  version: 0.12.7-1
+psychopy:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: psychopy
+  version: 1.83.04.dfsg-2
+pulseview:
+  bugs:
+  - '871172'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:41:41
+  rdeps:
+  - sigrok
+  removal_date: 2017-09-21 17:21:03
+  source: pulseview
+  version: 0.2.0-1.2
+pycorrfit:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: pycorrfit
+  version: 1.0.0+dfsg-1
+pydenticon:
+  bugs:
+  - '871079'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:59:44
+  rdeps:
+  - matrix-synapse
+  removal_date: 2017-09-19 22:19:11
+  source: pydenticon
+  version: 0.3-1
+pyferret:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: pyferret
+  version: 7.2-1
+pyfits:
+  bugs:
+  - '871156'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:58:51
+  removal_date: 2017-09-19 22:24:11
+  source: pyfits
+  version: 1:3.4-4
+pylint-celery:
+  buggy_dependencies:
+  - celery
+  bugs: []
+  bugs_dependencies:
+  - '867481'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:24
+  removal_date: 2017-08-31 10:27:02
+  source: pylint-celery
+  version: 0.3-3
+pylint-django:
+  bugs:
+  - '867413'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:29:27
+  rdeps:
+  - prospector
+  removal_date: 2017-09-12 00:39:02
+  source: pylint-django
+  version: 0.7.2-1
+pymvpa2:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: pymvpa2
+  version: 2.6.0-1
+pysal:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-20 18:42:05
+  source: pysal
+  version: 1.13.0-5
+pysodium:
+  bugs:
+  - '871199'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:09:40
+  removal_date: 2017-09-04 22:57:43
+  source: pysodium
+  version: 0.6.14-1
+pytest-catchlog:
+  bugs:
+  - '871998'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:36:53
+  rdeps:
+  - borgbackup
+  - ccdproc
+  - cookiecutter
+  - pytest-cookies
+  - python-dugong
+  - python-llfuse
+  - s3ql
+  - sen
+  removal_date: 2017-09-26 12:42:02
+  source: pytest-catchlog
+  version: 1.2.2-3
+pytest-cookies:
+  buggy_dependencies:
+  - pytest-catchlog
+  - pytest-mock
+  bugs: []
+  bugs_dependencies:
+  - '871127'
+  - '871998'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:36:53
+  removal_date: 2017-09-19 22:22:20
+  source: pytest-cookies
+  version: 0.2.0-1
+pytest-mock:
+  bugs:
+  - '871127'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:10:20
+  rdeps:
+  - cookiecutter
+  - onionbalance
+  - pytest-cookies
+  removal_date: 2017-09-19 22:22:20
+  source: pytest-mock
+  version: 1.3.0-1
+python-aodhclient:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-aodhclient
+  version: 0.7.0-2
+python-biopython:
+  buggy_dependencies:
+  - t-coffee
+  bugs: []
+  bugs_dependencies:
+  - '853677'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-04 00:42:04
+  source: python-biopython
+  version: 1.70+dfsg-2
+python-blosc:
+  bugs:
+  - '869195'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:47:08
+  rdeps:
+  - partd
+  removal_date: 2017-09-03 12:06:02
+  source: python-blosc
+  version: 1.4.4+ds1-3
+python-ceilometermiddleware:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-ceilometermiddleware
+  version: 0.5.0-3
+python-designateclient:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-designateclient
+  version: 2.3.0-2
+python-django-bootstrap-form:
+  bugs:
+  - '865938'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:33:48
+  rdeps:
+  - freedombox-setup
+  - plinth
+  removal_date: 2017-09-14 05:06:03
+  source: python-django-bootstrap-form
+  version: 3.2.1-2
+python-dugong:
+  buggy_dependencies:
+  - pytest-catchlog
+  bugs: []
+  bugs_dependencies:
+  - '871998'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:36:53
+  removal_date: 2017-09-26 12:42:02
+  source: python-dugong
+  version: 3.7.1+dfsg-1
+python-fedora:
+  buggy_dependencies:
+  - kitchen
+  bugs: []
+  bugs_dependencies:
+  - '868680'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:57:06
+  removal_date: 2017-09-20 19:09:03
+  source: python-fedora
+  version: 0.8.0-1
+python-geopandas:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-20 18:42:05
+  source: python-geopandas
+  version: 0.2.1-4
+python-gffutils:
+  buggy_dependencies:
+  - python-pybedtools
+  - statsmodels
+  - t-coffee
+  bugs: []
+  bugs_dependencies:
+  - '853677'
+  - '868927'
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-01 16:07:24
+  source: python-gffutils
+  version: 0.8.7.1-1
+python-glance-store:
+  buggy_dependencies:
+  - python-oslo.service
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-20 18:42:05
+  source: python-glance-store
+  version: 0.18.0-2
+python-gnocchiclient:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-gnocchiclient
+  version: 2.2.0-4
+python-heatclient:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-heatclient
+  version: 1.4.0-2
+python-ironic-lib:
+  buggy_dependencies:
+  - python-oslo.service
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-ironic-lib
+  version: 2.1.0-2
+python-keystonemiddleware:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-keystonemiddleware
+  version: 4.9.0-2
+python-llfuse:
+  buggy_dependencies:
+  - pytest-catchlog
+  bugs: []
+  bugs_dependencies:
+  - '871998'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:36:53
+  removal_date: 2017-09-26 12:42:02
+  source: python-llfuse
+  version: 1.2+dfsg-1
+python-lxc:
+  buggy_dependencies:
+  - lxc
+  bugs: []
+  bugs_dependencies:
+  - '853531'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:35:11
+  removal_date: 2017-09-15 02:33:03
+  source: python-lxc
+  version: 0.1-3
+python-mistralclient:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-mistralclient
+  version: 1:2.1.2-1
+python-monascaclient:
+  buggy_dependencies:
+  - python-oslo.service
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-monascaclient
+  version: 1.2.0-2
+python-neutron-lib:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-neutron-lib
+  version: 0.4.0-3
+python-neutronclient:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-neutronclient
+  version: 1:6.0.0-2
+python-os-brick:
+  buggy_dependencies:
+  - python-oslo.service
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-20 18:42:05
+  source: python-os-brick
+  version: 1.6.1-2
+python-os-vif:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-os-vif
+  version: 1.2.1-2
+python-os-win:
+  buggy_dependencies:
+  - python-oslo.service
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-08-21 00:15:02
+  source: python-os-win
+  version: 1.2.0-2
+python-osc-lib:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-osc-lib
+  version: 1.1.0-2
+python-oslo.messaging:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-oslo.messaging
+  version: 5.10.0-2
+python-oslo.service:
+  bugs:
+  - '867630'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:59:24
+  rdeps:
+  - murano-agent
+  - python-aodhclient
+  - python-ceilometermiddleware
+  - python-designateclient
+  - python-glance-store
+  - python-gnocchiclient
+  - python-heatclient
+  - python-ironic-lib
+  - python-keystonemiddleware
+  - python-mistralclient
+  - python-monascaclient
+  - python-neutron-lib
+  - python-neutronclient
+  - python-os-brick
+  - python-os-vif
+  - python-os-win
+  - python-osc-lib
+  - python-oslo.messaging
+  - python-oslo.versionedobjects
+  - python-osprofiler
+  - python-troveclient
+  - python-zaqarclient
+  - senlin
+  - zaqar
+  removal_date: 2017-08-21 00:15:02
+  source: python-oslo.service
+  version: 1.16.0-2
+python-oslo.versionedobjects:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-oslo.versionedobjects
+  version: 1.17.0-2
+python-osprofiler:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-osprofiler
+  version: 1.4.0-2
+python-pybedtools:
+  buggy_dependencies:
+  - statsmodels
+  bugs:
+  - '868927'
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:29:22
+  rdeps:
+  - python-gffutils
+  removal_date: 2017-09-01 16:07:24
+  source: python-pybedtools
+  version: 0.7.8-1
+python-pymeasure:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-20 06:42:05
+  source: python-pymeasure
+  version: 0.4.5-1
+python-pyngus:
+  buggy_dependencies:
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:13:35
+  removal_date: 2017-09-19 22:19:37
+  source: python-pyngus
+  version: 2.0.3-1
+python-pyorick:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: python-pyorick
+  version: 1.4-1
+python-raven:
+  buggy_dependencies:
+  - celery
+  bugs: []
+  bugs_dependencies:
+  - '867481'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:24
+  removal_date: 2017-08-31 10:27:02
+  source: python-raven
+  version: 6.0.0-1
+python-scrapy-djangoitem:
+  bugs:
+  - '871385'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:34:43
+  removal_date: 2017-09-05 16:27:35
+  source: python-scrapy-djangoitem
+  version: 1.1.1-1
+python-shogun:
+  buggy_dependencies:
+  - shogun
+  bugs: []
+  bugs_dependencies:
+  - '868786'
+  - '871716'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:39:44
+  removal_date: 2017-08-31 16:27:02
+  source: python-shogun
+  version: 3.2.0-5.2
+python-treetime:
+  buggy_dependencies:
+  - statsmodels
+  - t-coffee
+  bugs: []
+  bugs_dependencies:
+  - '853677'
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-03 20:05:47
+  source: python-treetime
+  version: 0.0+20170607-1
+python-troveclient:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-troveclient
+  version: 1:2.5.0-2
+python-xarray:
+  buggy_dependencies:
+  - statsmodels
+  bugs:
+  - '871208'
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-02 21:39:05
+  source: python-xarray
+  version: 0.9.2-1
+python-zaqarclient:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: python-zaqarclient
+  version: 1.2.0-2
+qcumber:
+  buggy_dependencies:
+  - t-coffee
+  bugs: []
+  bugs_dependencies:
+  - '853677'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-04 00:42:04
+  source: qcumber
+  version: 1.0.14+dfsg-1
+qevercloud:
+  bugs:
+  - '871202'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:22:04
+  rdeps:
+  - nixnote2
+  removal_date: 2017-09-19 22:57:51
+  source: qevercloud
+  version: 3.0.3+ds-2
+qflow:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: qflow
+  version: 1.1.58-1
+qpid-proton:
+  bugs:
+  - '871087'
+  - '871292'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:13:35
+  rdeps:
+  - python-aodhclient
+  - python-ceilometermiddleware
+  - python-designateclient
+  - python-gnocchiclient
+  - python-heatclient
+  - python-keystonemiddleware
+  - python-mistralclient
+  - python-neutron-lib
+  - python-neutronclient
+  - python-os-vif
+  - python-osc-lib
+  - python-oslo.messaging
+  - python-oslo.versionedobjects
+  - python-osprofiler
+  - python-pyngus
+  - python-troveclient
+  - python-zaqarclient
+  - senlin
+  - zaqar
+  removal_date: 2017-09-19 22:19:37
+  source: qpid-proton
+  version: 0.14.0-5.1
+quorum:
+  buggy_dependencies:
+  - jellyfish
+  bugs: []
+  bugs_dependencies:
+  - '872262'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:26:47
+  removal_date: 2017-09-28 13:00:01
+  source: quorum
+  version: 1.1.1-1
+qwtplot3d:
+  bugs:
+  - '853635'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:17:05
+  rdeps:
+  - goldencheetah
+  - scidavis
+  removal_date: 2017-09-04 00:42:04
+  source: qwtplot3d
+  version: 0.2.7+svn191-10.1
+r-bioc-biovizbase:
+  buggy_dependencies:
+  - r-bioc-rtracklayer
+  bugs: []
+  bugs_dependencies:
+  - '871333'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:00:47
+  removal_date: 2017-09-22 18:57:08
+  source: r-bioc-biovizbase
+  version: 1.22.0-2
+r-bioc-bsgenome:
+  buggy_dependencies:
+  - r-bioc-rtracklayer
+  bugs: []
+  bugs_dependencies:
+  - '871333'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:00:47
+  removal_date: 2017-09-22 18:57:08
+  source: r-bioc-bsgenome
+  version: 1.42.0-2
+r-bioc-cummerbund:
+  buggy_dependencies:
+  - r-bioc-rtracklayer
+  bugs: []
+  bugs_dependencies:
+  - '871333'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:00:47
+  removal_date: 2017-09-22 18:57:08
+  source: r-bioc-cummerbund
+  version: 2.16.0-2
+r-bioc-ensembldb:
+  buggy_dependencies:
+  - r-bioc-rtracklayer
+  bugs: []
+  bugs_dependencies:
+  - '871333'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:00:47
+  removal_date: 2017-09-22 18:57:08
+  source: r-bioc-ensembldb
+  version: 1.6.2-1
+r-bioc-genomicfeatures:
+  buggy_dependencies:
+  - r-bioc-rtracklayer
+  bugs: []
+  bugs_dependencies:
+  - '871333'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:00:47
+  removal_date: 2017-09-22 18:57:08
+  source: r-bioc-genomicfeatures
+  version: 1.26.2-1
+r-bioc-gviz:
+  buggy_dependencies:
+  - r-bioc-rtracklayer
+  bugs: []
+  bugs_dependencies:
+  - '871333'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:00:47
+  removal_date: 2017-09-22 18:57:08
+  source: r-bioc-gviz
+  version: 1.18.1-1
+r-bioc-rtracklayer:
+  bugs:
+  - '871333'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:00:47
+  rdeps:
+  - r-bioc-biovizbase
+  - r-bioc-bsgenome
+  - r-bioc-cummerbund
+  - r-bioc-ensembldb
+  - r-bioc-genomicfeatures
+  - r-bioc-gviz
+  - r-bioc-variantannotation
+  removal_date: 2017-09-22 18:57:08
+  source: r-bioc-rtracklayer
+  version: 1.34.1-1
+r-bioc-variantannotation:
+  buggy_dependencies:
+  - r-bioc-rtracklayer
+  bugs: []
+  bugs_dependencies:
+  - '871333'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:00:47
+  removal_date: 2017-09-22 18:57:08
+  source: r-bioc-variantannotation
+  version: 1.20.2-1
+r-cran-randomfields:
+  bugs:
+  - '871183'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:50:18
+  removal_date: 2017-09-04 22:33:02
+  source: r-cran-randomfields
+  version: 3.1.36-1
+r-cran-randomfieldsutils:
+  bugs:
+  - '868922'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:51:02
+  removal_date: 2017-09-01 16:07:06
+  source: r-cran-randomfieldsutils
+  version: 0.3.15-1
+rapmap:
+  buggy_dependencies:
+  - jellyfish
+  - libcereal
+  bugs: []
+  bugs_dependencies:
+  - '853486'
+  - '872262'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:26:47
+  removal_date: 2017-09-04 00:42:04
+  source: rapmap
+  version: 0.4.0+dfsg-2
+rdkit:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: rdkit
+  version: 201603.5-2
+redmine:
+  buggy_dependencies:
+  - ruby-actionpack-action-caching
+  - ruby-actionpack-xml-parser
+  bugs:
+  - '868955'
+  bugs_dependencies:
+  - '869033'
+  - '869048'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:22:00
+  rdeps:
+  - redmine-plugin-custom-css
+  - redmine-plugin-local-avatars
+  - redmine-plugin-pretend
+  removal_date: 2017-09-01 20:15:04
+  source: redmine
+  version: 3.3.1-4
+redmine-plugin-custom-css:
+  buggy_dependencies:
+  - redmine
+  - ruby-actionpack-action-caching
+  - ruby-actionpack-xml-parser
+  bugs: []
+  bugs_dependencies:
+  - '868955'
+  - '869033'
+  - '869048'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:00
+  removal_date: 2017-09-01 20:15:04
+  source: redmine-plugin-custom-css
+  version: 0.1.6+dfsg-1
+redmine-plugin-local-avatars:
+  buggy_dependencies:
+  - redmine
+  - ruby-actionpack-action-caching
+  - ruby-actionpack-xml-parser
+  bugs: []
+  bugs_dependencies:
+  - '868955'
+  - '869033'
+  - '869048'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:00
+  removal_date: 2017-09-01 20:15:04
+  source: redmine-plugin-local-avatars
+  version: 1.0.1-1
+redmine-plugin-pretend:
+  buggy_dependencies:
+  - redmine
+  - ruby-actionpack-action-caching
+  - ruby-actionpack-xml-parser
+  bugs: []
+  bugs_dependencies:
+  - '868955'
+  - '869033'
+  - '869048'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:00
+  removal_date: 2017-09-01 20:15:04
+  source: redmine-plugin-pretend
+  version: 0.0.2+git20130821-4
+regina-normal:
+  bugs:
+  - '853639'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:29:40
+  removal_date: 2017-09-03 14:15:08
+  source: regina-normal
+  version: 5.1-1
+ring:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: ring
+  version: 20170803.2.5fcfe3f~dfsg1-1
+robocode:
+  bugs:
+  - '871348'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:30:56
+  removal_date: 2017-09-05 16:10:19
+  source: robocode
+  version: 1.9.2.6-2
+rocksdb:
+  bugs:
+  - '853645'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:36:45
+  removal_date: 2017-09-01 17:21:05
+  source: rocksdb
+  version: 4.5.1-2
+rosegarden:
+  bugs:
+  - '871213'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:47:34
+  removal_date: 2017-09-04 22:58:27
+  source: rosegarden
+  version: 1:16.06-1
+rsbackup:
+  bugs:
+  - '853647'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:44:39
+  removal_date: 2017-09-02 14:09:05
+  source: rsbackup
+  version: 3.1-3
+rtv:
+  buggy_dependencies:
+  - kitchen
+  bugs: []
+  bugs_dependencies:
+  - '868680'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:57:06
+  removal_date: 2017-09-20 19:09:03
+  source: rtv
+  version: 1.17.1+dfsg-1
+rubocop:
+  bugs:
+  - '870852'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:34:38
+  removal_date: 2017-09-07 09:21:07
+  source: rubocop
+  version: 0.48.1+dfsg-1
+ruby-actionpack-action-caching:
+  bugs:
+  - '869033'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:53:12
+  rdeps:
+  - redmine
+  - redmine-plugin-custom-css
+  - redmine-plugin-local-avatars
+  - redmine-plugin-pretend
+  removal_date: 2017-09-02 07:33:10
+  source: ruby-actionpack-action-caching
+  version: 1.1.1-4
+ruby-actionpack-xml-parser:
+  bugs:
+  - '869048'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:53:27
+  rdeps:
+  - redmine
+  - redmine-plugin-custom-css
+  - redmine-plugin-local-avatars
+  - redmine-plugin-pretend
+  removal_date: 2017-09-02 07:34:09
+  source: ruby-actionpack-xml-parser
+  version: 1.0.2-2
+ruby-berkshelf-api-client:
+  bugs:
+  - '869919'
+  - '870754'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:10:05
+  removal_date: 2017-09-03 09:39:05
+  source: ruby-berkshelf-api-client
+  version: 2.0.2-1
+ruby-carrierwave:
+  buggy_dependencies:
+  - ruby-sham-rack
+  bugs: []
+  bugs_dependencies:
+  - '868750'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:59:01
+  removal_date: 2017-09-19 16:57:07
+  source: ruby-carrierwave
+  version: 0.10.0+gh-4
+ruby-combustion:
+  bugs:
+  - '869034'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:46:40
+  rdeps:
+  - open-build-service
+  - ruby-joiner
+  - ruby-thinking-sphinx
+  removal_date: 2017-09-02 07:33:14
+  source: ruby-combustion
+  version: 0.5.4-1
+ruby-dep-selector:
+  bugs:
+  - '870306'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:10:28
+  rdeps:
+  - ruby-solve
+  removal_date: 2017-09-13 20:51:02
+  source: ruby-dep-selector
+  version: 1.0.3-2
+ruby-flowdock:
+  bugs:
+  - '867649'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:19:31
+  rdeps:
+  - gitlab
+  - ruby-gitlab-flowdock-git-hook
+  removal_date: 2017-09-15 18:18:03
+  source: ruby-flowdock
+  version: 0.7.0-1
+ruby-gemnasium-gitlab-service:
+  bugs:
+  - '867655'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:59:45
+  rdeps:
+  - gitlab
+  removal_date: 2017-09-13 12:27:03
+  source: ruby-gemnasium-gitlab-service
+  version: 0.2.6-1
+ruby-gitlab-flowdock-git-hook:
+  buggy_dependencies:
+  - ruby-flowdock
+  bugs: []
+  bugs_dependencies:
+  - '867649'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:19:31
+  removal_date: 2017-09-15 18:18:03
+  source: ruby-gitlab-flowdock-git-hook
+  version: 1.0.1-2
+ruby-influxdb:
+  bugs:
+  - '867645'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:08:00
+  rdeps:
+  - gitlab
+  removal_date: 2017-09-17 10:21:24
+  source: ruby-influxdb
+  version: 0.2.3-1
+ruby-joiner:
+  buggy_dependencies:
+  - ruby-combustion
+  bugs: []
+  bugs_dependencies:
+  - '869034'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:46:40
+  removal_date: 2017-09-02 07:33:14
+  source: ruby-joiner
+  version: 0.3.4-2
+ruby-kramdown-rfc2629:
+  bugs:
+  - '870849'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-03 19:24:02
+  source: ruby-kramdown-rfc2629
+  version: 1.0.36-1
+ruby-neovim:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: ruby-neovim
+  version: 0.3.1-1
+ruby-omniauth-crowd:
+  bugs:
+  - '867654'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:09:46
+  rdeps:
+  - gitlab
+  removal_date: 2017-09-15 18:21:05
+  source: ruby-omniauth-crowd
+  version: 2.2.3-2
+ruby-ridley:
+  bugs:
+  - '870308'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:34:53
+  removal_date: 2017-09-06 03:06:06
+  source: ruby-ridley
+  version: 4.4.3-2
+ruby-sham-rack:
+  bugs:
+  - '868750'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:59:01
+  rdeps:
+  - gitlab
+  - ruby-carrierwave
+  removal_date: 2017-09-19 16:57:07
+  source: ruby-sham-rack
+  version: 1.3.6-6
+ruby-solve:
+  buggy_dependencies:
+  - ruby-dep-selector
+  bugs: []
+  bugs_dependencies:
+  - '870306'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:10:28
+  removal_date: 2017-09-13 20:51:02
+  source: ruby-solve
+  version: 3.0.1-1
+ruby-thinking-sphinx:
+  buggy_dependencies:
+  - ruby-combustion
+  bugs: []
+  bugs_dependencies:
+  - '869034'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:46:40
+  removal_date: 2017-09-02 07:33:14
+  source: ruby-thinking-sphinx
+  version: 3.2.0-1
+rush:
+  bugs:
+  - '853649'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:34:58
+  removal_date: 2017-09-04 07:42:07
+  source: rush
+  version: 1.8+dfsg-1
+s3ql:
+  buggy_dependencies:
+  - pytest-catchlog
+  bugs: []
+  bugs_dependencies:
+  - '871998'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:36:53
+  removal_date: 2017-09-26 12:42:02
+  source: s3ql
+  version: 2.22+dfsg-1
+salmon:
+  buggy_dependencies:
+  - jellyfish
+  - libcereal
+  bugs: []
+  bugs_dependencies:
+  - '853486'
+  - '872262'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:26:47
+  removal_date: 2017-09-04 00:42:04
+  source: salmon
+  version: 0.7.2+ds1-2
+scidavis:
+  buggy_dependencies:
+  - qwtplot3d
+  bugs: []
+  bugs_dependencies:
+  - '853635'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:17:05
+  removal_date: 2017-09-04 00:42:04
+  source: scidavis
+  version: 1.D13-1
+seaborn:
+  buggy_dependencies:
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:50:38
+  removal_date: 2017-09-17 21:39:05
+  source: seaborn
+  version: 0.8.0-1
+sen:
+  buggy_dependencies:
+  - pytest-catchlog
+  bugs: []
+  bugs_dependencies:
+  - '871998'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:36:53
+  removal_date: 2017-09-26 12:42:02
+  source: sen
+  version: 0.5.0-1
+senlin:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: senlin
+  version: 2.0.0-3
+sga:
+  bugs:
+  - '853656'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:57:56
+  removal_date: 2017-08-28 08:54:06
+  source: sga
+  version: 0.10.15-2
+shark:
+  bugs:
+  - '853658'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:35:43
+  rdeps:
+  - otb
+  removal_date: 2017-09-17 16:36:05
+  source: shark
+  version: 3.1.3+ds1-2
+shibboleth-resolver:
+  buggy_dependencies:
+  - opensaml2
+  - shibboleth-sp2
+  bugs: []
+  bugs_dependencies:
+  - '853598'
+  - '853659'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:47:07
+  removal_date: 2017-09-04 00:42:04
+  source: shibboleth-resolver
+  version: 1.0.0-1
+shibboleth-sp2:
+  buggy_dependencies:
+  - opensaml2
+  bugs:
+  - '853659'
+  bugs_dependencies:
+  - '853598'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:47:07
+  rdeps:
+  - shibboleth-resolver
+  - wordpress-shibboleth
+  removal_date: 2017-09-04 00:42:04
+  source: shibboleth-sp2
+  version: 2.6.0+dfsg1-4
+shogun:
+  bugs:
+  - '868786'
+  - '871716'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:39:44
+  rdeps:
+  - python-shogun
+  removal_date: 2017-08-31 16:27:02
+  source: shogun
+  version: 3.2.0-7.4
+sift:
+  buggy_dependencies:
+  - csh
+  bugs: []
+  bugs_dependencies:
+  - '853361'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:48
+  removal_date: 2017-09-04 00:42:04
+  source: sift
+  version: 4.0.3b-4
+sigrok:
+  buggy_dependencies:
+  - pulseview
+  bugs: []
+  bugs_dependencies:
+  - '871172'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:41:41
+  removal_date: 2017-09-21 17:21:03
+  source: sigrok
+  version: 0.2-3
+sipwitch:
+  buggy_dependencies:
+  - ucommon
+  bugs: []
+  bugs_dependencies:
+  - '853691'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:13:21
+  removal_date: 2017-09-19 15:12:11
+  source: sipwitch
+  version: 1.9.15-3
+skimage:
+  bugs:
+  - '871095'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:10:18
+  rdeps:
+  - caffe
+  - caffe-contrib
+  - ccdproc
+  - glueviz
+  - invesalius
+  - sunpy
+  removal_date: 2017-09-19 22:20:05
+  source: skimage
+  version: 0.12.3-9
+slapi-nis:
+  buggy_dependencies:
+  - 389-admin
+  - 389-ds-base
+  bugs: []
+  bugs_dependencies:
+  - '870032'
+  - '870752'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:04:58
+  removal_date: 2017-09-11 05:03:01
+  source: slapi-nis
+  version: 0.56.1-1
+slic3r-prusa:
+  bugs:
+  - '872275'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:41:06
+  removal_date: 2017-09-13 15:33:02
+  source: slic3r-prusa
+  version: 1.31.4-1
+sonic-pi:
+  buggy_dependencies:
+  - supercollider
+  bugs: []
+  bugs_dependencies:
+  - '853671'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:29:26
+  removal_date: 2017-09-04 15:51:03
+  source: sonic-pi
+  version: 2.10.0~repack-2
+soundmanager2:
+  bugs:
+  - '831551'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:52:52
+  removal_date: 2017-08-24 06:42:05
+  source: soundmanager2
+  version: 2.97a.20150601+dfsg2-1
+sparkleshare:
+  buggy_dependencies:
+  - webkitgtk-sharp3
+  bugs: []
+  bugs_dependencies:
+  - '866656'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:56:19
+  removal_date: 2017-09-11 19:48:06
+  source: sparkleshare
+  version: 1.5.0-2
+sql-ledger:
+  bugs:
+  - '869994'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:16:28
+  removal_date: 2017-08-26 13:57:01
+  source: sql-ledger
+  version: 3.0.8-1
+sqwebmail-de:
+  buggy_dependencies:
+  - courier
+  - mgetty
+  bugs: []
+  bugs_dependencies:
+  - '853548'
+  - '871586'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:04:35
+  removal_date: 2017-09-18 15:57:02
+  source: sqwebmail-de
+  version: 5.5.1-3
+srst2:
+  buggy_dependencies:
+  - t-coffee
+  bugs: []
+  bugs_dependencies:
+  - '853677'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:22
+  removal_date: 2017-09-04 00:42:04
+  source: srst2
+  version: 0.2.0-4
+starpu-contrib:
+  bugs:
+  - '871233'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:45:12
+  removal_date: 2017-09-05 03:39:01
+  source: starpu-contrib
+  version: 1.2.0+dfsg-4
+statsmodels:
+  bugs:
+  - '868977'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:50:38
+  rdeps:
+  - caffe
+  - caffe-contrib
+  - chemfp
+  - cinfony
+  - fmcs
+  - glueviz
+  - influxdb-python
+  - lmfit-py
+  - metaphlan2
+  - pandas
+  - partd
+  - patsy
+  - poretools
+  - psychopy
+  - pycorrfit
+  - pymvpa2
+  - pysal
+  - python-geopandas
+  - python-gffutils
+  - python-pybedtools
+  - python-pymeasure
+  - python-treetime
+  - python-xarray
+  - rdkit
+  - seaborn
+  - sunpy
+  removal_date: 2017-09-17 21:39:05
+  source: statsmodels
+  version: 0.8.0~rc1+git59-gef47cd9-5
+status-4-evar:
+  bugs:
+  - '871712'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:27:29
+  removal_date: 2017-09-08 20:24:01
+  source: status-4-evar
+  version: 2016.10.11.01-1
+strongswan:
+  bugs:
+  - '872155'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:10:54
+  rdeps:
+  - network-manager-l2tp
+  - network-manager-strongswan
+  removal_date: 2017-09-27 17:12:02
+  source: strongswan
+  version: 5.5.3-2
+sugar:
+  buggy_dependencies:
+  - abiword
+  - sugar-read-activity
+  - sugar-write-activity
+  bugs: []
+  bugs_dependencies:
+  - '866649'
+  - '868537'
+  - '870838'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:50
+  removal_date: 2017-09-04 01:03:25
+  source: sugar
+  version: 0.110.0-3
+sugar-pippy-activity:
+  buggy_dependencies:
+  - abiword
+  - sugar-read-activity
+  - sugar-write-activity
+  bugs: []
+  bugs_dependencies:
+  - '866649'
+  - '868537'
+  - '870838'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:23:50
+  removal_date: 2017-09-04 01:03:25
+  source: sugar-pippy-activity
+  version: 70+20160925~dfsg-1
+sugar-read-activity:
+  bugs:
+  - '866649'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:13:41
+  rdeps:
+  - sugar
+  - sugar-pippy-activity
+  removal_date: 2017-09-13 17:54:12
+  source: sugar-read-activity
+  version: 118-1
+sugar-write-activity:
+  buggy_dependencies:
+  - abiword
+  bugs:
+  - '870838'
+  bugs_dependencies:
+  - '868537'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:23:50
+  rdeps:
+  - sugar
+  - sugar-pippy-activity
+  removal_date: 2017-09-04 01:03:25
+  source: sugar-write-activity
+  version: 98-1
+sunpy:
+  buggy_dependencies:
+  - skimage
+  - statsmodels
+  bugs: []
+  bugs_dependencies:
+  - '868977'
+  - '871095'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:10:18
+  removal_date: 2017-09-17 21:39:05
+  source: sunpy
+  version: 0.7.9-1
+supercollider:
+  bugs:
+  - '853671'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:29:26
+  rdeps:
+  - sonic-pi
+  - supercollider-sc3-plugins
+  removal_date: 2017-09-04 15:51:03
+  source: supercollider
+  version: 1:3.7.0~repack-4
+supercollider-sc3-plugins:
+  buggy_dependencies:
+  - supercollider
+  bugs: []
+  bugs_dependencies:
+  - '853671'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:29:26
+  removal_date: 2017-09-04 15:51:03
+  source: supercollider-sc3-plugins
+  version: 3.7.1~repack-2
+svxlink:
+  bugs:
+  - '853672'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:21:35
+  removal_date: 2017-09-01 16:33:10
+  source: svxlink
+  version: 15.11-2
+syncevolution:
+  bugs:
+  - '871284'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:26:43
+  removal_date: 2017-09-05 14:57:02
+  source: syncevolution
+  version: 1.5.2-2
+synfig:
+  buggy_dependencies:
+  - etl
+  bugs: []
+  bugs_dependencies:
+  - '853674'
+  - '853675'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:35:04
+  removal_date: 2017-09-16 15:03:34
+  source: synfig
+  version: 1.0.2-1
+synfigstudio:
+  buggy_dependencies:
+  - etl
+  bugs: []
+  bugs_dependencies:
+  - '853674'
+  - '853675'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:35:04
+  removal_date: 2017-09-16 15:03:34
+  source: synfigstudio
+  version: 1.0.2-1
+sysdig:
+  bugs:
+  - '872035'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:38:57
+  removal_date: 2017-09-11 17:03:01
+  source: sysdig
+  version: 0.17.0-1
+syslog-nagios-bridge:
+  buggy_dependencies:
+  - icinga2
+  bugs: []
+  bugs_dependencies:
+  - '867884'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:26:54
+  removal_date: 2017-08-23 10:09:02
+  source: syslog-nagios-bridge
+  version: 1.0.3-1
+t-coffee:
+  bugs:
+  - '853677'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:23:22
+  rdeps:
+  - gasic
+  - graphlan
+  - gubbins
+  - mobyle
+  - mobyle-programs
+  - mobyle-tutorials
+  - python-biopython
+  - python-gffutils
+  - python-treetime
+  - qcumber
+  - srst2
+  removal_date: 2017-09-04 00:42:04
+  source: t-coffee
+  version: 11.00.8cbe486-5
+tangerine:
+  buggy_dependencies:
+  - banshee
+  bugs: []
+  bugs_dependencies:
+  - '790198'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:52
+  removal_date: 2017-09-14 10:27:03
+  source: tangerine
+  version: 0.3.4-6
+taskw:
+  buggy_dependencies:
+  - kitchen
+  bugs: []
+  bugs_dependencies:
+  - '868680'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:57:06
+  removal_date: 2017-09-20 19:09:03
+  source: taskw
+  version: 1.2.0-1
+telepathy-logger-qt:
+  bugs:
+  - '869887'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:17:01
+  rdeps:
+  - ktp-approver
+  - ktp-auth-handler
+  - ktp-common-internals
+  - ktp-contact-list
+  - ktp-contact-runner
+  - ktp-desktop-applets
+  - ktp-filetransfer-handler
+  - ktp-kded-integration-module
+  - ktp-send-file
+  removal_date: 2017-09-09 11:54:04
+  source: telepathy-logger-qt
+  version: 15.04.0-2
+tellico:
+  bugs:
+  - '871113'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:53:25
+  removal_date: 2017-09-04 22:21:29
+  source: tellico
+  version: 3.0.2-1.2
+tenace:
+  bugs:
+  - '871082'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:29:05
+  removal_date: 2017-09-05 18:54:05
+  source: tenace
+  version: 0.14-1
+tiledarray:
+  buggy_dependencies:
+  - madness
+  bugs:
+  - '853682'
+  bugs_dependencies:
+  - '869990'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:04:39
+  rdeps:
+  - mpqc3
+  removal_date: 2017-09-10 13:45:02
+  source: tiledarray
+  version: 0.6.0-5
+tinymux:
+  bugs:
+  - '853683'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:24:58
+  removal_date: 2017-09-01 12:39:03
+  source: tinymux
+  version: 2.10.1.13-1
+tlf:
+  buggy_dependencies:
+  - xmlrpc-c
+  bugs: []
+  bugs_dependencies:
+  - '871290'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:00:45
+  removal_date: 2017-09-20 14:57:17
+  source: tlf
+  version: 1.3.0-2
+tmate:
+  buggy_dependencies:
+  - msgpack-c
+  bugs: []
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:18:28
+  removal_date: 2017-09-20 11:39:07
+  source: tmate
+  version: 2.2.1-1
+trac-tags:
+  bugs:
+  - '865967'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:58:06
+  removal_date: 2017-09-02 12:42:07
+  source: trac-tags
+  version: 0.7+svn12392-1
+twinkle:
+  buggy_dependencies:
+  - ucommon
+  bugs: []
+  bugs_dependencies:
+  - '853691'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:13:21
+  removal_date: 2017-09-19 15:12:11
+  source: twinkle
+  version: 1:1.10.1+dfsg-2
+tycho:
+  bugs:
+  - '871347'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:34:18
+  removal_date: 2017-09-05 16:10:16
+  source: tycho
+  version: 0.25.0-1
+ucommon:
+  bugs:
+  - '853691'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:13:21
+  rdeps:
+  - libccaudio2
+  - libccrtp
+  - sipwitch
+  - twinkle
+  removal_date: 2017-09-19 15:12:11
+  source: ucommon
+  version: 7.0.0-9
+uim:
+  bugs:
+  - '868031'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:45:32
+  rdeps:
+  - gkrelluim
+  - mlterm
+  - mozc
+  - uim-chewing
+  removal_date: 2017-09-15 06:54:05
+  source: uim
+  version: 1:1.8.6+gh20161003.0.d63dadd-2.1
+uim-chewing:
+  buggy_dependencies:
+  - uim
+  bugs: []
+  bugs_dependencies:
+  - '868031'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:45:32
+  removal_date: 2017-09-15 06:54:05
+  source: uim-chewing
+  version: 0.1.0-4
+uima-as:
+  bugs:
+  - '871336'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:29:10
+  removal_date: 2017-09-19 22:57:28
+  source: uima-as
+  version: 2.3.1-5
+umockdev:
+  bugs:
+  - '871060'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:52:16
+  removal_date: 2017-09-04 22:18:07
+  source: umockdev
+  version: 0.9.1-1
+upx-ucl:
+  bugs:
+  - '853694'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:10:17
+  rdeps:
+  - ecere-sdk
+  removal_date: 2017-09-06 00:42:04
+  source: upx-ucl
+  version: 3.91-4
+urweb:
+  bugs:
+  - '871572'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:47:45
+  removal_date: 2017-09-07 12:45:01
+  source: urweb
+  version: 20170720+dfsg-1
+uwsgi:
+  buggy_dependencies:
+  - mongo-cxx-driver-legacy
+  bugs: []
+  bugs_dependencies:
+  - '853554'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:40:32
+  removal_date: 2017-09-04 00:42:04
+  source: uwsgi
+  version: 2.0.15-2.1
+vagrant-lxc:
+  buggy_dependencies:
+  - lxc
+  bugs: []
+  bugs_dependencies:
+  - '853531'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:35:11
+  removal_date: 2017-09-15 02:33:03
+  source: vagrant-lxc
+  version: 1.2.1-3
+varconf:
+  bugs:
+  - '871287'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:13:57
+  removal_date: 2017-09-05 14:57:09
+  source: varconf
+  version: 1.0.1-3
+varnish-modules:
+  bugs:
+  - '853696'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:38:04
+  removal_date: 2017-09-01 11:00:03
+  source: varnish-modules
+  version: 0.9.1-4
+vdr:
+  bugs:
+  - '853698'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:22:22
+  rdeps:
+  - vdr-plugin-dvd
+  - vdr-plugin-epgsearch
+  - vdr-plugin-epgsync
+  - vdr-plugin-femon
+  - vdr-plugin-fritzbox
+  - vdr-plugin-games
+  - vdr-plugin-infosatepg
+  - vdr-plugin-live
+  - vdr-plugin-mp3
+  - vdr-plugin-osdserver
+  - vdr-plugin-osdteletext
+  - vdr-plugin-remote
+  - vdr-plugin-remoteosd
+  - vdr-plugin-satip
+  - vdr-plugin-skinenigmang
+  - vdr-plugin-softhddevice
+  - vdr-plugin-spider
+  - vdr-plugin-streamdev
+  - vdr-plugin-sudoku
+  - vdr-plugin-svdrposd
+  - vdr-plugin-svdrpservice
+  - vdr-plugin-vcd
+  - vdr-plugin-vnsiserver
+  - vdr-plugin-weather
+  - vdr-plugin-xine
+  - vdr-plugin-xineliboutput
+  removal_date: 2017-09-13 19:51:05
+  source: vdr
+  version: 2.2.0-6
+vdr-plugin-dvd:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-dvd
+  version: 0.3.6~b03+cvs20090426.0013-23
+vdr-plugin-epgsearch:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-epgsearch
+  version: 1.0.1~beta6+git20150211-4
+vdr-plugin-epgsync:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-epgsync
+  version: 1.0.1-2
+vdr-plugin-femon:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-femon
+  version: 2.2.1-1
+vdr-plugin-fritzbox:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-fritzbox
+  version: 1.5.3-4
+vdr-plugin-games:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-games
+  version: 0.6.3-46
+vdr-plugin-infosatepg:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-infosatepg
+  version: 0.0.12-6
+vdr-plugin-live:
+  buggy_dependencies:
+  - vdr
+  bugs:
+  - '853699'
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:04:17
+  removal_date: 2017-08-29 19:51:05
+  source: vdr-plugin-live
+  version: 0.3.0+git20160123-1
+vdr-plugin-mp3:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-mp3
+  version: 0.10.2-22
+vdr-plugin-osdserver:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-osdserver
+  version: 0.1.3-17
+vdr-plugin-osdteletext:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-osdteletext
+  version: 0.9.5-3
+vdr-plugin-remote:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-remote
+  version: 0.7.0-1
+vdr-plugin-remoteosd:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-remoteosd
+  version: 1.0.0-5
+vdr-plugin-satip:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-satip
+  version: 2.2.4-1
+vdr-plugin-skinenigmang:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-skinenigmang
+  version: 0.1.2+git20150212-3
+vdr-plugin-softhddevice:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-softhddevice
+  version: 0.6.0+git20160108-1
+vdr-plugin-spider:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-spider
+  version: 0.2.2-21
+vdr-plugin-streamdev:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-streamdev
+  version: 0.6.1+git20150213-3
+vdr-plugin-sudoku:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-sudoku
+  version: 0.3.5-20
+vdr-plugin-svdrposd:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-svdrposd
+  version: 1.0.0-5
+vdr-plugin-svdrpservice:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-svdrpservice
+  version: 1.0.0-5
+vdr-plugin-vcd:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-vcd
+  version: 0.9-25
+vdr-plugin-vnsiserver:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-vnsiserver
+  version: 1:1.5.1-1
+vdr-plugin-weather:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-weather
+  version: 0.2.1e-67
+vdr-plugin-xine:
+  buggy_dependencies:
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-13 19:51:05
+  source: vdr-plugin-xine
+  version: 0.9.4-14
+vdr-plugin-xineliboutput:
+  buggy_dependencies:
+  - mp4v2
+  - vdr
+  bugs: []
+  bugs_dependencies:
+  - '853560'
+  - '853698'
+  dependencies_only: true
+  last_checked: 2017-08-23 22:22:22
+  removal_date: 2017-09-04 00:42:04
+  source: vdr-plugin-xineliboutput
+  version: 1.1.0+cvs20150907-3
+veusz:
+  bugs:
+  - '871550'
+  dependencies_only: false
+  last_checked: 2017-08-23 20:43:38
+  removal_date: 2017-09-19 22:24:11
+  source: veusz
+  version: 1.21.1-1.1
+vim-youcompleteme:
+  buggy_dependencies:
+  - ycmd
+  bugs: []
+  bugs_dependencies:
+  - '867992'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:22:55
+  removal_date: 2017-08-23 21:54:01
+  source: vim-youcompleteme
+  version: 0+20161219+git194ff33-1
+vzctl:
+  buggy_dependencies:
+  - ploop
+  bugs: []
+  bugs_dependencies:
+  - '853619'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:00:22
+  removal_date: 2017-09-04 00:42:04
+  source: vzctl
+  version: 4.9.4-3
+vzdump:
+  buggy_dependencies:
+  - ploop
+  bugs: []
+  bugs_dependencies:
+  - '853619'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:00:22
+  removal_date: 2017-09-04 00:42:04
+  source: vzdump
+  version: 1.2.6-4
+webdis:
+  buggy_dependencies:
+  - msgpack-c
+  bugs:
+  - '869951'
+  bugs_dependencies:
+  - '853564'
+  - '871140'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:05:06
+  removal_date: 2017-08-25 22:33:05
+  source: webdis
+  version: 0.1.2+dfsg-2
+webkitgtk-sharp3:
+  bugs:
+  - '866656'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:56:19
+  rdeps:
+  - sparkleshare
+  removal_date: 2017-09-11 19:48:06
+  source: webkitgtk-sharp3
+  version: 2.0.0+git20151221-3
+weresync:
+  buggy_dependencies:
+  - yapsy
+  bugs: []
+  bugs_dependencies:
+  - '867900'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:16:03
+  removal_date: 2017-08-31 00:42:04
+  source: weresync
+  version: 1.0.7-1
+west-chamber:
+  buggy_dependencies:
+  - xtables-addons
+  bugs: []
+  bugs_dependencies:
+  - '872077'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:39:36
+  removal_date: 2017-09-27 07:51:01
+  source: west-chamber
+  version: 20100405+svn20111107.r124-7
+wfmath:
+  bugs:
+  - '853706'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:17:54
+  rdeps:
+  - eris
+  - mercator
+  removal_date: 2017-09-04 00:42:04
+  source: wfmath
+  version: 1.0.2+dfsg1-3
+widelands:
+  bugs:
+  - '871114'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:42:42
+  removal_date: 2017-09-07 22:42:06
+  source: widelands
+  version: 1:19+repack-3
+witty:
+  bugs:
+  - '871286'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:29:02
+  removal_date: 2017-09-05 14:57:07
+  source: witty
+  version: 3.3.6+dfsg-1.1
+wmnut:
+  buggy_dependencies:
+  - nut
+  bugs: []
+  bugs_dependencies:
+  - '853579'
+  dependencies_only: true
+  last_checked: 2017-08-23 21:04:06
+  removal_date: 2017-09-22 21:00:18
+  source: wmnut
+  version: 0.66-1
+wordpress-shibboleth:
+  buggy_dependencies:
+  - opensaml2
+  - shibboleth-sp2
+  bugs: []
+  bugs_dependencies:
+  - '853598'
+  - '853659'
+  dependencies_only: true
+  last_checked: 2017-08-23 23:47:07
+  removal_date: 2017-09-04 00:42:04
+  source: wordpress-shibboleth
+  version: 1.4-2
+xbmc-pvr-addons:
+  buggy_dependencies:
+  - kodi
+  - libcec
+  bugs: []
+  bugs_dependencies:
+  - '853476'
+  - '853485'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:41:28
+  removal_date: 2017-09-04 00:42:04
+  source: xbmc-pvr-addons
+  version: 13.0+git20140512+g91cc731+dfsg1-3
+xmlrpc-c:
+  bugs:
+  - '871290'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:00:45
+  rdeps:
+  - certmonger
+  - flmsg
+  - flowgrind
+  - tlf
+  removal_date: 2017-09-20 14:57:17
+  source: xmlrpc-c
+  version: 1.33.14-4
+xtables-addons:
+  bugs:
+  - '872077'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:39:36
+  rdeps:
+  - west-chamber
+  removal_date: 2017-09-27 07:51:01
+  source: xtables-addons
+  version: 2.12-0.1
+yabause:
+  bugs:
+  - '870304'
+  dependencies_only: false
+  last_checked: 2017-08-23 22:05:01
+  removal_date: 2017-08-29 20:30:01
+  source: yabause
+  version: 0.9.14-2
+yapsy:
+  bugs:
+  - '867900'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:16:03
+  rdeps:
+  - weresync
+  removal_date: 2017-08-23 12:36:02
+  source: yapsy
+  version: 1.11.223-1
+ycmd:
+  bugs:
+  - '867992'
+  dependencies_only: false
+  last_checked: 2017-08-23 21:22:55
+  rdeps:
+  - vim-youcompleteme
+  removal_date: 2017-08-23 21:54:01
+  source: ycmd
+  version: 0+20161219+git486b809-2.1
+yorick:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick
+  version: 2.2.04+dfsg1-6
+yorick-av:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-av
+  version: 0.0.4-1
+yorick-cubeview:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-cubeview
+  version: 2.2-2
+yorick-curses:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-curses
+  version: 0.1-6
+yorick-gl:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-gl
+  version: 1.1+cvs20070922+dfsg-6.1
+yorick-gy:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-gy
+  version: 0.0.5-1
+yorick-hdf5:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-hdf5
+  version: 0.8.0-8
+yorick-imutil:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-imutil
+  version: 0.5.7-3
+yorick-mira:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-mira
+  version: 1.1.0+git20170124.3bd1c3~dfsg1-2
+yorick-ml4:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-ml4
+  version: 0.6.0-3
+yorick-mpeg:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-mpeg
+  version: 0.1-3
+yorick-optimpack:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-optimpack
+  version: 1.3.2+dfsg+1.4.0-1
+yorick-soy:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-soy
+  version: 1.4.0-3
+yorick-spydr:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-spydr
+  version: 0.8.2-3
+yorick-yao:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-yao
+  version: 5.4.0-1
+yorick-yeti:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-yeti
+  version: 6.4.0-1
+yorick-ygsl:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-ygsl
+  version: 1.2.1-1
+yorick-ynfft:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-ynfft
+  version: 1.0.3-1
+yorick-yutils:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-yutils
+  version: 1.5.2-1
+yorick-z:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yorick-z
+  version: 1.2.0+cvs20080115-5
+yp-svipc:
+  buggy_dependencies:
+  - gyoto
+  bugs: []
+  bugs_dependencies:
+  - '871283'
+  dependencies_only: true
+  last_checked: 2017-08-24 00:30:43
+  removal_date: 2017-09-20 14:51:46
+  source: yp-svipc
+  version: 0.16-2
+yrmcds:
+  bugs:
+  - '853715'
+  dependencies_only: false
+  last_checked: 2017-08-23 23:19:53
+  removal_date: 2017-09-02 21:24:03
+  source: yrmcds
+  version: 1.1.8-1
+zaqar:
+  buggy_dependencies:
+  - python-oslo.service
+  - qpid-proton
+  bugs: []
+  bugs_dependencies:
+  - '867630'
+  - '871087'
+  - '871292'
+  dependencies_only: true
+  last_checked: 2017-08-23 20:59:24
+  removal_date: 2017-09-21 18:42:06
+  source: zaqar
+  version: 3.0.0-6
+zeroc-ice:
+  bugs:
+  - '871288'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:12:52
+  rdeps:
+  - mumble
+  removal_date: 2017-09-20 14:57:12
+  source: zeroc-ice
+  version: 3.6.3-5
+zsh-syntax-highlighting:
+  bugs:
+  - '872017'
+  dependencies_only: false
+  last_checked: 2017-08-24 00:10:34
+  removal_date: 2017-09-11 13:42:01
+  source: zsh-syntax-highlighting
+  version: 0.5.0-1
+

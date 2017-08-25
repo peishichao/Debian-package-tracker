@@ -1,0 +1,58 @@
+Package: libclamunrar
+Binary: libclamunrar7
+Version: 0.99-0+deb7u2
+Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Uploaders: Michael Tautschnig <mt@debian.org>, Stephen Gran <sgran@debian.org>, Sebastian Andrzej Siewior <sebastian@breakpoint.cc>
+Build-Depends: debhelper (>= 8), autotools-dev, zlib1g-dev, libbz2-dev, dh-autoreconf, automake, libssl-dev, pkg-config
+Architecture: any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ e813dcaba8191c1590f858b65ee00fcc 2159 libclamunrar_0.99-0+deb7u2.dsc
+ 6b1a9739345aff4560b0e6d03d3411be 311248 libclamunrar_0.99.orig.tar.xz
+ e20bcd1dadea2565e79bb5140cc38c11 9708 libclamunrar_0.99-0+deb7u2.debian.tar.gz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-clamav/libclamunrar.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-clamav/libclamunrar.git
+Checksums-Sha1:
+ 4c43da6e03d6d66792c7713f3ab46784c657d3e4 2159 libclamunrar_0.99-0+deb7u2.dsc
+ 3299e943affefb7a1aea0cada292f1c4ec039aed 311248 libclamunrar_0.99.orig.tar.xz
+ c6e234f666832ed62c7e9608fafed9a4a35c99cf 9708 libclamunrar_0.99-0+deb7u2.debian.tar.gz
+Checksums-Sha256:
+ 51377929f00ce85b4039628c18ac4a700bc4c762c76c5c9dd2511d314b1180c9 2159 libclamunrar_0.99-0+deb7u2.dsc
+ 57db66f56d0b1fcc538b2de0b7de3ae77a014e77b7236d6aee80c9c4561b915f 311248 libclamunrar_0.99.orig.tar.xz
+ d837665b3d9b1309ecd01a9a939f445c892ea0bde93e2b1a9910954c15890e3e 9708 libclamunrar_0.99-0+deb7u2.debian.tar.gz
+Homepage: http://www.clamav.net/
+Autobuild: yes
+Package-List: 
+ libclamunrar7 deb non-free/libs extra
+Directory: pool/updates/non-free/libc/libclamunrar
+Priority: source
+Section: non-free/libs
+
+Package: unrar-nonfree
+Binary: unrar
+Version: 1:4.1.4-1+deb7u2
+Maintainer: Martin Meredith <mez@debian.org>
+Build-Depends: debhelper (>= 7)
+Architecture: any
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Files:
+ e99f666c17ac1e8c007792e0b0a6ae25 1394 unrar-nonfree_4.1.4-1+deb7u2.dsc
+ 808c92a661820a637ca1330cf40c18e4 157135 unrar-nonfree_4.1.4.orig.tar.gz
+ 9695f33518ab1ba89917a0ea5f4d2233 8417 unrar-nonfree_4.1.4-1+deb7u2.debian.tar.gz
+Checksums-Sha1:
+ bc7b61b8e79ad471b53f3c27b6c5640063ceb78c 1394 unrar-nonfree_4.1.4-1+deb7u2.dsc
+ ae4b1e2c99e96527c4a97f980daa547499f42a0f 157135 unrar-nonfree_4.1.4.orig.tar.gz
+ 64582e46838a585cc7ac66177366b5eb1c5878a1 8417 unrar-nonfree_4.1.4-1+deb7u2.debian.tar.gz
+Checksums-Sha256:
+ 082dc53b0a7cace2270e6cadc91e555b40b8437a657e44577be635025d0d1fae 1394 unrar-nonfree_4.1.4-1+deb7u2.dsc
+ 705d93285fcd3b9c11f68e52d96395d942bf3c20172dcee14f0d78f1fee57361 157135 unrar-nonfree_4.1.4.orig.tar.gz
+ 55f59c470df38ec5618174d73791f2d054392090d2a110664182c53fa8243c44 8417 unrar-nonfree_4.1.4-1+deb7u2.debian.tar.gz
+Autobuild: yes
+Package-List: 
+ unrar deb non-free/utils optional
+Directory: pool/updates/non-free/u/unrar-nonfree
+Priority: source
+Section: non-free/utils
+

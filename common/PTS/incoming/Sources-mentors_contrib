@@ -1,0 +1,23 @@
+Format: 3.0 (quilt)
+Binary: xtrs
+Architecture: any
+Version: 4.9d-2
+Maintainer: G. Branden Robinson <g.branden.robinson@gmail.com>
+Homepage: http://www.tim-mann.org/xtrs.html
+Standards-Version: 3.9.8
+Build-Depends: debhelper (>= 9), libncurses5-dev, libreadline-dev, libx11-dev, groff-base, bsdmainutils, po-debconf, html2text
+Package-List:
+ xtrs deb contrib/otherosfs extra arch=any
+Checksums-Sha1:
+ 42b1fc90246901456d29071421e838b545f39f0f 444499 xtrs_4.9d.orig.tar.gz
+ e1a1ed4692d5cef24466980de5c2bce64fad905d 30912 xtrs_4.9d-2.debian.tar.xz
+Checksums-Sha256:
+ 3985f2331e76198dfc027bc2afcd09a158d2bcad0348aeb4a4958a8fb99cf5c4 444499 xtrs_4.9d.orig.tar.gz
+ 5466f8a110a0c6f7fc30017fb5bf36586195cffe0dc478b7cff315ec24dc32ad 30912 xtrs_4.9d-2.debian.tar.xz
+Files:
+ 93868bed769c038bfae907375316bb2d 444499 xtrs_4.9d.orig.tar.gz
+ 0ebf4eb05f566ec11cbce22ce3b5669d 30912 xtrs_4.9d-2.debian.tar.xz
+ 4d4b2c0e27fa6f554274422d2f971703 1828 xtrs_4.9d-2.dsc
+Package: xtrs
+Directory: pool/contrib/x/xtrs
+

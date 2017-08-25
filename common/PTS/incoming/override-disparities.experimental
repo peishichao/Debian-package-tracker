@@ -1,0 +1,669 @@
+netcdf:
+- netcdf-dbg: Override says debug - optional, .deb says debug - extra
+librsync:
+- librsync-dbg: Override says debug - optional, .deb says debug - extra
+cython:
+- cython3-dbg: Override says debug - optional, .deb says debug - extra
+- cython-dbg: Override says debug - optional, .deb says debug - extra
+polkit-kde-agent-1:
+- polkit-kde-1: Override says libs - optional, .deb says oldlibs - extra
+jhc:
+- jhc: Override says haskell - optional, .deb says haskell - extra
+- jhc-doc: Override says doc - optional, .deb says doc - extra
+kdoctools:
+- kdoctools-dev: Override says libdevel - optional, .deb says oldlibs - optional ({partial})
+- kdoctools-dev: Override says libdevel - optional, .deb says oldlibs - extra ({partial})
+pyodbc:
+- python-pyodbc-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyodbc-dbg: Override says debug - optional, .deb says debug - extra
+prosody:
+- prosody: Override says net - optional, .deb says net - extra
+hwloc:
+- hwloc: Override says admin - optional, .deb says admin - extra
+- hwloc-nox: Override says admin - optional, .deb says admin - extra
+- libhwloc5: Override says libs - optional, .deb says libs - extra
+- libhwloc-doc: Override says doc - optional, .deb says doc - extra
+- libhwloc-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libhwloc-common: Override says libs - optional, .deb says libs - extra
+- libhwloc-plugins: Override says libs - optional, .deb says libs - extra
+kup:
+- kup-server: Override says net - optional, .deb says net - extra
+- kup-client: Override says net - optional, .deb says net - extra
+hwloc-contrib:
+- libhwloc-contrib-plugins: Override says contrib/admin - optional, .deb says contrib/admin - extra
+mosquitto:
+- libmosquittopp1-dbg: Override says debug - optional, .deb says debug - extra
+- mosquitto-dbg: Override says debug - optional, .deb says debug - extra
+- libmosquitto1-dbg: Override says debug - optional, .deb says debug - extra
+policyd-spf-fs:
+- postfix-policyd-spf: Override says mail - optional, .deb says mail - extra
+pygobject:
+- python3-gi-dbg: Override says debug - optional, .deb says debug - extra
+- python-gobject-dev: Override says oldlibs - optional, .deb says oldlibs - extra
+- python-gi-dbg: Override says debug - optional, .deb says debug - extra
+- python-gobject-dbg: Override says oldlibs - optional, .deb says oldlibs - extra
+- python-gobject: Override says oldlibs - optional, .deb says oldlibs - extra
+thrift:
+- libthrift-perl: Override says perl - optional, .deb says perl - extra
+- libthrift-0.9.3: Override says devel - optional, .deb says devel - extra
+- libthrift-dev: Override says libdevel - optional, .deb says libdevel - extra
+- python-thrift: Override says python - optional, .deb says python - extra
+- thrift-compiler: Override says devel - optional, .deb says devel - extra
+- php5-thrift: Override says php - optional, .deb says php - extra
+- libthrift-0.9.2-dbg: Override says debug - optional, .deb says debug - extra
+- libthrift-0.9.3-dbg: Override says debug - optional, .deb says debug - extra
+- libthrift-0.9.2: Override says devel - optional, .deb says devel - extra
+- golang-thrift-dev: Override says devel - optional, .deb says devel - extra
+- libthrift-java-doc: Override says doc - optional, .deb says doc - extra
+- libthrift-java: Override says java - optional, .deb says java - extra
+- libthrift-c-glib0-dbg: Override says debug - optional, .deb says debug - extra
+- php7.0-thrift: Override says php - optional, .deb says php - extra
+- libthrift-c-glib-dev: Override says libdevel - optional, .deb says libdevel - extra
+- python-thrift-dbg: Override says debug - optional, .deb says debug - extra
+- libthrift-c-glib0: Override says devel - optional, .deb says devel - extra
+solid:
+- qtdeclarative5-kf5solid: Override says oldlibs - optional, .deb says oldlibs - extra
+node-ci-info:
+- node-ci-info: Override says javascript - optional, .deb says web - optional
+openbabel:
+- openbabel-dbg: Override says debug - optional, .deb says debug - extra
+gnustep-sqlclient:
+- libsqlclient1.8-dbg: Override says debug - optional, .deb says debug - extra
+pynn:
+- python-pynn: Override says python - optional, .deb says python - extra
+blcr:
+- libcr-dbg: Override says debug - optional, .deb says debug - extra
+node-cli-spinners:
+- node-cli-spinners: Override says javascript - optional, .deb says web - optional
+ktp-common-internals:
+- kde-telepathy-debugger: Override says libs - optional, .deb says libs - extra
+- kde-telepathy-data: Override says libs - optional, .deb says kde - optional
+yamcha:
+- libyamcha1-dbg: Override says debug - optional, .deb says debug - extra
+node-buf-compare:
+- node-buf-compare: Override says javascript - optional, .deb says web - optional
+nemo:
+- gir1.2-nemo-3.0: Override says libdevel - optional, .deb says introspection - optional
+libvirt-tck:
+- libvirt-tck: Override says admin - optional, .deb says admin - extra
+upspin:
+- golang-upspin-dev: Override says devel - optional, .deb says devel - extra
+- upspin: Override says devel - optional, .deb says devel - extra
+- upspinserver: Override says devel - optional, .deb says devel - extra
+libgcrypt20:
+- libgcrypt-mingw-w64-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libgcrypt11-dev: Override says libdevel - optional, .deb says oldlibs - extra
+vlan:
+- vlan: Override says misc - optional, .deb says misc - extra
+node-throttleit:
+- node-throttleit: Override says javascript - optional, .deb says web - extra
+arc-theme:
+- arc-theme: Override says misc - optional, .deb says misc - extra
+maliit-framework:
+- gir1.2-maliit-1.0: Override says introspection - optional, .deb says libs - extra
+- maliit-framework-doc: Override says doc - optional, .deb says doc - extra
+- libmaliit-glib-doc: Override says doc - optional, .deb says doc - extra
+- libmaliit-glib0: Override says libs - optional, .deb says libs - extra
+- libmaliit-glib-dev: Override says libdevel - optional, .deb says libdevel - extra
+- maliit-framework: Override says libs - optional, .deb says libs - extra
+- libmaliit-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libmaliit-glib0-dbg: Override says debug - optional, .deb says debug - extra
+- libmaliit0: Override says libs - optional, .deb says libs - extra
+- maliit-inputcontext-gtk3: Override says libs - optional, .deb says libs - extra
+- maliit-inputcontext-gtk2: Override says libs - optional, .deb says libs - extra
+- maliit-inputcontext-qt4: Override says libs - optional, .deb says libs - extra
+- maliit-framework-dbg: Override says debug - optional, .deb says debug - extra
+- maliit-framework-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libmaliit0-dbg: Override says debug - optional, .deb says debug - extra
+dgit-test-dummy:
+- dgit-test-dummy: Override says misc - optional, .deb says misc - extra
+socat:
+- socat: Override says net - optional, .deb says net - extra
+python-amqp:
+- python-amqp-doc: Override says doc - optional, .deb says doc - extra
+- python3-amqp: Override says python - optional, .deb says python - extra
+- python-amqp: Override says python - optional, .deb says python - extra
+angular.js:
+- libjs-angularjs: Override says javascript - optional, .deb says web - optional
+brial:
+- python-polybori: Override says python - optional, .deb says oldlibs - extra
+- libbrial-groebner0: Override says libs - optional, .deb says libs - extra
+- python-brial: Override says python - optional, .deb says python - extra
+- libbrial0-dbg: Override says debug - optional, .deb says debug - extra
+- libbrial-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libbrial0: Override says libs - optional, .deb says libs - extra
+- libbrial-groebner0-dbg: Override says debug - optional, .deb says debug - extra
+- libbrial-groebner-dev: Override says libdevel - optional, .deb says libdevel - extra
+targetcli:
+- targetcli: Override says python - optional, .deb says net - optional
+scalapack:
+- libscalapack-mpi-dev: Override says libdevel - optional, .deb says libdevel - extra
+- scalapack-test-common: Override says devel - optional, .deb says devel - extra
+- scalapack-mpi-test: Override says math - optional, .deb says math - extra
+remote-logon-config-agent:
+- remote-logon-config-agent: Override says utils - optional, .deb says utils - extra
+exe-thumbnailer:
+- gnome-exe-thumbnailer: Override says gnome - optional, .deb says oldlibs - extra
+czmq:
+- libczmq-dbg: Override says debug - optional, .deb says debug - extra
+yum-utils:
+- yum-utils: Override says admin - optional, .deb says admin - extra
+pangoterm:
+- pangoterm: Override says x11 - optional, .deb says x11 - extra
+- pangoterm-dbg: Override says debug - optional, .deb says debug - extra
+proj4js:
+- node-proj4: Override says javascript - optional, .deb says science - optional
+- libjs-proj4: Override says javascript - optional, .deb says web - optional
+ghc:
+- ghc-doc: Override says doc - optional, .deb says doc - extra
+- ghc-prof: Override says haskell - optional, .deb says haskell - extra
+- ghc: Override says haskell - optional, .deb says haskell - extra
+bibledit:
+- bibledit-gtk: Override says gnome - optional, .deb says editors - extra
+- bibledit: Override says gnome - optional, .deb says editors - extra
+- bibledit-gtk-data: Override says gnome - optional, .deb says editors - extra
+- bibledit-data: Override says gnome - optional, .deb says editors - extra
+quassel-irssi:
+- irssi-plugin-quassel-dbg: Override says debug - optional, .deb says debug - extra
+libqinfinity:
+- libqinfinity-dbg: Override says debug - optional, .deb says debug - extra
+moonshot-ui:
+- moonshot-ui-dbg: Override says debug - optional, .deb says debug - extra
+ffc:
+- python-ffc: Override says python - optional, .deb says python - extra
+- python3-ffc: Override says python - optional, .deb says python - extra
+kwayland:
+- kwayland-dev: Override says libdevel - optional, .deb says oldlibs - optional
+arduino:
+- arduino-core: Override says electronics - optional, .deb says electronics - extra
+- arduino: Override says electronics - optional, .deb says electronics - extra
+scribus-ng:
+- scribus-ng: Override says graphics - optional, .deb says graphics - extra
+- scribus-ng-data: Override says graphics - optional, .deb says graphics - extra
+schroot:
+- libsbuild1.7.2-dbg: Override says debug - optional, .deb says debug - extra
+policycoreutils:
+- newrole: Override says utils - optional, .deb says utils - extra
+tumbler:
+- libtumbler-1-0: Override says libs - optional, .deb says xfce - optional
+daq:
+- libdaq4: Override says libs - optional, .deb says libs - extra
+- libdaq-dev: Override says libdevel - optional, .deb says libdevel - extra
+brltty:
+- python3-brlapi: Override says python - optional, .deb says python - extra
+- brltty-espeak: Override says admin - optional, .deb says admin - extra
+- brltty-speechd: Override says admin - optional, .deb says admin - extra
+- cl-brlapi: Override says lisp - optional, .deb says lisp - extra
+- brltty-flite: Override says admin - optional, .deb says admin - extra
+- libbrlapi-jni: Override says java - optional, .deb says java - extra
+- libbrlapi-java: Override says java - optional, .deb says java - extra
+- python-brlapi: Override says python - optional, .deb says python - extra
+- libbrlapi-dev: Override says libdevel - optional, .deb says libdevel - extra
+- brltty: Override says admin - optional, .deb says admin - extra
+- xbrlapi: Override says admin - optional, .deb says admin - extra
+- brltty-x11: Override says admin - optional, .deb says admin - extra
+- libbrlapi0.6: Override says libs - optional, .deb says libs - extra
+node-coffeeify:
+- node-coffeeify: Override says javascript - optional, .deb says web - optional
+kmetronome:
+- kmetronome: Override says sound - optional, .deb says sound - extra
+oxygen:
+- kde-style-oxygen: Override says kde - optional, .deb says oldlibs - extra
+dbus:
+- dbus-tests: Override says misc - optional, .deb says misc - extra
+prosody-modules:
+- prosody-modules: Override says net - optional, .deb says net - extra
+libmarpa:
+- libmarpa0-dbg: Override says debug - optional, .deb says debug - extra
+binutils-msp430:
+- binutils-msp430: Override says devel - optional, .deb says devel - extra
+dublin-traceroute:
+- libdublintraceroute-dev: Override says net - optional, .deb says libdevel - optional
+yorick-optimpack:
+- yorick-optimpack: Override says science - optional, .deb says science - extra
+logdata-anomaly-miner:
+- logdata-anomaly-miner: Override says misc - optional, .deb says admin - optional
+qt4-x11:
+- qt4-default: Override says libdevel - optional, .deb says libs - optional
+- qt4-demos-dbg: Override says debug - optional, .deb says debug - extra
+- libqt4-qt3support-dbg: Override says debug - optional, .deb says debug - extra
+- qt4-bin-dbg: Override says debug - optional, .deb says debug - extra
+- libqt4-xmlpatterns-dbg: Override says debug - optional, .deb says debug - extra
+- libqt4-script-dbg: Override says debug - optional, .deb says debug - extra
+- libqt4-designer-dbg: Override says debug - optional, .deb says debug - extra
+- libqt4-dbg: Override says debug - optional, .deb says debug - extra
+qalculate-gtk:
+- qalculate: Override says oldlibs - optional, .deb says oldlibs - extra
+haskell-raaz:
+- libghc-raaz-prof: Override says haskell - optional, .deb says haskell - extra
+- libghc-raaz-doc: Override says doc - optional, .deb says doc - extra
+- haskell-raaz-utils: Override says utils - optional, .deb says utils - extra
+- libghc-raaz-dev: Override says haskell - optional, .deb says haskell - extra
+khard:
+- khard: Override says misc - optional, .deb says misc - extra
+fiat:
+- python3-fiat: Override says python - optional, .deb says python - extra
+- python-fiat: Override says python - optional, .deb says python - extra
+node-xdg-basedir:
+- node-xdg-basedir: Override says javascript - optional, .deb says web - optional
+python-mkdocs:
+- mkdocs: Override says python - optional, .deb says text - optional
+tor:
+- tor-geoipdb: Override says net - optional, .deb says net - extra
+critterding:
+- critterding-dbg: Override says debug - optional, .deb says debug - extra
+- critterding: Override says science - optional, .deb says science - extra
+- critterding-common: Override says science - optional, .deb says science - extra
+libtap-parser-sourcehandler-pgtap-perl:
+- libtap-parser-sourcehandler-pgtap-perl: Override says perl - optional, .deb says perl - extra
+twisted:
+- twisted-doc: Override says doc - optional, .deb says doc - extra
+- python3-twisted-bin-dbg: Override says debug - optional, .deb says debug - extra
+- python-twisted-runner-dbg: Override says debug - optional, .deb says debug - extra
+- python-twisted: Override says python - optional, .deb says python - extra
+- python-twisted-bin-dbg: Override says debug - optional, .deb says debug - extra
+remote-logon-service:
+- remote-logon-service: Override says misc - optional, .deb says misc - extra
+jquery-minicolors:
+- libjs-jquery-minicolors: Override says javascript - optional, .deb says web - optional
+node-timed-out:
+- node-timed-out: Override says javascript - optional, .deb says web - optional
+dgit:
+- dgit-infrastructure: Override says devel - optional, .deb says devel - extra
+poti:
+- libpoti4: Override says libs - optional, .deb says libs - extra
+- libpoti-dbg: Override says debug - optional, .deb says debug - extra
+- libpoti-dev: Override says libdevel - optional, .deb says libdevel - extra
+kactivities-kf5:
+- qml-module-org-kde-extensionplugin: Override says libs - optional, .deb says oldlibs - optional
+bind9:
+- dnsutils: Override says net - optional, .deb says net - standard
+- libisccfg140: Override says libs - optional, .deb says libs - standard
+- host: Override says oldlibs - optional, .deb says net - standard
+openjdk-7:
+- openjdk-7-jre-zero: Override says java - optional, .deb says java - extra
+- openjdk-7-source: Override says java - optional, .deb says java - extra
+- icedtea-7-jre-jamvm: Override says java - optional, .deb says java - extra
+- openjdk-7-jre-lib: Override says java - optional, .deb says oldlibs - extra
+- openjdk-7-doc: Override says doc - optional, .deb says doc - extra
+- openjdk-7-demo: Override says java - optional, .deb says java - extra
+- openjdk-7-dbg: Override says debug - optional, .deb says debug - extra
+wesnoth-1.13:
+- wesnoth-1.13-dbg: Override says debug - optional, .deb says debug - extra
+ip4r:
+- postgresql-9.6-ip4r: Override says misc - optional, .deb says misc - extra
+pyqt5:
+- python-pyqt5.qtquick-dbg: Override says debug - optional, .deb says debug - extra
+- python3-dbus.mainloop.pyqt5-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtx11extras-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtsensors-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtpositioning-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtwebchannel-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtsql-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtmultimedia-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtsvg-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtwebsockets-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtwebchannel-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtsensors-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtopengl-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtquick-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtwebengine-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtserialport-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtpositioning-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtwebkit-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtopengl-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtwebkit-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtserialport-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtsvg-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtwebengine-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtsql-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtx11extras-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtxmlpatterns-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtxmlpatterns-dbg: Override says debug - optional, .deb says debug - extra
+- python-dbus.mainloop.pyqt5-dbg: Override says debug - optional, .deb says debug - extra
+- python-pyqt5.qtwebsockets-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt5.qtmultimedia-dbg: Override says debug - optional, .deb says debug - extra
+srtp:
+- libsrtp1-dbg: Override says debug - optional, .deb says debug - extra
+dh-kpatches:
+- dh-kpatches: Override says devel - optional, .deb says devel - extra
+- kernel-patch-scripts: Override says kernel - optional, .deb says devel - optional
+dtc:
+- dtc-postfix-dovecot: Override says admin - optional, .deb says admin - extra
+- dtc-stats-daemon: Override says admin - optional, .deb says admin - extra
+- dtc-toaster: Override says admin - optional, .deb says admin - extra
+- dtc-common: Override says admin - optional, .deb says admin - extra
+- dtc-autodeploy: Override says admin - optional, .deb says admin - extra
+- dtc-core: Override says admin - optional, .deb says admin - extra
+- dtc-dos-firewall: Override says admin - optional, .deb says admin - extra
+- dtc-postfix-courier: Override says admin - optional, .deb says admin - extra
+- dtc-cyrus: Override says admin - optional, .deb says admin - extra
+arriero:
+- arriero: Override says devel - optional, .deb says devel - extra
+node-ansi-align:
+- node-ansi-align: Override says javascript - optional, .deb says web - optional
+efl:
+- libelementary-bin: Override says misc - optional, .deb says libs - optional
+- efl-doc: Override says doc - optional, .deb says doc - extra
+- libelementary-data: Override says misc - optional, .deb says libs - optional
+tunnelx:
+- tunnelx: Override says science - optional, .deb says science - extra
+biosig4c++:
+- libbiosig1: Override says libs - optional, .deb says libs - extra
+- libbiosig-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libbiosig1-dbg: Override says debug - optional, .deb says debug - extra
+- octave-biosig: Override says science - optional, .deb says science - extra
+- python-biosig: Override says python - optional, .deb says python - extra
+- biosig-tools: Override says science - optional, .deb says science - extra
+qtspeech-opensource-src:
+- qtspeech5-doc: Override says doc - optional, .deb says doc - extra
+- qtspeech5-doc-html: Override says doc - optional, .deb says doc - extra
+kinfocenter:
+- kinfocenter: Override says utils - optional, .deb says kde - optional
+debhelper:
+- dh-systemd: Override says admin - optional, .deb says oldlibs - extra
+ezmlm-idx:
+- ezmlm-idx: Override says mail - optional, .deb says mail - extra
+- ezmlm-idx-pgsql: Override says mail - optional, .deb says mail - extra
+- ezmlm-idx-mysql: Override says mail - optional, .deb says mail - extra
+libxfce4util:
+- libxfce4util-dev: Override says xfce - optional, .deb says libdevel - optional
+mini-buildd:
+- mini-buildd: Override says devel - optional, .deb says devel - extra
+- python3-mini-buildd: Override says python - optional, .deb says python - extra
+leaflet:
+- libjs-leaflet: Override says javascript - optional, .deb says web - extra
+mediaelement:
+- libjs-mediaelement: Override says javascript - optional, .deb says web - optional
+libgit2:
+- libgit2-dev: Override says libdevel - optional, .deb says libdevel - extra
+urjtag:
+- urjtag: Override says embedded - optional, .deb says embedded - extra
+libxfce4ui:
+- xfce-keyboard-shortcuts: Override says xfce - optional, .deb says oldlibs - extra
+freedink-data:
+- freedink-data: Override says games - optional, .deb says games - extra
+gnokii:
+- gnokii: Override says comm - optional, .deb says metapackages - optional
+- gnokii-smsd-pgsql: Override says comm - optional, .deb says comm - extra
+- gnokii-smsd-mysql: Override says comm - optional, .deb says comm - extra
+- libgnokii-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libgnokii-dbg: Override says debug - optional, .deb says debug - extra
+- gnokii-smsd: Override says comm - optional, .deb says comm - extra
+- gnokii-dbg: Override says debug - optional, .deb says debug - extra
+calligra:
+- calligra-reports-web-element: Override says kde - optional, .deb says oldlibs - extra
+e17:
+- e17-data: Override says x11 - optional, .deb says oldlibs - extra
+- e17: Override says x11 - optional, .deb says oldlibs - extra
+senlin-dashboard:
+- python-senlin-dashboard: Override says python - optional, .deb says python - extra
+baloo-kf5:
+- baloo: Override says oldlibs - optional, .deb says oldlibs - extra
+cpio:
+- cpio-win32: Override says utils - optional, .deb says utils - extra
+ssm:
+- libssm-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libssm2: Override says libs - optional, .deb says libs - extra
+- libssm-bin: Override says science - optional, .deb says science - extra
+xmlelements:
+- python3-xe: Override says python - optional, .deb says python - extra
+- python-xe: Override says python - optional, .deb says python - extra
+telepathy-phoenix:
+- telepathy-phoenix: Override says utils - optional, .deb says utils - extra
+tbb:
+- tbb-examples: Override says doc - optional, .deb says doc - extra
+- libtbb2: Override says libs - optional, .deb says libs - extra
+- libtbb2-dbg: Override says debug - optional, .deb says debug - extra
+- libtbb-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libtbb-doc: Override says doc - optional, .deb says doc - extra
+luajit:
+- libluajit-5.1-2: Override says libs - optional, .deb says interpreters - optional
+libjs-handlebars.runtime:
+- libjs-handlebars.runtime: Override says javascript - optional, .deb says web - optional
+ganeti:
+- python-ganeti-rapi: Override says python - optional, .deb says python - extra
+- ganeti: Override says admin - optional, .deb says admin - extra
+- ganeti-htools: Override says admin - optional, .deb says admin - extra
+- ganeti-haskell-2.16: Override says admin - optional, .deb says admin - extra
+- ganeti-htools-2.16: Override says admin - optional, .deb says admin - extra
+- ganeti-doc: Override says doc - optional, .deb says doc - extra
+- ganeti-2.16: Override says admin - optional, .deb says admin - extra
+- ganeti2: Override says admin - optional, .deb says admin - extra
+llvm-defaults:
+- libclang1: Override says libs - optional, .deb says devel - optional
+nemo-fileroller:
+- nemo-fileroller: Override says gnome - optional, .deb says misc - optional
+bluemindo:
+- bluemindo: Override says sound - optional, .deb says sound - extra
+gitlab-ci-multi-runner:
+- gitlab-ci-multi-runner: Override says devel - optional, .deb says devel - extra
+jquery-caret.js:
+- libjs-jquery-caret.js: Override says javascript - optional, .deb says web - optional
+webkit2gtk:
+- libjavascriptcoregtk-4.0-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libwebkit2gtk-4.0-doc: Override says doc - optional, .deb says doc - extra
+- libwebkit2gtk-4.0-dev: Override says libdevel - optional, .deb says libdevel - extra
+omniorb-dfsg:
+- libomniorb4-2-dbg: Override says debug - optional, .deb says debug - extra
+- libcos4-2-dbg: Override says debug - optional, .deb says debug - extra
+- libomnithread4-dbg: Override says debug - optional, .deb says debug - extra
+python-igraph:
+- python-igraph: Override says python - optional, .deb says python - extra
+- python3-igraph: Override says python - optional, .deb says python - extra
+ndiswrapper:
+- ndiswrapper-utils-1.9: Override says misc - optional, .deb says oldlibs - extra
+sip4:
+- sip-dbg: Override says debug - optional, .deb says debug - extra
+- python-sip-dbg: Override says debug - optional, .deb says debug - extra
+- python3-sip-dbg: Override says debug - optional, .deb says debug - extra
+instant:
+- python-instant: Override says python - optional, .deb says python - extra
+- python3-instant: Override says python - optional, .deb says python - extra
+msgpack-c:
+- libmsgpack-doc: Override says doc - optional, .deb says doc - extra
+- libmsgpackc2: Override says libs - optional, .deb says libs - extra
+- libmsgpack-dev: Override says libdevel - optional, .deb says libdevel - extra
+olla:
+- olla: Override says devel - optional, .deb says devel - extra
+ants:
+- ants: Override says science - optional, .deb says science - extra
+gnome-twitch:
+- gnome-twitch: Override says video - optional, .deb says video - extra
+- gnome-twitch-player-backend-gstreamer-clutter: Override says video - optional, .deb says video - extra
+- gnome-twitch-player-backend-gstreamer-cairo: Override says video - optional, .deb says video - extra
+- gnome-twitch-player-backend-gstreamer-opengl: Override says video - optional, .deb says video - extra
+- gnome-twitch-player-backend-mpv-opengl: Override says video - optional, .deb says video - extra
+gnome-software:
+- gnome-packagekit-session: Override says oldlibs - optional, .deb says oldlibs - extra
+node-minimatch:
+- node-minimatch: Override says javascript - optional, .deb says web - extra
+libosmocore:
+- libosmocore-dbg: Override says debug - optional, .deb says debug - extra
+librep:
+- librep-dbg: Override says debug - optional, .deb says debug - extra
+ceph:
+- ceph-resource-agents: Override says admin - optional, .deb says admin - extra
+node-fn-name:
+- node-fn-name: Override says javascript - optional, .deb says web - optional
+gearmand:
+- gearman: Override says misc - optional, .deb says misc - extra
+- gearman-job-server: Override says misc - optional, .deb says misc - extra
+- libgearman-dev: Override says libdevel - optional, .deb says libdevel - extra
+- gearman-tools: Override says misc - optional, .deb says misc - extra
+- libgearman-doc: Override says doc - optional, .deb says doc - extra
+libccp4:
+- libccp4-data: Override says libdevel - optional, .deb says libdevel - extra
+- libccp4-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libccp4f0: Override says libs - optional, .deb says libs - extra
+- libccp4c0: Override says libs - optional, .deb says libs - extra
+coffeescript:
+- coffeescript-doc: Override says doc - optional, .deb says doc - extra
+- coffeescript: Override says devel - optional, .deb says devel - extra
+- libjs-coffeescript: Override says javascript - optional, .deb says web - extra
+debbugs:
+- libdebbugs-perl: Override says perl - optional, .deb says perl - extra
+- debbugs-web: Override says web - optional, .deb says misc - extra
+- debbugs: Override says misc - optional, .deb says misc - extra
+- debbugs-local: Override says misc - optional, .deb says misc - extra
+sqlite3:
+- libsqlite3-0-dbg: Override says debug - optional, .deb says debug - extra
+golang-github-golang-geo:
+- golang-github-golang-geo-dev: Override says devel - optional, .deb says devel - extra
+leaflet-markercluster:
+- libjs-leaflet-markercluster: Override says javascript - optional, .deb says web - extra
+kio:
+- kio-dev: Override says libdevel - optional, .deb says oldlibs - optional ({partial})
+- kio-dev: Override says libdevel - optional, .deb says oldlibs - extra ({partial})
+quasselc:
+- libquasselc-dev: Override says libdevel - optional, .deb says libdevel - extra
+node-slice-ansi:
+- node-slice-ansi: Override says javascript - optional, .deb says web - optional
+sump-logicanalyzer:
+- sump-logicanalyzer: Override says science - optional, .deb says science - extra
+clipper:
+- libclipper2-dbg: Override says debug - optional, .deb says debug - extra
+spatialite:
+- libspatialite-dbg: Override says debug - optional, .deb says debug - extra
+gcc-cross-support:
+- gcc-x86-64-linux-gnu: Override says devel - optional, .deb says devel - extra
+- g++-mips-linux-gnu: Override says devel - optional, .deb says devel - extra
+- gcc-for-host: Override says devel - optional, .deb says devel - extra
+- gfortran-for-host: Override says devel - optional, .deb says devel - extra
+- cpp-for-host: Override says devel - optional, .deb says devel - extra
+- gcc-for-build: Override says devel - optional, .deb says devel - extra
+- gfortran-x86-64-linux-gnu: Override says devel - optional, .deb says devel - extra
+- gcc-mips-linux-gnu: Override says devel - optional, .deb says devel - extra
+- gfortran-i586-linux-gnu: Override says devel - optional, .deb says devel - extra
+- cpp-mips-linux-gnu: Override says devel - optional, .deb says devel - extra
+- g++-x86-64-linux-gnu: Override says devel - optional, .deb says devel - extra
+- cpp-for-build: Override says devel - optional, .deb says devel - extra
+- cpp-i586-linux-gnu: Override says devel - optional, .deb says devel - extra
+- g++-for-host: Override says devel - optional, .deb says devel - extra
+- gfortran-for-build: Override says devel - optional, .deb says devel - extra
+- g++-for-build: Override says devel - optional, .deb says devel - extra
+- g++-i586-linux-gnu: Override says devel - optional, .deb says devel - extra
+- cpp-x86-64-linux-gnu: Override says devel - optional, .deb says devel - extra
+- gfortran-mips-linux-gnu: Override says devel - optional, .deb says devel - extra
+- gcc-i586-linux-gnu: Override says devel - optional, .deb says devel - extra
+python-qt4:
+- python-qt4-sql-dbg: Override says debug - optional, .deb says debug - extra
+- python-qt4-phonon-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt4-dbg: Override says debug - optional, .deb says debug - extra
+- python3-dbus.mainloop.qt-dbg: Override says debug - optional, .deb says debug - extra
+- python-qt4-gl-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt4.qtopengl-dbg: Override says debug - optional, .deb says debug - extra
+- python-qt4-dbus-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt4.phonon-dbg: Override says debug - optional, .deb says debug - extra
+- python3-pyqt4.qtsql-dbg: Override says debug - optional, .deb says debug - extra
+- python-qt4-dbg: Override says debug - optional, .deb says debug - extra
+qreator:
+- qreator: Override says utils - optional, .deb says utils - extra
+qoauth:
+- libqoauth2: Override says libs - optional, .deb says libs - extra
+- libqoauth-dev: Override says libdevel - optional, .deb says libdevel - extra
+pyotherside:
+- pyotherside: Override says libs - optional, .deb says oldlibs - extra
+nx-libs:
+- libxcomp3: Override says libs - optional, .deb says x11 - extra
+- nx-x11proto-render-dev: Override says libdevel - optional, .deb says libdevel - extra
+- nxagent: Override says x11 - optional, .deb says x11 - extra
+- nx-x11proto-randr-dev: Override says libdevel - optional, .deb says libdevel - extra
+- nx-x11proto-core-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libnx-x11-6: Override says x11 - optional, .deb says x11 - extra
+- nx-x11proto-xfixes-dev: Override says libdevel - optional, .deb says libdevel - extra
+- nxproxy: Override says x11 - optional, .deb says x11 - extra
+- libxcompshad-dev: Override says libdevel - optional, .deb says libdevel - extra
+- nx-x11proto-xinerama-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libxcomp-dev: Override says libdevel - optional, .deb says libdevel - extra
+- nx-x11proto-xext-dev: Override says libdevel - optional, .deb says libdevel - extra
+- nx-x11proto-scrnsaver-dev: Override says libdevel - optional, .deb says libdevel - extra
+- nx-x11proto-composite-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libnx-x11-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libxcompshad3: Override says x11 - optional, .deb says x11 - extra
+- nx-x11proto-damage-dev: Override says libdevel - optional, .deb says libdevel - extra
+- nx-x11-common: Override says x11 - optional, .deb says x11 - extra
+banshee:
+- banshee-dbg: Override says debug - optional, .deb says debug - extra
+elmer-doc:
+- elmer-doc: Override says non-free/doc - optional, .deb says non-free/doc - extra
+tinysvm:
+- libtinysvm1-dbg: Override says debug - optional, .deb says debug - extra
+kmfl-keyboards-mywin:
+- kmfl-keyboards-mywin: Override says utils - optional, .deb says utils - extra
+openafs:
+- openafs-modules-dkms: Override says kernel - optional, .deb says kernel - extra
+- libopenafs-dev: Override says libdevel - optional, .deb says libdevel - extra
+- openafs-modules-source: Override says kernel - optional, .deb says kernel - extra
+- openafs-fuse: Override says net - optional, .deb says net - extra
+edk2:
+- qemu-efi-arm: Override says misc - optional, .deb says misc - extra
+- qemu-efi: Override says misc - optional, .deb says misc - extra
+- qemu-efi-aarch64: Override says misc - optional, .deb says misc - extra
+- ovmf: Override says misc - optional, .deb says misc - extra
+glibc:
+- multiarch-support: Override says libs - required, .deb says oldlibs - optional ({partial})
+- locales-all: Override says localization - optional, .deb says localization - extra ({partial})
+- libc6-dbg: Override says debug - optional, .deb says debug - extra ({partial})
+nvidia-graphics-drivers:
+- libgles1-nvidia: Override says non-free/libs - optional, .deb says non-free/oldlibs - extra
+- libgles2-nvidia: Override says non-free/libs - optional, .deb says non-free/oldlibs - extra
+icu:
+- icu-devtools-dbg: Override says debug - optional, .deb says debug - extra
+- libicu58-dbg: Override says debug - optional, .deb says debug - extra
+nvidia-texture-tools:
+- libnvtt-bin: Override says libs - optional, .deb says libs - extra
+- libnvtt-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libnvtt2: Override says libs - optional, .deb says libs - extra
+boinc:
+- boinc-client-nvidia-cuda: Override says contrib/net - optional, .deb says contrib/net - extra
+- boinc-cgi-stripchart: Override says libs - optional, .deb says libs - extra
+- boinc-client-opencl: Override says contrib/net - optional, .deb says contrib/net - extra
+- boinc-dev: Override says devel - optional, .deb says oldlibs - extra
+elmerfem:
+- elmergui-samples: Override says science - optional, .deb says science - extra
+- elmer-common: Override says science - optional, .deb says science - extra
+- libelmersolver-dbg: Override says debug - optional, .deb says debug - extra
+- elmer: Override says science - optional, .deb says science - extra
+- libelmer-dev: Override says libdevel - optional, .deb says libdevel - extra
+- libelmersolver-7.0: Override says libs - optional, .deb says libs - extra
+- elmer-dbg: Override says debug - optional, .deb says debug - extra
+node-md5-o-matic:
+- node-md5-o-matic: Override says javascript - optional, .deb says web - optional
+sqlalchemy:
+- python-sqlalchemy-doc: Override says doc - optional, .deb says doc - extra
+postgresql-10:
+- postgresql-10-dbg: Override says debug - optional, .deb says debug - extra
+grass:
+- grass: Override says science - optional, .deb says metapackages - optional
+pulseaudio:
+- pulseaudio-module-bluetooth: Override says sound - optional, .deb says sound - extra
+- libpulse-mainloop-glib0: Override says libs - optional, .deb says sound - optional
+golang-golang-x-debug:
+- golang-golang-x-debug-dev: Override says devel - optional, .deb says devel - extra
+golang-google-api:
+- golang-google-api-dev: Override says devel - optional, .deb says devel - extra
+ruby-rails-assets-markdown-it:
+- libjs-markdown-it: Override says javascript - optional, .deb says web - optional
+lucene-net:
+- liblucene-net3.0-cil-dev: Override says cli-mono - optional, .deb says cli-mono - extra
+- liblucene-net3.0-cil: Override says cli-mono - optional, .deb says cli-mono - extra
+batmand:
+- batmand: Override says net - optional, .deb says net - extra
+cipux-rbac:
+- cipux-rbac-tools: Override says admin - optional, .deb says perl - optional
+libffi:
+- libffi7-dbg: Override says debug - optional, .deb says debug - extra
+- libffi6-dbg: Override says debug - optional, .deb says debug - extra
+python-slugify:
+- slugify: Override says python - optional, .deb says text - optional
+pyfeed:
+- python3-feed: Override says python - optional, .deb says python - extra
+- python-feed: Override says python - optional, .deb says python - extra
+maliit-plugins:
+- maliit-keyboard: Override says libs - optional, .deb says libs - extra
+- maliit-keyboard-data: Override says libs - optional, .deb says libs - extra
+kdeclarative:
+- qtdeclarative5-kf5declarative: Override says oldlibs - optional, .deb says oldlibs - extra

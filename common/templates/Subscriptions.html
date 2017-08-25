@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Subscriptions | Debian Package Tracker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link href="https://tracker.debian.org/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="https://tracker.debian.org/static/css/octicons.css" rel="stylesheet" media="screen">
+        <link href="https://tracker.debian.org/static/css/style.css" rel="stylesheet" media="screen">
+        <script type="text/javascript">
+	function validate_email(field,alerttxt)
+	{
+	with (field)
+	{
+	apos=value.indexOf("@")
+	dotpos=value.lastIndexOf(".")
+	if (apos<1||dotpos-apos<2) 
+	  {alert(alerttxt);return false}
+	else {return true}
+	}
+	}
+	function validate_form(thisform)
+	{
+	with (thisform)
+	{
+	if (validate_email(email,"Not a valid e-mail address!")==false)
+	  {email.focus();return false}
+	}
+	}
+	</script>    
+    </head>
+    <body>
+        
+        <header class="page-header">
+            <div class="container-fluid">
+                
+		<div class="row">
+		<div class="col-xs-12 text-xs-center">
+		    <div class="pull-xs-left">
+<a href="/"><img src="https://tracker.debian.org/static/img/logo.png" alt="Debian Package Tracker"></a>
+</div>
+		    <div class="pull-xs-right">
+		    
+		    
+    <span>|</span>
+    <span><a id="account-logout" href="{{url_for('index')}}">Debian package tracker</a></span>
+
+
+		    
+		    </div>
+		    
+		    <h1>Debian Package Tracker</h1>
+		    
+		</div>
+		</div>
+                
+            </div>
+        </header>
+        
+
+	
+        <div class="container">
+            
+
+
+<nav class="navbar navbar-dark bg-inverse"><ul class="nav navbar-nav"><li class="nav-item active"><a class="nav-link" href="/accounts/subscriptions/">Subscriptions information</a></li></ul></nav>
+
+<p style="font-family:verdana;color:red">{{get_flashed_messages()[0]}}</p>
+
+{% if flag_emails %}  
+{% if flag_sources %} 
+<div class="accordion-group row">
+<div class="accordion-heading col-xs-12 m-y-1">
+    <b>Subscriptions for {{session.get('email')}}</b>
+   
+    
+    <form style="display: inline-block; margin-bottom: 0px;" action="/unsubscribe_all" method="POST">
+    <input type="hidden" name="email" value={{session.get('email')}}>
+    <button class='btn btn-sm btn-danger unsubscribe-all' type="submit">Unsubscribe all</button>
+    </form>
+    
+    <div class="default-keywords" style="display: none;" id="default-keywords-1">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+</div>
+<div class="accordion-body collapse in row" id="emails-1">
+<div class="accordion-inner col-xs-12">
+
+
+
+
+
+<div class="list-group" id="subscriptions-accordion-1">
+
+
+
+    
+   {% for i in range(source_package_size ) %} 
+    <div class="panel list-group-item accordion-group subscription-group">
+        <div class="accordion-heading">
+            <div class="row">
+		<div class="col-md-6">
+		  
+		    <span class='subscription-package'>
+		    
+		    <a href="/pkg/python">{{source_packages[i][0]}}</a>
+		    
+		    </span>
+		    
+		</div>
+		<div class="col-md-6">
+		    <div class="pull-xs-right">
+			<form style="margin-bottom: 0px;display:inline;" action="/unsubscribe" method="POST">
+			<input type="hidden" name="packagename_unsub" value={{source_packages[i][0]}}>
+			<input type="hidden" name="email" value={{session.get('email')}}>
+			<button type="submit" class="btn btn-sm btn-danger unsubscribe-package">Unsubscribe</button>
+			</form>
+		    </div>
+		</div> 
+            </div> 
+        </div>
+
+    </div>
+   {% endfor %}
+    
+
+
+    
+
+
+
+
+</div>
+
+
+
+
+</div></div>
+
+
+{% endif  %} 
+<div class="row">
+<div class="col-xs-12 m-t-1">
+<h3>Add new subscription</h3>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+        <form class="form-horizontal" id="package-subscribe-form" action="/subscribe" method="POST">
+	    <div class="form-group row">
+		<div class="col-sm-3 col-lg-2">
+		    <label class="form-label">Emails to subscribe:</label>
+		</div>
+		<div class="col-sm-9" id="dt-subscription-email-list">
+		    
+			<label class="checkbox-inline">
+			<input type="checkbox" name="email" value={{session.get('email')}}
+			checked="True"> {{session.get('email')}}
+			</label>
+		    
+		</div>
+            </div>
+	    <div class="form-group row">
+		<div class="col-sm-3 col-lg-2">
+		    <label for="package-search-input">Debian package name:</label>
+		</div>
+		<div class="col-sm-9">
+		    <input id="package-search-input" class="form-control package-completion" type="text" name="packagename" placeholder="Choose package...">
+		</div>
+            </div>
+	    <div class="form-group row">
+		<div class="col-sm-offset-3 col-lg-offset-2 col-sm-9">
+		    <button type="submit" class="btn btn-primary">Subscribe</button>
+		</div>
+            </div>
+        </form>
+</div>
+</div>
+
+{% endif  %} 
+{% if not flag_emails %}  
+<div class="row">
+<div class="col-xs-12">
+        <form class="form-horizontal" id="package-subscribe-form" action="/subscribe_information" method="POST" onsubmit="return validate_form(this);">
+	    <div class="form-group row">
+		<div class="col-sm-3 col-lg-2">
+		    <label class="form-label" > </label>
+		</div>
+		<div class="col-sm-9" id="dt-subscription-email-list">
+		    
+		</div>
+            </div>
+	    <div class="form-group row">
+		<div class="col-sm-3 col-lg-2">
+		    <label for="package-search-input">Your Email address:</label>
+		</div>
+		<div class="col-sm-9">
+		    <input id="package-search-input" class="form-control package-completion" type="text" name="new_email_address" placeholder="please input your address..." >
+		</div>
+            </div>
+	    <div class="form-group row">
+		<div class="col-sm-offset-3 col-lg-offset-2 col-sm-9">
+		    <button type="submit" class="btn btn-primary">go on</button>
+		</div>
+            </div>
+        </form>
+</div>
+</div>
+{% endif  %} 
+        </div>
+	
+
+        <hr>
+  	<footer id="footer">
+            <div class="container-fluid">
+                <div class="text-xs-center">
+                    
+                                        <div id="footer-title"><a href="https://www.debian.org">Debian</a> Package Tracker — <a href="https://deb.li/DTAuthors">Copyright</a> 2017-2018 ISCAS</div>
+
+                    
+                </div>
+            </div>
+        </footer>
+
+
+    </body>
+</html>
+

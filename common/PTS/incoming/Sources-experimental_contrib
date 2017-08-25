@@ -1,0 +1,193 @@
+Package: hwloc-contrib
+Binary: libhwloc-contrib-plugins
+Version: 1.11.7-1
+Maintainer: Samuel Thibault <sthibault@debian.org>
+Build-Depends: debhelper (>= 9), libltdl-dev, valgrind [amd64 arm64 armhf i386 mips mipsel powerpc ppc64el s390x mips64el ppc64], libx11-dev, libxext-dev, nvidia-cuda-dev, libxnvctrl-dev, libpciaccess-dev, pkg-config, libibverbs-dev [linux-any], ocl-icd-opencl-dev [!hurd-i386] | opencl-dev, opencl-headers, autoconf (>= 2.63), dh-autoreconf, dpkg-dev (>= 1.16)
+Build-Conflicts: autoconf2.13
+Architecture: amd64
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ d9dd990fe37e5378b6179c3bfc98c75e 2275 hwloc-contrib_1.11.7-1.dsc
+ 13d2e4dbce392cda41f1451d386d9a45 4187754 hwloc-contrib_1.11.7.orig.tar.bz2
+ 9245e95a021572e2bc43a662ca8f27c4 6407 hwloc-contrib_1.11.7-1.debian.tar.bz2
+Vcs-Browser: http://github.com/open-mpi/hwloc-debian
+Vcs-Git: http://github.com/open-mpi/hwloc-debian.git
+Checksums-Sha256:
+ 2a2154f65106b1f1d19cb526b86fe3e2e05d1b1845478325afd2045ea065b6d5 2275 hwloc-contrib_1.11.7-1.dsc
+ ab6910e248eed8c85d08b529917a6aae706b32b346e886ba830895e36a809729 4187754 hwloc-contrib_1.11.7.orig.tar.bz2
+ 04d78dc003e083c8cad00cb35892f1be3e73b953737a87e35abc0e84d8ed8189 6407 hwloc-contrib_1.11.7-1.debian.tar.bz2
+Homepage: http://www.open-mpi.org/projects/hwloc/
+Package-List: 
+ libhwloc-contrib-plugins deb contrib/admin extra arch=amd64
+Directory: pool/contrib/h/hwloc-contrib
+Priority: optional
+Section: contrib/misc
+
+Package: lua-torch-cutorch
+Binary: lua-torch-cutorch, libtorch-thc, libtorch-thc-dev
+Version: 0~20170511-g92e9c08-1
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: Zhou Mo <cdluminate@gmail.com>
+Build-Depends: debhelper (>= 10), cmake, dh-lua, luajit, nvidia-cuda-toolkit, clang-3.8, lua-torch-torch7, libtorch-th-dev, libtorch-luat-dev
+Architecture: amd64 ppc64el
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ d3b464dfcbc1308ba1edae719d6c5bbf 2434 lua-torch-cutorch_0~20170511-g92e9c08-1.dsc
+ b0f99424f2fd13f584d4890c2652b92d 202382 lua-torch-cutorch_0~20170511-g92e9c08.orig.tar.gz
+ a879f893f7670dc0535cd4191861f775 3900 lua-torch-cutorch_0~20170511-g92e9c08-1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/debian-science/packages/lua-torch-cutorch.git/
+Vcs-Git: https://anonscm.debian.org/git/debian-science/packages/lua-torch-cutorch.git
+Checksums-Sha256:
+ 0557e9b02c9de50c1acb257f8c1b941bf9a81a34f411d64e792cf8def1f50c21 2434 lua-torch-cutorch_0~20170511-g92e9c08-1.dsc
+ 3b9bc117789bdd846dc7f82910907a001914714fc33861eaff7b46550492936b 202382 lua-torch-cutorch_0~20170511-g92e9c08.orig.tar.gz
+ 055b90dab717616c76a62b35ef693fb6d94c7e8c54989dc1adaf0dcc74575888 3900 lua-torch-cutorch_0~20170511-g92e9c08-1.debian.tar.xz
+Homepage: https://github.com/torch/cutorch
+Package-List: 
+ libtorch-thc deb contrib/libs optional arch=amd64,ppc64el
+ libtorch-thc-dev deb contrib/libdevel optional arch=amd64,ppc64el
+ lua-torch-cutorch deb contrib/science optional arch=amd64,ppc64el
+Directory: pool/contrib/l/lua-torch-cutorch
+Priority: optional
+Section: contrib/misc
+
+Package: node-rollup
+Binary: rollup
+Version: 0.38.0-1
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>, Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper (>= 9), dh-buildinfo, nodejs, node-magic-string, node-acorn, node-minimist, node-require-relative, node-sourcemap-codec
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 70e5fc3abed9120d2486f5d21788f738 2176 node-rollup_0.38.0-1.dsc
+ eef1bc776fff927909c843abc013eb27 159338 node-rollup_0.38.0.orig.tar.gz
+ 4ffa934efc8ba7cf5593dd0447d26e97 2880 node-rollup_0.38.0-1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-rollup.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-rollup.git
+Checksums-Sha256:
+ 41d4617c31b536cc82e073db084c12d82e0c26af9d173114dae26f0f0f36a9ec 2176 node-rollup_0.38.0-1.dsc
+ c26104bd0594ba9b2bf18161c96b530f5bfbd73096d45bcb973365203d2350fb 159338 node-rollup_0.38.0.orig.tar.gz
+ 4580838c9e5c04a7fd355555767f7a0c6c2f75f23662dd38dec424eb71011356 2880 node-rollup_0.38.0-1.debian.tar.xz
+Homepage: https://github.com/rollup/rollup
+Package-List: 
+ rollup deb contrib/web optional arch=all
+Testsuite: autopkgtest
+Testsuite-Triggers: node-rollup
+Directory: pool/contrib/n/node-rollup
+Priority: optional
+Section: contrib/javascript
+
+Package: node-webpack
+Binary: webpack
+Version: 2.6.1-1
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper (>= 9), dh-buildinfo, nodejs, mocha, node-should, node-sinon, node-memory-fs (>= 0.4.1), node-watchpack (>= 1.3.1), node-loader-runner (>= 2.3.0), node-async (>= 0.8), node-yargs (>= 6.0.0), node-mkdirp (>= 0.5.0), node-source-map (>= 0.5.3), node-tapable (>= 0.2.5), node-json5 (>= 0.5), node-ajv-keywords (>= 2.0.0), node-ajv (>= 5.0), node-acorn-dynamic-import (>= 2.0.0), node-acorn (>= 4.0.0), node-supports-color (>= 3.1.0), node-webpack-sources (>= 0.2), node-loader-utils (>= 0.2), node-libs-browser (>= 2.0.0), node-enhanced-resolve (>= 3.0.0), node-json-loader (>= 0.5.4), node-interpret (>= 1.0.0), node-lodash-packages, node-lodash
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ a014808007c441a412cb57233874e868 2671 node-webpack_2.6.1-1.dsc
+ 53a29e4ce7fec71c09a8d926c3f003af 479283 node-webpack_2.6.1.orig.tar.gz
+ 1e001d179d99c496e3eb331ef3080b1a 2920 node-webpack_2.6.1-1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-webpack.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-webpack.git
+Checksums-Sha256:
+ c2faed20e879d7164faade4596fe85ab2537fe94a572717c2e5ded8968245823 2671 node-webpack_2.6.1-1.dsc
+ 3c2c09ec5bc632faf8fd4e8eefa514534329a542e1ab89bd26389b631f92c4de 479283 node-webpack_2.6.1.orig.tar.gz
+ 02bc4d44d5cfbb963662709fa1980ec49de80cbea270cd59eb0de5c59eaa7919 2920 node-webpack_2.6.1-1.debian.tar.xz
+Homepage: https://github.com/webpack/webpack
+Package-List: 
+ webpack deb contrib/web optional arch=all
+Testsuite: autopkgtest
+Testsuite-Triggers: node-webpack
+Directory: pool/contrib/n/node-webpack
+Priority: extra
+Section: contrib/misc
+
+Package: openjk
+Binary: openjk-academy, openjk-academy-server, openjk-outcast, openjk-common
+Version: 0~20170718+dfsg1-2
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Simon McVittie <smcv@debian.org>
+Build-Depends: cmake, debhelper (>= 10), dh-apparmor [linux-any], dh-exec, dpkg-dev (>= 1.16.1), icnsutils, imagemagick, libboost-test-dev, libjpeg-dev, libpng-dev, libsdl2-dev (>= 2.0.4), zip
+Architecture: any
+Standards-Version: 4.0.0
+Format: 3.0 (quilt)
+Files:
+ b081731557b739f21f0aff190bb90a8e 2370 openjk_0~20170718+dfsg1-2.dsc
+ e1db8039ad8ef19d3453b95e91a18393 6116780 openjk_0~20170718+dfsg1.orig.tar.xz
+ f1c774d2976cf3bced06596d123d646b 19632 openjk_0~20170718+dfsg1-2.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-games/openjk.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-games/openjk.git
+Checksums-Sha256:
+ 36b83973a7252996adf72c2232998b1aaebd91c89b3017b3e314199db922e0c1 2370 openjk_0~20170718+dfsg1-2.dsc
+ 27ad240f7e8fbfb20efbb5e918f4a11cc46bef9a317ebd2b9eaf92890b9d9786 6116780 openjk_0~20170718+dfsg1.orig.tar.xz
+ 73dcafdc33c6dfae4671e612a73c0fff9afd6eea7efd624f56bb9c1b1f83c6c3 19632 openjk_0~20170718+dfsg1-2.debian.tar.xz
+Homepage: https://github.com/JACoders/OpenJK
+Package-List: 
+ openjk-academy deb contrib/games optional arch=any
+ openjk-academy-server deb contrib/games optional arch=any
+ openjk-common deb contrib/games optional arch=any
+ openjk-outcast deb contrib/games optional arch=any
+Directory: pool/contrib/o/openjk
+Priority: optional
+Section: contrib/misc
+
+Package: ruby-webpack-rails
+Binary: ruby-webpack-rails
+Version: 0.9.10-1
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper (>= 9~), gem2deb, ruby-railties (>= 3.2.0)
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ b84d9b2136740725df5e8cd863a1ef78 2160 ruby-webpack-rails_0.9.10-1.dsc
+ 1b366d55fb6ce183a693ee8a57d5ffff 8599 ruby-webpack-rails_0.9.10.orig.tar.gz
+ 7dc41d7a130009f6e6452baa04f301f3 2032 ruby-webpack-rails_0.9.10-1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-webpack-rails.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-webpack-rails.git
+Checksums-Sha256:
+ 8f66f6d6c85f62be637dec1f2801dc1ec27f1f15ed8905ca443b590d77bd08c6 2160 ruby-webpack-rails_0.9.10-1.dsc
+ 43a66c3c5c82ca01244cae49fdc257011428e0665ebccafd547aa71f8318b1d3 8599 ruby-webpack-rails_0.9.10.orig.tar.gz
+ 872ed86183197a6faa3548fd5580cb357eb064ec1e135f5865841c19ed1347bf 2032 ruby-webpack-rails_0.9.10-1.debian.tar.xz
+Homepage: http://github.com/mipearson/webpack-rails
+Package-List: 
+ ruby-webpack-rails deb contrib/ruby optional arch=all
+Ruby-Versions: all
+Testsuite: autopkgtest-pkg-ruby
+Directory: pool/contrib/r/ruby-webpack-rails
+Priority: extra
+Section: contrib/misc
+
+Package: winetricks
+Binary: winetricks
+Version: 0.0+20170327-1
+Maintainer: Debian Wine Party <pkg-wine-party@lists.alioth.debian.org>
+Uploaders: Joseph Bisch <joseph.bisch@gmail.com>, Jens Reyer <jre.winesim@gmail.com>,
+Build-Depends: debhelper (>= 10)
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 0aa28e5a1a27c45158daee361d25385f 2041 winetricks_0.0+20170327-1.dsc
+ ffeceb8c9697b5409858f0d161270fd5 190864 winetricks_0.0+20170327.orig.tar.gz
+ 175198c3bf5e6e91a84aa998a5be7289 93156 winetricks_0.0+20170327-1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-wine/winetricks.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-wine/winetricks.git
+Checksums-Sha256:
+ d81e3c59d2952b54d980e65889aebf349192532f5dd005b43979fba1487262ed 2041 winetricks_0.0+20170327-1.dsc
+ ad381386be95f5f2c34a69a6d1d77f3d41d86f883b8bed7ac4699947cf13e97d 190864 winetricks_0.0+20170327.orig.tar.gz
+ 0fdf6886626e31f7fbb6dfb048ef285b511bb2c44552a3a64e2440762fcb0bfa 93156 winetricks_0.0+20170327-1.debian.tar.xz
+Homepage: https://github.com/Winetricks/winetricks
+Package-List: 
+ winetricks deb contrib/otherosfs optional arch=all
+Directory: pool/contrib/w/winetricks
+Priority: source
+Section: contrib/otherosfs
+

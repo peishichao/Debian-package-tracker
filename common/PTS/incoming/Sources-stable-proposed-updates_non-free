@@ -1,0 +1,85 @@
+Package: nvidia-graphics-drivers
+Binary: nvidia-driver, nvidia-driver-bin, nvidia-driver-libs, nvidia-driver-libs-i386, xserver-xorg-video-nvidia, nvidia-legacy-check, libgldispatch0-nvidia, libopengl0-glvnd-nvidia, libglx0-glvnd-nvidia, libglx-nvidia0, libgl1-glvnd-nvidia-glx, libgl1-nvidia-glvnd-glx, libgl1-nvidia-glx, libnvidia-glcore, libegl1-glvnd-nvidia, libegl1-nvidia, libegl-nvidia0, libgles1-glvnd-nvidia, libgles1-nvidia, libgles-nvidia1, libgles2-glvnd-nvidia, libgles2-nvidia, libgles-nvidia2, libnvidia-eglcore, nvidia-egl-common, nvidia-egl-icd, libnvidia-egl-wayland, nvidia-vulkan-common, nvidia-vulkan-icd, libnvidia-cfg1, nvidia-alternative, nvidia-kernel-support, nvidia-kernel-dkms, nvidia-kernel-source, nvidia-vdpau-driver, nvidia-smi, nvidia-cuda-mps, libcuda1, libcuda1-i386, libnvidia-compiler, libnvidia-fatbinaryloader, libnvidia-ptxjitcompiler, libnvcuvid1, libnvidia-encode1, libnvidia-ifr1, libnvidia-fbc1, libnvidia-ml1, nvidia-opencl-common, nvidia-opencl-icd, nvidia-libopencl1,
+ nvidia-detect
+Version: 375.82-1~deb9u1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>, Vincent Cheng <vcheng@debian.org>, Luca Boccassi <luca.boccassi@gmail.com>,
+Build-Depends: debhelper (>= 10), dpkg-dev (>= 1.17), xz-utils, dkms, libwayland-client0, libwayland-server0, libxext6 [!ppc64el], quilt, po-debconf
+Build-Conflicts: libglvnd-dev
+Architecture: i386 amd64 armhf ppc64el
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 1b19fdfbf7ad249289127def7b704b9a 7774 nvidia-graphics-drivers_375.82-1~deb9u1.dsc
+ d2eb4eeb1659f7929b03ebaffd982af4 77427357 nvidia-graphics-drivers_375.82.orig-amd64.tar.gz
+ b4102c3c5679775be69b9a56ce4aea34 26614203 nvidia-graphics-drivers_375.82.orig-armhf.tar.gz
+ eb6ac725bb9ac467cd7a080d94e4bb10 44598480 nvidia-graphics-drivers_375.82.orig-i386.tar.gz
+ 190db47be72c43ade29e8c301cb757ed 137 nvidia-graphics-drivers_375.82.orig.tar.gz
+ d6112c6091c281c460515682cf7a8c77 170196 nvidia-graphics-drivers_375.82-1~deb9u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-graphics-drivers/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-graphics-drivers/trunk
+Checksums-Sha256:
+ 25ecd336fbd63948287fc39367b5151874e42764572cbe3112b58e3fd597d803 7774 nvidia-graphics-drivers_375.82-1~deb9u1.dsc
+ d31010892740a908aba779e06d8075576400cd2345cae769d363315603f5b6f6 77427357 nvidia-graphics-drivers_375.82.orig-amd64.tar.gz
+ d0ec92702b89e321832d9bb78ad414e7f725ff80afcbea37f531e38803508575 26614203 nvidia-graphics-drivers_375.82.orig-armhf.tar.gz
+ 68017fdfab8bc656e803a9e0723efcc21b6fec4bd055699b918b86a171aee585 44598480 nvidia-graphics-drivers_375.82.orig-i386.tar.gz
+ 32a41fa4c92304214951cd1208042fd79e25ba1efe73274c85cf296ef23c7693 137 nvidia-graphics-drivers_375.82.orig.tar.gz
+ 4632001202e9c96cb89c24404ede10f61624fb4983a3ce66a04b0b28fe3e2523 170196 nvidia-graphics-drivers_375.82-1~deb9u1.debian.tar.xz
+Homepage: http://www.nvidia.com
+Autobuild: yes
+Package-List: 
+ libcuda1 deb non-free/libs optional arch=i386,amd64,armhf,ppc64el
+ libcuda1-i386 deb non-free/libs optional arch=i386
+ libegl-nvidia0 deb non-free/libs optional arch=i386,amd64,armhf
+ libegl1-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libegl1-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgl1-glvnd-nvidia-glx deb non-free/libs optional arch=i386,amd64,armhf
+ libgl1-nvidia-glvnd-glx deb non-free/libs optional arch=i386,amd64,armhf
+ libgl1-nvidia-glx deb non-free/libs optional arch=i386,amd64,armhf
+ libgldispatch0-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgles-nvidia1 deb non-free/libs optional arch=i386,amd64,armhf
+ libgles-nvidia2 deb non-free/libs optional arch=i386,amd64,armhf
+ libgles1-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgles1-nvidia deb non-free/oldlibs extra arch=i386,amd64,armhf
+ libgles2-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgles2-nvidia deb non-free/oldlibs extra arch=i386,amd64,armhf
+ libglx-nvidia0 deb non-free/libs optional arch=i386,amd64,armhf
+ libglx0-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libnvcuvid1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-cfg1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-compiler deb non-free/libs optional arch=i386,amd64
+ libnvidia-egl-wayland deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-eglcore deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-encode1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-fatbinaryloader deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-fbc1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-glcore deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-ifr1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-ml1 deb non-free/libs optional arch=i386,amd64,armhf,ppc64el
+ libnvidia-ptxjitcompiler deb non-free/libs optional arch=i386,amd64,armhf
+ libopengl0-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-alternative deb non-free/libs optional arch=i386,amd64,armhf,ppc64el
+ nvidia-cuda-mps deb non-free/utils optional arch=i386,amd64,armhf,ppc64el
+ nvidia-detect deb non-free/x11 optional arch=i386,amd64,armhf
+ nvidia-driver deb non-free/x11 optional arch=i386,amd64,armhf
+ nvidia-driver-bin deb non-free/x11 optional arch=i386,amd64,armhf
+ nvidia-driver-libs deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-driver-libs-i386 deb non-free/libs optional arch=i386
+ nvidia-egl-common deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-egl-icd deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-kernel-dkms deb non-free/kernel optional arch=i386,amd64,armhf,ppc64el
+ nvidia-kernel-source deb non-free/kernel optional arch=i386,amd64,armhf,ppc64el
+ nvidia-kernel-support deb non-free/kernel optional arch=i386,amd64,armhf,ppc64el
+ nvidia-legacy-check deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-libopencl1 deb non-free/libs optional arch=i386,amd64,ppc64el
+ nvidia-opencl-common deb non-free/libs optional arch=i386,amd64,ppc64el
+ nvidia-opencl-icd deb non-free/libs optional arch=i386,amd64,ppc64el
+ nvidia-smi deb non-free/utils optional arch=i386,amd64,armhf,ppc64el
+ nvidia-vdpau-driver deb non-free/video optional arch=i386,amd64,armhf
+ nvidia-vulkan-common deb non-free/libs optional arch=i386,amd64
+ nvidia-vulkan-icd deb non-free/libs optional arch=i386,amd64
+ xserver-xorg-video-nvidia deb non-free/x11 optional arch=i386,amd64,armhf
+Directory: pool/non-free/n/nvidia-graphics-drivers
+Priority: source
+Section: non-free/x11
+

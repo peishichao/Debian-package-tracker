@@ -1,0 +1,1204 @@
+Package: apache2
+Binary: apache2, apache2-data, apache2-bin, apache2-mpm-worker, apache2-mpm-prefork, apache2-mpm-event, apache2-mpm-itk, apache2.2-bin, apache2.2-common, libapache2-mod-proxy-html, libapache2-mod-macro, apache2-utils, apache2-suexec, apache2-suexec-pristine, apache2-suexec-custom, apache2-doc, apache2-dev, apache2-dbg
+Version: 2.4.10-10+deb8u10
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Uploaders: Stefan Fritsch <sf@debian.org>, Arno Töll <arno@debian.org>
+Build-Depends: debhelper (>= 9.20131213~), lsb-release, dpkg-dev (>= 1.16.1~), libaprutil1-dev (>= 1.5.0), libapr1-dev (>= 1.5.0), libpcre3-dev, zlib1g-dev, libssl-dev (>= 0.9.8m), perl, liblua5.1-0-dev, libxml2-dev, autotools-dev, gawk | awk
+Build-Conflicts: autoconf2.13
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ a12f9fba58574e8f32618566c2e0b2d8 3281 apache2_2.4.10-10+deb8u10.dsc
+ 44543dff14a4ebc1e9e2d86780507156 5031834 apache2_2.4.10.orig.tar.bz2
+ 576047d1cf5108772c43d790289120a1 558192 apache2_2.4.10-10+deb8u10.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-apache/apache2.git
+Vcs-Git: git://anonscm.debian.org/pkg-apache/apache2.git
+Checksums-Sha1:
+ a9bec52db372c18a0ae6bc96b3a2eb72ca469da0 3281 apache2_2.4.10-10+deb8u10.dsc
+ 00f5c3f8274139bd6160eda2cf514fa9b74549e5 5031834 apache2_2.4.10.orig.tar.bz2
+ ee8dde0e307f5acca17091a70630872fe8d936ba 558192 apache2_2.4.10-10+deb8u10.debian.tar.xz
+Checksums-Sha256:
+ 818e2cea2c65448a89b1d51bbbb3c69c100f044894fa19d7065744cad5f3db85 3281 apache2_2.4.10-10+deb8u10.dsc
+ 176c4dac1a745f07b7b91e7f4fd48f9c48049fa6f088efe758d61d9738669c6a 5031834 apache2_2.4.10.orig.tar.bz2
+ 7d722793f3436428ce87e5d67f5755c6d627f9fac50272cba86e77759edaa63c 558192 apache2_2.4.10-10+deb8u10.debian.tar.xz
+Homepage: http://httpd.apache.org/
+Package-List: 
+ apache2 deb httpd optional arch=any
+ apache2-bin deb httpd optional arch=any
+ apache2-data deb httpd optional arch=all
+ apache2-dbg deb debug extra arch=any
+ apache2-dev deb httpd optional arch=any
+ apache2-doc deb doc optional arch=all
+ apache2-mpm-event deb oldlibs extra arch=any
+ apache2-mpm-itk deb oldlibs extra arch=any
+ apache2-mpm-prefork deb oldlibs extra arch=any
+ apache2-mpm-worker deb oldlibs extra arch=any
+ apache2-suexec deb oldlibs extra arch=any
+ apache2-suexec-custom deb httpd extra arch=any
+ apache2-suexec-pristine deb httpd optional arch=any
+ apache2-utils deb httpd optional arch=any
+ apache2.2-bin deb oldlibs extra arch=any
+ apache2.2-common deb oldlibs extra arch=any
+ libapache2-mod-macro deb oldlibs extra arch=any
+ libapache2-mod-proxy-html deb oldlibs extra arch=any
+Directory: pool/main/a/apache2
+Priority: source
+Section: httpd
+
+Package: atril
+Binary: atril, atril-dbg, atril-common, libatrilview3, libatrilview-dev, libatrilview3-dbg, libatrildocument3, libatrildocument-dev, libatrildocument3-dbg
+Version: 1.8.1+dfsg1-4+deb8u1
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>, John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>, Stefano Karapetsas <stefano@karapetsas.com>, Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: cdbs, debhelper (>= 9), intltool, mate-common, mate-icon-theme, yelp-tools, gtk-doc-tools, libdbus-glib-1-dev, libx11-dev, libgtk2.0-dev, libglib2.0-dev, libsecret-1-dev | libgnome-keyring-dev, libxml2-dev, libsm-dev, zlib1g-dev, libcaja-extension-dev (>= 1.5.0), libpoppler-glib-dev, libspectre-dev, libtiff-dev, libdjvulibre-dev, libkpathsea-dev, autotools-dev, libgail-dev, xsltproc, libgxps-dev
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ cb2107692abfd2ea19af67494c701a35 2978 atril_1.8.1+dfsg1-4+deb8u1.dsc
+ 44df9fcc478f90ad483b1bd32dd2a67a 894092 atril_1.8.1+dfsg1.orig.tar.xz
+ e6bbc203450f957f462bdfbaca3b45b4 13984 atril_1.8.1+dfsg1-4+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/atril.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-mate/atril.git
+Checksums-Sha1:
+ ac1da8eefdb9b260dda5f96c0de7a81773677f5e 2978 atril_1.8.1+dfsg1-4+deb8u1.dsc
+ 1373d4119fe224d8a6515fd3a4d8a56f0ef00c4a 894092 atril_1.8.1+dfsg1.orig.tar.xz
+ ba2ad685871ed1945ba37be7d13bbdba288bdb35 13984 atril_1.8.1+dfsg1-4+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 1a397ddb0f77ee92b66234a6225f212488ae0735ff85f31e04560a9bf0fd880e 2978 atril_1.8.1+dfsg1-4+deb8u1.dsc
+ 4405c1ccbfa41870aaed97701d6be28cc487f1411788ad6f77d104ce9cf6ecc1 894092 atril_1.8.1+dfsg1.orig.tar.xz
+ c211c8b4ff2fe20539d8f5ce4f9db96152763eeb0c090ea8a3793e2ab3d3ec44 13984 atril_1.8.1+dfsg1-4+deb8u1.debian.tar.xz
+Homepage: http://www.mate-desktop.org/
+Package-List: 
+ atril deb x11 optional arch=any
+ atril-common deb x11 optional arch=all
+ atril-dbg deb debug extra arch=any
+ libatrildocument-dev deb libdevel optional arch=any
+ libatrildocument3 deb libs optional arch=any
+ libatrildocument3-dbg deb debug extra arch=any
+ libatrilview-dev deb libdevel optional arch=any
+ libatrilview3 deb libs optional arch=any
+ libatrilview3-dbg deb debug extra arch=any
+Directory: pool/main/a/atril
+Priority: source
+Section: misc
+
+Package: augeas
+Binary: augeas-tools, libaugeas-dev, libaugeas0, augeas-dbg, augeas-lenses, augeas-doc
+Version: 1.2.0-0.2+deb8u2
+Maintainer: Nicolas Valcárcel Scerpella <nvalcarcel@gmail.com>
+Uploaders: Free Ekanayaka <freee@debian.org>, Micah Anderson <micah@debian.org>
+Build-Depends: debhelper (>= 9), dh-autoreconf, libreadline-dev, libselinux1-dev [linux-any], libxml2-dev, naturaldocs (>= 1.51), pkg-config, texlive-latex-base
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ e24a61d05cbbd12332b2aa36091184ec 2352 augeas_1.2.0-0.2+deb8u2.dsc
+ dce2f52cbd20f72c7da48e014ad48076 1957910 augeas_1.2.0.orig.tar.gz
+ 2b718659b0364c412da612ee36aa7740 11960 augeas_1.2.0-0.2+deb8u2.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/cgit/collab-maint/augeas.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/augeas.git
+Checksums-Sha1:
+ e56fdc95428b1d6fd70aa0d1850999e2d8e0e3b8 2352 augeas_1.2.0-0.2+deb8u2.dsc
+ ab63548ae5462d7b3dc90e74311b8e566ba22485 1957910 augeas_1.2.0.orig.tar.gz
+ b156c48e9e883a0e5e1f2fba9ec7d9479d3b9528 11960 augeas_1.2.0-0.2+deb8u2.debian.tar.xz
+Checksums-Sha256:
+ c2561b304f073c4dd9fcd1db07014b5f69e8f03a01ffbcec8b96d11835e30f70 2352 augeas_1.2.0-0.2+deb8u2.dsc
+ f4aeb28ebe0b0921920fe1c9b4c016739c25261a15de04cb97db02d669f481e0 1957910 augeas_1.2.0.orig.tar.gz
+ 56c8504771d32950c3839e803dc8cae64e795b551f186d09238d46dec67a9f86 11960 augeas_1.2.0-0.2+deb8u2.debian.tar.xz
+Homepage: http://augeas.net/
+Package-List: 
+ augeas-dbg deb debug extra arch=any
+ augeas-doc deb doc optional arch=all
+ augeas-lenses deb misc optional arch=all
+ augeas-tools deb admin optional arch=any
+ libaugeas-dev deb libdevel optional arch=any
+ libaugeas0 deb libs optional arch=any
+Directory: pool/main/a/augeas
+Priority: source
+Section: libs
+
+Package: bind9
+Binary: bind9, bind9utils, bind9-doc, host, bind9-host, libbind-dev, libbind9-90, libdns100, libisc95, liblwres90, libisccc90, libisccfg90, dnsutils, lwresd, libbind-export-dev, libdns-export100, libdns-export100-udeb, libisc-export95, libisc-export95-udeb, libisccfg-export90, libisccfg-export90-udeb, libirs-export91, libirs-export91-udeb
+Version: 1:9.9.5.dfsg-9+deb8u13
+Maintainer: LaMont Jones <lamont@debian.org>
+Uploaders: Michael Gilbert <mgilbert@debian.org>
+Build-Depends: libkrb5-dev, debhelper (>= 5), libssl-dev, libtool, bison, libdb-dev (>> 4.6), libldap2-dev, libxml2-dev, libcap2-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], hardening-wrapper, libgeoip-dev (>= 1.4.6.dfsg-5), dpkg-dev (>= 1.15.5), python, python-argparse, dh-systemd, autotools-dev, dh-autoreconf
+Build-Conflicts: libdb4.2-dev
+Architecture: any all
+Standards-Version: 3.7.3.0
+Format: 1.0
+Files:
+ e0c1ad322c5c8ec59d49951f5960cd20 3120 bind9_9.9.5.dfsg-9+deb8u13.dsc
+ e3b03e1cd273d708cbfbd862297646ce 7877309 bind9_9.9.5.dfsg.orig.tar.gz
+ 6afbdf8ef815fbcb7b653ba1e19cbc70 134768 bind9_9.9.5.dfsg-9+deb8u13.diff.gz
+Vcs-Browser: http://git.debian.org/?p=users/lamont/bind9.git
+Vcs-Git: git://git.debian.org/~lamont/bind9.git
+Checksums-Sha1:
+ 536a263bf811f76c67c92465ad3adfaf02ffa37b 3120 bind9_9.9.5.dfsg-9+deb8u13.dsc
+ ea05323d1d799fae970a7124debe297ef71f2cd0 7877309 bind9_9.9.5.dfsg.orig.tar.gz
+ d831609ac116a75bea0fcfb1e837cdd0706c9099 134768 bind9_9.9.5.dfsg-9+deb8u13.diff.gz
+Checksums-Sha256:
+ a38e2a7cb786a3a6161feca3cf6d7e9f2f733f6cc3540e4b6a2b679ef0e8c01e 3120 bind9_9.9.5.dfsg-9+deb8u13.dsc
+ 8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6 7877309 bind9_9.9.5.dfsg.orig.tar.gz
+ 322344a5653a70da3496249d5c07735723a0cd44fac791a0d4958e06015393f0 134768 bind9_9.9.5.dfsg-9+deb8u13.diff.gz
+Package-List: 
+ bind9 deb net optional arch=any
+ bind9-doc deb doc optional arch=all
+ bind9-host deb net standard arch=any
+ bind9utils deb net optional arch=any
+ dnsutils deb net standard arch=any
+ host deb net standard arch=all
+ libbind-dev deb libdevel optional arch=any
+ libbind-export-dev deb libdevel optional arch=any
+ libbind9-90 deb libs standard arch=any
+ libdns-export100 deb libs optional arch=any
+ libdns-export100-udeb udeb debian-installer optional arch=any
+ libdns100 deb libs standard arch=any
+ libirs-export91 deb libs optional arch=any
+ libirs-export91-udeb udeb debian-installer optional arch=any
+ libisc-export95 deb libs optional arch=any
+ libisc-export95-udeb udeb debian-installer optional arch=any
+ libisc95 deb libs standard arch=any
+ libisccc90 deb libs optional arch=any
+ libisccfg-export90 deb libs optional arch=any
+ libisccfg-export90-udeb udeb debian-installer optional arch=any
+ libisccfg90 deb libs optional arch=any
+ liblwres90 deb libs standard arch=any
+ lwresd deb net optional arch=any
+Directory: pool/main/b/bind9
+Priority: source
+Section: net
+
+Package: botan1.10
+Binary: botan1.10-dbg, libbotan-1.10-0, libbotan1.10-dev
+Version: 1.10.8-2+deb8u2
+Maintainer: Ondřej Surý <ondrej@debian.org>
+Build-Depends: debhelper (>= 9), libbz2-dev, libgmp3-dev, libssl-dev, python, zlib1g-dev
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ 383c9a72529de07b2ebe6a50e7754d9c 2075 botan1.10_1.10.8-2+deb8u2.dsc
+ a0b68a77ed8b1170f494a33ecdae039c 2211993 botan1.10_1.10.8.orig.tar.bz2
+ eed95a43cdd743f6e85fe22d56067539 16352 botan1.10_1.10.8-2+deb8u2.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/?p=pkg-nlnetlabs/botan1.10.git
+Vcs-Git: git://anonscm.debian.org/pkg-nlnetlabs/botan1.10.git
+Checksums-Sha1:
+ d13e685332649cc0bd0d5591e0484fa2a9b831be 2075 botan1.10_1.10.8-2+deb8u2.dsc
+ a7ba0be11629143043da078a4c044eac3369b4ec 2211993 botan1.10_1.10.8.orig.tar.bz2
+ 9f63c1a8a7425b0a77496066f8ab0c31d466d5cd 16352 botan1.10_1.10.8-2+deb8u2.debian.tar.xz
+Checksums-Sha256:
+ 5eb515774624619b062d9703773c33b7cde9308da12e19edf06dd3103affdfd3 2075 botan1.10_1.10.8-2+deb8u2.dsc
+ bc2fd5fe904bba7cd688df021689f53a2d2f87ae728b647196a6b5954d184ea0 2211993 botan1.10_1.10.8.orig.tar.bz2
+ b357113f2f46cdf259a84a0759b95158eb43470d38586d260f2a01f462c6e37b 16352 botan1.10_1.10.8-2+deb8u2.debian.tar.xz
+Homepage: http://botan.randombit.net/
+Package-List: 
+ botan1.10-dbg deb debug extra arch=any
+ libbotan-1.10-0 deb libs optional arch=any
+ libbotan1.10-dev deb libdevel optional arch=any
+Directory: pool/main/b/botan1.10
+Priority: source
+Section: libs
+
+Package: catdoc
+Binary: catdoc
+Version: 0.94.4-1.1+deb8u1
+Maintainer: Nick Bane <nick@enomem.co.uk>
+Build-Depends: debhelper (>> 7.0.0), tk
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Files:
+ 5b8964cf584d5b5150b470c557ef8272 1845 catdoc_0.94.4-1.1+deb8u1.dsc
+ 4820680e3611392caf2b4dd2413bfae5 679156 catdoc_0.94.4.orig.tar.gz
+ 5616790078d53ef94d42290a3f587be8 6984 catdoc_0.94.4-1.1+deb8u1.debian.tar.xz
+Checksums-Sha1:
+ 053041814b050ab5348e58b53515fbe37e210e1a 1845 catdoc_0.94.4-1.1+deb8u1.dsc
+ 26c9addb221543288c013ecadf4f6fb0c9eca13e 679156 catdoc_0.94.4.orig.tar.gz
+ 6a8f019cd401679d35cef555cf10b2f8f39100aa 6984 catdoc_0.94.4-1.1+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ d78e4d84e9bc6437ebb090e49fdeb8f16b406c10b02bef2bde72de383de1b4f6 1845 catdoc_0.94.4-1.1+deb8u1.dsc
+ c06fd69d2a218fcc2ed1320988cef07a67cf5555a12f25752766d746e25758ee 679156 catdoc_0.94.4.orig.tar.gz
+ acd91ed2cfc4a539d8713656fa67baf8963c9b355a6e64f03e8d16cc84a5cca5 6984 catdoc_0.94.4-1.1+deb8u1.debian.tar.xz
+Package-List: 
+ catdoc deb text optional arch=any
+Directory: pool/main/c/catdoc
+Priority: source
+Section: text
+
+Package: cups
+Binary: libcups2, libcupsimage2, libcupscgi1, libcupsmime1, libcupsppdc1, cups, cups-core-drivers, cups-daemon, cups-client, libcups2-dev, libcupsimage2-dev, libcupscgi1-dev, libcupsmime1-dev, libcupsppdc1-dev, cups-bsd, cups-common, cups-server-common, cups-ppdc, cups-dbg
+Version: 1.7.5-11+deb8u2
+Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Uploaders: Didier Raboud <odyx@debian.org>, Till Kamppeter <till.kamppeter@gmail.com>,
+Build-Depends: debhelper (>= 9~), dh-apparmor, dh-systemd, dpkg-dev (>= 1.16.1~), patch, autoconf, automake, libtool, autotools-dev, pkg-config, ghostscript (>= 9.02~), libavahi-client-dev, libavahi-common-dev, libavahi-compat-libdnssd-dev, libdbus-1-dev (>= 1.0.2), libfontconfig1-dev, libfreetype6-dev, libgnutls28-dev, libijs-dev, libjpeg-dev, libldap2-dev, libkrb5-dev, libpam0g-dev, libpaper-dev, libpng-dev | libpng12-dev, libslp-dev, libsystemd-daemon-dev [linux-any], libtiff-dev, libusb-1.0-0-dev [!hurd-any], po4a (>= 0.31~), po-debconf, poppler-utils, sharutils, zlib1g-dev, cups-filters (>= 1.0.38~), libcupsfilters-dev (>= 1.0.38~)
+Build-Conflicts: libgmp-dev (<< 2:6)
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ b418163ec953e281d69beb55c153e90b 3461 cups_1.7.5-11+deb8u2.dsc
+ 5d893edc2957005f78e2b2423fdace2e 8793338 cups_1.7.5.orig.tar.bz2
+ fa7962b8ab166484db97a6ef101d7979 305704 cups_1.7.5-11+deb8u2.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=printing/cups.git
+Vcs-Git: https://alioth.debian.org/anonscm/git/printing/cups.git
+Checksums-Sha1:
+ 336e441443b1084ce350795f3eeeda2e7b8cb71b 3461 cups_1.7.5-11+deb8u2.dsc
+ 7cd1a18fe2988b4375e9276af313a53e1caf5a27 8793338 cups_1.7.5.orig.tar.bz2
+ 9ea0d9a1ae0412e1a2e382e93e470061827700dc 305704 cups_1.7.5-11+deb8u2.debian.tar.xz
+Checksums-Sha256:
+ 22f612c156019f489b1431356edac5b467ecd52779f8b56feb78644af4f0cb71 3461 cups_1.7.5-11+deb8u2.dsc
+ 18cb4c6847dbaaaa05c8b35af787f19dd5c7686970b46548e72c711c6f26bd02 8793338 cups_1.7.5.orig.tar.bz2
+ ae8943c35211802415a1495c0afdcb6943484f4f592f09ec024f11ded5f85ec9 305704 cups_1.7.5-11+deb8u2.debian.tar.xz
+Homepage: http://www.cups.org
+Package-List: 
+ cups deb net optional arch=any
+ cups-bsd deb net extra arch=any
+ cups-client deb net optional arch=any
+ cups-common deb net optional arch=all
+ cups-core-drivers deb net optional arch=any
+ cups-daemon deb net optional arch=any
+ cups-dbg deb debug extra arch=any
+ cups-ppdc deb utils optional arch=any
+ cups-server-common deb net optional arch=all
+ libcups2 deb libs optional arch=any
+ libcups2-dev deb libdevel optional arch=any
+ libcupscgi1 deb libs optional arch=any
+ libcupscgi1-dev deb libdevel optional arch=any
+ libcupsimage2 deb libs optional arch=any
+ libcupsimage2-dev deb libdevel optional arch=any
+ libcupsmime1 deb libs optional arch=any
+ libcupsmime1-dev deb libdevel optional arch=any
+ libcupsppdc1 deb libs optional arch=any
+ libcupsppdc1-dev deb libdevel optional arch=any
+Testsuite: autopkgtest
+Directory: pool/main/c/cups
+Priority: source
+Section: net
+
+Package: cvs
+Binary: cvs
+Version: 2:1.12.13+real-15+deb8u1
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: debhelper (>= 5), autopoint, autotools-dev, bsdmainutils, dh-autoreconf, groff, libbsd-dev, libkrb5-dev | heimdal-dev, procps, texinfo, texlive-latex-base, texlive-fonts-recommended, texlive-latex-recommended, zlib1g-dev
+Architecture: any
+Standards-Version: 3.9.5
+Format: 1.0
+Files:
+ 451b3557f24de1b5160998e82dab44eb 2094 cvs_1.12.13+real-15+deb8u1.dsc
+ 7a71a2e7a64973ecf255965956a1d338 4737137 cvs_1.12.13+real.orig.tar.gz
+ e20d975ba3aaf6b72e22bf7b55ff6292 105645 cvs_1.12.13+real-15+deb8u1.diff.gz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/cvs.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/cvs.git
+Checksums-Sha1:
+ 6273e61f2eb17e6aad42f295aa4bbcc0f1736f29 2094 cvs_1.12.13+real-15+deb8u1.dsc
+ a868aaad46c54cb1f7510b79c8cb0b38534483ce 4737137 cvs_1.12.13+real.orig.tar.gz
+ 4035e96f084517c7d6a71d35420876d508b00376 105645 cvs_1.12.13+real-15+deb8u1.diff.gz
+Checksums-Sha256:
+ 5315f661fd8f8a5978106835aea6b7c33e7fef4a87a6564be986844bb17f6bb9 2094 cvs_1.12.13+real-15+deb8u1.dsc
+ 4734971a59471744e4ad8665c1dca54cb3ebf9fc66ce9c2dff3d04670d3f7312 4737137 cvs_1.12.13+real.orig.tar.gz
+ c39ca3d80b13265d3d8d7370148835b3f5892e0af8ae9c32d2cc34a945ec7585 105645 cvs_1.12.13+real-15+deb8u1.diff.gz
+Homepage: http://www.nongnu.org/cvs/
+Package-List: 
+ cvs deb vcs optional arch=any
+Directory: pool/main/c/cvs
+Priority: source
+Section: vcs
+
+Package: doxygen
+Binary: doxygen, doxygen-latex, doxygen-doc, doxygen-gui, doxygen-dbg
+Version: 1.8.8-5
+Maintainer: Matthias Klose <doko@debian.org>
+Uploaders: Helmut Grohne <helmut@subdivi.de>
+Build-Depends: debhelper (>= 5), libqt4-dev, flex, bison (>= 1.875a), python3, libsqlite3-dev, libxapian-dev, tmake, yui-compressor, libclang-3.5-dev [alpha amd64 armel armhf arm64 i386 mips mipsel powerpc powerpcspe ppc64 ppc64el s390x kfreebsd-amd64 kfreebsd-i386]
+Build-Depends-Indep: texlive-fonts-recommended, texlive-generic-recommended, texlive-latex-extra, texlive-latex-recommended, texlive-extra-utils, texlive-font-utils, ghostscript, graphviz, latex-xcolor, rdfind
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ d37aff58d25463528706747c0690d044 2440 doxygen_1.8.8-5.dsc
+ 453892def7b378df387585a9358c23d4 4971577 doxygen_1.8.8.orig.tar.gz
+ 2057394feeb0ddc0f873b874ad7adf39 24168 doxygen_1.8.8-5.debian.tar.xz
+Checksums-Sha1:
+ 1bec731697787569295295d1f01d5a6602645899 2440 doxygen_1.8.8-5.dsc
+ 2f2d028254d804c3b04e78ba2183de5a7637143c 4971577 doxygen_1.8.8.orig.tar.gz
+ 80956349843cdeb6696a1b144a1ccb7aa143bd10 24168 doxygen_1.8.8-5.debian.tar.xz
+Checksums-Sha256:
+ 15641f3680da982a5ac40aae4b59abccc646c88bdbb5ac5e4efd4350bfa7a18c 2440 doxygen_1.8.8-5.dsc
+ d1f978350527a2338199c9abb78f76f10746520de5dc4ae4cdd27fc9df9b19b8 4971577 doxygen_1.8.8.orig.tar.gz
+ 0a1e81bac5a65ce76d0d7c452fcfb5ea940690499aadfc9dfc1888977a9893d4 24168 doxygen_1.8.8-5.debian.tar.xz
+Homepage: http://www.stack.nl/~dimitri/doxygen/
+Package-List: 
+ doxygen deb devel optional arch=any
+ doxygen-dbg deb debug extra arch=any
+ doxygen-doc deb doc optional arch=all
+ doxygen-gui deb devel optional arch=any profile=!stage1
+ doxygen-latex deb devel optional arch=all
+Testsuite: autopkgtest
+Extra-Source-Only: yes
+Directory: pool/main/d/doxygen
+Priority: source
+Section: devel
+
+Package: dwww
+Binary: dwww
+Version: 1.12.1+deb8u1
+Maintainer: Robert Luberda <robert@debian.org>
+Build-Depends: debhelper (>= 9), dh-apache2, lsb-release, publib-dev
+Build-Conflicts: apache2-dev (<< 2.4.4-6~)
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (native)
+Files:
+ 9ef9cba65841352816966b928746f37e 1610 dwww_1.12.1+deb8u1.dsc
+ 496f60b5648943b9c7e0dfa511134c9f 120492 dwww_1.12.1+deb8u1.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=users/robert/dwww.git
+Vcs-Git: git://anonscm.debian.org/users/robert/dwww.git
+Checksums-Sha1:
+ c06c2ca7b5e52859113b1d3943dcf8b3c1e888fa 1610 dwww_1.12.1+deb8u1.dsc
+ 6830663a8456f99b66299720ae1a4d38a295f5b2 120492 dwww_1.12.1+deb8u1.tar.xz
+Checksums-Sha256:
+ e8b423ca94d06d9f6951be5f440d8e8b3f31cfb0dff83bcf7f8e7be57609ffbe 1610 dwww_1.12.1+deb8u1.dsc
+ 2b4681a3a2a75463b093e4d3a76a9aa42d848e1a64329b97f523069027ee8cb1 120492 dwww_1.12.1+deb8u1.tar.xz
+Package-List: 
+ dwww deb doc optional arch=any
+Directory: pool/main/d/dwww
+Priority: source
+Section: doc
+
+Package: elog
+Binary: elog
+Version: 2.9.2+2014.05.11git44800a7-2+deb8u2
+Maintainer: Roger Kalt <roger.kalt@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libssl-dev, libkrb5-dev
+Architecture: any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ d96ca392aa023532a61b4fb824157aec 1837 elog_2.9.2+2014.05.11git44800a7-2+deb8u2.dsc
+ ed02851c5465c5326ffe2d967d6fd066 2294932 elog_2.9.2+2014.05.11git44800a7.orig.tar.gz
+ b993f728d8b8b6db4549e920fae9f45a 20296 elog_2.9.2+2014.05.11git44800a7-2+deb8u2.debian.tar.xz
+Checksums-Sha1:
+ b0572c5d08451271e2beec40ce347b4670de0ad6 1837 elog_2.9.2+2014.05.11git44800a7-2+deb8u2.dsc
+ feb122702a2b68949d8aaefad18b34c876f60b26 2294932 elog_2.9.2+2014.05.11git44800a7.orig.tar.gz
+ 32c957114d7038545c54e763369ec3504c876c48 20296 elog_2.9.2+2014.05.11git44800a7-2+deb8u2.debian.tar.xz
+Checksums-Sha256:
+ 056c3567be1d3dabc74e04ee58e90010a90c037fb9fc0a1b49c0346d1e747c1e 1837 elog_2.9.2+2014.05.11git44800a7-2+deb8u2.dsc
+ 3c7c7e26a3030d5a38d36f27bdfa420bae78f4509c96ee33cd06ba9392e1aaae 2294932 elog_2.9.2+2014.05.11git44800a7.orig.tar.gz
+ 7fd24e297f118778bfaea99b76327d171f07edce13931082cd6991da99c82639 20296 elog_2.9.2+2014.05.11git44800a7-2+deb8u2.debian.tar.xz
+Homepage: http://midas.psi.ch/elog
+Package-List: 
+ elog deb web optional arch=any
+Directory: pool/main/e/elog
+Priority: source
+Section: misc
+
+Package: enigmail
+Binary: enigmail
+Version: 2:1.9.8.1-1~deb8u1
+Maintainer: Debian Mozilla Extension Maintainers <pkg-mozext-maintainers@lists.alioth.debian.org>
+Uploaders: Alexander Sack <asac@debian.org>, Willi Mann <willi@debian.org>, Daniel Kahn Gillmor <dkg@fifthhorseman.net>,
+Build-Depends: debhelper (>= 9~), dh-autoreconf, mozilla-devscripts, perl, python, zip
+Architecture: all
+Standards-Version: 4.0.0
+Format: 3.0 (quilt)
+Files:
+ 4f9e5c6619bd50eabb76af4b7b1a5613 2119 enigmail_1.9.8.1-1~deb8u1.dsc
+ b1da87d6a16d3b4f5b5f58ce3a98eafe 1776673 enigmail_1.9.8.1.orig.tar.gz
+ 33bfa17171d14c1df22fbd1b52700a43 28756 enigmail_1.9.8.1-1~deb8u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/git/pkg-mozext/enigmail.git/
+Vcs-Git: https://anonscm.debian.org/git/pkg-mozext/enigmail.git -b jessie
+Checksums-Sha1:
+ 64d9d63a943ca9dfb2dbfd661c260ac288788ec9 2119 enigmail_1.9.8.1-1~deb8u1.dsc
+ c2a08c14ea548cfa3893f014653ecdca4501669f 1776673 enigmail_1.9.8.1.orig.tar.gz
+ 219859b753d3611adf1b23a136ed7d6791d7a740 28756 enigmail_1.9.8.1-1~deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 9109a17845130684fd96751955249bf4af26a9d54af0bedb81ccf155c5c8d50e 2119 enigmail_1.9.8.1-1~deb8u1.dsc
+ 4bcf2da00d96a67921b24dbec9f43930cba41112a2cd241b0952eb573c648a4d 1776673 enigmail_1.9.8.1.orig.tar.gz
+ 8105f833b72393724d89621d8d607fbe9fe0420e8f8c891621e44cef33dc980c 28756 enigmail_1.9.8.1-1~deb8u1.debian.tar.xz
+Homepage: https://www.enigmail.net/
+Package-List: 
+ enigmail deb mail optional arch=all
+Directory: pool/main/e/enigmail
+Priority: source
+Section: mail
+
+Package: freeradius
+Binary: freeradius, freeradius-common, freeradius-utils, libfreeradius2, libfreeradius-dev, freeradius-krb5, freeradius-ldap, freeradius-postgresql, freeradius-mysql, freeradius-iodbc, freeradius-dbg
+Version: 2.2.5+dfsg-0.2+deb8u1
+Maintainer: Josip Rodin <joy-packages@debian.org>
+Uploaders: Stephen Gran <sgran@debian.org>, Mark Hymers <mhy@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), dpkg-dev (>= 1.13.19), autotools-dev, libtool (>= 2.2), libtool-bin, libltdl-dev (>= 2.2), libssl-dev, libpam0g-dev, libmysqlclient-dev, libgdbm-dev, libldap2-dev, libsasl2-dev, libiodbc2-dev, libkrb5-dev, libperl-dev, libpcap-dev, python-dev, libsnmp-dev, libpq-dev
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ ba1f00a2c2450003f5b28630cf5151bc 2773 freeradius_2.2.5+dfsg-0.2+deb8u1.dsc
+ 888bbddf316ecb41d6ae575414003700 3555329 freeradius_2.2.5+dfsg.orig.tar.gz
+ 23628037472f79e821a72afd18b9780e 43284 freeradius_2.2.5+dfsg-0.2+deb8u1.debian.tar.xz
+Checksums-Sha1:
+ a8f362019661a2a6ff5fbdd9d8a984681ce5022d 2773 freeradius_2.2.5+dfsg-0.2+deb8u1.dsc
+ 57064dc21d289efc449960746b48193a26af4143 3555329 freeradius_2.2.5+dfsg.orig.tar.gz
+ c3a6d2496adbd70dc7c6789bd1358dd9dd3c1893 43284 freeradius_2.2.5+dfsg-0.2+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 9c58afc7d5537a95778981432ac78f396483f3d9341d6b37e12aac236751934c 2773 freeradius_2.2.5+dfsg-0.2+deb8u1.dsc
+ fb3b637cc76f7614e41996b9ebcdaf396ccc8bbff0a794bbfd225e1a4c8a0a97 3555329 freeradius_2.2.5+dfsg.orig.tar.gz
+ b927932abc7c741ae3d1b0a433588382f8f5320d9cf190922d3bfb6afc351515 43284 freeradius_2.2.5+dfsg-0.2+deb8u1.debian.tar.xz
+Homepage: http://www.freeradius.org/
+Package-List: 
+ freeradius deb net optional arch=any
+ freeradius-common deb net optional arch=all
+ freeradius-dbg deb debug extra arch=any
+ freeradius-iodbc deb net optional arch=any
+ freeradius-krb5 deb net optional arch=any
+ freeradius-ldap deb net optional arch=any
+ freeradius-mysql deb net optional arch=any
+ freeradius-postgresql deb net optional arch=any
+ freeradius-utils deb net optional arch=any
+ libfreeradius-dev deb libdevel optional arch=any
+ libfreeradius2 deb net optional arch=any
+Directory: pool/main/f/freeradius
+Priority: source
+Section: net
+
+Package: gajim
+Binary: gajim
+Version: 0.16-1+deb8u2
+Maintainer: Tanguy Ortolo <tanguy+debian@ortolo.eu>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, python (>= 2.6.6-3~), gettext (>= 0.17-4), intltool (>= 0.40.1), imagemagick, libglib2.0-dev
+Architecture: all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ b65c91cb122cf300e638f0c7a3d707bc 2053 gajim_0.16-1+deb8u2.dsc
+ 569aeee2851eea03ceab4d4ff54c859b 6122592 gajim_0.16.orig.tar.gz
+ f0ab8212b1253a9bc8ad4040859b194f 9772 gajim_0.16-1+deb8u2.debian.tar.xz
+Vcs-Browser: http://git.ortolo.eu/pkg-gajim.git
+Vcs-Git: git://git.ortolo.eu/pkg-gajim.git
+Checksums-Sha1:
+ cb8bf562bec01600ba9912561a4987497ca0c893 2053 gajim_0.16-1+deb8u2.dsc
+ e6dac18a331dc2615ee63ce445ff8d5f21e41ba8 6122592 gajim_0.16.orig.tar.gz
+ 1f2c032761264a8b7d1d00ba5db6f5f666cc10b7 9772 gajim_0.16-1+deb8u2.debian.tar.xz
+Checksums-Sha256:
+ 485373a4317746cd1de4f4585deda5e459195ad613bd9c6463e31620f596d563 2053 gajim_0.16-1+deb8u2.dsc
+ 01775e02044358292835296efa7d59f0ad39974946f872e71b4f040492d3fb64 6122592 gajim_0.16.orig.tar.gz
+ 18926d177b15a154a7ce56e459b8a1805fbf3a3841cd30698809d263ff0a80ef 9772 gajim_0.16-1+deb8u2.debian.tar.xz
+Homepage: https://gajim.org/
+Package-List: 
+ gajim deb net optional arch=all
+Directory: pool/main/g/gajim
+Priority: source
+Section: net
+
+Package: hexchat
+Binary: hexchat, hexchat-common
+Version: 2.10.1-1+deb8u2
+Maintainer: Jesse Rhodes <drubo@drubo.net>
+Build-Depends: debhelper (>= 9.0.0), dh-autoreconf, imagemagick, intltool, libcanberra-dev, libdbus-glib-1-dev, libglib2.0-dev, libgtk2.0-dev (>= 2.10.0), libnotify-dev, libpci-dev, libperl-dev, libproxy-dev, libssl-dev, libtool, python-dev
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ 1004e445c9fbfde443aafc1460831ad3 2124 hexchat_2.10.1-1+deb8u2.dsc
+ 4b5b2cf13769fe594817a885cdebb1e1 1618372 hexchat_2.10.1.orig.tar.xz
+ 282d3f3a455e908366a763d76aa329bf 30732 hexchat_2.10.1-1+deb8u2.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/cgit/collab-maint/hexchat.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/hexchat.git
+Checksums-Sha1:
+ b17eaf8f775047f8ef31bddf792bd49faf8c1789 2124 hexchat_2.10.1-1+deb8u2.dsc
+ 3ad562ec76323ba9d0f279d36201a333594c755b 1618372 hexchat_2.10.1.orig.tar.xz
+ cdbb9d822ad1a6bf45c7d243c861bc896e0234ec 30732 hexchat_2.10.1-1+deb8u2.debian.tar.xz
+Checksums-Sha256:
+ ad180b53067c67f856b44dc4a20fec99ae4dfa5c9b273589606017ef5b57df9f 2124 hexchat_2.10.1-1+deb8u2.dsc
+ ffccee6a3470d2f9539e75bd0dd2e3f35c65737004cb02e6d2106c1d5dcde9a9 1618372 hexchat_2.10.1.orig.tar.xz
+ a58521ad95c27bad929637599c9c8e41dc12ebfa94ffbb4ec0e821f0131ba89b 30732 hexchat_2.10.1-1+deb8u2.debian.tar.xz
+Homepage: http://hexchat.github.io/
+Package-List: 
+ hexchat deb net optional arch=any
+ hexchat-common deb net optional arch=all
+Directory: pool/main/h/hexchat
+Priority: source
+Section: misc
+
+Package: imagemagick
+Binary: imagemagick-common, imagemagick-doc, libmagickcore-6-headers, libmagickwand-6-headers, libmagick++-6-headers, imagemagick, libimage-magick-perl, libmagickcore-6-arch-config, imagemagick-6.q16, libmagickcore-6.q16-2, libmagickcore-6.q16-2-extra, libmagickcore-6.q16-dev, libmagickwand-6.q16-2, libmagickwand-6.q16-dev, libmagick++-6.q16-5, libmagick++-6.q16-dev, imagemagick-dbg, libimage-magick-q16-perl, perlmagick, libmagickcore-dev, libmagickwand-dev, libmagick++-dev
+Version: 8:6.8.9.9-5+deb8u10
+Maintainer: ImageMagick Packaging Team <pkg-gmagick-im-team@lists.alioth.debian.org>
+Uploaders: Luciano Bello <luciano@debian.org>, Daniel Kobras <kobras@debian.org>, Nelson A. de Oliveira <naoliv@debian.org>, Bastien Roucariès <rouca@debian.org>, Vincent Fourmond <fourmond@debian.org>
+Build-Depends: debhelper (>= 9~), pkg-config, libltdl-dev, dh-autoreconf, chrpath, libfftw3-dev, liblcms2-dev, liblqr-1-0-dev, libfreetype6-dev, libfontconfig1-dev, zlib1g-dev, liblzma-dev, libbz2-dev, libx11-dev, libxext-dev, libxt-dev, ghostscript, libdjvulibre-dev, libexif-dev, libjasper-dev, libjpeg-dev, libopenexr-dev, libperl-dev, libpng-dev, libtiff-dev, libwmf-dev, libpango1.0-dev, librsvg2-bin, librsvg2-dev, libxml2-dev, pkg-kde-tools, dpkg-dev (>= 1.17.6)
+Build-Depends-Indep: debhelper (>= 9~), doxygen, doxygen-latex, graphviz, libxml2-utils, xsltproc
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 5c1680233ae03afb61357c3cccc6a028 4228 imagemagick_6.8.9.9-5+deb8u10.dsc
+ 9ac3d9153ef78482d750cb03e3456e28 7891624 imagemagick_6.8.9.9.orig.tar.xz
+ 6189d10459b09bb1972dbb39b44c8504 286116 imagemagick_6.8.9.9-5+deb8u10.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/imagemagick.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/imagemagick.git
+Checksums-Sha1:
+ 4d7e2fd3f9f406340bef41dc46e5b772187df970 4228 imagemagick_6.8.9.9-5+deb8u10.dsc
+ 84abbeab6d142267fe6eedfbbfaec11d43075c48 7891624 imagemagick_6.8.9.9.orig.tar.xz
+ af671e2222e4ae1e81fa8e2fd123337f24d61484 286116 imagemagick_6.8.9.9-5+deb8u10.debian.tar.xz
+Checksums-Sha256:
+ 96bae3c6468f12c6292e99e8e8fdb5e0ed66e58843b803e52bcbaf13a3dc715b 4228 imagemagick_6.8.9.9-5+deb8u10.dsc
+ a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb 7891624 imagemagick_6.8.9.9.orig.tar.xz
+ a9664cde38586f09a7d29718136c5a083fc0b854ca862d7cbd5b6151a5009452 286116 imagemagick_6.8.9.9-5+deb8u10.debian.tar.xz
+Homepage: http://www.imagemagick.org/
+Package-List: 
+ imagemagick deb graphics optional arch=any
+ imagemagick-6.q16 deb graphics optional arch=any
+ imagemagick-common deb graphics optional arch=all
+ imagemagick-dbg deb debug extra arch=any
+ imagemagick-doc deb doc optional arch=all
+ libimage-magick-perl deb perl optional arch=all
+ libimage-magick-q16-perl deb perl optional arch=any
+ libmagick++-6-headers deb libdevel optional arch=all
+ libmagick++-6.q16-5 deb libs optional arch=any
+ libmagick++-6.q16-dev deb libdevel optional arch=any
+ libmagick++-dev deb oldlibs extra arch=all
+ libmagickcore-6-arch-config deb libdevel optional arch=any
+ libmagickcore-6-headers deb libdevel optional arch=all
+ libmagickcore-6.q16-2 deb libs optional arch=any
+ libmagickcore-6.q16-2-extra deb libs optional arch=any
+ libmagickcore-6.q16-dev deb libdevel optional arch=any
+ libmagickcore-dev deb oldlibs extra arch=all
+ libmagickwand-6-headers deb libdevel optional arch=all
+ libmagickwand-6.q16-2 deb libs optional arch=any
+ libmagickwand-6.q16-dev deb libdevel optional arch=any
+ libmagickwand-dev deb oldlibs extra arch=all
+ perlmagick deb oldlibs extra arch=all
+Directory: pool/main/i/imagemagick
+Priority: source
+Section: graphics
+
+Package: ioquake3
+Binary: ioquake3, ioquake3-server, ioquake3-dbg
+Version: 1.36+u20140802+gca9eebb-2+deb8u2
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Bruno "Fuddl" Kleinert <fuddl@debian.org>, Simon McVittie <smcv@debian.org>
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1), libcurl4-gnutls-dev, libjpeg-dev, libopenal-dev, libopus-dev, libopusfile-dev, libsdl1.2-dev, libspeexdsp-dev, libvorbis-dev, lsb-release
+Architecture: linux-any kfreebsd-any hurd-any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ 15b866d299bd49dadcc34345ef9c174a 2487 ioquake3_1.36+u20140802+gca9eebb-2+deb8u2.dsc
+ c2c32361212294bc8a6f032f97e06832 1876668 ioquake3_1.36+u20140802+gca9eebb.orig.tar.xz
+ d32e16ee6ae297b0dff0e4c3ba3410d4 21328 ioquake3_1.36+u20140802+gca9eebb-2+deb8u2.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-games/ioquake3.git
+Vcs-Git: git://anonscm.debian.org/pkg-games/ioquake3.git
+Checksums-Sha1:
+ 74428d865287b740fe942e9c61a1c1de6148bb95 2487 ioquake3_1.36+u20140802+gca9eebb-2+deb8u2.dsc
+ 4d6782c17e106c9a5f3c03872d6d8e75941e2008 1876668 ioquake3_1.36+u20140802+gca9eebb.orig.tar.xz
+ dbc1bef688c31dde83efce5f289850c7691720d4 21328 ioquake3_1.36+u20140802+gca9eebb-2+deb8u2.debian.tar.xz
+Checksums-Sha256:
+ c4d7f5d1fcdc4880aae830fa285e3e34d3f92013389e8ad3169bb8d6e9748e4f 2487 ioquake3_1.36+u20140802+gca9eebb-2+deb8u2.dsc
+ 436e83a5754a4a7106d787aba58454f9cc0d99d6476e20e4bd448aa6a025987b 1876668 ioquake3_1.36+u20140802+gca9eebb.orig.tar.xz
+ 431d0bfd241c03b668496e4d271e0ac687f73acfa3e61afc4a61b1e160bc4821 21328 ioquake3_1.36+u20140802+gca9eebb-2+deb8u2.debian.tar.xz
+Homepage: http://www.ioquake3.org/
+Package-List: 
+ ioquake3 deb games optional arch=linux-any,kfreebsd-any,hurd-any
+ ioquake3-dbg deb debug extra arch=linux-any,kfreebsd-any,hurd-any
+ ioquake3-server deb games optional arch=linux-any,kfreebsd-any,hurd-any
+Directory: pool/main/i/ioquake3
+Priority: source
+Section: games
+
+Package: kedpm
+Binary: kedpm, kedpm-gtk
+Version: 1.0+deb8u1
+Maintainer: Antoine Beaupré <anarcat@debian.org>
+Build-Depends: debhelper (>= 8.0.0), python, python-setuptools, python-crypto
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (native)
+Files:
+ 32c46e5096e397919de8169e4b58b114 1650 kedpm_1.0+deb8u1.dsc
+ 72db137fb464f72c3962dc70f0bd0836 60792 kedpm_1.0+deb8u1.tar.xz
+Vcs-Browser: https://redmine.koumbit.net/projects/kedpm/repository
+Vcs-Git: git://git.koumbit.net/kedpm.git
+Checksums-Sha1:
+ a849e36bdc224205e8395b1c9d2d1eeea91dc5db 1650 kedpm_1.0+deb8u1.dsc
+ 6133b1b55b32845cdfdc5198b7f751a5a6e2e099 60792 kedpm_1.0+deb8u1.tar.xz
+Checksums-Sha256:
+ d5fe83b787a8cd7c8188ed486e03d506af31b1b8459fef803466750c34258dc3 1650 kedpm_1.0+deb8u1.dsc
+ 89388ca66fb645e184351acd13eb9969fff30a1183c9c504252251cfe6c1f3d7 60792 kedpm_1.0+deb8u1.tar.xz
+Homepage: https://redmine.koumbit.net/projects/kedpm
+Package-List: 
+ kedpm deb utils extra arch=all
+ kedpm-gtk deb utils extra arch=all
+Directory: pool/main/k/kedpm
+Priority: source
+Section: utils
+
+Package: libembperl-perl
+Binary: libembperl-perl
+Version: 2.5.0-4+deb8u1
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Jonathan Yu <jawnsy@cpan.org>, Dominic Hargreaves <dom@earth.li>, Florian Schlichting <fsfs@debian.org>, Axel Beckert <abe@debian.org>
+Build-Depends: apache2, apache2-api-20120211, apache2-dev, debhelper (>= 9.20120312), libapache-sessionx-perl, libapache2-mod-perl2, libcgi-pm-perl, libwww-perl, libxslt1-dev, netbase, perl
+Architecture: any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ c623c4ae380f8b9d0b455926362c2683 2422 libembperl-perl_2.5.0-4+deb8u1.dsc
+ 2ad805a8c9001c7a0c6dad8e73eac9f3 787397 libembperl-perl_2.5.0.orig.tar.gz
+ f88edde56447f338876c0cc566ef741b 14496 libembperl-perl_2.5.0-4+deb8u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libembperl-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libembperl-perl.git
+Checksums-Sha1:
+ 6b955ef71cd31eaa6a8784ee6a60ead0bbb89b9b 2422 libembperl-perl_2.5.0-4+deb8u1.dsc
+ d3551a3cc5dca03765ee19a5b6c5d940cf7ea2ba 787397 libembperl-perl_2.5.0.orig.tar.gz
+ 14129959087b5490ec98f0ac36ec890175e04fd1 14496 libembperl-perl_2.5.0-4+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ e2c808db98a967ab0024d9d7c79afe05d3f746948a2efd646b12683b0a9605df 2422 libembperl-perl_2.5.0-4+deb8u1.dsc
+ 502ff90cb22c1de3bda731b50ef9bd31154d27bb63e4d43712dfaf87a705f97e 787397 libembperl-perl_2.5.0.orig.tar.gz
+ 4b52e74fe45a80dbcf2d5534a81b0e5b58d4821b2493377409108360b9ad4b61 14496 libembperl-perl_2.5.0-4+deb8u1.debian.tar.xz
+Homepage: https://metacpan.org/release/Embperl
+Package-List: 
+ libembperl-perl deb perl optional arch=any
+Directory: pool/main/libe/libembperl-perl
+Priority: source
+Section: perl
+
+Package: libgd2
+Binary: libgd-tools, libgd-dev, libgd3, libgd-dbg, libgd2-xpm-dev, libgd2-noxpm-dev
+Version: 2.1.0-5+deb8u10
+Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+Uploaders: Ondřej Surý <ondrej@debian.org>
+Build-Depends: autotools-dev, debhelper (>= 9), libpng-dev, libz-dev, libjpeg-dev, libfreetype6-dev, libxpm-dev, libx11-dev, libxt-dev, libfontconfig-dev, libvpx-dev, libtiff-dev, dh-autoreconf, html2text
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Files:
+ 3bbea5b0f884ece5786d4b7fd431af5c 2510 libgd2_2.1.0-5+deb8u10.dsc
+ 03588159bf4faab9079849c8d709acc6 2004304 libgd2_2.1.0.orig.tar.xz
+ f1a2511ce95eae332d69203e23b97d5d 38344 libgd2_2.1.0-5+deb8u10.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/libgd.git;a=summary
+Vcs-Git: git://anonscm.debian.org/git/collab-maint/libgd
+Checksums-Sha1:
+ 6b471163b732b336ff19a052230c75a8fd553893 2510 libgd2_2.1.0-5+deb8u10.dsc
+ 66c56fc07246b66ba649c83e996fd2085ea2f9e2 2004304 libgd2_2.1.0.orig.tar.xz
+ 9b0e83c48a8edb727982d7a4d35b7adf709d137b 38344 libgd2_2.1.0-5+deb8u10.debian.tar.xz
+Checksums-Sha256:
+ a382d058da161bf93b31142d0e8b618dc9a3502917fa72de00c6c38eb6ce5d12 2510 libgd2_2.1.0-5+deb8u10.dsc
+ fa6665dfe3d898019671293c84d77067a3d2ede50884dbcb6df899d508370e5a 2004304 libgd2_2.1.0.orig.tar.xz
+ c8ced061a104ed1d162996ff76ce442bf85cfc14ccf116af774da7857309c53d 38344 libgd2_2.1.0-5+deb8u10.debian.tar.xz
+Homepage: http://www.libgd.org/
+Package-List: 
+ libgd-dbg deb debug extra arch=any
+ libgd-dev deb libdevel optional arch=any
+ libgd-tools deb graphics optional arch=any
+ libgd2-noxpm-dev deb oldlibs extra arch=any
+ libgd2-xpm-dev deb oldlibs extra arch=any
+ libgd3 deb libs optional arch=any
+Directory: pool/main/libg/libgd2
+Priority: source
+Section: oldlibs
+
+Package: libmspack
+Binary: libmspack0, libmspack-dev, libmspack-dbg, libmspack-doc
+Version: 0.5-1+deb8u1
+Maintainer: Marc Dequènes (Duck) <Duck@DuckCorp.org>
+Build-Depends: dpkg-dev (>= 1.16.1.1), debhelper (>= 9), dh-autoreconf, autotools-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Files:
+ b5bcf260629f0c2c6884d8b1b1877f55 2106 libmspack_0.5-1+deb8u1.dsc
+ 3aa3f6b9ef101463270c085478fda1da 654193 libmspack_0.5.orig.tar.gz
+ be04a3ce310a729c35f5fdb666655373 5148 libmspack_0.5-1+deb8u1.debian.tar.xz
+Vcs-Browser: http://git.debian.org/?p=collab-maint/libmspack.git;a=summary
+Vcs-Git: git://git.debian.org/collab-maint/libmspack.git
+Checksums-Sha1:
+ 0f0eeda3692a12a2ba912733b96c72c6e190295a 2106 libmspack_0.5-1+deb8u1.dsc
+ 226f19b1fc58e820671a1749983b06896e108cc4 654193 libmspack_0.5.orig.tar.gz
+ 42df94afb1e167e1334b92cded4e86c0b6568823 5148 libmspack_0.5-1+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 4c0d570bee1de45c801dd2fc745c4fa56131a206ab1edab49e7407942f7d8387 2106 libmspack_0.5-1+deb8u1.dsc
+ 8967f275525f5067b364cee43b73e44d0433668c39f9376dfff19f653d1c8110 654193 libmspack_0.5.orig.tar.gz
+ c7ad3df9c6401cbc075acba4519a5fb312183c83154834d52408ce8455e76db8 5148 libmspack_0.5-1+deb8u1.debian.tar.xz
+Homepage: http://www.cabextract.org.uk/libmspack/
+Package-List: 
+ libmspack-dbg deb debug extra arch=any
+ libmspack-dev deb libdevel optional arch=any
+ libmspack-doc deb doc optional arch=all
+ libmspack0 deb libs optional arch=any
+Directory: pool/main/libm/libmspack
+Priority: source
+Section: misc
+
+Package: libraw
+Binary: libraw10, libraw-bin, libraw-dev, libraw-doc
+Version: 0.16.0-9+deb8u3
+Maintainer: Debian Shotwell Maintainers <pkg-shotwell-maint@lists.alioth.debian.org>
+Uploaders: Matteo F. Vescovi <mfvescovi@gmail.com>
+Build-Depends: debhelper (>= 9), autotools-dev, dh-autoreconf, pkg-config, libjasper-dev, liblcms2-dev, libjpeg-dev
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ ee7c6ba65f23316739fa35c00ef851e4 2368 libraw_0.16.0-9+deb8u3.dsc
+ 21f569be043057b754d87e3062e2345a 1472935 libraw_0.16.0.orig.tar.gz
+ 90317c73b4a761a2c5a3e553c4fcbfbd 28364 libraw_0.16.0-9+deb8u3.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-shotwell/libraw.git
+Vcs-Git: git://anonscm.debian.org/pkg-shotwell/libraw.git
+Checksums-Sha1:
+ 14cead4473579defa07fa1c72e47574b14abdf05 2368 libraw_0.16.0-9+deb8u3.dsc
+ 492239aa209b1ddd1f030da4fc2978498c32a29b 1472935 libraw_0.16.0.orig.tar.gz
+ 84853e3d959834a7e997732bd1aa8d371fc5a91f 28364 libraw_0.16.0-9+deb8u3.debian.tar.xz
+Checksums-Sha256:
+ 0f55bbeddb07c36a37fb6a4f248191f51f2425bd393200fbcc59546eef0a28de 2368 libraw_0.16.0-9+deb8u3.dsc
+ 71f43871ec2535345c5c9b748f07813e49915170f9510b721a2be6478426cf96 1472935 libraw_0.16.0.orig.tar.gz
+ 8f5b19a1cfd2cdbdcb96808f834408bb3b46d688c101476cf0fd169b2bcf1cc3 28364 libraw_0.16.0-9+deb8u3.debian.tar.xz
+Homepage: http://www.libraw.org/
+Package-List: 
+ libraw-bin deb graphics optional arch=any
+ libraw-dev deb libdevel optional arch=any
+ libraw-doc deb doc optional arch=all
+ libraw10 deb libs optional arch=any
+Testsuite: autopkgtest
+Directory: pool/main/libr/libraw
+Priority: source
+Section: libs
+
+Package: libsoup2.4
+Binary: libsoup2.4-dev, libsoup2.4-1, libsoup2.4-dbg, libsoup-gnome2.4-1, libsoup-gnome2.4-dev, libsoup2.4-doc, gir1.2-soup-2.4
+Version: 2.48.0-1+deb8u1
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: Andreas Henriksson <andreas@fatal.se>, Emilio Pozuelo Monfort <pochu@debian.org>, Sjoerd Simons <sjoerd@debian.org>
+Build-Depends: debhelper (>= 9), cdbs (>= 0.4.93~), gnome-pkg-tools, intltool (>= 0.35.0), libglib2.0-dev (>= 2.39.90), glib-networking (>= 2.32.0), libsqlite3-dev, libxml2-dev, gtk-doc-tools, shared-mime-info, libgirepository1.0-dev (>= 0.9.5), gobject-introspection (>= 0.9.12-4~), dbus, dbus-x11, xvfb, xauth, curl
+Build-Depends-Indep: libglib2.0-doc
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ adbb090f3252d20847403c4eafe86ce2 2917 libsoup2.4_2.48.0-1+deb8u1.dsc
+ 51ccb76f5262945e1f0316fdc46de567 1709072 libsoup2.4_2.48.0.orig.tar.xz
+ 05294541ead5e7767670b349b8a7d2dd 15484 libsoup2.4_2.48.0-1+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/desktop/unstable/libsoup2.4
+Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/desktop/unstable/libsoup2.4
+Checksums-Sha1:
+ 0eb7c2febc0b43b5a9e4203c0e7926ee5b975edf 2917 libsoup2.4_2.48.0-1+deb8u1.dsc
+ 2cb87c88a88c8c8b3948e0cfcb25eeb89db56f08 1709072 libsoup2.4_2.48.0.orig.tar.xz
+ 7a0ff5d3020e915860987a0d7dbe413a77173062 15484 libsoup2.4_2.48.0-1+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 8ce2529c48665cd32c713c6c81fd85250f64e1e4a8721987bb29e249b504f956 2917 libsoup2.4_2.48.0-1+deb8u1.dsc
+ ea34dd64fe44343445daf6dd690d0691e9d973468de44878da97371c16d89784 1709072 libsoup2.4_2.48.0.orig.tar.xz
+ bae152048c7de7c4d97fab353932be4b7e5a2188c94039cf7d04deef95da4678 15484 libsoup2.4_2.48.0-1+deb8u1.debian.tar.xz
+Package-List: 
+ gir1.2-soup-2.4 deb introspection optional arch=any
+ libsoup-gnome2.4-1 deb libs optional arch=any
+ libsoup-gnome2.4-dev deb libdevel optional arch=any
+ libsoup2.4-1 deb libs optional arch=any
+ libsoup2.4-dbg deb debug extra arch=any
+ libsoup2.4-dev deb libdevel optional arch=any
+ libsoup2.4-doc deb doc optional arch=all
+Directory: pool/main/libs/libsoup2.4
+Priority: source
+Section: devel
+
+Package: mysql-5.5
+Binary: libmysqlclient18, libmysqld-pic, libmysqld-dev, libmysqlclient-dev, mysql-common, mysql-client-5.5, mysql-server-core-5.5, mysql-server-5.5, mysql-server, mysql-client, mysql-testsuite, mysql-testsuite-5.5, mysql-source-5.5
+Version: 5.5.57-0+deb8u1
+Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Uploaders: Norbert Tretkowski <norbert@tretkowski.de>, Clint Byrum <clint@ubuntu.com>, James Page <jamespage@debian.org>
+Build-Depends: bison, chrpath, cmake, debhelper (>= 8.1.3~), dh-apparmor, doxygen-latex, gawk, ghostscript, hardening-wrapper, libaio-dev [linux-any], libncurses5-dev (>= 5.0-6), libreadline-dev, libwrap0-dev (>= 7.6-8.3), lsb-release, perl, po-debconf, psmisc, zlib1g-dev (>= 1:1.1.3-5)
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ 76a78d50c1cd996c1f158a0042d2d49e 3262 mysql-5.5_5.5.57-0+deb8u1.dsc
+ 98103cc90cf483eb1bd4032baa34a315 21044615 mysql-5.5_5.5.57.orig.tar.gz
+ f0c3316ead0e31627b694284c861ef96 232520 mysql-5.5_5.5.57-0+deb8u1.debian.tar.xz
+Vcs-Browser: http://git.debian.org/?p=pkg-mysql/mysql-5.5.git
+Vcs-Git: git://git.debian.org/git/pkg-mysql/mysql-5.5.git
+Checksums-Sha1:
+ 3ddca18597306e8b9161a2159b55f685223da8db 3262 mysql-5.5_5.5.57-0+deb8u1.dsc
+ 4652b6bbc6b0dbb763ffa778c29e8cb4ea6a9f7f 21044615 mysql-5.5_5.5.57.orig.tar.gz
+ 14bc13cdebda591e99d5d1810b61906843f19bf5 232520 mysql-5.5_5.5.57-0+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ a0a622fb7e7f91e87bbee01510d193034121d645628ba5dc8fe3e8b5977959ef 3262 mysql-5.5_5.5.57-0+deb8u1.dsc
+ c1c2bd321e524f92e43fe73d0d6745badd538c984c7561b273ae10e9aef57384 21044615 mysql-5.5_5.5.57.orig.tar.gz
+ b11423f6e61e804c768b677f68e286f97bce008769f9735d7e593ab8e4ed8889 232520 mysql-5.5_5.5.57-0+deb8u1.debian.tar.xz
+Homepage: http://dev.mysql.com/
+Package-List: 
+ libmysqlclient-dev deb libdevel optional arch=any
+ libmysqlclient18 deb libs optional arch=any
+ libmysqld-dev deb libdevel optional arch=any
+ libmysqld-pic deb libdevel optional arch=any
+ mysql-client deb database optional arch=all
+ mysql-client-5.5 deb database optional arch=any
+ mysql-common deb database optional arch=all
+ mysql-server deb database optional arch=all
+ mysql-server-5.5 deb database optional arch=any
+ mysql-server-core-5.5 deb database optional arch=any
+ mysql-source-5.5 deb database optional arch=any
+ mysql-testsuite deb database optional arch=all
+ mysql-testsuite-5.5 deb database optional arch=any
+Testsuite: autopkgtest
+Directory: pool/main/m/mysql-5.5
+Priority: source
+Section: misc
+
+Package: newsbeuter
+Binary: newsbeuter, newsbeuter-dbg
+Version: 2.8-2+deb8u1
+Maintainer: Nico Golde <nion@debian.org>
+Build-Depends: libncursesw5-dev, debhelper (>= 9), libxml2-dev, libstfl-dev (>= 0.19), libsqlite3-dev, perl, pkg-config, libcurl4-gnutls-dev, libjson-c-dev, dpkg-dev (>= 1.16.1~)
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ 101de38e05936a2bc7d6f9f480823fd2 1582 newsbeuter_2.8-2+deb8u1.dsc
+ 5d8f1a5eed700beccfeb512ae003613d 431299 newsbeuter_2.8.orig.tar.gz
+ edc2c785ad494e60ed20460112f88fab 6968 newsbeuter_2.8-2+deb8u1.debian.tar.xz
+Checksums-Sha1:
+ 44a991ce7654dfec9dab34f2c4473b24e4b8080f 1582 newsbeuter_2.8-2+deb8u1.dsc
+ de284124c840062941b500ffbd72e3f183fb2b61 431299 newsbeuter_2.8.orig.tar.gz
+ af10d872a8a859df79f923d405a1d4918260ff11 6968 newsbeuter_2.8-2+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ d584aa7c0a0690bb3110e826293c522beee66a78164f022dcd7dfe36ac8c7694 1582 newsbeuter_2.8-2+deb8u1.dsc
+ c872a068ec7792680b11126230dff240dee72acdab8f153016ba5ef83c8a7804 431299 newsbeuter_2.8.orig.tar.gz
+ f59e0e011df8ed81f89039fe682348443b0affd30d6a9d1a9970c2467f23e4c1 6968 newsbeuter_2.8-2+deb8u1.debian.tar.xz
+Homepage: http://www.newsbeuter.org
+Package-List: 
+ newsbeuter deb net optional arch=any
+ newsbeuter-dbg deb debug extra arch=any
+Directory: pool/main/n/newsbeuter
+Priority: source
+Section: net
+
+Package: nginx
+Binary: nginx, nginx-doc, nginx-common, nginx-full, nginx-full-dbg, nginx-light, nginx-light-dbg, nginx-extras, nginx-extras-dbg
+Version: 1.6.2-5+deb8u5
+Maintainer: Kartik Mistry <kartik@debian.org>
+Uploaders: Jose Parrella <bureado@debian.org>, Fabio Tranchitella <kobold@debian.org>, Michael Lustfield <michael@lustfield.net>, Dmitry E. Oboukhov <unera@debian.org>, Cyril Lavier <cyril.lavier@davromaniak.eu>, Christos Trochalakis <yatiohi@ideopolis.gr>
+Build-Depends: autotools-dev, debhelper (>= 9), po-debconf, dh-systemd (>= 1.5), dpkg-dev (>= 1.15.5), libexpat-dev, libgd2-dev | libgd2-noxpm-dev, libgeoip-dev, libluajit-5.1-dev [i386 amd64 kfreebsd-i386 armel armhf powerpc powerpcspe mips mipsel], liblua5.1-0-dev [!i386 !amd64 !kfreebsd-i386 !armel !armhf !powerpc !powerpcspe !mips !mipsel], libmhash-dev, libpam0g-dev, libpcre3-dev, libperl-dev, libssl-dev, libxslt1-dev, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.6.0
+Format: 3.0 (quilt)
+Files:
+ f6c3096ccb162de4d5823e48c74f7166 2965 nginx_1.6.2-5+deb8u5.dsc
+ d1b55031ae6e4bce37f8776b94d8b930 804164 nginx_1.6.2.orig.tar.gz
+ 27edceb6b52a57ca76af729f5b1ccb86 611576 nginx_1.6.2-5+deb8u5.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/nginx.git;a=summary
+Vcs-Git: git://anonscm.debian.org/collab-maint/nginx.git
+Checksums-Sha1:
+ 2527db1f794788a538971737d27a2cddcb09b7db 2965 nginx_1.6.2-5+deb8u5.dsc
+ 1a5458bc15acf90eea16353a1dd17285cf97ec35 804164 nginx_1.6.2.orig.tar.gz
+ 0b1e85eeeebfff8267d58ab82dc8f567d4c779b2 611576 nginx_1.6.2-5+deb8u5.debian.tar.xz
+Checksums-Sha256:
+ 70d8e0fca4155ee7efee3b052a5182b7aa8300f68e4e7e07d7b4c70fa6036705 2965 nginx_1.6.2-5+deb8u5.dsc
+ b5608c2959d3e7ad09b20fc8f9e5bd4bc87b3bc8ba5936a513c04ed8f1391a18 804164 nginx_1.6.2.orig.tar.gz
+ 0775bf1407067b888ab3cb4d2325a81e4c74eae30f753f1b38d0a52fa1f7e9d3 611576 nginx_1.6.2-5+deb8u5.debian.tar.xz
+Homepage: http://nginx.net
+Package-List: 
+ nginx deb httpd optional arch=all
+ nginx-common deb httpd optional arch=all
+ nginx-doc deb doc optional arch=all
+ nginx-extras deb httpd extra arch=any
+ nginx-extras-dbg deb debug extra arch=any
+ nginx-full deb httpd optional arch=any
+ nginx-full-dbg deb debug extra arch=any
+ nginx-light deb httpd extra arch=any
+ nginx-light-dbg deb debug extra arch=any
+Testsuite: autopkgtest
+Directory: pool/main/n/nginx
+Priority: source
+Section: httpd
+
+Package: pjproject
+Binary: libpjlib-util2, libpjmedia-audiodev2, libpjmedia-codec2, libpjmedia-videodev2, libpjmedia2, libpjnath2, libpjsip-simple2, libpjsip-ua2, libpjsip2, libpjsua2, libpj2, libpjproject-dev
+Version: 2.1.0.0.ast20130823-1+deb8u1
+Maintainer: Tzafrir Cohen <tzafrir@debian.org>
+Uploaders: Jeremy Lainé <jeremy.laine@m4x.org>
+Build-Depends: debhelper (>= 8), autotools-dev, dh-autoreconf, libspeex-dev, libspeexdsp-dev, portaudio19-dev, libgsm1-dev, uuid-dev, libsrtp0-dev, libssl-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Files:
+ 2564cf736a6f97abe8b6d365c3e24d6f 2786 pjproject_2.1.0.0.ast20130823-1+deb8u1.dsc
+ 09be2a712e2f55a7008c5aad43154c16 5118950 pjproject_2.1.0.0.ast20130823.orig.tar.gz
+ 2620227fd4758b5f3cf3335024dfd831 25072 pjproject_2.1.0.0.ast20130823-1+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-voip/pjproject.git
+Vcs-Git: git://anonscm.debian.org/pkg-voip/pjproject.git
+Checksums-Sha1:
+ 14965792942b4e60c66904db26a436e46dd9f426 2786 pjproject_2.1.0.0.ast20130823-1+deb8u1.dsc
+ c1cc248eb56d66c156bc6839816bfa585eb6f5e9 5118950 pjproject_2.1.0.0.ast20130823.orig.tar.gz
+ 23b339636be0cd48f378b1ae73d9b1f5df202987 25072 pjproject_2.1.0.0.ast20130823-1+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ bb9bf8b14cdaff2da11a55ca56a6307218d692423d4015666cbdb8c9a16cb37e 2786 pjproject_2.1.0.0.ast20130823-1+deb8u1.dsc
+ b9cd63ce093d8480fe177598a93caf452916be56192d3b8c1cc40ef0319a24c0 5118950 pjproject_2.1.0.0.ast20130823.orig.tar.gz
+ b5f9961f1b07a01a09bbb7c2a176a595b9d0d16d053993c675205d6a119e300e 25072 pjproject_2.1.0.0.ast20130823-1+deb8u1.debian.tar.xz
+Homepage: http://www.pjsip.org/
+Package-List: 
+ libpj2 deb comm optional arch=any
+ libpjlib-util2 deb comm optional arch=any
+ libpjmedia-audiodev2 deb comm optional arch=any
+ libpjmedia-codec2 deb comm optional arch=any
+ libpjmedia-videodev2 deb comm optional arch=any
+ libpjmedia2 deb comm optional arch=any
+ libpjnath2 deb comm optional arch=any
+ libpjproject-dev deb libdevel optional arch=any
+ libpjsip-simple2 deb comm optional arch=any
+ libpjsip-ua2 deb comm optional arch=any
+ libpjsip2 deb comm optional arch=any
+ libpjsua2 deb comm optional arch=any
+Directory: pool/main/p/pjproject
+Priority: source
+Section: misc
+
+Package: postgresql-9.4
+Binary: libpq-dev, libpq5, libecpg6, libecpg-dev, libecpg-compat3, libpgtypes3, postgresql-9.4, postgresql-9.4-dbg, postgresql-client-9.4, postgresql-server-dev-9.4, postgresql-doc-9.4, postgresql-contrib-9.4, postgresql-plperl-9.4, postgresql-plpython-9.4, postgresql-plpython3-9.4, postgresql-pltcl-9.4
+Version: 9.4.13-0+deb8u1
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Uploaders: Martin Pitt <mpitt@debian.org>, Peter Eisentraut <petere@debian.org>, Christoph Berg <myon@debian.org>
+Build-Depends: debhelper (>= 9~), dpkg-dev (>= 1.16.1~) | hardening-wrapper, perl (>= 5.8), libperl-dev, libipc-run-perl, tcl8.6-dev | tcl8.5-dev, libedit-dev, libssl-dev, zlib1g-dev | libz-dev, libpam0g-dev | libpam-dev, libxml2-dev, krb5-multidev, libldap2-dev, libselinux1-dev [linux-any], libxslt1-dev, uuid-dev, python-dev, python3-dev, bison, flex, openjade, docbook-dsssl, docbook-xsl, docbook, opensp, xsltproc, gettext
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 62587b2c7f10b668991158f289a9fbf2 3546 postgresql-9.4_9.4.13-0+deb8u1.dsc
+ dbdb9fbe1b9a394b9ac19d3113b73944 17867502 postgresql-9.4_9.4.13.orig.tar.bz2
+ bcfd3860425056462bbf018c206bd36c 24760 postgresql-9.4_9.4.13-0+deb8u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-postgresql/postgresql.git/
+Vcs-Git: https://anonscm.debian.org/git/pkg-postgresql/postgresql.git -b 9.4-jessie
+Checksums-Sha1:
+ 34b339db6cba6a7a191bc15fc752667f9bd20f48 3546 postgresql-9.4_9.4.13-0+deb8u1.dsc
+ 01d663713daf2eb4f668da96141bb12b0b5b649a 17867502 postgresql-9.4_9.4.13.orig.tar.bz2
+ 74f4ccb2fabc64b976b4f0d0439d4e51184138d2 24760 postgresql-9.4_9.4.13-0+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ b803979189136ce6cd081a51d5c8cc26e5a7d8cb3dbcc31aa9e0eedeaa28e79c 3546 postgresql-9.4_9.4.13-0+deb8u1.dsc
+ 0080f55d65194de8b96a2dab153443f8248ff2b2b10e6ab4cda2dcadcac7f2ab 17867502 postgresql-9.4_9.4.13.orig.tar.bz2
+ eaba640d7bab6113ba355e774d7e060263dcc7b3a27d4f31bf0478ab87075be7 24760 postgresql-9.4_9.4.13-0+deb8u1.debian.tar.xz
+Homepage: http://www.postgresql.org/
+Package-List: 
+ libecpg-compat3 deb libs optional arch=any
+ libecpg-dev deb libdevel optional arch=any
+ libecpg6 deb libs optional arch=any
+ libpgtypes3 deb libs optional arch=any
+ libpq-dev deb libdevel optional arch=any
+ libpq5 deb libs optional arch=any
+ postgresql-9.4 deb database optional arch=any
+ postgresql-9.4-dbg deb debug extra arch=any
+ postgresql-client-9.4 deb database optional arch=any
+ postgresql-contrib-9.4 deb database optional arch=any
+ postgresql-doc-9.4 deb doc optional arch=all
+ postgresql-plperl-9.4 deb database optional arch=any
+ postgresql-plpython-9.4 deb database optional arch=any
+ postgresql-plpython3-9.4 deb database optional arch=any
+ postgresql-pltcl-9.4 deb database optional arch=any
+ postgresql-server-dev-9.4 deb libdevel optional arch=any
+Testsuite: autopkgtest
+Directory: pool/main/p/postgresql-9.4
+Priority: source
+Section: misc
+
+Package: samba
+Binary: samba, samba-libs, samba-common, samba-common-bin, smbclient, samba-testsuite, registry-tools, libparse-pidl-perl, samba-dev, samba-doc, python-samba, samba-dsdb-modules, samba-vfs-modules, libpam-smbpass, libsmbclient, libsmbclient-dev, winbind, libpam-winbind, libnss-winbind, samba-dbg, libwbclient0, libwbclient-dev, ctdb
+Version: 2:4.2.14+dfsg-0+deb8u7
+Maintainer: Debian Samba Maintainers <pkg-samba-maint@lists.alioth.debian.org>
+Uploaders: Steve Langasek <vorlon@debian.org>, Christian Perrier <bubulle@debian.org>, Jelmer Vernooij <jelmer@debian.org>, Ivo De Decker <ivodd@debian.org>, Mathieu Parent <sathieu@debian.org>
+Build-Depends: bison, debhelper (>> 9), dh-systemd (>= 1.5), docbook-xml, docbook-xsl, faketime, flex, libacl1-dev, libaio-dev [linux-any], libarchive-dev, libattr1-dev, libblkid-dev, libbsd-dev, libcap-dev [linux-any], libcups2-dev, libgnutls28-dev, libheimntlm0-heimdal (>= 1.6~), libldap2-dev, libldb-dev (>= 1:1.1.20~), libncurses5-dev, libntdb-dev (>= 1.0), libpam0g-dev, libparse-yapp-perl, libpcap-dev [hurd-i386 kfreebsd-any], libpopt-dev, libreadline-dev, libsubunit-dev, libtalloc-dev (>= 2.1.2~), libtdb-dev (>= 1.3.6~), libtevent-dev (>= 0.9.28~), perl, perl-modules, pkg-config, po-debconf, python-all-dev (>= 2.6.6-3), python-dnspython, python-ldb (>= 1:1.1.20~), python-ldb-dev (>= 1:1.1.20~), python-ntdb, python-talloc-dev (>= 2.1.2~), python-tdb (>= 1.3.6~), python-testtools, python3, subunit (>= 0.0.6), xsltproc, zlib1g-dev (>= 1:1.2.3)
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 40c68e6cae1a93b240ad78b6341ea09e 4188 samba_4.2.14+dfsg-0+deb8u7.dsc
+ c76527d80c6c7c1c8ea7bdbeba35c073 20862908 samba_4.2.14+dfsg.orig.tar.gz
+ 082158481f8d6c35ff9163b5806968a4 260836 samba_4.2.14+dfsg-0+deb8u7.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-samba/samba.git
+Vcs-Git: git://anonscm.debian.org/pkg-samba/samba.git -b master
+Checksums-Sha1:
+ 1c028e4a72352d5a35921ee19e13dbc0fb25f29f 4188 samba_4.2.14+dfsg-0+deb8u7.dsc
+ 636584f1e88276a5dc1eed99845063660e493704 20862908 samba_4.2.14+dfsg.orig.tar.gz
+ 75c480c6b950d9874bc2c562c5bea9c0bd896bb4 260836 samba_4.2.14+dfsg-0+deb8u7.debian.tar.xz
+Checksums-Sha256:
+ 0e7028f037e32efe68c6a427da8434a19fe73a0ed941a625ce108dc25eabda00 4188 samba_4.2.14+dfsg-0+deb8u7.dsc
+ 9beca5ea39f4e61798bb05748abfdd0650c85b6381b5531b372f7757635e4264 20862908 samba_4.2.14+dfsg.orig.tar.gz
+ b2f68dd3341620de7a42178a5a8cf1feaf167b1d82c92388a7feba22003bb8df 260836 samba_4.2.14+dfsg-0+deb8u7.debian.tar.xz
+Homepage: http://www.samba.org
+Package-List: 
+ ctdb deb net optional arch=any
+ libnss-winbind deb net optional arch=any
+ libpam-smbpass deb admin extra arch=any
+ libpam-winbind deb net optional arch=any
+ libparse-pidl-perl deb perl optional arch=any
+ libsmbclient deb libs optional arch=any
+ libsmbclient-dev deb libdevel extra arch=any
+ libwbclient-dev deb libdevel optional arch=any
+ libwbclient0 deb libs optional arch=any
+ python-samba deb python optional arch=any
+ registry-tools deb net optional arch=any
+ samba deb net optional arch=any
+ samba-common deb net optional arch=all
+ samba-common-bin deb net optional arch=any
+ samba-dbg deb debug extra arch=any
+ samba-dev deb devel optional arch=any
+ samba-doc deb doc optional arch=all
+ samba-dsdb-modules deb libs optional arch=any
+ samba-libs deb libs optional arch=any
+ samba-testsuite deb net optional arch=any
+ samba-vfs-modules deb net optional arch=any
+ smbclient deb net optional arch=any
+ winbind deb net optional arch=any
+Testsuite: autopkgtest
+Directory: pool/main/s/samba
+Priority: source
+Section: net
+
+Package: slurm-llnl
+Binary: slurm-wlm, slurm-client, slurmd, slurmctld, libslurmdb27, libslurm27, libpmi0, libslurm-dev, libslurmdb-dev, libpmi0-dev, slurm-wlm-doc, slurm-wlm-basic-plugins, slurm-wlm-basic-plugins-dev, sview, slurmdbd, libslurm-perl, libslurmdb-perl, slurm-wlm-torque, libpam-slurm, slurm-llnl, slurm-llnl-slurmdbd
+Version: 14.03.9-5+deb8u1
+Maintainer: Gennaro Oliva <oliva.g@na.icar.cnr.it>
+Uploaders: Rémi Palancher <remi@rezib.org>, Mehdi Dogguy <mehdi@debian.org>
+Build-Depends: debhelper (>= 9.20130504), autotools-dev, libmunge-dev, libncurses5-dev, libssl-dev, po-debconf, python, libglade2-dev, libgtk2.0-dev, libmysqlclient-dev, libpam0g-dev, libperl-dev, chrpath, liblua5.1-0-dev, libhwloc-dev, dh-autoreconf, dh-exec, dh-systemd (>= 1.5)
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 60caf9e7c39358ba914c63bd9e207541 3354 slurm-llnl_14.03.9-5+deb8u1.dsc
+ a7e219e5051e0652ac653c378cd2da3e 8273638 slurm-llnl_14.03.9.orig.tar.gz
+ 71f528e649843df44eb66505e0533440 47856 slurm-llnl_14.03.9-5+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/cgit/collab-maint/slurm-llnl.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/slurm-llnl.git
+Checksums-Sha1:
+ fad355000dd85b3bc296ec9d84604c76d583bc12 3354 slurm-llnl_14.03.9-5+deb8u1.dsc
+ 60b855729334ddb4ec41531637039ab8950be792 8273638 slurm-llnl_14.03.9.orig.tar.gz
+ 5e1b97146925ffd6c2483996db5ea01ff45da4e2 47856 slurm-llnl_14.03.9-5+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 2157052653fa7a99b6cef88e84428f05a624a9e877dfd6b1140fbc4a0b026bb5 3354 slurm-llnl_14.03.9-5+deb8u1.dsc
+ dd2af77c4c37b1a3de3a24e59654323ff33c10368869d0c1471c433fa3be6eca 8273638 slurm-llnl_14.03.9.orig.tar.gz
+ 9459ddafe7748bc988e5a873b4629801d1f145330484aebbf50c8d13f79b3a90 47856 slurm-llnl_14.03.9-5+deb8u1.debian.tar.xz
+Homepage: http://slurm.schedmd.com
+Package-List: 
+ libpam-slurm deb admin extra arch=any
+ libpmi0 deb libs extra arch=any
+ libpmi0-dev deb libdevel extra arch=any
+ libslurm-dev deb libdevel extra arch=any
+ libslurm-perl deb perl extra arch=any
+ libslurm27 deb libs extra arch=any
+ libslurmdb-dev deb libdevel extra arch=any
+ libslurmdb-perl deb perl extra arch=any
+ libslurmdb27 deb libs extra arch=any
+ slurm-client deb admin extra arch=any
+ slurm-llnl deb oldlibs extra arch=all
+ slurm-llnl-slurmdbd deb oldlibs extra arch=all
+ slurm-wlm deb admin extra arch=any
+ slurm-wlm-basic-plugins deb admin extra arch=any
+ slurm-wlm-basic-plugins-dev deb devel extra arch=any
+ slurm-wlm-doc deb doc extra arch=all
+ slurm-wlm-torque deb admin extra arch=all
+ slurmctld deb admin extra arch=any
+ slurmd deb admin extra arch=any
+ slurmdbd deb admin extra arch=any
+ sview deb admin extra arch=any
+Directory: pool/main/s/slurm-llnl
+Priority: source
+Section: admin
+
+Package: supervisor
+Binary: supervisor
+Version: 3.0r1-1+deb8u1
+Maintainer: Qijiang Fan <fqj1994@gmail.com>
+Build-Depends: debhelper (>= 9), python-setuptools, python-all (>= 2.6.6~3)
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Files:
+ 5182b444c142de8d8bf3f8c6bcecbf2d 2088 supervisor_3.0r1-1+deb8u1.dsc
+ fe9bbfaf5eb9cc3156d35dd1662354ca 460340 supervisor_3.0r1.orig.tar.gz
+ 4d35718ffa70ee002ebde4ca2a196381 10864 supervisor_3.0r1-1+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/supervisor.git;a=summary
+Vcs-Git: git://anonscm.debian.org/collab-maint/supervisor.git
+Checksums-Sha1:
+ d3a6bf5a01fa81a2239ef8838b4c7f7a844bb35c 2088 supervisor_3.0r1-1+deb8u1.dsc
+ 560ed627498e51a147d98749d11fb908d5c70f9e 460340 supervisor_3.0r1.orig.tar.gz
+ f4301bdbbe3b36d92e1b36e4ac5b0f0657413baa 10864 supervisor_3.0r1-1+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 71d86a09a64ead4210265e833474386c10f79c7a4ce1022a137b0a379346e75a 2088 supervisor_3.0r1-1+deb8u1.dsc
+ f46aec68df0ea74fe76c6cdea04b4b61fa4ad883f6f9ba4fb667223dc06ac20d 460340 supervisor_3.0r1.orig.tar.gz
+ afa6075c352437c5f0ba329d2516fe84d3516cf180d3a4626b3ec236e6eedda1 10864 supervisor_3.0r1-1+deb8u1.debian.tar.xz
+Homepage: http://supervisord.org/
+Package-List: 
+ supervisor deb admin extra arch=all
+Directory: pool/main/s/supervisor
+Priority: source
+Section: admin
+
+Package: varnish
+Binary: varnish, varnish-doc, libvarnishapi1, libvarnishapi-dev, varnish-dbg
+Version: 4.0.2-1+deb8u1
+Maintainer: Varnish Package Maintainers <pkg-varnish-devel@lists.alioth.debian.org>
+Uploaders: Jan Wagner <waja@cyconet.org>, Lars Bahner <bahner@debian.org>, Stig Sandbeck Mathisen <ssm@debian.org>, Tollef Fog Heen <tfheen@debian.org>,
+Build-Depends: automake, autotools-dev, debhelper (>= 9), dh-autoreconf, dh-systemd, libedit-dev, libjemalloc-dev, libncurses-dev, libpcre3-dev, libtool, pkg-config, python-docutils, xsltproc
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 254bf9f85e6bfb789e13206b25d57247 2621 varnish_4.0.2-1+deb8u1.dsc
+ bf86f3630605c273b1bbadbbe518237a 1853668 varnish_4.0.2.orig.tar.gz
+ 7d60e51442998ca55404617a3e6acce9 22896 varnish_4.0.2-1+deb8u1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-varnish/pkg-varnish.git
+Vcs-Git: git://anonscm.debian.org/pkg-varnish/pkg-varnish.git
+Checksums-Sha1:
+ 1a210e2708e8d2ae0ff3dcf7df7eb2acd2015151 2621 varnish_4.0.2-1+deb8u1.dsc
+ af9a87a1e8536e895c1ebf0e09921a583dafe29a 1853668 varnish_4.0.2.orig.tar.gz
+ 3a0dba69f87e5fd6ca29369ecde396505fa907c4 22896 varnish_4.0.2-1+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 0bf34656055afee59b6693a74e5c9000af244d7a9a06b22c2504cf3626cfce20 2621 varnish_4.0.2-1+deb8u1.dsc
+ d9fb6a6eaf05bbb0c8eb5855556a4b092183b2c1a61281bfd73adf83a304555b 1853668 varnish_4.0.2.orig.tar.gz
+ 34290ef020764bac221fb8ff39238ca6d44b10fdcd92dedfe5318cde9c5874fe 22896 varnish_4.0.2-1+deb8u1.debian.tar.xz
+Homepage: http://varnish-cache.org/
+Package-List: 
+ libvarnishapi-dev deb libdevel optional arch=any
+ libvarnishapi1 deb libs optional arch=any
+ varnish deb web optional arch=any
+ varnish-dbg deb debug extra arch=any
+ varnish-doc deb doc optional arch=all
+Testsuite: autopkgtest
+Directory: pool/main/v/varnish
+Priority: source
+Section: web
+
+Package: zabbix
+Binary: zabbix-agent, zabbix-frontend-php, zabbix-java-gateway, zabbix-proxy-mysql, zabbix-proxy-pgsql, zabbix-proxy-sqlite3, zabbix-server-mysql, zabbix-server-pgsql
+Version: 1:2.2.7+dfsg-2+deb8u3
+Maintainer: Christoph Haas <haas@debian.org>
+Uploaders: Dmitry Smirnov <onlyjob@debian.org>
+Build-Depends: debhelper (>= 9), automake, dh-autoreconf, libcurl4-gnutls-dev, libgcrypt20-dev | libgcrypt-dev, libiksemel-dev, libldap2-dev, libmysqlclient-dev, libopenipmi-dev [!hurd-any !arm], libpq-dev, libsnmp9-dev | libsnmp-dev, libsqlite3-dev, libssh2-1-dev, libxml2-dev, pkg-config, unixodbc-dev, javahelper
+Build-Depends-Indep: default-jdk, libandroid-json-org-java, liblogback-java, libslf4j-java, junit4
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ b2b528f96359683bc2d7fc478b183339 2794 zabbix_2.2.7+dfsg-2+deb8u3.dsc
+ 53fcafa41d157467d8646525504722b2 5905712 zabbix_2.2.7+dfsg.orig.tar.xz
+ f073259ec773c66c661aba95d1ee5165 190924 zabbix_2.2.7+dfsg-2+deb8u3.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/zabbix.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/zabbix.git
+Checksums-Sha1:
+ 3122866a780a47d723a6cf1028bb273e8d03e1d8 2794 zabbix_2.2.7+dfsg-2+deb8u3.dsc
+ 14426c8336d6461fa87cddb8bbf93fca5aa8bff9 5905712 zabbix_2.2.7+dfsg.orig.tar.xz
+ 05edbfa8b81edcb57ca0d23779bf51248accdf7d 190924 zabbix_2.2.7+dfsg-2+deb8u3.debian.tar.xz
+Checksums-Sha256:
+ 09797738f7d1bd80d9e524ad1313a390b41ea66b829490084b9b8c27ee5788e9 2794 zabbix_2.2.7+dfsg-2+deb8u3.dsc
+ 922b2f12d3145ed4c0c0dc14cdce07a4cd959cb4d5801690f7017c116258ec7b 5905712 zabbix_2.2.7+dfsg.orig.tar.xz
+ 76cda51c4fd8e004ef9509cda1b6b30d1f5c029c8b4516de15f8b6f0325b3266 190924 zabbix_2.2.7+dfsg-2+deb8u3.debian.tar.xz
+Homepage: http://zabbix.com
+Package-List: 
+ zabbix-agent deb net optional arch=any
+ zabbix-frontend-php deb net optional arch=all
+ zabbix-java-gateway deb net optional arch=all
+ zabbix-proxy-mysql deb net optional arch=any
+ zabbix-proxy-pgsql deb net optional arch=any
+ zabbix-proxy-sqlite3 deb net optional arch=any
+ zabbix-server-mysql deb net optional arch=any
+ zabbix-server-pgsql deb net optional arch=any
+Directory: pool/main/z/zabbix
+Priority: source
+Section: net
+

@@ -1,0 +1,22 @@
+#!/bin/sh -e
+
+# Copyright 2002 Raphaël Hertzog
+# Copyright 2007-2008 Stefano Zacchiroli
+# This file is distributed under the terms of the General Public License
+# version 2 or (at your option) any later version.
+
+umask 002
+
+if [ -d "../incoming" ]; then
+    root=$PWD/..
+elif [ -d "incoming" ]; then
+    root=$PWD
+else
+    root=/srv/packages.qa.debian.org/www
+fi
+
+cd $root
+
+# Collect all the data from everywhere
+bin/update_incoming.sh
+

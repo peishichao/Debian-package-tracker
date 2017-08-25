@@ -1,0 +1,388 @@
+Package: gcc-mozilla
+Binary: gcc-mozilla
+Version: 4.8.4-0deb7u1
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Uploaders: Matthias Klose <doko@debian.org>
+Build-Depends: debhelper (>= 5.0.62), dpkg-dev (>= 1.16.0~ubuntu4), g++-multilib [amd64 i386 kfreebsd-amd64 mips mips64 mips64el mipsel mipsn32 mipsn32el powerpc ppc64 s390 s390x sparc sparc64 x32], libc6.1-dev (>= 2.13-5) [alpha ia64] | libc0.3-dev (>= 2.13-5) [hurd-i386] | libc0.1-dev (>= 2.13-5) [kfreebsd-i386 kfreebsd-amd64] | libc6-dev (>= 2.13-5), libc6-dev (>= 2.13-31) [armel armhf], libc6-dev-amd64 [i386 x32], libc6-dev-sparc64 [sparc], libc6-dev-sparc [sparc64], libc6-dev-s390 [s390x], libc6-dev-s390x [s390], libc6-dev-i386 [amd64 x32], libc6-dev-powerpc [ppc64], libc6-dev-ppc64 [powerpc], libc0.1-dev-i386 [kfreebsd-amd64], lib32gcc1 [amd64 ppc64 kfreebsd-amd64 mipsn32 mipsn32el mips64 mips64el s390x sparc64 x32], libn32gcc1 [mips mipsel mips64 mips64el], lib64gcc1 [i386 mips mipsel mipsn32 mipsn32el powerpc sparc s390 x32], libc6-dev-mips64 [mips mipsel mipsn32 mipsn32el], libc6-dev-mipsn32 [mips mipsel mips64 mips64el], libc6-dev-mips32 [mipsn32 mipsn32el mips64 mips64el], libc6.1-dbg [alpha ia64] | libc0.3-dbg [hurd-i386] | libc0.1-dbg [kfreebsd-i386 kfreebsd-amd64] | libc6-dbg, kfreebsd-kernel-headers (>= 0.84) [kfreebsd-any], m4, libtool, autoconf2.64, libunwind7-dev (>= 0.98.5-6) [ia64], libatomic-ops-dev [ia64], gawk, lzma, xz-utils, patchutils, zlib1g-dev, binutils (>= 2.22) | binutils-multiarch (>= 2.22), binutils-hppa64 (>= 2.22) [hppa], gperf (>= 3.0.1), bison (>= 1:2.3), flex, gettext, texinfo (>= 4.3), locales, sharutils, procps, libantlr-java, python, libffi-dev, netbase, libcloog-ppl-dev (>= 0.15.9-2~), libmpc-dev, libmpfr-dev (>= 3.0.0-9~), libgmp-dev (>= 2:5.0.1~), dejagnu [!m68k !hurd-amd64 !hurd-i386 !hurd-alpha !kfreebsd-amd64 !kfreebsd-i386 !kfreebsd-alpha], autogen, realpath (>= 1.9.12), chrpath, lsb-release, quilt
+Build-Depends-Indep: doxygen (>= 1.7.2), graphviz (>= 2.2), ghostscript, texlive-latex-base, xsltproc, libxml2-utils, docbook-xsl-ns
+Architecture: any
+Standards-Version: 3.9.6
+Format: 1.0
+Files:
+ 19e04fa9874bf1f02c335bfbcd4ce14d 3798 gcc-mozilla_4.8.4-0deb7u1.dsc
+ 0d89476c12aeb3d17ed1427679935be5 70635843 gcc-mozilla_4.8.4.orig.tar.gz
+ bad1cd55182b751bd4efea4c8907d25e 1090456 gcc-mozilla_4.8.4-0deb7u1.diff.gz
+Vcs-Browser: http://svn.debian.org/viewsvn/gcccvs/branches/sid/gcc-4.8/
+Vcs-Svn: svn://svn.debian.org/svn/gcccvs/branches/sid/gcc-4.8
+Checksums-Sha1:
+ e00f7c1dc2262f873160a5ead8ed7625f1dcab98 3798 gcc-mozilla_4.8.4-0deb7u1.dsc
+ 5f3f31bb4b272e2eec853b300ff7adf7ea7b35cf 70635843 gcc-mozilla_4.8.4.orig.tar.gz
+ 36bd6e7547ab08688b8aed1a3bf7d95dd37eb71d 1090456 gcc-mozilla_4.8.4-0deb7u1.diff.gz
+Checksums-Sha256:
+ 59ba0a20d6e5251c57f3f951fe39d1e19e53ea4e3558316580857cf6b378a0bd 3798 gcc-mozilla_4.8.4-0deb7u1.dsc
+ 8d5ffac603ea55866568911b369f6ea604312594f71dc00576cae0b1362bc1ac 70635843 gcc-mozilla_4.8.4.orig.tar.gz
+ 61194675dcedd5564cd90d9876f9d72900a4a4c4695c3205ef0b6e38e7169473 1090456 gcc-mozilla_4.8.4-0deb7u1.diff.gz
+Homepage: http://gcc.gnu.org/
+Package-List: 
+ gcc-mozilla deb devel extra
+Directory: pool/main/g/gcc-mozilla
+Priority: extra
+Section: misc
+
+Package: icedove
+Binary: thunderbird, icedove, thunderbird-dev, icedove-dev, thunderbird-dbg, icedove-dbg, lightning, iceowl-extension, calendar-google-provider, thunderbird-l10n-all, thunderbird-l10n-ar, thunderbird-l10n-ast, thunderbird-l10n-be, thunderbird-l10n-bg, thunderbird-l10n-bn-bd, thunderbird-l10n-br, thunderbird-l10n-ca, thunderbird-l10n-cs, thunderbird-l10n-da, thunderbird-l10n-de, thunderbird-l10n-el, thunderbird-l10n-en-gb, thunderbird-l10n-es-ar, thunderbird-l10n-es-es, thunderbird-l10n-et, thunderbird-l10n-eu, thunderbird-l10n-fi, thunderbird-l10n-fr, thunderbird-l10n-fy-nl, thunderbird-l10n-ga-ie, thunderbird-l10n-gd, thunderbird-l10n-gl, thunderbird-l10n-he, thunderbird-l10n-hr, thunderbird-l10n-hu, thunderbird-l10n-hy-am, thunderbird-l10n-id, thunderbird-l10n-is, thunderbird-l10n-it, thunderbird-l10n-ja, thunderbird-l10n-ko, thunderbird-l10n-lt, thunderbird-l10n-nb-no, thunderbird-l10n-nl, thunderbird-l10n-nn-no, thunderbird-l10n-pa-in, thunderbird-l10n-pl,
+ thunderbird-l10n-pt-br, thunderbird-l10n-pt-pt, thunderbird-l10n-rm, thunderbird-l10n-ro, thunderbird-l10n-ru, thunderbird-l10n-si, thunderbird-l10n-sk, thunderbird-l10n-sl, thunderbird-l10n-sq, thunderbird-l10n-sr, thunderbird-l10n-sv-se, thunderbird-l10n-ta-lk, thunderbird-l10n-tr, thunderbird-l10n-uk, thunderbird-l10n-vi, thunderbird-l10n-zh-cn, thunderbird-l10n-zh-tw, icedove-l10n-all, icedove-l10n-ar, icedove-l10n-ast, icedove-l10n-be, icedove-l10n-bg, icedove-l10n-bn-bd, icedove-l10n-br, icedove-l10n-ca, icedove-l10n-cs, icedove-l10n-da, icedove-l10n-de, icedove-l10n-el, icedove-l10n-en-gb, icedove-l10n-es-ar, icedove-l10n-es-es, icedove-l10n-et, icedove-l10n-eu, icedove-l10n-fi, icedove-l10n-fr, icedove-l10n-fy-nl, icedove-l10n-ga-ie, icedove-l10n-gd, icedove-l10n-gl, icedove-l10n-he, icedove-l10n-hr, icedove-l10n-hu, icedove-l10n-hy-am, icedove-l10n-id, icedove-l10n-is, icedove-l10n-it, icedove-l10n-ja, icedove-l10n-ko, icedove-l10n-lt, icedove-l10n-nb-no,
+ icedove-l10n-nl, icedove-l10n-nn-no, icedove-l10n-pa-in, icedove-l10n-pl, icedove-l10n-pt-br, icedove-l10n-pt-pt, icedove-l10n-rm, icedove-l10n-ro, icedove-l10n-ru, icedove-l10n-si, icedove-l10n-sk, icedove-l10n-sl, icedove-l10n-sq, icedove-l10n-sr, icedove-l10n-sv-se, icedove-l10n-ta-lk, icedove-l10n-tr, icedove-l10n-uk, icedove-l10n-vi, icedove-l10n-zh-cn, icedove-l10n-zh-tw, lightning-l10n-ar, lightning-l10n-be, lightning-l10n-bg, lightning-l10n-bn-bd, lightning-l10n-br, lightning-l10n-ca, lightning-l10n-cs, lightning-l10n-cy, lightning-l10n-da, lightning-l10n-de, lightning-l10n-el, lightning-l10n-es-ar, lightning-l10n-es-es, lightning-l10n-en-gb, lightning-l10n-et, lightning-l10n-eu, lightning-l10n-fi, lightning-l10n-fr, lightning-l10n-fy-nl, lightning-l10n-ga-ie, lightning-l10n-gd, lightning-l10n-gl, lightning-l10n-he, lightning-l10n-hr, lightning-l10n-hu, lightning-l10n-hy-am, lightning-l10n-id, lightning-l10n-is, lightning-l10n-it, lightning-l10n-ja,
+ lightning-l10n-ko, lightning-l10n-lt, lightning-l10n-nb-no, lightning-l10n-nl, lightning-l10n-nn-no, lightning-l10n-pa-in, lightning-l10n-pl, lightning-l10n-pt-br, lightning-l10n-pt-pt, lightning-l10n-rm, lightning-l10n-ro, lightning-l10n-ru, lightning-l10n-si, lightning-l10n-sk, lightning-l10n-sl, lightning-l10n-sr, lightning-l10n-sq, lightning-l10n-sv-se, lightning-l10n-ta-lk, lightning-l10n-tr, lightning-l10n-uk, lightning-l10n-vi, lightning-l10n-zh-cn, lightning-l10n-zh-tw, iceowl-l10n-ar, iceowl-l10n-be, iceowl-l10n-bg, iceowl-l10n-bn-bd, iceowl-l10n-br, iceowl-l10n-ca, iceowl-l10n-cs, iceowl-l10n-cy, iceowl-l10n-da, iceowl-l10n-de, iceowl-l10n-el, iceowl-l10n-es-ar, iceowl-l10n-es-es, iceowl-l10n-en-gb, iceowl-l10n-et, iceowl-l10n-eu, iceowl-l10n-fi, iceowl-l10n-fr, iceowl-l10n-fy-nl, iceowl-l10n-ga-ie, iceowl-l10n-gd, iceowl-l10n-gl, iceowl-l10n-he, iceowl-l10n-hr, iceowl-l10n-hu, iceowl-l10n-hy-am, iceowl-l10n-id, iceowl-l10n-is, iceowl-l10n-it,
+ iceowl-l10n-ja, iceowl-l10n-ko, iceowl-l10n-lt, iceowl-l10n-nb-no, iceowl-l10n-nl, iceowl-l10n-nn-no, iceowl-l10n-pa-in, iceowl-l10n-pl, iceowl-l10n-pt-br, iceowl-l10n-pt-pt, iceowl-l10n-rm, iceowl-l10n-ro, iceowl-l10n-ru, iceowl-l10n-si, iceowl-l10n-sk, iceowl-l10n-sl, iceowl-l10n-sr, iceowl-l10n-sq, iceowl-l10n-sv-se, iceowl-l10n-ta-lk, iceowl-l10n-tr, iceowl-l10n-uk, iceowl-l10n-vi, iceowl-l10n-zh-cn,
+ iceowl-l10n-zh-tw
+Version: 1:45.8.0-3~deb7u1
+Maintainer: Christoph Goehre <chris@sigxcpu.org>
+Uploaders: Guido Günther <agx@sigxcpu.org>, Carsten Schoenert <c.schoenert@t-online.de>,
+Build-Depends: autoconf2.13, autotools-dev, bash-completion, bzip2, debhelper (>= 9.20120909~), libasound2-dev [linux-any], dh-apparmor, dh-exec, dpkg (>= 1.16.18~), dpkg-dev (>= 1.16.18~), g++-4.7, gcc-4.7, libatk-adaptor, libbz2-dev, libcairo2-dev (>= 1.10.2-1.1~), libdbus-glib-1-dev (>= 0.60), libevent-dev (>= 1.4.1), libffi-dev, libfontconfig1-dev, libglib2.0-dev (>= 2.22.0), libgnomeui-dev (>= 2.22), libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, libgtk2.0-dev (>= 2.18), libhunspell-dev (>= 1.2), libidl-dev (>= 0.8.0), libiw-dev [linux-any], libpng-dev, libpulse-dev, libreadline-dev, libstartup-notification0-dev, libxau-dev, libxft-dev, libxt-dev, mesa-common-dev, mozilla-devscripts, python-minimal (>= 2.6.6-13~), python-ply, python2.7, unzip, yasm (>= 1.1), zip, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 741dc8dc4c9a4ee644cb50bf94d34efb 16862 icedove_45.8.0-3~deb7u1.dsc
+ 06e78c2df73d39e313d8eaba0a87c8a9 7807120 icedove_45.8.0.orig-icedove-l10n.tar.xz
+ 4b9d24da8320ef832716d02818b1ea47 825848 icedove_45.8.0.orig-iceowl-l10n.tar.xz
+ 5f9501e0d652c79b60afcedfd653338e 205587972 icedove_45.8.0.orig.tar.xz
+ a70e5b6f9e6543e69850998fb3e4e9ce 538277 icedove_45.8.0-3~deb7u1.debian.tar.gz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-mozilla/icedove.git
+Vcs-Git: https://anonscm.debian.org/cgit/pkg-mozilla/icedove.git
+Checksums-Sha1:
+ d5232a6efb0706927188eab4584b152c25b87ac1 16862 icedove_45.8.0-3~deb7u1.dsc
+ 6938463349899d87d0c687ad388a274cb605b33c 7807120 icedove_45.8.0.orig-icedove-l10n.tar.xz
+ 8d6b93ee674c7592228477b3ff6243488792ec96 825848 icedove_45.8.0.orig-iceowl-l10n.tar.xz
+ d00145b22322f29225b6d9db8d1b3158705dfc64 205587972 icedove_45.8.0.orig.tar.xz
+ bd085ea414c28fef0f8df16691337b3fbd8e5514 538277 icedove_45.8.0-3~deb7u1.debian.tar.gz
+Checksums-Sha256:
+ b3a9e972eecbda098614a86008b12a21ca4456004370a635135dadddefccee50 16862 icedove_45.8.0-3~deb7u1.dsc
+ 427ec228b09dc327510adc41a5396e37f24596940ebbb5e99802161d38307e3e 7807120 icedove_45.8.0.orig-icedove-l10n.tar.xz
+ 5371401761af6ae30dbeb3a58af0301dd23647ea334dc85d3d3c9c12fc7d189f 825848 icedove_45.8.0.orig-iceowl-l10n.tar.xz
+ 49adb7d861bca2cddf20cd27533216e52a0a5a2431bd5663e931d8f60ee7e30f 205587972 icedove_45.8.0.orig.tar.xz
+ 43a287085e7cf07122b1d1712500bae8d74ea15d6a7da96e8a90a3213aa0d6f9 538277 icedove_45.8.0-3~deb7u1.debian.tar.gz
+Homepage: http://www.mozilla.org/thunderbird/
+Package-List: 
+ calendar-google-provider deb mail optional
+ icedove deb oldlibs extra
+ icedove-dbg deb oldlibs extra
+ icedove-dev deb oldlibs extra
+ icedove-l10n-all deb oldlibs extra
+ icedove-l10n-ar deb oldlibs extra
+ icedove-l10n-ast deb oldlibs extra
+ icedove-l10n-be deb oldlibs extra
+ icedove-l10n-bg deb oldlibs extra
+ icedove-l10n-bn-bd deb oldlibs extra
+ icedove-l10n-br deb oldlibs extra
+ icedove-l10n-ca deb oldlibs extra
+ icedove-l10n-cs deb oldlibs extra
+ icedove-l10n-da deb oldlibs extra
+ icedove-l10n-de deb oldlibs extra
+ icedove-l10n-el deb oldlibs extra
+ icedove-l10n-en-gb deb oldlibs extra
+ icedove-l10n-es-ar deb oldlibs extra
+ icedove-l10n-es-es deb oldlibs extra
+ icedove-l10n-et deb oldlibs extra
+ icedove-l10n-eu deb oldlibs extra
+ icedove-l10n-fi deb oldlibs extra
+ icedove-l10n-fr deb oldlibs extra
+ icedove-l10n-fy-nl deb oldlibs extra
+ icedove-l10n-ga-ie deb oldlibs extra
+ icedove-l10n-gd deb oldlibs extra
+ icedove-l10n-gl deb oldlibs extra
+ icedove-l10n-he deb oldlibs extra
+ icedove-l10n-hr deb oldlibs extra
+ icedove-l10n-hu deb oldlibs extra
+ icedove-l10n-hy-am deb oldlibs extra
+ icedove-l10n-id deb oldlibs extra
+ icedove-l10n-is deb oldlibs extra
+ icedove-l10n-it deb oldlibs extra
+ icedove-l10n-ja deb oldlibs extra
+ icedove-l10n-ko deb oldlibs extra
+ icedove-l10n-lt deb oldlibs extra
+ icedove-l10n-nb-no deb oldlibs extra
+ icedove-l10n-nl deb oldlibs extra
+ icedove-l10n-nn-no deb oldlibs extra
+ icedove-l10n-pa-in deb oldlibs extra
+ icedove-l10n-pl deb oldlibs extra
+ icedove-l10n-pt-br deb oldlibs extra
+ icedove-l10n-pt-pt deb oldlibs extra
+ icedove-l10n-rm deb oldlibs extra
+ icedove-l10n-ro deb oldlibs extra
+ icedove-l10n-ru deb oldlibs extra
+ icedove-l10n-si deb oldlibs extra
+ icedove-l10n-sk deb oldlibs extra
+ icedove-l10n-sl deb oldlibs extra
+ icedove-l10n-sq deb oldlibs extra
+ icedove-l10n-sr deb oldlibs extra
+ icedove-l10n-sv-se deb oldlibs extra
+ icedove-l10n-ta-lk deb oldlibs extra
+ icedove-l10n-tr deb oldlibs extra
+ icedove-l10n-uk deb oldlibs extra
+ icedove-l10n-vi deb oldlibs extra
+ icedove-l10n-zh-cn deb oldlibs extra
+ icedove-l10n-zh-tw deb oldlibs extra
+ iceowl-extension deb oldlibs extra
+ iceowl-l10n-ar deb oldlibs extra
+ iceowl-l10n-be deb oldlibs extra
+ iceowl-l10n-bg deb oldlibs extra
+ iceowl-l10n-bn-bd deb oldlibs extra
+ iceowl-l10n-br deb oldlibs extra
+ iceowl-l10n-ca deb oldlibs extra
+ iceowl-l10n-cs deb oldlibs extra
+ iceowl-l10n-cy deb oldlibs extra
+ iceowl-l10n-da deb oldlibs extra
+ iceowl-l10n-de deb oldlibs extra
+ iceowl-l10n-el deb oldlibs extra
+ iceowl-l10n-en-gb deb oldlibs extra
+ iceowl-l10n-es-ar deb oldlibs extra
+ iceowl-l10n-es-es deb oldlibs extra
+ iceowl-l10n-et deb oldlibs extra
+ iceowl-l10n-eu deb oldlibs extra
+ iceowl-l10n-fi deb oldlibs extra
+ iceowl-l10n-fr deb oldlibs extra
+ iceowl-l10n-fy-nl deb oldlibs extra
+ iceowl-l10n-ga-ie deb oldlibs extra
+ iceowl-l10n-gd deb oldlibs extra
+ iceowl-l10n-gl deb oldlibs extra
+ iceowl-l10n-he deb oldlibs extra
+ iceowl-l10n-hr deb oldlibs extra
+ iceowl-l10n-hu deb oldlibs extra
+ iceowl-l10n-hy-am deb oldlibs extra
+ iceowl-l10n-id deb oldlibs extra
+ iceowl-l10n-is deb oldlibs extra
+ iceowl-l10n-it deb oldlibs extra
+ iceowl-l10n-ja deb oldlibs extra
+ iceowl-l10n-ko deb oldlibs extra
+ iceowl-l10n-lt deb oldlibs extra
+ iceowl-l10n-nb-no deb oldlibs extra
+ iceowl-l10n-nl deb oldlibs extra
+ iceowl-l10n-nn-no deb oldlibs extra
+ iceowl-l10n-pa-in deb oldlibs extra
+ iceowl-l10n-pl deb oldlibs extra
+ iceowl-l10n-pt-br deb oldlibs extra
+ iceowl-l10n-pt-pt deb oldlibs extra
+ iceowl-l10n-rm deb oldlibs extra
+ iceowl-l10n-ro deb oldlibs extra
+ iceowl-l10n-ru deb oldlibs extra
+ iceowl-l10n-si deb oldlibs extra
+ iceowl-l10n-sk deb oldlibs extra
+ iceowl-l10n-sl deb oldlibs extra
+ iceowl-l10n-sq deb oldlibs extra
+ iceowl-l10n-sr deb oldlibs extra
+ iceowl-l10n-sv-se deb oldlibs extra
+ iceowl-l10n-ta-lk deb oldlibs extra
+ iceowl-l10n-tr deb oldlibs extra
+ iceowl-l10n-uk deb oldlibs extra
+ iceowl-l10n-vi deb oldlibs extra
+ iceowl-l10n-zh-cn deb oldlibs extra
+ iceowl-l10n-zh-tw deb oldlibs extra
+ lightning deb mail optional
+ lightning-l10n-ar deb localization optional
+ lightning-l10n-be deb localization optional
+ lightning-l10n-bg deb localization optional
+ lightning-l10n-bn-bd deb localization optional
+ lightning-l10n-br deb localization optional
+ lightning-l10n-ca deb localization optional
+ lightning-l10n-cs deb localization optional
+ lightning-l10n-cy deb localization optional
+ lightning-l10n-da deb localization optional
+ lightning-l10n-de deb localization optional
+ lightning-l10n-el deb localization optional
+ lightning-l10n-en-gb deb localization optional
+ lightning-l10n-es-ar deb localization optional
+ lightning-l10n-es-es deb localization optional
+ lightning-l10n-et deb localization optional
+ lightning-l10n-eu deb localization optional
+ lightning-l10n-fi deb localization optional
+ lightning-l10n-fr deb localization optional
+ lightning-l10n-fy-nl deb localization optional
+ lightning-l10n-ga-ie deb localization optional
+ lightning-l10n-gd deb localization optional
+ lightning-l10n-gl deb localization optional
+ lightning-l10n-he deb localization optional
+ lightning-l10n-hr deb localization optional
+ lightning-l10n-hu deb localization optional
+ lightning-l10n-hy-am deb localization optional
+ lightning-l10n-id deb localization optional
+ lightning-l10n-is deb localization optional
+ lightning-l10n-it deb localization optional
+ lightning-l10n-ja deb localization optional
+ lightning-l10n-ko deb localization optional
+ lightning-l10n-lt deb localization optional
+ lightning-l10n-nb-no deb localization optional
+ lightning-l10n-nl deb localization optional
+ lightning-l10n-nn-no deb localization optional
+ lightning-l10n-pa-in deb localization optional
+ lightning-l10n-pl deb localization optional
+ lightning-l10n-pt-br deb localization optional
+ lightning-l10n-pt-pt deb localization optional
+ lightning-l10n-rm deb localization optional
+ lightning-l10n-ro deb localization optional
+ lightning-l10n-ru deb localization optional
+ lightning-l10n-si deb localization optional
+ lightning-l10n-sk deb localization optional
+ lightning-l10n-sl deb localization optional
+ lightning-l10n-sq deb localization optional
+ lightning-l10n-sr deb localization optional
+ lightning-l10n-sv-se deb localization optional
+ lightning-l10n-ta-lk deb localization optional
+ lightning-l10n-tr deb localization optional
+ lightning-l10n-uk deb localization optional
+ lightning-l10n-vi deb localization optional
+ lightning-l10n-zh-cn deb localization optional
+ lightning-l10n-zh-tw deb localization optional
+ thunderbird deb mail optional
+ thunderbird-dbg deb debug extra
+ thunderbird-dev deb mail optional
+ thunderbird-l10n-all deb metapackages optional
+ thunderbird-l10n-ar deb localization optional
+ thunderbird-l10n-ast deb localization optional
+ thunderbird-l10n-be deb localization optional
+ thunderbird-l10n-bg deb localization optional
+ thunderbird-l10n-bn-bd deb localization optional
+ thunderbird-l10n-br deb localization optional
+ thunderbird-l10n-ca deb localization optional
+ thunderbird-l10n-cs deb localization optional
+ thunderbird-l10n-da deb localization optional
+ thunderbird-l10n-de deb localization optional
+ thunderbird-l10n-el deb localization optional
+ thunderbird-l10n-en-gb deb localization optional
+ thunderbird-l10n-es-ar deb localization optional
+ thunderbird-l10n-es-es deb localization optional
+ thunderbird-l10n-et deb localization optional
+ thunderbird-l10n-eu deb localization optional
+ thunderbird-l10n-fi deb localization optional
+ thunderbird-l10n-fr deb localization optional
+ thunderbird-l10n-fy-nl deb localization optional
+ thunderbird-l10n-ga-ie deb localization optional
+ thunderbird-l10n-gd deb localization optional
+ thunderbird-l10n-gl deb localization optional
+ thunderbird-l10n-he deb localization optional
+ thunderbird-l10n-hr deb localization optional
+ thunderbird-l10n-hu deb localization optional
+ thunderbird-l10n-hy-am deb localization optional
+ thunderbird-l10n-id deb localization optional
+ thunderbird-l10n-is deb localization optional
+ thunderbird-l10n-it deb localization optional
+ thunderbird-l10n-ja deb localization optional
+ thunderbird-l10n-ko deb localization optional
+ thunderbird-l10n-lt deb localization optional
+ thunderbird-l10n-nb-no deb localization optional
+ thunderbird-l10n-nl deb localization optional
+ thunderbird-l10n-nn-no deb localization optional
+ thunderbird-l10n-pa-in deb localization optional
+ thunderbird-l10n-pl deb localization optional
+ thunderbird-l10n-pt-br deb localization optional
+ thunderbird-l10n-pt-pt deb localization optional
+ thunderbird-l10n-rm deb localization optional
+ thunderbird-l10n-ro deb localization optional
+ thunderbird-l10n-ru deb localization optional
+ thunderbird-l10n-si deb localization optional
+ thunderbird-l10n-sk deb localization optional
+ thunderbird-l10n-sl deb localization optional
+ thunderbird-l10n-sq deb localization optional
+ thunderbird-l10n-sr deb localization optional
+ thunderbird-l10n-sv-se deb localization optional
+ thunderbird-l10n-ta-lk deb localization optional
+ thunderbird-l10n-tr deb localization optional
+ thunderbird-l10n-uk deb localization optional
+ thunderbird-l10n-vi deb localization optional
+ thunderbird-l10n-zh-cn deb localization optional
+ thunderbird-l10n-zh-tw deb localization optional
+Directory: pool/main/i/icedove
+Priority: source
+Section: mail
+
+Package: samba
+Binary: samba, samba-common-bin, samba-common, samba-tools, smbclient, swat, samba-doc, samba-doc-pdf, libpam-smbpass, libsmbclient, libsmbclient-dev, winbind, libpam-winbind, libnss-winbind, samba-dbg, libwbclient0, libwbclient-dev
+Version: 2:3.6.6-6+deb7u9
+Maintainer: Debian Samba Maintainers <pkg-samba-maint@lists.alioth.debian.org>
+Uploaders: Steve Langasek <vorlon@debian.org>, Christian Perrier <bubulle@debian.org>, Noèl Köthe <noel@debian.org>, Jelmer Vernooij <jelmer@debian.org>
+Build-Depends: debhelper (>= 9~), libpam0g-dev, libreadline-dev, libcups2-dev, libacl1-dev [linux-any], libkrb5-dev (>= 1.10+dfsg~), libldap2-dev, po-debconf, libpopt-dev, uuid-dev, libtalloc-dev (>= 2.0.1-1~bpo50+1), libtdb-dev (>= 1.2.6~), libcap-dev [linux-any], libkeyutils-dev [linux-any], libctdb-dev (>= 1.10+git20110412), pkg-config, perl
+Build-Conflicts: libfam-dev, python-ldb, python-ldb-dev
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Files:
+ 92748d80a54c73917d1a6c36b778346d 3089 samba_3.6.6-6+deb7u9.dsc
+ 46b07ed027657917413f6bfc7234db38 29464478 samba_3.6.6.orig.tar.bz2
+ 21c26803dfaf181eefcbb74c22d60a16 520115 samba_3.6.6-6+deb7u9.debian.tar.gz
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-samba/trunk/samba/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-samba/trunk/samba
+Checksums-Sha1:
+ 7cb67ab481f3a78973279b2b29b509a70c147b32 3089 samba_3.6.6-6+deb7u9.dsc
+ 450371e613d867a2d42555998cd3e83a47014123 29464478 samba_3.6.6.orig.tar.bz2
+ 796ae5d65a88148c2414f709a649795b3a9987aa 520115 samba_3.6.6-6+deb7u9.debian.tar.gz
+Checksums-Sha256:
+ 293a3666f2d6db3a022dd17360cb6e6329c4002b61eb7308ac0cc2fcd8f7d31d 3089 samba_3.6.6-6+deb7u9.dsc
+ 1141eb5f173534db8f8d7dd1aa8fed53404d719e4a65c610f3ef62fdcad783e6 29464478 samba_3.6.6.orig.tar.bz2
+ f7e18e207adb32f2f8ee7e3d087672a960704684ac5692df2898f8b9791a025e 520115 samba_3.6.6-6+deb7u9.debian.tar.gz
+Homepage: http://www.samba.org
+Package-List: 
+ libnss-winbind deb net optional
+ libpam-smbpass deb admin extra
+ libpam-winbind deb net optional
+ libsmbclient deb libs optional
+ libsmbclient-dev deb libdevel extra
+ libwbclient-dev deb libdevel optional
+ libwbclient0 deb libs optional
+ samba deb net optional
+ samba-common deb net optional
+ samba-common-bin deb net optional
+ samba-dbg deb debug extra
+ samba-doc deb doc optional
+ samba-doc-pdf deb doc optional
+ samba-tools deb net optional
+ smbclient deb net optional
+ swat deb net optional
+ winbind deb net optional
+Directory: pool/main/s/samba
+Priority: source
+Section: net
+
+Package: wireshark
+Binary: wireshark-common, wireshark, wireshark-qt, tshark, wireshark-dev, wireshark-dbg, wireshark-doc, libwireshark5, libwsutil4, libwsutil-dev, libwireshark-data, libwireshark-dev, libwiretap4, libwiretap-dev
+Version: 1.12.1+g01b65bf-4+deb8u6~deb7u1
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Build-Depends: libgtk-3-dev, lsb-release, qt4-qmake, libqt4-dev, libpcap0.8-dev, flex, libz-dev, debhelper (>= 9), po-debconf, libtool, python (>= 2.6.6-3~), python-ply, libc-ares-dev, xsltproc, docbook-xsl (>= 1.64.1.0-0), docbook-xml, libxml2-utils, libpcre3-dev, libcap2-dev [linux-any] | libcap-dev (>= 2.17) [linux-any], bison, libgnutls-dev, libgcrypt-dev, portaudio19-dev, libkrb5-dev, liblua5.2-dev, libsmi2-dev, libgeoip-dev, dpkg-dev (>= 1.16.1~), imagemagick, xdg-utils, libnl-genl-3-dev [linux-any], libnl-route-3-dev [linux-any], asciidoc, cmake, w3m
+Build-Conflicts: libsnmp-dev, libsnmp4.2-dev
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ ad8be2a31453315b3a2ac244df3a76a7 3187 wireshark_1.12.1+g01b65bf-4+deb8u6~deb7u1.dsc
+ 9b573499932f20a6d5a25a1cb83e14f6 25091052 wireshark_1.12.1+g01b65bf.orig.tar.xz
+ 05baa80fb89cec0c20b9c74ce6a7b6b7 161979 wireshark_1.12.1+g01b65bf-4+deb8u6~deb7u1.debian.tar.gz
+Vcs-Browser: http://svn.debian.org/wsvn/collab-maint/ext-maint/wireshark/trunk/
+Vcs-Svn: svn://svn.debian.org/svn/collab-maint/ext-maint/wireshark/trunk
+Checksums-Sha1:
+ 77203d43db02344c81833dc26a1bab593367b3fe 3187 wireshark_1.12.1+g01b65bf-4+deb8u6~deb7u1.dsc
+ 407f0a5f28c4ea34b0ea2b5a43e1da7632e357a9 25091052 wireshark_1.12.1+g01b65bf.orig.tar.xz
+ e69f6033212ef8e434a7006b8dea75f1429585fc 161979 wireshark_1.12.1+g01b65bf-4+deb8u6~deb7u1.debian.tar.gz
+Checksums-Sha256:
+ 0aed2b25a58b67a60ab8aa883778b60f05083a3966dcdbb8cc6501e2712bcb8c 3187 wireshark_1.12.1+g01b65bf-4+deb8u6~deb7u1.dsc
+ 5244081064ba37780804983724e09263440866587f33f2a525a684b6d393d4cf 25091052 wireshark_1.12.1+g01b65bf.orig.tar.xz
+ 9483139c1fe6770c83914d3fc5c4be9efe0d89c8523a642e85be37d7b859dff9 161979 wireshark_1.12.1+g01b65bf-4+deb8u6~deb7u1.debian.tar.gz
+Homepage: http://www.wireshark.org/
+Package-List: 
+ libwireshark-data deb libs optional
+ libwireshark-dev deb libdevel optional
+ libwireshark5 deb libs optional
+ libwiretap-dev deb libdevel optional
+ libwiretap4 deb libs optional
+ libwsutil-dev deb libdevel optional
+ libwsutil4 deb libs optional
+ tshark deb net optional
+ wireshark deb net optional
+ wireshark-common deb net optional
+ wireshark-dbg deb debug extra
+ wireshark-dev deb devel optional
+ wireshark-doc deb doc extra
+ wireshark-qt deb net optional
+Directory: pool/main/w/wireshark
+Priority: source
+Section: net
+

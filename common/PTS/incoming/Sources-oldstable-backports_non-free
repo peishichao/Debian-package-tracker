@@ -1,0 +1,638 @@
+Package: broadcom-sta
+Binary: broadcom-sta-common, broadcom-sta-dkms, broadcom-sta-source
+Version: 6.30.223.271-5~bpo8+1
+Maintainer: Eduard Bloch <blade@debian.org>
+Uploaders: Cyril Lacoux <clacoux@easter-eggs.com>
+Build-Depends: debhelper (>= 9.2), dkms
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ c8e14d044b56092ef18228ab5fc0c078 2140 broadcom-sta_6.30.223.271-5~bpo8+1.dsc
+ f2d9a16d5c36afa112ea9cef2f3592be 2194116 broadcom-sta_6.30.223.271.orig.tar.xz
+ 8e1e6f7f431c6bd0d1c3a0b1d5b1eb3c 20396 broadcom-sta_6.30.223.271-5~bpo8+1.debian.tar.xz
+Vcs-Git: https://gitlab.com/setecastronomy/broadcom-sta.git
+Checksums-Sha1:
+ 530fea69d71e1046fae8bdce290b6ba4dd14e65b 2140 broadcom-sta_6.30.223.271-5~bpo8+1.dsc
+ 38f040920b064b244d47bd560a669308fd10cac8 2194116 broadcom-sta_6.30.223.271.orig.tar.xz
+ c1d809f99a200217742d7546a7c00c8ed99b0cbc 20396 broadcom-sta_6.30.223.271-5~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ cc507e22f2a651701128b902d81f4e978325334b261c577839cc3343018e1ea1 2140 broadcom-sta_6.30.223.271-5~bpo8+1.dsc
+ 8b539f173ab7092d34307b6306e22c6380df025a7f2483937374492a7aedb2dc 2194116 broadcom-sta_6.30.223.271.orig.tar.xz
+ 17e5381f4d3749ca91aef10370d353c6d8af6a009247ab98bae954bf8466a78e 20396 broadcom-sta_6.30.223.271-5~bpo8+1.debian.tar.xz
+Homepage: http://www.broadcom.com/support/802.11/linux_sta.php
+Package-List: 
+ broadcom-sta-common deb non-free/kernel optional arch=all
+ broadcom-sta-dkms deb non-free/kernel optional arch=all
+ broadcom-sta-source deb non-free/kernel optional arch=all
+Directory: pool/non-free/b/broadcom-sta
+Priority: optional
+Section: non-free/misc
+
+Package: emacs24-non-dfsg
+Binary: emacs24-common-non-dfsg
+Version: 24.5+1-1~bpo8+1
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Uploaders: Jerome Marant <jerome@debian.org>
+Build-Depends: texinfo, autotools-dev, dpkg-dev (>> 1.10.0), quilt, debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.7.2
+Format: 3.0 (quilt)
+Files:
+ fed026d54543baef21f1aae5d85c39ea 1886 emacs24-non-dfsg_24.5+1-1~bpo8+1.dsc
+ 57c473a0ad2203e1e6044fc36b6fbb20 3494180 emacs24-non-dfsg_24.5+1.orig.tar.bz2
+ 1484024823b335e030c2f817e02942eb 7200 emacs24-non-dfsg_24.5+1-1~bpo8+1.debian.tar.xz
+Checksums-Sha1:
+ 03e656f7616d9717de6e35e409192df449d50c1d 1886 emacs24-non-dfsg_24.5+1-1~bpo8+1.dsc
+ 05071a7cc9bd1303e6496aa77e3a60b6a612015d 3494180 emacs24-non-dfsg_24.5+1.orig.tar.bz2
+ 0f665cab4903f7b94b4add3c3c26e0b4d4674034 7200 emacs24-non-dfsg_24.5+1-1~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ 024be22e2b3059d35993f7e7bcfcb84d119a8c98e27a704c7cd35b5c7e3251b0 1886 emacs24-non-dfsg_24.5+1-1~bpo8+1.dsc
+ 7e9e10fe55efacd117e76ece7dd168a7ad786893c61034ce80d03afda804f78f 3494180 emacs24-non-dfsg_24.5+1.orig.tar.bz2
+ 8d3a6fbb8dee48db443ea65cd00d8325c48ba43e0df9f9693e19904e4c819927 7200 emacs24-non-dfsg_24.5+1-1~bpo8+1.debian.tar.xz
+Package-List: 
+ emacs24-common-non-dfsg deb non-free/editors optional arch=all
+Directory: pool/non-free/e/emacs24-non-dfsg
+Priority: optional
+Section: non-free/misc
+
+Package: fglrx-driver
+Binary: fglrx-driver, libfglrx, libfglrx-amdxvba1, libgl1-fglrx-glx, libgl1-fglrx-glx-i386, fglrx-modules-dkms, fglrx-source, fglrx-control, fglrx-atieventsd, amd-opencl-icd, amd-libopencl1, amd-opencl-dev, amd-clinfo
+Version: 1:15.12-2~bpo8+4
+Maintainer: Fglrx packaging team <pkg-fglrx-devel@lists.alioth.debian.org>
+Uploaders: Patrick Matthäi <pmatthaei@debian.org>, Andreas Beckmann <anbe@debian.org>,
+Build-Depends: debhelper (>= 9), bzip2, libxrandr2, libxext6, libgl1-mesa-glx, libqtgui4, libxcursor1, libxinerama1, xsltproc, docbook-xml, docbook-xsl, chrpath, automake, rpl, dkms (>= 2.1.1.1), po-debconf
+Architecture: i386 amd64
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 6eb41a1eb90150102f5cd49e1a6690bf 3131 fglrx-driver_15.12-2~bpo8+4.dsc
+ 0253b3ffb2ec907468657618ed2413ef 122378636 fglrx-driver_15.12.orig.tar.xz
+ 3faa4fec52c780e31057fe663c5f3f93 114100 fglrx-driver_15.12-2~bpo8+4.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-fglrx/fglrx-driver/trunk/
+Vcs-Svn: svn://anonscm.debian.org/pkg-fglrx/fglrx-driver/trunk
+Checksums-Sha1:
+ a69f9b5ab7de4ddf655a4b630e037e93cb627b3d 3131 fglrx-driver_15.12-2~bpo8+4.dsc
+ 3cc50815aca5be8789a48832b5eca1fefab27e71 122378636 fglrx-driver_15.12.orig.tar.xz
+ 9e1513bf4916e81310b2aa913a4017dbbdad9b1b 114100 fglrx-driver_15.12-2~bpo8+4.debian.tar.xz
+Checksums-Sha256:
+ f03ad6bf8c4cf49c829bf22b39b71d452ac5113a14db7b467423dfb7d57f0825 3131 fglrx-driver_15.12-2~bpo8+4.dsc
+ 7f0e2f8fe982cd693edba2ddffe0e481f1c5de8bbb5d7a3227b34b9e65211c49 122378636 fglrx-driver_15.12.orig.tar.xz
+ d4f44f68ac0cbe2418f42a52665a7c5bf8a3b3e5e0daf32b16d377d2701a951b 114100 fglrx-driver_15.12-2~bpo8+4.debian.tar.xz
+Homepage: http://support.amd.com/en-us/download/desktop?os=Linux%20x86
+Autobuild: yes
+Package-List: 
+ amd-clinfo deb non-free/x11 extra arch=i386,amd64
+ amd-libopencl1 deb non-free/x11 extra arch=i386,amd64
+ amd-opencl-dev deb non-free/x11 extra arch=i386,amd64
+ amd-opencl-icd deb non-free/x11 extra arch=i386,amd64
+ fglrx-atieventsd deb non-free/x11 extra arch=i386,amd64
+ fglrx-control deb non-free/x11 extra arch=i386,amd64
+ fglrx-driver deb non-free/x11 extra arch=i386,amd64
+ fglrx-modules-dkms deb non-free/kernel extra arch=i386,amd64
+ fglrx-source deb non-free/kernel extra arch=i386,amd64
+ libfglrx deb non-free/libs extra arch=i386,amd64
+ libfglrx-amdxvba1 deb non-free/libs extra arch=i386,amd64
+ libgl1-fglrx-glx deb non-free/libs extra arch=i386,amd64
+ libgl1-fglrx-glx-i386 deb non-free/x11 extra arch=i386
+Directory: pool/non-free/f/fglrx-driver
+Priority: optional
+Section: non-free/misc
+
+Package: firmware-nonfree
+Binary: firmware-linux, firmware-linux-nonfree, firmware-amd-graphics, firmware-atheros, firmware-bnx2, firmware-bnx2x, firmware-brcm80211, firmware-cavium, firmware-intelwimax, firmware-intel-sound, firmware-ipw2x00, firmware-ivtv, firmware-iwlwifi, firmware-libertas, firmware-misc-nonfree, firmware-myricom, firmware-netxen, firmware-qlogic, firmware-realtek, firmware-samsung, firmware-siano, firmware-ti-connectivity
+Version: 20161130-3~bpo8+1
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Uploaders: Bastian Blank <waldi@debian.org>, Steve Langasek <vorlon@debian.org>, maximilian attems <maks@debian.org>, Ben Hutchings <ben@decadent.org.uk>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 385980f98ce8b35636e8722017179bfa 3740 firmware-nonfree_20161130-3~bpo8+1.dsc
+ 73adbd7e95beed7f46966337e05cca65 30872784 firmware-nonfree_20161130.orig.tar.xz
+ 4f709ffe99118e675ddb101e8dfae730 1309284 firmware-nonfree_20161130-3~bpo8+1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/kernel/firmware-nonfree.git
+Vcs-Git: https://anonscm.debian.org/git/kernel/firmware-nonfree.git
+Checksums-Sha1:
+ d22774806a4d5140f8f415c53c36ba4e243ee413 3740 firmware-nonfree_20161130-3~bpo8+1.dsc
+ 4c77a90503154121d1046fc0cb24bceee3ab598d 30872784 firmware-nonfree_20161130.orig.tar.xz
+ 14f28060c7183b88504f515f7db285b285eab383 1309284 firmware-nonfree_20161130-3~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ 5ad35a23cee1f4d05eca90ad43fec15448c41b500519a6414a8cb32afb6f6421 3740 firmware-nonfree_20161130-3~bpo8+1.dsc
+ 3a6d58b518d30f18ade4914b66e8788fd32e19ec4c86a6eddbbe58d349a81c12 30872784 firmware-nonfree_20161130.orig.tar.xz
+ 1942ea51c7d129544de1b2ef08afef5bcc232efc3b28d57752db8df705a83fda 1309284 firmware-nonfree_20161130-3~bpo8+1.debian.tar.xz
+Autobuild: yes
+Package-List: 
+ firmware-amd-graphics deb non-free/kernel optional arch=all
+ firmware-atheros deb non-free/kernel optional arch=all
+ firmware-bnx2 deb non-free/kernel optional arch=all
+ firmware-bnx2x deb non-free/kernel optional arch=all
+ firmware-brcm80211 deb non-free/kernel optional arch=all
+ firmware-cavium deb non-free/kernel optional arch=all
+ firmware-intel-sound deb non-free/kernel optional arch=all
+ firmware-intelwimax deb non-free/kernel optional arch=all
+ firmware-ipw2x00 deb non-free/kernel optional arch=all
+ firmware-ivtv deb non-free/kernel optional arch=all
+ firmware-iwlwifi deb non-free/kernel optional arch=all
+ firmware-libertas deb non-free/kernel optional arch=all
+ firmware-linux deb non-free/metapackages optional arch=all
+ firmware-linux-nonfree deb non-free/metapackages optional arch=all
+ firmware-misc-nonfree deb non-free/kernel optional arch=all
+ firmware-myricom deb non-free/kernel optional arch=all
+ firmware-netxen deb non-free/kernel optional arch=all
+ firmware-qlogic deb non-free/kernel optional arch=all
+ firmware-realtek deb non-free/kernel optional arch=all
+ firmware-samsung deb non-free/kernel optional arch=all
+ firmware-siano deb non-free/kernel optional arch=all
+ firmware-ti-connectivity deb non-free/kernel optional arch=all
+Directory: pool/non-free/f/firmware-nonfree
+Priority: optional
+Section: non-free/misc
+
+Package: intel-microcode
+Binary: intel-microcode
+Version: 3.20170511.1~bpo8+1
+Maintainer: Henrique de Moraes Holschuh <hmh@debian.org>
+Uploaders: Giacomo Catenazzi <cate@debian.org>
+Build-Depends: debhelper (>= 9), iucode-tool (>= 0.9)
+Architecture: i386 amd64 x32
+Standards-Version: 3.9.8
+Format: 3.0 (native)
+Files:
+ 9a97b2bb300c50912a94cc19aee5afdc 1811 intel-microcode_3.20170511.1~bpo8+1.dsc
+ ec9db70ccbee4746ad270b327c9028c5 1191216 intel-microcode_3.20170511.1~bpo8+1.tar.xz
+Vcs-Browser: http://git.debian.org/?p=users/hmh/intel-microcode.git
+Vcs-Git: git://git.debian.org/users/hmh/intel-microcode.git
+Checksums-Sha1:
+ be9011553890e6991339cd3889a444c9089d9bd7 1811 intel-microcode_3.20170511.1~bpo8+1.dsc
+ 6049bd44453baf826ebc140f9ef82f978a20af1f 1191216 intel-microcode_3.20170511.1~bpo8+1.tar.xz
+Checksums-Sha256:
+ 8a393265a8898cfef38f21650d84f5da3894b19c8abaa46774069d6f22920f89 1811 intel-microcode_3.20170511.1~bpo8+1.dsc
+ 1d32b2aa588524e67fe3927f971653b0f0e5360fc8f1f22eda5ae4c29c334032 1191216 intel-microcode_3.20170511.1~bpo8+1.tar.xz
+Homepage: https://downloadcenter.intel.com/search?keyword=linux+microcode
+Autobuild: yes
+Package-List: 
+ intel-microcode deb non-free/admin standard arch=i386,amd64,x32
+Directory: pool/non-free/i/intel-microcode
+Priority: optional
+Section: non-free/misc
+
+Package: nvidia-cuda-toolkit
+Binary: nvidia-cuda-toolkit, nvidia-cuda-doc, nvidia-cuda-gdb, nvidia-profiler, nvidia-visual-profiler, nvidia-nsight, nvidia-cuda-dev, nvidia-opencl-dev, libcudart7.5, libcublas7.5, libnvblas7.5, libcufft7.5, libcufftw7.5, libcusparse7.5, libcurand7.5, libnppc7.5, libnppi7.5, libnpps7.5, libcuinj64-7.5, libnvtoolsext1, libnvvm3, libcupti7.5, libcupti-dev, libcupti-doc, libcusolver7.5, libnvrtc7.5
+Version: 7.5.18-4~bpo8+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Andreas Beckmann <anbe@debian.org>, Russ Allbery <rra@debian.org>, Graham Inggs <ginggs@debian.org>, Zhou Mo <cdluminate@gmail.com>,
+Build-Depends: debhelper (>= 9), quilt, libncurses5, chrpath [ppc64el], libexpat1 [ppc64el]
+Architecture: amd64 ppc64el all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 70e87515069f60bc07520ee583615d6a 4412 nvidia-cuda-toolkit_7.5.18-4~bpo8+1.dsc
+ 3d45a2dcf353ba15952321ac7420e1ce 912533668 nvidia-cuda-toolkit_7.5.18.orig-ppc64el.tar.xz
+ 7fb82c46d2dfb41fa0f683f58529868c 966244712 nvidia-cuda-toolkit_7.5.18.orig.tar.xz
+ 09c5b27a1747f1478c2f163e6f1c747b 63720 nvidia-cuda-toolkit_7.5.18-4~bpo8+1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-cuda-toolkit/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-cuda-toolkit/trunk
+Checksums-Sha1:
+ 1884157e4934b8196567fb146a2bd3fd35d33cff 4412 nvidia-cuda-toolkit_7.5.18-4~bpo8+1.dsc
+ f093a6481e49fc57fd67166fca870c398da354f9 912533668 nvidia-cuda-toolkit_7.5.18.orig-ppc64el.tar.xz
+ 472932576f7525cf75344b38251d081d8c8242b9 966244712 nvidia-cuda-toolkit_7.5.18.orig.tar.xz
+ 40081d22bc793d2541812635c9e5330ebb0e53f7 63720 nvidia-cuda-toolkit_7.5.18-4~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ 041d33b2f5221983cde077c9bc6bc6b21b938c4b34ef9d4d9021a45ae9628545 4412 nvidia-cuda-toolkit_7.5.18-4~bpo8+1.dsc
+ 5c6e7d48bf2a51790c4d9a8c4221afbc4b7bce1c28b355876bec210f67bda8f2 912533668 nvidia-cuda-toolkit_7.5.18.orig-ppc64el.tar.xz
+ 16090fb053d9e508e8c88de1e2da485841749922e98aca29566d1bbad6c9855d 966244712 nvidia-cuda-toolkit_7.5.18.orig.tar.xz
+ 67cd2d9bf6fba5ef20c70368dca5b0d21d388c60bdfb660c441fc1ac1332ba65 63720 nvidia-cuda-toolkit_7.5.18-4~bpo8+1.debian.tar.xz
+Homepage: http://www.nvidia.com/CUDA
+Autobuild: yes
+Package-List: 
+ libcublas7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libcudart7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libcufft7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libcufftw7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libcuinj64-7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libcupti-dev deb non-free/libdevel extra arch=amd64,ppc64el
+ libcupti-doc deb non-free/doc extra arch=all
+ libcupti7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libcurand7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libcusolver7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libcusparse7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libnppc7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libnppi7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libnpps7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libnvblas7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libnvrtc7.5 deb non-free/libs extra arch=amd64,ppc64el
+ libnvtoolsext1 deb non-free/libs extra arch=amd64,ppc64el
+ libnvvm3 deb non-free/libs extra arch=amd64,ppc64el
+ nvidia-cuda-dev deb non-free/libdevel extra arch=amd64,ppc64el
+ nvidia-cuda-doc deb non-free/doc extra arch=all
+ nvidia-cuda-gdb deb non-free/devel extra arch=amd64,ppc64el
+ nvidia-cuda-toolkit deb non-free/devel extra arch=amd64,ppc64el
+ nvidia-nsight deb non-free/devel extra arch=amd64,ppc64el
+ nvidia-opencl-dev deb non-free/libdevel extra arch=amd64,ppc64el
+ nvidia-profiler deb non-free/devel extra arch=amd64,ppc64el
+ nvidia-visual-profiler deb non-free/devel extra arch=amd64,ppc64el
+Directory: pool/non-free/n/nvidia-cuda-toolkit
+Priority: optional
+Section: non-free/misc
+
+Package: nvidia-graphics-drivers
+Binary: nvidia-driver, nvidia-driver-bin, nvidia-driver-libs, nvidia-driver-libs-i386, xserver-xorg-video-nvidia, nvidia-legacy-check, libgldispatch0-nvidia, libopengl0-glvnd-nvidia, libglx0-glvnd-nvidia, libglx-nvidia0, libgl1-glvnd-nvidia-glx, libgl1-nvidia-glvnd-glx, libgl1-nvidia-glx, libnvidia-glcore, libegl1-glvnd-nvidia, libegl1-nvidia, libegl-nvidia0, libgles1-glvnd-nvidia, libgles1-nvidia, libgles-nvidia1, libgles2-glvnd-nvidia, libgles2-nvidia, libgles-nvidia2, libnvidia-eglcore, nvidia-egl-common, nvidia-egl-icd, libnvidia-egl-wayland, nvidia-vulkan-common, nvidia-vulkan-icd, libnvidia-cfg1, nvidia-alternative, nvidia-kernel-support, nvidia-kernel-dkms, nvidia-kernel-source, nvidia-vdpau-driver, nvidia-smi, nvidia-cuda-mps, libcuda1, libcuda1-i386, libnvidia-compiler, libnvidia-fatbinaryloader, libnvidia-ptxjitcompiler, libnvcuvid1, libnvidia-encode1, libnvidia-ifr1, libnvidia-fbc1, libnvidia-ml1, nvidia-opencl-common, nvidia-opencl-icd, nvidia-libopencl1,
+ nvidia-detect
+Version: 375.82-1~deb9u1~bpo8+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>, Vincent Cheng <vcheng@debian.org>, Luca Boccassi <luca.boccassi@gmail.com>,
+Build-Depends: debhelper (>= 10), dpkg-dev (>= 1.17), xz-utils, dkms, libwayland-client0, libwayland-server0, libxext6 [!ppc64el], quilt, po-debconf
+Build-Conflicts: libglvnd-dev
+Architecture: i386 amd64 armhf ppc64el
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 24d3e126149de7422ab60b6a8df48c61 7802 nvidia-graphics-drivers_375.82-1~deb9u1~bpo8+1.dsc
+ d2eb4eeb1659f7929b03ebaffd982af4 77427357 nvidia-graphics-drivers_375.82.orig-amd64.tar.gz
+ b4102c3c5679775be69b9a56ce4aea34 26614203 nvidia-graphics-drivers_375.82.orig-armhf.tar.gz
+ eb6ac725bb9ac467cd7a080d94e4bb10 44598480 nvidia-graphics-drivers_375.82.orig-i386.tar.gz
+ 190db47be72c43ade29e8c301cb757ed 137 nvidia-graphics-drivers_375.82.orig.tar.gz
+ 1ba2579ea4606811da55dcbe3e003bc5 171008 nvidia-graphics-drivers_375.82-1~deb9u1~bpo8+1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-graphics-drivers/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-graphics-drivers/trunk
+Checksums-Sha1:
+ 3b71d9f3f6e7aebd001b3c09d40e9f8528d13e86 7802 nvidia-graphics-drivers_375.82-1~deb9u1~bpo8+1.dsc
+ dc6aa4eddebb97a6b7ee57324567fd6a19a6ae63 77427357 nvidia-graphics-drivers_375.82.orig-amd64.tar.gz
+ 2d7f9eee29657128c6c2d881e4536f3f7732e7d5 26614203 nvidia-graphics-drivers_375.82.orig-armhf.tar.gz
+ cae664e801c7b03fd966a2ed27de205cfedb7e32 44598480 nvidia-graphics-drivers_375.82.orig-i386.tar.gz
+ 3670766f4a1a1dd43e917371c2e31616c6adb65f 137 nvidia-graphics-drivers_375.82.orig.tar.gz
+ 3da10ea1ec7a7f60181fddaae5eb80e58856d536 171008 nvidia-graphics-drivers_375.82-1~deb9u1~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ 435b069dd982e8bfae098c3ef2c6a7cce0cf1ff94efbd31ed69b3c6b73263149 7802 nvidia-graphics-drivers_375.82-1~deb9u1~bpo8+1.dsc
+ d31010892740a908aba779e06d8075576400cd2345cae769d363315603f5b6f6 77427357 nvidia-graphics-drivers_375.82.orig-amd64.tar.gz
+ d0ec92702b89e321832d9bb78ad414e7f725ff80afcbea37f531e38803508575 26614203 nvidia-graphics-drivers_375.82.orig-armhf.tar.gz
+ 68017fdfab8bc656e803a9e0723efcc21b6fec4bd055699b918b86a171aee585 44598480 nvidia-graphics-drivers_375.82.orig-i386.tar.gz
+ 32a41fa4c92304214951cd1208042fd79e25ba1efe73274c85cf296ef23c7693 137 nvidia-graphics-drivers_375.82.orig.tar.gz
+ 43d7d812585e314c9b42d857567d1e3e173bec0c73a8b09dabfade17f9f3c529 171008 nvidia-graphics-drivers_375.82-1~deb9u1~bpo8+1.debian.tar.xz
+Homepage: http://www.nvidia.com
+Autobuild: yes
+Package-List: 
+ libcuda1 deb non-free/libs optional arch=i386,amd64,armhf,ppc64el
+ libcuda1-i386 deb non-free/libs optional arch=i386
+ libegl-nvidia0 deb non-free/libs optional arch=i386,amd64,armhf
+ libegl1-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libegl1-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgl1-glvnd-nvidia-glx deb non-free/libs optional arch=i386,amd64,armhf
+ libgl1-nvidia-glvnd-glx deb non-free/libs optional arch=i386,amd64,armhf
+ libgl1-nvidia-glx deb non-free/libs optional arch=i386,amd64,armhf
+ libgldispatch0-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgles-nvidia1 deb non-free/libs optional arch=i386,amd64,armhf
+ libgles-nvidia2 deb non-free/libs optional arch=i386,amd64,armhf
+ libgles1-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgles1-nvidia deb non-free/oldlibs extra arch=i386,amd64,armhf
+ libgles2-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libgles2-nvidia deb non-free/oldlibs extra arch=i386,amd64,armhf
+ libglx-nvidia0 deb non-free/libs optional arch=i386,amd64,armhf
+ libglx0-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ libnvcuvid1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-cfg1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-compiler deb non-free/libs optional arch=i386,amd64
+ libnvidia-egl-wayland deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-eglcore deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-encode1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-fatbinaryloader deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-fbc1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-glcore deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-ifr1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-ml1 deb non-free/libs optional arch=i386,amd64,armhf,ppc64el
+ libnvidia-ptxjitcompiler deb non-free/libs optional arch=i386,amd64,armhf
+ libopengl0-glvnd-nvidia deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-alternative deb non-free/libs optional arch=i386,amd64,armhf,ppc64el
+ nvidia-cuda-mps deb non-free/utils optional arch=i386,amd64,armhf,ppc64el
+ nvidia-detect deb non-free/x11 optional arch=i386,amd64,armhf
+ nvidia-driver deb non-free/x11 optional arch=i386,amd64,armhf
+ nvidia-driver-bin deb non-free/x11 optional arch=i386,amd64,armhf
+ nvidia-driver-libs deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-driver-libs-i386 deb non-free/libs optional arch=i386
+ nvidia-egl-common deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-egl-icd deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-kernel-dkms deb non-free/kernel optional arch=i386,amd64,armhf,ppc64el
+ nvidia-kernel-source deb non-free/kernel optional arch=i386,amd64,armhf,ppc64el
+ nvidia-kernel-support deb non-free/kernel optional arch=i386,amd64,armhf,ppc64el
+ nvidia-legacy-check deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-libopencl1 deb non-free/libs optional arch=i386,amd64,ppc64el
+ nvidia-opencl-common deb non-free/libs optional arch=i386,amd64,ppc64el
+ nvidia-opencl-icd deb non-free/libs optional arch=i386,amd64,ppc64el
+ nvidia-smi deb non-free/utils optional arch=i386,amd64,armhf,ppc64el
+ nvidia-vdpau-driver deb non-free/video optional arch=i386,amd64,armhf
+ nvidia-vulkan-common deb non-free/libs optional arch=i386,amd64
+ nvidia-vulkan-icd deb non-free/libs optional arch=i386,amd64
+ xserver-xorg-video-nvidia deb non-free/x11 optional arch=i386,amd64,armhf
+Directory: pool/non-free/n/nvidia-graphics-drivers
+Priority: optional
+Section: non-free/misc
+
+Package: nvidia-graphics-drivers-legacy-304xx
+Binary: nvidia-legacy-304xx-driver, nvidia-legacy-304xx-driver-bin, nvidia-legacy-304xx-driver-libs, nvidia-legacy-304xx-driver-libs-i386, xserver-xorg-video-nvidia-legacy-304xx, libgl1-nvidia-legacy-304xx-glx, libnvidia-legacy-304xx-glcore, libnvidia-legacy-304xx-cfg1, nvidia-legacy-304xx-alternative, nvidia-legacy-304xx-kernel-support, nvidia-legacy-304xx-kernel-dkms, nvidia-legacy-304xx-kernel-source, nvidia-legacy-304xx-vdpau-driver, nvidia-legacy-304xx-smi, libnvidia-legacy-304xx-cuda1, libnvidia-legacy-304xx-cuda1-i386, libnvidia-legacy-304xx-compiler, libnvidia-legacy-304xx-nvcuvid1, libnvidia-legacy-304xx-ml1, nvidia-legacy-304xx-opencl-icd
+Version: 304.135-2~bpo8+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>, Vincent Cheng <vcheng@debian.org>, Luca Boccassi <luca.boccassi@gmail.com>,
+Build-Depends: debhelper (>= 10), dpkg-dev (>= 1.17), xz-utils, dkms, libxext6, libxvmc1, quilt
+Architecture: i386 amd64
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ c785926d320b37d3d21c1f7039f0bc14 5208 nvidia-graphics-drivers-legacy-304xx_304.135-2~bpo8+1.dsc
+ 872e7ca8bc888ec562ac3c9a37f035f0 67621644 nvidia-graphics-drivers-legacy-304xx_304.135.orig-amd64.tar.gz
+ 1b3befea161959c67f5bf29ab0e8ce26 39898214 nvidia-graphics-drivers-legacy-304xx_304.135.orig-i386.tar.gz
+ 03e4229dea625d4453c52fcd9ca80260 138 nvidia-graphics-drivers-legacy-304xx_304.135.orig.tar.gz
+ 13ba42023e1b7c5359184b0e355ebab4 62716 nvidia-graphics-drivers-legacy-304xx_304.135-2~bpo8+1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-graphics-drivers-legacy-304xx/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-graphics-drivers-legacy-304xx/trunk
+Checksums-Sha1:
+ effde1f8d1a8e70b18a0c43b9155829db123c082 5208 nvidia-graphics-drivers-legacy-304xx_304.135-2~bpo8+1.dsc
+ 61a7262143dd62d32ded3249367f37d9f56302b9 67621644 nvidia-graphics-drivers-legacy-304xx_304.135.orig-amd64.tar.gz
+ 45c95c4e3f8344f312f29e88610c60d788f02cf9 39898214 nvidia-graphics-drivers-legacy-304xx_304.135.orig-i386.tar.gz
+ 8ef0249c99bfe6908eb19aa078000840bc0dfbba 138 nvidia-graphics-drivers-legacy-304xx_304.135.orig.tar.gz
+ a81e0c8546da937d43bd238ad2e88a66bc5a604a 62716 nvidia-graphics-drivers-legacy-304xx_304.135-2~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ 05fd842c700f42cb0b4c5950fb22b86a5a9d5481bf4fa968c817937268cb07fc 5208 nvidia-graphics-drivers-legacy-304xx_304.135-2~bpo8+1.dsc
+ c1be05911ac6da5a6f406bcd4e08fcaabc202e6c59f0811bdf7de7acf6d12a9a 67621644 nvidia-graphics-drivers-legacy-304xx_304.135.orig-amd64.tar.gz
+ 050307a44e27c405da28ae70707919107eb94fd7feaab362344efcccd765f6eb 39898214 nvidia-graphics-drivers-legacy-304xx_304.135.orig-i386.tar.gz
+ 85a63eef6201fb017071f1909c6ab627433325305cb865e901ed29443fa545bb 138 nvidia-graphics-drivers-legacy-304xx_304.135.orig.tar.gz
+ 2602559d6410d177524aae66f9cc95dae27ffc33ab43cefd0a078f0635af5b53 62716 nvidia-graphics-drivers-legacy-304xx_304.135-2~bpo8+1.debian.tar.xz
+Homepage: http://www.nvidia.com
+Autobuild: yes
+Package-List: 
+ libgl1-nvidia-legacy-304xx-glx deb non-free/libs optional arch=i386,amd64
+ libnvidia-legacy-304xx-cfg1 deb non-free/libs optional arch=i386,amd64
+ libnvidia-legacy-304xx-compiler deb non-free/libs optional arch=i386,amd64
+ libnvidia-legacy-304xx-cuda1 deb non-free/libs optional arch=i386,amd64
+ libnvidia-legacy-304xx-cuda1-i386 deb non-free/libs optional arch=i386
+ libnvidia-legacy-304xx-glcore deb non-free/libs optional arch=i386,amd64
+ libnvidia-legacy-304xx-ml1 deb non-free/libs optional arch=i386,amd64
+ libnvidia-legacy-304xx-nvcuvid1 deb non-free/libs optional arch=i386,amd64
+ nvidia-legacy-304xx-alternative deb non-free/libs optional arch=i386,amd64
+ nvidia-legacy-304xx-driver deb non-free/x11 optional arch=i386,amd64
+ nvidia-legacy-304xx-driver-bin deb non-free/x11 optional arch=i386,amd64
+ nvidia-legacy-304xx-driver-libs deb non-free/libs optional arch=i386,amd64
+ nvidia-legacy-304xx-driver-libs-i386 deb non-free/libs optional arch=i386
+ nvidia-legacy-304xx-kernel-dkms deb non-free/kernel optional arch=i386,amd64
+ nvidia-legacy-304xx-kernel-source deb non-free/kernel optional arch=i386,amd64
+ nvidia-legacy-304xx-kernel-support deb non-free/kernel optional arch=i386,amd64
+ nvidia-legacy-304xx-opencl-icd deb non-free/libs optional arch=i386,amd64
+ nvidia-legacy-304xx-smi deb non-free/utils optional arch=i386,amd64
+ nvidia-legacy-304xx-vdpau-driver deb non-free/video optional arch=i386,amd64
+ xserver-xorg-video-nvidia-legacy-304xx deb non-free/x11 optional arch=i386,amd64
+Directory: pool/non-free/n/nvidia-graphics-drivers-legacy-304xx
+Priority: optional
+Section: non-free/misc
+
+Package: nvidia-graphics-drivers-legacy-340xx
+Binary: nvidia-legacy-340xx-driver, nvidia-legacy-340xx-driver-bin, nvidia-legacy-340xx-driver-libs, nvidia-legacy-340xx-driver-libs-i386, xserver-xorg-video-nvidia-legacy-340xx, libgl1-nvidia-legacy-340xx-glx, libnvidia-legacy-340xx-glcore, libegl1-nvidia-legacy-340xx, libgles1-nvidia-legacy-340xx, libgles2-nvidia-legacy-340xx, libnvidia-legacy-340xx-eglcore, libnvidia-legacy-340xx-cfg1, nvidia-legacy-340xx-alternative, nvidia-legacy-340xx-kernel-support, nvidia-legacy-340xx-kernel-dkms, nvidia-legacy-340xx-kernel-source, nvidia-legacy-340xx-vdpau-driver, nvidia-legacy-340xx-smi, libnvidia-legacy-340xx-cuda1, libnvidia-legacy-340xx-cuda1-i386, libnvidia-legacy-340xx-compiler, libnvidia-legacy-340xx-nvcuvid1, libnvidia-legacy-340xx-encode1, libnvidia-legacy-340xx-ifr1, libnvidia-legacy-340xx-fbc1, libnvidia-legacy-340xx-ml1, nvidia-legacy-340xx-opencl-icd
+Version: 340.102-1~bpo8+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>, Vincent Cheng <vcheng@debian.org>, Luca Boccassi <luca.boccassi@gmail.com>,
+Build-Depends: debhelper (>= 10), dpkg-dev (>= 1.17), xz-utils, dkms, libxext6, quilt, po-debconf
+Architecture: i386 amd64 armhf
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ a284d4fe9d90c44a712538153e1a7a41 6435 nvidia-graphics-drivers-legacy-340xx_340.102-1~bpo8+1.dsc
+ 7cec06e7c630f4dada7d950a6527fc5e 69928076 nvidia-graphics-drivers-legacy-340xx_340.102.orig-amd64.tar.gz
+ 797c8de9ffa8c49c0125c2e549f0f711 23498470 nvidia-graphics-drivers-legacy-340xx_340.102.orig-armhf.tar.gz
+ 56f97efeeed8d188c85175446ec23415 38744685 nvidia-graphics-drivers-legacy-340xx_340.102.orig-i386.tar.gz
+ 0d7c684e3b6607e56352f287588df315 138 nvidia-graphics-drivers-legacy-340xx_340.102.orig.tar.gz
+ 45e744336cbd9c00238157000e7ea72b 65272 nvidia-graphics-drivers-legacy-340xx_340.102-1~bpo8+1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-graphics-drivers-legacy-340xx/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-graphics-drivers-legacy-340xx/trunk
+Checksums-Sha1:
+ a56266b876e11ce54398a43e064ce58c4d8abe7f 6435 nvidia-graphics-drivers-legacy-340xx_340.102-1~bpo8+1.dsc
+ f4fda4d0072f06c7b48dd7c20ffcd7fe9edc0f50 69928076 nvidia-graphics-drivers-legacy-340xx_340.102.orig-amd64.tar.gz
+ 869c26cd9eb9bcbd20ab74f725953181a92c5919 23498470 nvidia-graphics-drivers-legacy-340xx_340.102.orig-armhf.tar.gz
+ 6c26c81f93dcfb4566ec11ebd359e589296eaca2 38744685 nvidia-graphics-drivers-legacy-340xx_340.102.orig-i386.tar.gz
+ 8483f84a22fdebd402eb6ffcd2d9b0d40782bfc5 138 nvidia-graphics-drivers-legacy-340xx_340.102.orig.tar.gz
+ b9d6d179d53b01f96e316ffd07b4ac6a73a0d4d8 65272 nvidia-graphics-drivers-legacy-340xx_340.102-1~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ 1e661b2380dc0f62c930601d16aa5524d313a102c4ed2297d9086b9c710edec0 6435 nvidia-graphics-drivers-legacy-340xx_340.102-1~bpo8+1.dsc
+ fb3c21fa825660f46ac2fd2b502f8db9a021a13715aa977a394311b8e63030c8 69928076 nvidia-graphics-drivers-legacy-340xx_340.102.orig-amd64.tar.gz
+ 12b1aaa7961905b3368304564d1fe5c8ac272e2b57bf1fcb9caa27ec74c38b8e 23498470 nvidia-graphics-drivers-legacy-340xx_340.102.orig-armhf.tar.gz
+ c5b69e6ac4dfbe87fa08b702b60666a4fa996201077cf1623af955447dd4d8e0 38744685 nvidia-graphics-drivers-legacy-340xx_340.102.orig-i386.tar.gz
+ 35e60368283bef06a1adae66c94f22eb6d342c3d49711ed9483f52ae4807ff26 138 nvidia-graphics-drivers-legacy-340xx_340.102.orig.tar.gz
+ fc84b92676c5ba7bda5aeb0ebf5fbb23df6e420713b5b37f05be0da2bbb35956 65272 nvidia-graphics-drivers-legacy-340xx_340.102-1~bpo8+1.debian.tar.xz
+Homepage: http://www.nvidia.com
+Autobuild: yes
+Package-List: 
+ libegl1-nvidia-legacy-340xx deb non-free/libs optional arch=i386,amd64,armhf
+ libgl1-nvidia-legacy-340xx-glx deb non-free/libs optional arch=i386,amd64,armhf
+ libgles1-nvidia-legacy-340xx deb non-free/libs optional arch=i386,amd64,armhf
+ libgles2-nvidia-legacy-340xx deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-legacy-340xx-cfg1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-legacy-340xx-compiler deb non-free/libs optional arch=i386,amd64
+ libnvidia-legacy-340xx-cuda1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-legacy-340xx-cuda1-i386 deb non-free/libs optional arch=i386
+ libnvidia-legacy-340xx-eglcore deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-legacy-340xx-encode1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-legacy-340xx-fbc1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-legacy-340xx-glcore deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-legacy-340xx-ifr1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-legacy-340xx-ml1 deb non-free/libs optional arch=i386,amd64,armhf
+ libnvidia-legacy-340xx-nvcuvid1 deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-legacy-340xx-alternative deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-legacy-340xx-driver deb non-free/x11 optional arch=i386,amd64,armhf
+ nvidia-legacy-340xx-driver-bin deb non-free/x11 optional arch=i386,amd64,armhf
+ nvidia-legacy-340xx-driver-libs deb non-free/libs optional arch=i386,amd64,armhf
+ nvidia-legacy-340xx-driver-libs-i386 deb non-free/libs optional arch=i386
+ nvidia-legacy-340xx-kernel-dkms deb non-free/kernel optional arch=i386,amd64,armhf
+ nvidia-legacy-340xx-kernel-source deb non-free/kernel optional arch=i386,amd64,armhf
+ nvidia-legacy-340xx-kernel-support deb non-free/kernel optional arch=i386,amd64,armhf
+ nvidia-legacy-340xx-opencl-icd deb non-free/libs optional arch=i386,amd64
+ nvidia-legacy-340xx-smi deb non-free/utils optional arch=i386,amd64,armhf
+ nvidia-legacy-340xx-vdpau-driver deb non-free/video optional arch=i386,amd64,armhf
+ xserver-xorg-video-nvidia-legacy-340xx deb non-free/x11 optional arch=i386,amd64,armhf
+Directory: pool/non-free/n/nvidia-graphics-drivers-legacy-340xx
+Priority: optional
+Section: non-free/misc
+
+Package: otrs2
+Binary: otrs2, otrs
+Version: 5.0.16-1~bpo8+1
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Uploaders: Thomas Mueller <thomas@chaschperli.ch>
+Build-Depends: debhelper (>= 9), yui-compressor
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ b20a014c5efff50074f6ae2e463ff55f 1824 otrs2_5.0.16-1~bpo8+1.dsc
+ 9fe21e6993bcac71247fdcaf5e1f4e55 19417591 otrs2_5.0.16.orig.tar.bz2
+ cf7ca7f312118e94474fa3b8356052c0 44952 otrs2_5.0.16-1~bpo8+1.debian.tar.xz
+Checksums-Sha1:
+ 3ee47116a7eaabe4e673fac85594e0f67eb67849 1824 otrs2_5.0.16-1~bpo8+1.dsc
+ 5538c2b9138a0b6d5816ff034507dd5ce26abf8d 19417591 otrs2_5.0.16.orig.tar.bz2
+ 8123b4c5fa16f1575d2dd4af41b1e82dc7f358a5 44952 otrs2_5.0.16-1~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ dbeb1a14c701d78940115722070b09d5045365083b22cc287cc4b828e740e001 1824 otrs2_5.0.16-1~bpo8+1.dsc
+ ddec039990c1bdfc27299ab175eff3e1665aa99ba48050f7f2dde480b28f4029 19417591 otrs2_5.0.16.orig.tar.bz2
+ 167483905ea6e0ee9a3c956ebd3b2f14ee2f845876ac9c3e05e9cf50a98b13d6 44952 otrs2_5.0.16-1~bpo8+1.debian.tar.xz
+Homepage: http://www.otrs.org
+Package-List: 
+ otrs deb non-free/web optional arch=all
+ otrs2 deb non-free/web optional arch=all
+Directory: pool/non-free/o/otrs2
+Priority: optional
+Section: non-free/misc
+
+Package: parmetis
+Binary: libparmetis-dev, libparmetis4.0, parmetis-test, parmetis-doc
+Version: 4.0.3-4~bpo8+1
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: Adam C. Powell IV <hazelsct@debian.org>, Christophe Prud'homme <prudhomm@debian.org>, Wolfgang Fuetterer <debian@wlf-online.de>
+Build-Depends: debhelper (>> 9), mpi-default-dev, mpi-default-bin, cmake, libmetis-dev
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 42153ced4b98e092b858d39026f98101 2386 parmetis_4.0.3-4~bpo8+1.dsc
+ f69c479586bf6bb7aff6a9bc0c739628 5567670 parmetis_4.0.3.orig.tar.gz
+ 7f84e9fd48d194764218da91873ba21e 13916 parmetis_4.0.3-4~bpo8+1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/debian-science/packages/parmetis.git
+Vcs-Git: git://anonscm.debian.org/debian-science/packages/parmetis.git
+Checksums-Sha1:
+ 4064ddf79a5b00ed2f86786b28082d774de2e660 2386 parmetis_4.0.3-4~bpo8+1.dsc
+ e0df69b037dd43569d4e40076401498ee5aba264 5567670 parmetis_4.0.3.orig.tar.gz
+ 61ae8091233a7ccb07141219db40be14fc0b52d3 13916 parmetis_4.0.3-4~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ ba837a043e9500fb534dff642d7c7d1479cd6187924796f9563ae55e1979fde1 2386 parmetis_4.0.3-4~bpo8+1.dsc
+ f2d9a231b7cf97f1fee6e8c9663113ebf6c240d407d3c118c55b3633d6be6e5f 5567670 parmetis_4.0.3.orig.tar.gz
+ 02b79a48aa2c98d0245bebc3f74fc894d9a5a1bef6b355bd85a90a5904d8d62d 13916 parmetis_4.0.3-4~bpo8+1.debian.tar.xz
+Homepage: http://glaros.dtc.umn.edu/gkhome/metis/parmetis/overview
+Autobuild: yes
+Package-List: 
+ libparmetis-dev deb non-free/libdevel extra arch=any
+ libparmetis4.0 deb non-free/libs extra arch=any
+ parmetis-doc deb non-free/doc extra arch=all
+ parmetis-test deb non-free/math extra arch=any
+Testsuite: autopkgtest
+Directory: pool/non-free/p/parmetis
+Priority: optional
+Section: non-free/misc
+
+Package: proj-rdnap
+Binary: proj-rdnap
+Version: 2008-4~bpo8+1
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Uploaders: Bas Couwenberg <sebastic@debian.org>
+Build-Depends: debhelper (>= 9), proj-bin (>= 4.8.0), proj-data, perl, libfile-slurp-perl, libipc-run-perl, libjson-perl, libjson-xs-perl
+Architecture: all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ fe5a0730723a0e566244ebbdbb4a1b46 2143 proj-rdnap_2008-4~bpo8+1.dsc
+ 86e93773d3ab793e56cdd03922dd6703 1347636 proj-rdnap_2008.orig.tar.xz
+ 3f8b52e91142aaabd5bde0e6b274cf5b 9140 proj-rdnap_2008-4~bpo8+1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-grass/proj-rdnap.git
+Vcs-Git: git://anonscm.debian.org/pkg-grass/proj-rdnap.git -b jessie-backports
+Checksums-Sha1:
+ ba3dd3a3ccf60ef2e0049ba616ca0f1952c1b65d 2143 proj-rdnap_2008-4~bpo8+1.dsc
+ 3f5f56d28d2ab8b813e00e99c489099fd32bc822 1347636 proj-rdnap_2008.orig.tar.xz
+ 025c9e76d02993f3872aadc876293fbb02877c2c 9140 proj-rdnap_2008-4~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ 4317df15364f2c532c6c87202f1fe93e8251641ef32b56fdc87a9d6d181979cb 2143 proj-rdnap_2008-4~bpo8+1.dsc
+ a47d0b08b59281231d155eda62efdc856622d8e4423ef6b25ea50c6df0348619 1347636 proj-rdnap_2008.orig.tar.xz
+ fa032b436649043461b441081e7a6848939b0b7a9f852449d3342fb04bcc8075 9140 proj-rdnap_2008-4~bpo8+1.debian.tar.xz
+Homepage: https://www.kadaster.nl/web/Themas/Registraties/Rijksdriehoeksmeting/Transformatie-van-coordinaten.htm
+Package-List: 
+ proj-rdnap deb non-free/science optional arch=all
+Directory: pool/non-free/p/proj-rdnap
+Priority: optional
+Section: non-free/misc
+
+Package: tinyows
+Binary: tinyows
+Version: 1.1.1-1~bpo8+1
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Uploaders: Pirmin Kalberer <pi_deb@sourcepole.ch>, Bas Couwenberg <sebastic@debian.org>
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1.1), autotools-dev, autoconf, dh-autoreconf, libxml2-dev (>= 2.8.0), libxml2 (>= 2.8.0), libpq-dev, postgis, libfcgi-dev, flex
+Architecture: any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 83334fb360587db627a00765ad0b0850 2125 tinyows_1.1.1-1~bpo8+1.dsc
+ 4093a4899ce661fcb27342fdb5676206 1240294 tinyows_1.1.1.orig.tar.gz
+ 36a78370beab4e4430b25c4d150a1677 7048 tinyows_1.1.1-1~bpo8+1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-grass/tinyows.git
+Vcs-Git: git://anonscm.debian.org/pkg-grass/tinyows.git -b jessie-backports
+Checksums-Sha1:
+ 8bc9213682426fd29ebc489e709aa2eeb652b62c 2125 tinyows_1.1.1-1~bpo8+1.dsc
+ b7b370b020f06f68e39b6c71c47d738601549f39 1240294 tinyows_1.1.1.orig.tar.gz
+ c6376d5c18c2d6ed1cd8ce2fa27be4bfa20d6419 7048 tinyows_1.1.1-1~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ 358664f4fdc4e04abe2936be9770d96270e5bf7445d1f823a5cf9038f90040b9 2125 tinyows_1.1.1-1~bpo8+1.dsc
+ 38cd093a6f43b487027f44e005c45d9c16462b0604da4f787f4f7e7638d5a930 1240294 tinyows_1.1.1.orig.tar.gz
+ b6b4cce9a986d4f41ea3ce11c6d7e4d3c648d8243451b843b077c73958c93136 7048 tinyows_1.1.1-1~bpo8+1.debian.tar.xz
+Homepage: http://www.mapserver.org/tinyows/
+Package-List: 
+ tinyows deb non-free/web optional arch=any
+Directory: pool/non-free/t/tinyows
+Priority: optional
+Section: non-free/misc
+
+Package: varscan
+Binary: varscan
+Version: 2.3.9+dfsg-1~bpo8+1
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Uploaders: Andreas Tille <tille@debian.org>
+Build-Depends: debhelper (>= 9), javahelper, default-jdk, ant
+Architecture: any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 7b7c38eecf4f2878eea15e980f80d654 2007 varscan_2.3.9+dfsg-1~bpo8+1.dsc
+ 66c4bedb29f517ffd421a8ee173cda5f 49176 varscan_2.3.9+dfsg.orig.tar.xz
+ 797f2d0ba0ba89480c0b969f4ddb8c66 17564 varscan_2.3.9+dfsg-1~bpo8+1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/debian-med/varscan.git
+Vcs-Git: git://anonscm.debian.org/debian-med/varscan.git
+Checksums-Sha1:
+ 040bc724be4b3726f49a71d413b0a2cf2dc7230d 2007 varscan_2.3.9+dfsg-1~bpo8+1.dsc
+ ca071c9c6549a5855677275765ccf73811ffb0ce 49176 varscan_2.3.9+dfsg.orig.tar.xz
+ 24e88f67c84d9c84e73af2d66c37ec78533ae184 17564 varscan_2.3.9+dfsg-1~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ 43737501363bf050bc1ab7d20d54dcfc6a8988f31ca743d4c5699f6ca0986acd 2007 varscan_2.3.9+dfsg-1~bpo8+1.dsc
+ 417fafeeefc52226a06d17857c2e0f51fb55c7fd76fcfe02998b36e3d171ddca 49176 varscan_2.3.9+dfsg.orig.tar.xz
+ 7ce0c09a11537d84b19e834e7a2ff889c7107816c3118aeb2887d3c502284d7a 17564 varscan_2.3.9+dfsg-1~bpo8+1.debian.tar.xz
+Homepage: http://varscan.sourceforge.net/
+Autobuild: no
+Package-List: 
+ varscan deb non-free/science optional arch=any
+Directory: pool/non-free/v/varscan
+Priority: optional
+Section: non-free/misc
+
+Package: virtualbox-guest-additions-iso
+Binary: virtualbox-guest-additions-iso
+Version: 5.1.8-1~bpo8+1
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Uploaders: Ritesh Raj Sarraf <rrs@debian.org>, Gianfranco Costamagna <locutusofborg@debian.org>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.8
+Format: 3.0 (quilt)
+Files:
+ 12c33526d0002da2213df21cddc8505c 2239 virtualbox-guest-additions-iso_5.1.8-1~bpo8+1.dsc
+ 65f629b30b2bc5fce9514c58801740f6 39690280 virtualbox-guest-additions-iso_5.1.8.orig.tar.xz
+ 83742bc3b8cbab717875464c3f74cf04 8020 virtualbox-guest-additions-iso_5.1.8-1~bpo8+1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-virtualbox/virtualbox-guest-additions-iso.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-virtualbox/virtualbox-guest-additions-iso.git
+Checksums-Sha1:
+ 389de7124fbf01c1e2b1300b23d0372cc7506eef 2239 virtualbox-guest-additions-iso_5.1.8-1~bpo8+1.dsc
+ 18ab995b8cacf9596ed6de31be7a8b82716e694c 39690280 virtualbox-guest-additions-iso_5.1.8.orig.tar.xz
+ 91402fc8fc39ef89e3d6bb9404db9a75367ef825 8020 virtualbox-guest-additions-iso_5.1.8-1~bpo8+1.debian.tar.xz
+Checksums-Sha256:
+ 150efd33e6eab94eeb65c3d5f240146cac97f1c744447fcdc95b92f43754a617 2239 virtualbox-guest-additions-iso_5.1.8-1~bpo8+1.dsc
+ ffd19100164086c7963dd154c77116b5845604fdb0e705b904abc4b1fd6ed5a3 39690280 virtualbox-guest-additions-iso_5.1.8.orig.tar.xz
+ 78e583c73fd40e917178e24342b30b9afd2cf2697ba5a57b44f29a91e107ada8 8020 virtualbox-guest-additions-iso_5.1.8-1~bpo8+1.debian.tar.xz
+Homepage: http://www.virtualbox.org/
+Package-List: 
+ virtualbox-guest-additions-iso deb non-free/misc extra arch=all
+Directory: pool/non-free/v/virtualbox-guest-additions-iso
+Priority: optional
+Section: non-free/misc
+

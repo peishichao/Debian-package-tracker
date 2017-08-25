@@ -1,0 +1,373 @@
+#language en
+It is sometimes claimed that the strong ownership of packages by their maintainers is detrimental to Debian's progress in cases when a maintainer can't, for whatever reason, fix a problem speedily. The [[NMU]] procedure takes a long time, at least about two weeks, depending on the value of "some".
+
+The maintainers and maintainer groups listed below declare that their packages (all, or the ones listed specifically below) may be fixed and uploaded without delay, at any time, as long as the [[http://www.debian.org/doc/developers-reference/pkgs.html#nmu|NMU procedure]] in the Debian Developer's Reference is otherwise followed. You don't need to contact the maintainers beforehand, and you don't need to use a delayed upload queue. If the package maintainer or maintainer group is active, it is polite to let them have a stab at fixing the problem first.
+
+Every change should be to fix a reported bug. Changes should not be frivolous. For example, don't change from debhelper to cdbs just because you prefer it that way; if you really want to make such big changes to the package, talk with the maintainer or maintainer group first, and maybe offer to adopt the package.
+
+This list is utterly and totally opt-in. The above relaxation of time limits does not apply to anyone else's packages.
+
+The majority of records in this page is written in a (pseudo) machine-friendly markup, following this rule:
+
+ * - as field separator
+ * first field: Developer Name
+ * second field: packages under NMU lowthreshold, (all packages) for all
+ * other fields: additional optional info, one per field, like:
+  * Comaintainers welcome
+  * except: <package [motivations]>
+  * check: <package [motivations]>
+  * comment: <freeform comment>
+An «except» field means that <package> is excluded from this lowthreshold list because of <motivations>.
+
+A «check» field means that before NMUing <package> you should get in touch and check with original maintainer because special <motivations> apply.
+
+A «comment» field contains general information regarding all the packages of that DD.
+
+N.B. Sometimes groups of packages were specified in a more complex human-like form. I've marked them with a prepended "ie." label, as I haven't yet found a proper solution. A common example is: "except: ie. comaintained [by the FOO team]".
+
+== Groups ==
+ 1. [[Teams/AnonymityTools|Debian Anonymity Tools packaging team]] - ([[https://qa.debian.org/developer.php?login=pkg-anonymity-tools@lists.alioth.debian.org&comaint=yes|all packages]])
+ 1. [[AppArmor|Debian AppArmor Profiles Team]] - ([[https://qa.debian.org/developer.php?login=pkg-aa-profiles-team@lists.alioth.debian.org&comaint=yes|all packages]])
+ 1. [[Teams/DebianBOINCMaintainers|Debian BOINC Maintainers]] - ([[http://qa.debian.org/developer.php?login=pkg-boinc-devel@lists.alioth.debian.org|all packages]])
+ 1. [[http://pkg-perl.alioth.debian.org|Debian Perl Group]] - ([[http://qa.debian.org/developer.php?login=pkg-perl-maintainers@lists.alioth.debian.org&comaint=yes|all packages]]) - please use [[http://pkg-perl.alioth.debian.org/git.html|our git repositories]]
+ 1. [[Teams/OTR|Debian OTR team]] - ([[https://qa.debian.org/developer.php?login=pkg-otr-team@lists.alioth.debian.org|all packages]])
+ 1. [[Teams/Printing|Debian Printing Team]] ([[https://qa.debian.org/developer.php?login=debian-printing@lists.debian.org|all packages]]) - please use the git repositories
+ 1. [[Teams/PkgPrivacyMaintainers|Debian Privacy Maintainers team]] - ([[https://qa.debian.org/developer.php?login=pkg-privacy-maintainers@lists.alioth.debian.org&comaint=yes|all packages]])
+ 1. [[http://cipux.alioth.debian.org/|CipUX Team]] - ([[http://qa.debian.org/developer.php?login=cipux-devel@lists.alioth.debian.org&comaint=yes|all packages]]) - please use the git repository
+ 1. Debian GSS Team - ([[http://qa.debian.org/developer.php?login=help-gss@gnu.org&comaint=yes|all packages]])
+ 1. Debian Shishi Team - ([[http://qa.debian.org/developer.php?login=help-shishi@gnu.org&comaint=yes|all packages]])
+ 1. [[http://pkg-common-lisp.alioth.debian.org|Debian Common Lisp Team]] - ([[http://qa.debian.org/developer.php?login=pkg-common-lisp-devel@lists.alioth.debian.org&comaint=yes|all packages]])
+ 1. [[DebianMed|Debian Med Team]] - ([[http://qa.debian.org/developer.php?login=debian-med-packaging@lists.alioth.debian.org&comaint=yes|all packages]])
+ 1. Debian Authentication Maintainers - ([[https://qa.debian.org/developer.php?email=pkg-auth-maintainers@lists.alioth.debian.org&comaint=yes|all packages]])
+
+== Individual Maintainers ==
+Please keep the alphabetical according to first and last name.
+
+The [[http://packages.qa.debian.org/|PTS]] fetches all email adresses in links to http://qa.debian.org/developer.php?login=, and displays a link to this page next to the Maintainer name. Please add such a link to your entry.
+
+ 1. Aaron M. Ucko - ([[http://qa.debian.org/developer.php?login=ucko|all packages]])
+ 1. [[AdamBorowski|Adam Borowski]] - ([[http://qa.debian.org/developer.php?login=kilobyte@angband.pl|all packages]])
+ 1. [[AdrianBridgett|Adrian Bridgett]] - ([[http://qa.debian.org/developer.php?login=bridgett|all packages]])
+ 1. [[AdrianVonBidder|Adrian von Bidder]] - ([[http://qa.debian.org/developer.php?login=cmot|all packages]])
+ 1. Afif Elghraoui - ([[http://qa.debian.org/developer.php?login=afif|all packages]]) - comment: no need to contact me before uploading unless you have questions; please commit to package's SCM repository; if review is needed, use a topic branch and send an email - Comaintainers welcome
+ 1. [[AigarsMahinovs|Aigars Mahinovs]] - ([[http://qa.debian.org/developer.php?login=aigarius|all packages]])
+ 1. [[Tolimar|Alexander Reichle-Schmehl]] - ([[http://qa.debian.org/developer.php?login=tolimar|all packages]])
+ 1. [[AlexanderDreyer|Alexander Dreyer]] - ([[http://qa.debian.org/developer.php?login=adreyer@gmx.de|all packages]])
+ 1. [[AlexandreFayolle|Alexandre Fayolle]] - ([[http://qa.debian.org/developer.php?login=afayolle|all packages]])
+ 1. Alex Muntada - ([[http://qa.debian.org/developer.php?login=alexm@alexm.org|all packages]]) - comment: Please check with co-maintainers.
+ 1. [[AmayaRodrigo|Amaya Rodrigo Sastre]] - ([[http://qa.debian.org/developer.php?login=amaya|all packages]]) - except: ie. Co-maintained - Comaintainers welcome
+ 1. Andreas Barth - ([[http://qa.debian.org/developer.php?login=aba@not.so.argh.org|all packages]]) - except: libapache-mod-dav - check: mgetty please ask first - check: netpbm-free please make sure you don't do copyright violations as upstream is a bit lazy - check: dpkg-sig that's HE's domain - Comaintainers welcome
+ 1. [[AndreasFester|Andreas Fester]] - ([[http://qa.debian.org/developer.php?login=Andreas.Fester@gmx.de|all packages]])
+ 1. [[AndreasTille|Andreas Tille]] - ([[http://qa.debian.org/developer.php?login=tille|all packages]])
+ 1. [[AndresMejia|Andres Mejia]] - ([[http://qa.debian.org/developer.php?login=mcitadel@gmail.com|all packages]]) - Comaintainers welcome
+ 1. [[AndrewPollock|Andrew Pollock]] - ([[http://qa.debian.org/developer.php?login=apollock|all packages]]) Comment: please don't NMU out of the blue, I hate surprises
+ 1. [[AndrewSB|Andrew Starr-Bochicchio]] - ([[http://qa.debian.org/developer.php?login=asb|all packages]]) - please commit to VCS when possible
+ 1. [[AndreyRahmatullin|Andrey Rahmatullin]] - ([[http://qa.debian.org/developer.php?login=wrar|all packages]])
+ 1. [[AngusLees|Angus Lees]] - ([[http://qa.debian.org/developer.php?login=gus|all packages]])
+ 1. [[AnibalMonsalveSalazar|Anibal Monsalve Salazar]] - ([[http://qa.debian.org/developer.php?login=anibal|all packages]])
+ 1. Ansgar Burchardt - ([[http://qa.debian.org/developer.php?login=ansgar@43-1.org|all packages]])
+ 1. [[AnthonyFok|Anthony Fok]] - ([[http://qa.debian.org/developer.php?login=foka|all packages]])
+ 1. Antonio Terceiro - ([[http://qa.debian.org/developer.php?login=terceiro@debian.org|all packages]]) - except: Co/Team-maintained
+ 1. [[TheAnarcat|Antoine Beaupré]] - ([[http://qa.debian.org/developer.php?login=anarcat|all packages]])
+ 1. [[AnttiJuhaniKaijanaho|Antti-Juhani Kaijanaho]] - ([[http://qa.debian.org/developer.php?login=ajk|all packages]])
+ 1. [[ApollonOikonomopoulos|Apollon Oikonomopoulos]] - ([[http://qa.debian.org/developer.php?login=apoikos|all packages]]) - Comaintainers welcome
+ 1. [[AriPollak|Ari Pollak]] - ([[http://qa.debian.org/developer.php?login=ari|all packages]]) - Comaintainers welcome
+ 1. [[ArjanOosting|Arjan Oosting]] - ([[http://qa.debian.org/developer.php?login=arjan@debian.org|all packages]])
+ 1. Arnaud Cornet - ([[http://qa.debian.org/developer.php?login=acornet|all packages]])
+ 1. [[AsheeshLaroia|Asheesh Laroia]] - ([[http://qa.debian.org/developer.php?login=asheesh@asheesh.org|all packages]])
+ 1. [[XTaran|Axel Beckert]] - evolvotron iselect unclutter xrootconsole - if VCS is in collab-maint, also commit your changes - Comaintainers welcome
+ 1. [[BarakPearlmutter|Barak Pearlmutter]] - ([[http://qa.debian.org/developer.php?login=bap@debian.org|all packages]]) - Comaintainers welcome
+ 1. [[BaruchEven|Baruch Even]] - ([[http://qa.debian.org/developer.php?login=baruch@debian.org|all packages]]) - Comaintainers welcome
+ 1. Bayle Florent - ([[http://qa.debian.org/developer.php?login=fbayle@bigfoot.com|all packages]])
+ 1. [[BenArmstrong|Ben Armstrong]] - ([[http://qa.debian.org/developer.php?login=synrg@sanctuary.nslug.ns.ca|all packages]]) - Comaintainers welcome
+ 1. [[BenHutchings|Ben Hutchings]] - (all packages) - except ie. Co-maintained - comment: see [[http://qa.debian.org/developer.php?login=ben@decadent.org.uk|here]] and [[http://qa.debian.org/developer.php?login=ben@decadentplace.org.uk|here]]
+ 1. Ben Pfaff - ([[http://qa.debian.org/developer.php?login=pfaffben|all packages]]) - except: autoconf - except: autoconf2.13
+ 1. [[BenjaminMakoHill|Benjamin Mako Hill]] - ([[http://qa.debian.org/developer.php?login=mako@debian.org|all packages]])
+ 1. Bernd Zeimetz - ([[http://qa.debian.org/developer.php?login=bzed|all packages]], [[http://qa.debian.org/developer.php?login=bernd@bzed.de|all packages]]) - except: Co-maintained packages Comment: Only fix RC bugs. For everything else - talk with me. Neither upload new upstream versions nor make any other kind of mess.
+ 1. Bernhard Schmidt - ([[http://qa.debian.org/developer.php?login=berni@debian.org|all packages]]) - Comaintainers welcome
+ 1. Boyuan Yang - ([[http://qa.debian.org/developer.php?login=073plan@gmail.com|all packages]]) - except: packages as an uploader but not team maintained - comment: Please commit the fixes to the package VCS - Comaintainers welcome
+ 1. [[BriceGoglin|Brice Goglin]] - ([[http://qa.debian.org/developer.php?login=bgoglin|all packages]]) - except: Co-maintained packages
+ 1. Carsten Hey - ([[http://qa.debian.org/developer.php?login=c.hey@web.de|all packages]]) - except: Co-maintained packages - check: deborphan
+ 1. [[ChangwooRyu|Changwoo Ryu]] - ([[http://qa.debian.org/developer.php?login=cwryu@debian.org|all packages]])
+ 1. [[ChrisBoot|Chris Boot]] - ([[http://qa.debian.org/developer.php?login=bootc@debian.org|all packages]]) - except: Co-/Team-maintained packages, but ppp is fine
+ 1. [[ChrisBoyle|Chris Boyle]] - ([[http://qa.debian.org/developer.php?login=cmb|all packages]])
+ 1. Chris Butler - ([[http://qa.debian.org/developer.php?login=chrisb@debian.org|all packages]])
+ 1. Christian Aichinger - ([[http://qa.debian.org/developer.php?login=Greek0@gmx.net|all packages]])
+ 1. [[ChristianHammers|Christian Hammers]] - ([[http://qa.debian.org/developer.php?login=ch@debian.org|all packages]]) - except: mysql - except: quagga - Comaintainers welcome for all
+ 1. [[ChristianPerrier|Christian Perrier]] - [[http://qa.debian.org/developer.php?login=bubulle|all packages]] - except: Co-maintained
+ 1. [[ChristineSpang|Christine Spang]] - ([[http://qa.debian.org/developer.php?login=christine@debian.org|all packages]]) - except: Team-maintained
+ 1. [[ChristophBerg|Christoph Berg]] - ([[http://qa.debian.org/developer.php?login=myon@debian.org|all packages]]) - Comaintainers welcome
+ 1. [[ChristophEgger|Christoph Egger]] - ([[http://qa.debian.org/developer.php?login=christoph@debian.org|all packages]]) - except: Team-maintained - Comaintainers welcome
+ 1. Christopher Cramer - ([[http://qa.debian.org/developer.php?login=crayc@dapac.org|all packages]])
+ 1. Clément Stenac - ([[http://qa.debian.org/developer.php?login=zorglub|all packages]]) - Comaintainers welcome
+ 1. [[ColinWatson|Colin Watson]] - ([[http://qa.debian.org/developer.php?login=cjwatson@debian.org|all packages]]) - except: base-passwd - Comaintainers welcome - check: base-passwd comaintainers are welcome
+ 1. [[CristianGreco]] - ([[http://qa.debian.org/developer.php?login=cristian+greco|all packages]]) - except: Co-maintained packages
+ 1. Daniel Burrows - ([[http://qa.debian.org/developer.php?login=dburrows@debian.org|all packages]])
+ 1. [[DanielKahnGillmor|Daniel Kahn Gillmor]] - ([[http://qa.debian.org/developer.php?login=dkg-debian.org@fifthhorseman.net|all packages]])
+ 1. [[DanielLeidert|Daniel Leidert]] - ([[http://qa.debian.org/developer.php?login=dkg-debian.org@fifthhorseman.net|all packages]]) - except: ie. Co-maintained by [[http://debichem.alioth.debian.org/|debichem team]] - comment: read [[http://www.wgdd.de/?p=43|my blog]]
+ 1. Daniel Ruoso - ([[http://qa.debian.org/developer.php?login=daniel@ruoso.com|all packages]]) - Comaintainers welcome
+ 1. [[DavidMorenoGarza|David Moreno Garza]] - ([[http://qa.debian.org/developer.php?login=damog@debian.org|all packages]])
+ 1. [[DavidNusinow|David Nusinow]] - ([[http://qa.debian.org/developer.php?login=dnusinow@debian.org|all packages]]) - except: ie. Co-maintained by the [[XStrikeForce]] - except: ie. comaintained by [[http://pkg-ruby-extras.alioth.debian.org/|libruby-extras team]]
+ 1. [[DavidPaleino|David Paleino]] - ([[http://qa.debian.org/developer.php?login=d.paleino@gmail.com|all packages]]) - except: [[http://packages.qa.debian.org/b/bash-completion.html|bash-completion]] - except: ie. co-maintained
+ 1. David Prévot - ([[http://qa.debian.org/developer.php?login=taffit|all packages]]) - Comaintainers welcome
+ 1. [[DavidWeinehall|David Weinehall]] - ([[http://qa.debian.org/developer.php?login=tao@debian.org|all packages]])
+ 1. [[DecklinFoster|Decklin Foster]] - ([[http://qa.debian.org/developer.php?login=decklin@red-bean.com|all packages]])
+ 1. Denis Barbier - ([[http://qa.debian.org/developer.php?login=barbier|all packages]]) - comment: check packages where I am listed as Maintainer - Comaintainers welcome
+ 1. Didier 'OdyX' Raboud - ([[http://qa.debian.org/developer.php?login=odyx|all packages]]) - except: Team-maintained packages - comment: Please commit the fixes to the package VCS - Comaintainers welcome
+ 1. Dima Kogan - ([[http://qa.debian.org/developer.php?login=dkogan|all packages]]) - Please use the underlying git repos whenever possible
+ 1. Dmitry E. Oboukhov - ([[http://qa.debian.org/developer.php?login=unera@debian.org|all packages]]) - all patches must be commited into git-repo (git.debian.org)
+ 1. [[DominiqueDumont|Dominique Dumont]] - ([[http://qa.debian.org/developer.php?login=dod|all packages]]) - comment: Please check with co-maintainers and commit to VCS when possible
+ 1. [[DonArmstrong|Don Armstrong]] - ([[http://qa.debian.org/developer.php?login=don|all packages]]) - Comaintainers welcome
+ 1. Dylan Aïssi - ([[http://qa.debian.org/developer.php?login=bob.dybian@gmail.com|all packages]])
+ 1. [[EddyPetrisor]] - aspell-ro and any package without co-maintainers - even new upstream versions are ok (contact me before such an upload), Co-maintainers welcome
+ 1. [[EduardBloch|Eduard Bloch]] - ([[http://qa.debian.org/developer.php?login=blade|all packages]]) - except: ie. on strategic upstream issues where I am (defacto) upstream of a package - Comantainers welcome
+ 1. [[EmanueleRocca|Emanuele Rocca]] - ([[http://qa.debian.org/developer.php?login=ema|all packages]]) - except:  ie. Co-maintained by the [[http://pkg-xfce.alioth.debian.org|Debian Xfce Group]]
+ 1. [[EmilioPozueloMonfort|Emilio Pozuelo Monfort]] - ([[http://qa.debian.org/developer.php?login=pochu@ubuntu.com|all packages]]) - except: Co-maintained.
+ 1. [[EnricoRossi|Enrico Rossi]] - ([[http://qa.debian.org/developer.php?login=e.rossi@tecnobrain.com|all packages]]) - Comaintainers welcome
+ 1. [[EnricoTassi|Enrico Tassi]] - ([[http://qa.debian.org/developer.php?login=gareuselesinge|all packages]]) - Comaintainers welcome
+ 1. [[EnricoZini|Enrico Zini]] - ([[http://qa.debian.org/developer.php?login=enrico|all packages]]) - Comaintainers welcome
+ 1. [[ErichSchubert|Erich Schubert]] - ([[http://qa.debian.org/developer.php?login=erich|all packages]]) - Comaintainers welcome
+ 1. [[ErinnClark|Erinn Clark]] - ([[http://qa.debian.org/developer.php?login=erinn@double-helix.org|all packages]])
+ 1. [[EvanBroder|Evan Broder]] - ([[http://qa.debian.org/developer.php?login=evan@ebroder.net|all packages]])
+ 1. [[EvgeniGolov|Evgeni Golov]] - ([[http://qa.debian.org/developer.php?login=evgeni|all packages]]) - Comaintainers welcome
+ 1. [[FabioTranchitella|Fabio Tranchitella]] - ([[http://qa.debian.org/developer.php?login=kobold|all packages]]) - comment: check with comaintainers where appropriate - Comaintainers welcome
+ 1. [[FaidonLiambotis|Faidon Liambotis]] - ([[http://qa.debian.org/developer.php?login=paravoid|all packages]])
+ 1. Falk Hueffner - ([[http://qa.debian.org/developer.php?login=falk|all packages]]) - Comaintainers welcome
+ 1. Federico Gimenez Nieto - ([[http://qa.debian.org/developer.php?login=fgimenez@coit.es|all packages]])
+ 1. Felipe Sateler - ([[http://qa.debian.org/developer.php?login=fsateler|all packages]]) - except: co-maintained with pkg-multimedia, ask on pkg-multimedia-maintainers@lists.alioth.debian.org first
+ 1. Félix Sipma - ([[https://qa.debian.org/developer.php?login=felix%2Bdebian@gueux.org|all packages]])
+ 1. [[FilippoGiunchedi|Filippo Giunchedi]] - ([[http://qa.debian.org/developer.php?login=filippo|all packages]]) - Comaintainers welcome
+ 1. [[FlorianErnst|Florian Ernst]] - ([[http://qa.debian.org/developer.php?login=florian&comaint=no|all packages]]) - comment: check packages  where I am listed as Maintainer - Comaintainers welcome
+ 1. [[FlorianSchlichting|Florian Schlichting]] - ([[http://qa.debian.org/developer.php?login=fsfs|all packages]]) - packages are either group-maintained (pkg-perl, pkg-mpd) or in collab-maint, please use vcs - Comaintainers welcome
+ 1. Francesco Namuri - ([[http://qa.debian.org/developer.php?login=francesco@namuri.it|all packages]])
+
+ 1. [[FranzPletz|Franz Pletz]] - ([[http://qa.debian.org/developer.php?login=fpletz@franz-pletz.org|all packages]]) - Comaintainers welcome
+ 1. [[FredericPeters|Frederic Peters]] - ([[http://qa.debian.org/developer.php?login=fpeters|all packages]])
+ 1. [[GanesanRajagopal|Ganesan Rajagopal]] - ([[http://qa.debian.org/developer.php?login=rganesan|all packages]])
+ 1. [[GaudenzSteinlin|Gaudenz Steinlin]] - ([[http://qa.debian.org/developer.php?login=gaudenz|all packages]] - comment: advance notices for me to comment welcome - Comaintainers welcome
+ 1. Geert Stappers - ([[http://qa.debian.org/developer.php?login=stappers|all packages]])
+ 1. George Danchev - ([[http://qa.debian.org/developer.php?login=danchev@spnet.net|all packages]]) - Comaintainers welcome
+ 1. [[GiovanniMascellani|Giovanni Mascellani]] - ([[http://qa.debian.org/developer.php?login=Giovanni+Mascellani|all packages]]) - comment: Please check with comaintainers and/or teams
+ 1. [[GoedsonPaixao|Goedson Paixão]] - ([[http://qa.debian.org/developer.php?login=goedson&comaint=no|all packages]])
+ 1. [[goneri|Gonéri Le Bouder]] - ([[http://qa.debian.org/developer.php?login=goneri@rulezlan.org|all packages]])
+ 1. Graham Inggs - ([[http://qa.debian.org/developer.php?login=ginggs|all packages]]) - except: team maintained - comment: please commit changes to collab-maint - Co-maintainers welcome
+ 1. Gregor Herrmann - ([[http://qa.debian.org/developer.php?login=gregoa|all packages]]) - comment: Please check with co-maintainers.
+ 1. [[GunnarWolf|Gunnar Wolf]] - ([[http://qa.debian.org/developer.php?login=gwolf|all packages]])
+ 1. [[GürkanSengün|Gürkan Sengün]] - ([[http://qa.debian.org/developer.php?login=gurkan@linuks.mine.nu|all packages]])
+ 1. [[GustavoFranco|Gustavo Franco]] - ([[http://qa.debian.org/developer.php?login=stratus|all packages]]) - Comaintainers welcome
+ 1. Gustavo Noronha Silva - ([[http://qa.debian.org/developer.php?login=kov|all packages]]) - Comaintainers welcome
+ 1. Gustavo Panizzo - ([[http://qa.debian.org/developer.php?login=gfa@zumbi.com.ar|all packages]]) - except: Team-maintained. Comaintainers welcome - please commit to VCS when possible 
+ 1. [[HansChristophSteiner|Hans-Christoph Steiner]] - ([[http://qa.debian.org/developer.php?login=hans@eds.org|all packages]]) - except: Team-maintained. Comaintainers welcome
+ 1. Heikki Mäntysaari - ([[https://qa.debian.org/developer.php?login=heikki.mantysaari@linux.fi|all packages]])
+ 1. Helge Kreutzmann - ([[http://qa.debian.org/developer.php?login=debian@helgefjell.de|all packages]])
+ 1. Helmut Grohne - ([[http://qa.debian.org/developer.php?login=helmutg|all packages]]) - except: co-maintained - Comaintainers welcome - comment: for co- and team-maintained packages apply the thresholds of all other maintainers
+ 1. [[HolgerLevsen|Holger Levsen]] - ([[http://qa.debian.org/developer.php?login=holger@debian.org|all packages]]) - Comaintainers welcome
+ 1. Iain Lane - ([[http://qa.debian.org/developer.php?login=laney@debian.org|all non-team packages]]) (for team packages contact the team first)
+ 1. [[IanWienand|Ian Wienand]] - ([[http://qa.debian.org/developer.php?login=ianw@debian.org|all packages]])
+ 1. intrigeri - ([[http://qa.debian.org/developer.php?login=intrigeri%2bdebian@boum.org|all packages]]) - Comaintainers welcome
+ 1. [[IvanKohler|Ivan Kohler]] - ([[http://qa.debian.org/developer.php?login=ivan-debian@420.am|all packages]] - comment: check packages where I am listed as Maintainer - Comaintainers welcome
+ 1. [[JaldharVyas|Jaldhar H. Vyas]] - ([[http://qa.debian.org/developer.php?login=jaldhar@debian.org|all packages]]) - except: dovecot
+ 1. [[JamesWestby|James Westby]] - ([[http://qa.debian.org/developer.php?login=jw+debian@jameswestby.net&comaint=no|all packages]]  - except: co-maintained - Co-maintainers welcome
+ 1. Jamin W. Collins - ([[http://qa.debian.org/developer.php?login=ianw@debian.org|all packages]]) - Co-maintainers welcome
+ 1. [[JanDittberner|Jan Dittberner]] - ([[http://qa.debian.org/developer.php?login=jandd|all packages]]) - except: migrate
+ 1. [[JanLübbe|Jan Lübbe]] - ([[http://qa.debian.org/developer.php?login=jluebbe|all packages]]) - except: bitbake
+ 1. [[JanNiehusmann|Jan Niehusmann]] - ([[http://qa.debian.org/developer.php?login=jan|all packages]]) - Co-maintainers welcome
+ 1. [[JanNordholz|Jan Nordholz]] - ([[http://qa.debian.org/developer.php?login=hesso@pool.math.tu-berlin.de|all packages]]) - except: ebtables already co-maintained
+ 1. [[JariAalto|Jari Aalto]] - ([[http://qa.debian.org/developer.php?login=jari.aalto@cante.net|all packages]]) - except: co-maintained - Co-maintainers welcome - comment: please prefer working through the [[http://wiki.debian.org/CollaborativeMaintenance|collab-maint]] [[http://git.debian.org/|Git repositories]] where you can find the packages
+ 1. [[vicho|Javi Merino]] - ([[http://qa.debian.org/developer.php?login=Javi+Merino|all packages]])
+ 1. [[jbailey|Jeff Bailey]] - ([[http://qa.debian.org/developer.php?login=jbailey@raspberryginger.com|all packages]], [[http://qa.debian.org/developer.php?login=jbailey@debian.org|all packages]], [[http://qa.debian.org/developer.php?login=jbailey@nisa.net|all packages]]) - except: glibc - Comaintainers welcome
+ 1. [[JelmerVernooij|Jelmer Vernooij]] - ([[http://qa.debian.org/developer.php?login=jelmer@samba.org|all packages]])
+ 1. [[JeremieCorbier|Jeremie Corbier]] - ([[http://qa.debian.org/developer.php?login=jeremie.corbier@resel.enst-bretagne.fr|all packages]])
+ 1. Jeremy Bicha - ([[http://qa.debian.org/developer.php?login=jbicha@ubuntu.com|all packages]]) 
+ 1. [[JeremyBobbio|Jérémy Bobbio]] - ([[http://qa.debian.org/developer.php?login=lunar@debian.org|all packages]]) - comment: please note that most of them are already team maintained
+ 1. [[JeroenDekkers|Jeroen Dekkers]] - ([[http://qa.debian.org/developer.php?login=jeroen@dekkers.ch|all packages]])
+ 1. [[Jeroen|Jeroen van Wolffelaar]] - ([[http://qa.debian.org/developer.php?login=jeroen@wolffelaar.nl|all packages]])
+ 1. [[JoachimBreitner|Joachim Breitner]] - ([[http://qa.debian.org/developer.php?login=nomeata@debian.org|all packages]])
+ 1. Joachim Reichel - ([[http://qa.debian.org/developer.php?login=reichel@debian.org|all packages]])
+ 1. [[JochenFriedrich|Jochen Friedrich]] - ([[http://qa.debian.org/developer.php?login=jochen@scram.de|all packages]]) - except: net-snmp - Comaintainers welcome. - comment: net-snmp Please commit to SVN first.
+ 1. Joe Nahmias - ([[http://qa.debian.org/developer.php?login=jello|all packages]]) - if VCS is in collab-maint, also commit your changes - Comaintainers welcome
+ 1. Joe Wreschnig - ([[http://qa.debian.org/developer.php?login=piman|all packages]])
+ 1. [[JoeyHess|Joey Hess]] - ([[http://qa.debian.org/developer.php?login=joeyh|all packages]])
+ 1. [[JohannesSchauer|Johannes 'josch' Schauer]] - ([[https://qa.debian.org/developer.php?login=j.schauer@email.de|all packages]])
+ 1. [[JohnGoerzen|John Goerzen]] - ([[http://qa.debian.org/developer.php?login=jgoerzen@complete.org|all packages]])
+ 1. [[JohnWright|John Wright]] - ([[http://qa.debian.org/developer.php?login=jsw@debian.org|all packages]]) - Comaintainers welcome - except: python-debian already team-maintained
+ 1. [[JonDowland|Jon Dowland]]/[[jmtd]] - ([[http://qa.debian.org/developer.php?login=jmtd@debian.org|all packages]])
+ 1. [[JonathanCarter|Jonathan Carter]] - ([[https://qa.debian.org/developer.php?login=jcarter@linux.com|all packages]] except team maintained, comaintainers welcome). I'm also on [[LowThresholdAdoption]]
+ 1. [[JonasSmedegaard|Jonas Smedegaard]] - ([[http://qa.debian.org/developer.php?login=dr@jones.dk|all packages]], [[http://qa.debian.org/developer.php?login=js@debian.org|all packages]]) - if VCS is in collab-maint, also commit your changes - Comaintainers welcome
+ 1. [[JoostDamad|Joost Yervante Damad]] - ([[http://qa.debian.org/developer.php?login=andete|all packages]])
+ 1. [[http://mdcc.cx/|Joost van Baal]] - ([[http://qa.debian.org/developer.php?login=joostvb|all packages]]) - Comaintainers welcome
+ 1. [[JordiMallach|Jordi Mallach]] - ([[http://qa.debian.org/developer.php?login=jordi|all packages]]) - comment: Co-maintained for GNOME ask on #debian-gnome@OFTC or debian-gtk-gnome@lists.d.o first.
+ 1. [[JoseSogo|Jose Carlos Garcia Sogo]] - ([[http://qa.debian.org/developer.php?login=jsogo@debian.org|all packages]]) - comment: check with different teams before uploading a NMU of those packages hold by a team.
+ 1. [[JoshuaKwan|Joshua Kwan]] - ([[http://qa.debian.org/developer.php?login=joshk@triplehelix.org|all packages]]) - comment: I'm super busy with school so NMU away. I'll pick up the pieces in the summer.
+ 1. Josselin Mouette - ([[http://qa.debian.org/developer.php?login=joss|all packages]]) - except: python-support - comment: Co-maintained for GNOME ask on #debian-gnome@OFTC or debian-gtk-gnome@lists.d.o first
+ 1. [[JuanDiaz|Juan A. Diaz]] - ([[http://qa.debian.org/developer.php?login=juan@linux.org.ar|all packages]])
+ 1. [[JulienDanjou|Julien Danjou]] - ([[http://qa.debian.org/developer.php?login=acid|all packages]])
+ 1. [[KalleKivimaa|Kalle Kivimaa]] - ([[http://qa.debian.org/developer.php?login=killer|all packages]])
+ 1. [[KarlBartel|Karl Bartel]] - ([[http://qa.debian.org/developer.php?login=karlb@gmx.net|all packages]])
+ 1. [[kartikmistry|Kartik Mistry]] - ([[http://qa.debian.org/developer.php?login=kartik.mistry@gmail.com|all packages]], [[http://qa.debian.org/developer.php?login=kartik|all packages]]) - ask for: Co-maintained packages
+ 1. [[KevinMcCarty|Kevin B. McCarty]] - ([[http://qa.debian.org/developer.php?login=kmccarty|all packages]]) - check: cernlib - check: paw - check: geant321 - check: mclibs - check: mn-fit - comment: Cernlib-related please try to contact me first.
+ 1. [[KumarAppaiah|Kumar Appaiah]] - ([[http://qa.debian.org/developer.php?login=Kumar+Appaiah|all packages]])
+ 1. [[KyleMcMartin|Kyle McMartin]] - ([[http://qa.debian.org/developer.php?login=kyle@debian.org|all packages]])
+ 1. [[LarsWirzenius|Lars Wirzenius]] - ([[http://qa.debian.org/developer.php?login=liw@iki.fi|all packages]])
+ 1. [[LaszloKajan|Laszlo Kajan]] - ([[http://qa.debian.org/developer.php?login=lkajan@rostlab.org|all packages]])
+ 1. [[LevLamberov|Lev Lamberov]] - ([[http://qa.debian.org/developer.php?login=dogsleg@debian.org|all packages]]) - if VCS is in collab-maint, also commit your changes
+ 1. Lionel Elie Mamane - ([[http://qa.debian.org/developer.php?login=lmamane|all packages]]) - except: ie. Comaintained (consult with comaintainers first) - except: ie. exception to the exception: scsh* seem like they are co-maintained, but they are not, so they *DO* fall under LowThresholdNMU.
+ 1. Loic Minier - ([[http://qa.debian.org/developer.php?login=lool@dooz.org|all packages]]) - except: Co-maintained
+ 1. [[LucaCapello|Luca Capello]] - ([[http://qa.debian.org/developer.php?login=luca@pca.it|all packages]]) - comment: if possible please send darcs patches
+ 1. Lucas Nussbaum - ([[http://qa.debian.org/developer.php?login=lucas@lucas-nussbaum.net|all packages]])
+ 1. [[LucianoBello|Luciano Bello]] - ([[http://qa.debian.org/developer.php?login=luciano|all packages]])
+ 1. [[RodrigoGallardo|Luis Rodrigo Gallardo Cruz]] - ([[http://qa.debian.org/developer.php?login=rodrigo|all packages]])
+ 1. Marc 'HE' Brockschmidt - ([[http://qa.debian.org/developer.php?login=he|all packages]])
+ 1. Marco Presi (Zufus) - ([[http://qa.debian.org/developer.php?login=zufus|all packages]]) - Comaintainers welcome - check: python-scipy *please* watch out the ([[http://svn.debian.org/wsvn/deb-scipy|svn repository]]) - check: python-numpy *please* watch out the ([[http://svn.debian.org/wsvn/deb-scipy|svn repository]])
+ 1. Marco Rodrigues - ([[http://qa.debian.org/developer.php?login=gothicx@sapo.pt|all packages]])
+ 1. Marco Túlio Gontijo e Silva - ([[http://qa.debian.org/developer.php?login=marcot@riseup.net|all packages]])
+ 1. Marcus Better - ([[http://qa.debian.org/developer.php?login=marcus@better.se|all packages]]) - Comaintainers welcome
+ 1. [[Marga|Margarita Manterola]] - ([[http://qa.debian.org/developer.php?login=marga|all packages]]) - Comaintainers welcome
+ 1. Mario Iseli - ([[http://qa.debian.org/developer.php?login=mario|all packages]]) - Comaintainers welcome
+ 1. Marius Gavrilescu - ([[http://qa.debian.org/developer.php?login=marius@ieval.ro|all packages]]) - Comaintainers welcome
+ 1. Mark Howard - ([[http://qa.debian.org/developer.php?login=mh|all packages]]) - Comaintainers welcome
+ 1. Markus Koschany - ([[http://qa.debian.org/developer.php?login=apo@debian.org|all packages]]) - Comaintainers welcome
+ 1. [[madduck|Martin F. Krafft]] - ([[http://qa.debian.org/developer.php?login=madduck@debian.org|all packages]], incl. patches for reproducible builds) - comment: check with comaintainers where approriate - Comaintainers welcome.
+ 1. Martin Meredith - ([[http://qa.debian.org/developer.php?login=mez|all packages]])
+ 1. Martin Pitt - ([[http://qa.debian.org/developer.php?login=mpitt|all packages]] - check: postgresql* please be extra conservative about them
+ 1. Martin Wuertele - ([[http://qa.debian.org/developer.php?login=maxx|all packages]]) - Comaintainers welcome
+ 1. Martin Zobel-Helas - ([[http://qa.debian.org/developer.php?login=zobel|all packages]]) - except: ed
+ 1. [[MasayukiHatta|Masayuki Hatta]] - ([[http://qa.debian.org/developer.php?login=mhatta|all packages]]) - Comaintainers welcome
+ 1. Matej Vela - ([[http://qa.debian.org/developer.php?login=vela|all packages]])
+ 1. Matt Brubeck - ([[http://qa.debian.org/developer.php?login=mbrubeck|all packages]]) - Comaintainers welcome
+ 1. [[MattKraai|Matt Kraai]] - ([[http://qa.debian.org/developer.php?login=kraai|all packages]]) - Comaintainers welcome
+ 1. [[maxy|Maximiliano Curia]] - ([[http://qa.debian.org/developer.php?login=maxy|all packages]]) - except: Team-maintained. Comaintainers welcome
+ 1. [[MatthewJohnson|Matthew Johnson]] - ([[http://qa.debian.org/developer.php?login=mjj29|all packages]])
+ 1. [[MicahAnderson|Micah Anderson]] - ([[http://qa.debian.org/developer.php?login=micah|all packages]])
+ 1. [[MichaelBanck|Michael Banck]] - ([[http://qa.debian.org/developer.php?login=mbanck|all packages]])
+ 1. [[MichaelCasadevall|Michael Casadevall]] - ([[http://qa.debian.org/developer.php?login=mcasadevall|all packages]]) - except: Co-maintained packages comment: Comaintainers welcomes. Also see [here|http://qa.debian.org/developer.php?login=sonicmctails@gmail.com] for packages under my old email address. Please ping on IRC or send email beforehand.
+ 1. [[MichaelHanke|Michael Hanke]] - ([[http://qa.debian.org/developer.php?login=michael.hanke@gmail.com|all packages]]) - Comaintainers welcome
+ 1. [[MichaelJanssen|Michael Janssen]] - ([[http://qa.debian.org/developer.php?login=jamuraa|all packages]])
+ 1. [[MichaelMende|Michael Mende]] - ([[http://qa.debian.org/developer.php?login=debian@menole.net|all packages]]) - Comaintainers welcome
+ 1. Michael Stapelberg - ([[http://qa.debian.org/developer.php?login=stapelberg@debian.org|all packages]]) - except: i3 - except: i3lock - except: i3status - comment: please check back on IRC before, I respond within 24h max. Please prefer working through the collab-maint Git repositories where you can find the packages
+ 1. Michael Tautschnig - ([[http://qa.debian.org/developer.php?login=mt@debian.org|all packages]]) - Comaintainers welcome
+ 1. [[MichalCihar|Michal Čihař]] - ([[http://qa.debian.org/developer.php?login=nijel|all packages]]) - Comaintainers welcome
+ 1. Miguel Gea Milvaques - ([[http://qa.debian.org/developer.php?login=xerakko|all packages]])
+ 1. Mike Gabriel ([[http://qa.debian.org/developer.php?login=sunweaver|all packages]]) - Comaintainers welcome - except: debian-edu-*
+ 1. Mohammed Adnène Trojette - ([[http://qa.debian.org/developer.php?login=adn+deb@diwi.org|all packages]])
+ 1. Moray Allan - ([[http://qa.debian.org/developer.php?login=moray|all packages]])
+ 1. Moritz Muehlenhoff - ([[http://qa.debian.org/developer.php?login=jmm@inutil.org|all packages]])
+ 1. Morten Hustveit - ([[http://qa.debian.org/developer.php?login=morten|all packages]])
+ 1. [[Werner|Morten Werner Forsbring]] - ([[http://qa.debian.org/developer.php?login=werner|all packages]])
+ 1. [[NathanaelNerode|Nathanael Nerode]] - ([[http://qa.debian.org/developer.php?login=neroden@gcc.gnu.org|all packages]]) - Comaintainers welcome
+ 1. [[NeilMcGovern|Neil McGovern]] - ([[http://qa.debian.org/developer.php?login=neilm|all packages]])
+ 1. [[NelsonOliveira|Nelson A. de Oliveira]] - ([[http://qa.debian.org/developer.php?login=naoliv@debian.org|all packages]]) - Comaintainers welcome
+ 1. [[NeutronSoutmun|Neutron Soutmun]] - ([[http://qa.debian.org/developer.php?login=neo.neutron@gmail.com|all packages]]) - Comaintainers welcome
+ 1. Nico Golde - ([[http://qa.debian.org/developer.php?login=nion|all packages]]) - Comaintainers welcome
+ 1. Nicolas Duboc - ([[http://qa.debian.org/developer.php?login=nduboc|all packages]])
+ 1. Nikolaus Rath - ([[http://qa.debian.org/developer.php?login=Nikolaus%40rath.org&comaint=yes|all packages]])
+ 1. Niels Thykier - ([[http://qa.debian.org/developer.php?login=niels@thykier.net|all packages]]) - comment: Co-maintainers are welcome. - except: Team-/Co-maintained packages.
+ 1. [[NivSardi|Niv Sardi]] - ([[http://qa.debian.org/developer.php?login=xaiki|all packages]])
+ 1. [[malex|Oleksandr Moskalenko]] - ([[http://qa.debian.org/developer.php?login=malex@debian.org|all packages]]) - comment: Do try to contact me via IRC or email before uploading. -  Comaintainers welcome
+ 1. [[OndrejCertik|Ondřej Čertík]] - ([[http://qa.debian.org/developer.php?login=ondrej@certik.cz|all packages]]) - Comaintainers welcome
+ 1. [[OndřejSurý|Ondřej Surý]] - ([[http://qa.debian.org/developer.php?login=ondrej@debian.org|all packages]])
+ 1. [[OsamuAoki|Osamu Aoki]] - ([[http://qa.debian.org/developer.php?login=osamu|all packages]]) - Comaintainers welcome
+ 1. [[OtavioSalvador|Otavio Salvador]] - ([[http://qa.debian.org/developer.php?login=otavio|all packages]]) - Comaintainers welcome
+ 1. Otto Kekäläinen - ([[http://qa.debian.org/developer.php?login=otto@seravo.fi|all packages]]) - co-maintainers welcome
+ 1. [[PatrickSchoenfeld|Patrick Schoenfeld]] - ([[http://qa.debian.org/developer.php?login=schoenfeld@in-medias-res.com|all packages]]) - except: Co-maintained
+ 1. [[PaulCannon|paul cannon]] - ([[http://qa.debian.org/developer.php?login=pik|all packages]])
+ 1. [[PaulGevers|Paul Gevers]] - ([[http://qa.debian.org/developer.php?login=elbrus|all packages]]) - comment: be careful with motif, contact motif@packages.debian.org ; Please push changes to VCS if you have access to it, otherwise I suggest you use dgit and make logical small commits. 
+ 1. [[PaulTagliamonte|Paul Tagliamonte]] - ([[http://qa.debian.org/developer.php?login=paultag|all packages]]) - except desktop-base fluxbox dput-ng - comment: Please get in touch with any co-maintainers. Please push changes to VCS.
+ 1. [[PaulWise|Paul Wise]] - ([[http://qa.debian.org/developer.php?login=pabs|all packages]]) - Comaintainers welcome
+ 1. [[PerOlofsson|Per Olofsson]] - ([[http://qa.debian.org/developer.php?login=pelle|all packages]]) - Comaintainers welcome
+ 1. [[PeterMakholm|Peter Makholm]] - ([[http://qa.debian.org/developer.php?login=peter@makholm.net|all packages]]) - except debnest
+ 1. [[PeterVanEynde|Peter Van Eynde]] - ([[http://qa.debian.org/developer.php?login=pvaneynd|all packages]]) - comment: if possible please send darcs patches
+ 1. [[PetterReinholdtsen|Petter Reinholdtsen]] - ([[http://qa.debian.org/developer.php?login=pere|all packages]]) - except: Co-maintained - Comaintainers welcome
+ 1. [[PhilipHands|Philip Hands]] - ([[http://qa.debian.org/developer.php?login=phil@hands.com|all packages]]) - Comaintainers welcome
+ 1. [[PhilippHug|Philipp Hug]] - ([[http://qa.debian.org/developer.php?login=debian@hug.cx|all packages]]) - Comaintainers welcome
+ 1. [[PierreHabouzit|Pierre Habouzit]] - ([[http://qa.debian.org/developer.php?login=madcoder|all packages]]) - except: ie. KDE packages - comment: for KDE ones, ask debian-qt-kde@lists.debian.org - Comaintainers welcome
+ 1. Pierre Machard - ([[http://qa.debian.org/developer.php?login=pmachard|all packages]])
+ 1. [[QingningHuo|Qingning Huo]] - ([[http://qa.debian.org/developer.php?login=qhuo@mayhq.co.uk|all packages]])
+ 1. [[RafaelLaboissiere|Rafael Laboissiere]] - ([[http://qa.debian.org/developer.php?login=rafael|all packages]]) - except: ie. Co-maintained packages - Comaintainers welcome
+ 1. [[RamakrishnanMuthukrishnan|Ramakrishnan Muthukrishnan]] - ([[http://qa.debian.org/developer.php?login=rkrishnan@debian.org|all packages]]) - Comaintainers welcome
+ 1. [[RaphaelGeissert|Raphael Geissert]] - ([[http://qa.debian.org/developer.php?login=atomo64@gmail.com|all packages]])
+ 1. [[RaphaelHertzog|Raphael Hertzog]] - ([[http://qa.debian.org/developer.php?login=hertzog|all packages]]) - Comaintainers welcome
+ 1. [[ReinhardTartler|Reinhard Tartler]] - ([[http://qa.debian.org/developer.php?login=siretart@tauware.de|all packages]]) - Comaintainers welcome
+ 1. [[RémiVanicat|Rémi Vanicat]] - ([[https://qa.debian.org/developer.php?login=vanicat|all packages]])
+ 1. ReneMayorga - ([[http://qa.debian.org/developer.php?login=Rene+Mayorga|all packages]])
+ 1. [[RicardoMones|Ricardo Mones]] - ([[http://qa.debian.org/developer.php?login=mones|all packages]]) - except: ie. Co-maintained - Comaintainers welcome
+ 1. [[RichardNelson|Richard Nelson]] - ([[http://qa.debian.org/developer.php?login=cowboy|all packages]]) -
+ 1. [[nchip|Riku Voipio]] - ([[http://qa.debian.org/developer.php?login=riku.voipio@iki.fi|all packages]]) - except: ie. Co-maintained
+ 1. Robert Collins - ([[http://qa.debian.org/developer.php?login=robertc@robertcollins.net|all packages]]) - Comaintainers welcome
+ 1. Robert Jordens - ([[http://qa.debian.org/developer.php?login=jordens|all packages]]) - Comaintainers welcome
+ 1. Robert Lemmen - ([[http://qa.debian.org/developer.php?login=robertle@semistable.com|all packages]])
+ 1. [[RobertMcQueen|Robert McQueen]] - ([[http://qa.debian.org/developer.php?login=robot101|all packages]]) - Comaintainers welcome
+ 1. [[RobertoSanchez|Roberto C. Sanchez]] - ([[http://qa.debian.org/developer.php?login=roberto@connexer.com|all packages]]) - except: ie. Co-maintained - comment: please file a bug including a diff with the source changes
+ 1. Roger Leigh - ([[http://qa.debian.org/developer.php?login=rleigh|all packages]]) - Comaintainers welcome
+ 1. [[RogerSo|Roger So]] - ([[http://qa.debian.org/developer.php?login=rogerso|all packages]]) - Comaintainers welcome
+ 1. [[Rogério Brito]] - ([[http://qa.debian.org/developer.php?login=rbrito@ime.usp.br|all packages]]) - Comaintainers welcome
+ 1. [[Roktas|Recai Oktaş]] - ([[http://qa.debian.org/developer.php?login=roktas@debian.org|all packages]])
+ 1. Roland Mas - ([[http://qa.debian.org/developer.php?login=lolando|all packages]]) - comment: Please try to ping me on IRC or email beforehand - comaintainers welcome - check: gforge please refrain from touching the database maintenance code in gforge as it's somewhat fragile
+ 1. Romain Beauxis  - ([[http://qa.debian.org/developer.php?login=toots|all packages]])
+ 1. Ross Burton - ([[http://qa.debian.org/developer.php?login=ross|all packages]])
+ 1. [[RubenMolina|Ruben Molina]] - ([[http://qa.debian.org/developer.php?login=rmolina@udea.edu.co|all packages]])
+ 1. [[RudyGodoy|Rudy Godoy]] - ([[http://qa.debian.org/developer.php?login=rudy|all packages]]) - except: Co-maintained - Comaintainers welcome.
+ 1. [[RussAllbery|Russ Allbery]] - ([[http://qa.debian.org/developer.php?login=rra|all packages]]) - except: Co-maintained - check: heads-up welcome so that I can comment
+ 1. [[RyanKavanagh|Ryan Kavanagh]] - ([[http://qa.debian.org/developer.php?login=rak|all packages]]) - except: Co-maintained, rxvt-unicode - comment: before NMUing please send me a direct email and wait 48 hours for a reply
+ 1. Ryan Niebur - ([[http://qa.debian.org/developer.php?login=ryanryan52@gmail.com&comaint=no|all packages]]) - except: Co-maintained -  Comaintainers welcome - comment: before NMUing please send me a direct email and wait 48 hours for a reply
+ 1. [[RyszardLach|Ryszard Aach]] - ([[http://qa.debian.org/developer.php?login=rla|all packages]])
+ 1. [[SalvatoreBonaccorso|Salvatore Bonaccorso]] - ([[http://qa.debian.org/developer.php?login=carnil|all packages]] - comment: advance notices for me to comment welcome (for group maintained packages check there))
+ 1. [[SamHocevar|Sam Hocevar (Debian packages)]] - ([[http://qa.debian.org/developer.php?login=sam+deb@zoy.org|all packages]]) - except: ie. Co-maintained - check: vlc - check: ffmpeg - check: yasm - comment: be careful with things that will cause utter retaliation if you break them more than needed
+ 1. [[SamMorris|Sam Morris]] - ([[http://qa.debian.org/developer.php?login=sam@robots.org.uk|all packages]])
+ 1. [[SantiagoRuanoRincón|Santiago Ruano Rincón]] - ([[http://qa.debian.org/developer.php?login=santiago|all packages]]) - except: Co-maintained
+ 1. Sebastian Dröge - ([[http://qa.debian.org/developer.php?login=slomo@debian.org|all packages]]) - except: Co-maintained
+ 1. [[ScottHoward|Scott Howard]] - ([[http://qa.debian.org/developer.php?login=showard@debian.org|all packages]])
+ 1. [[SerafeimZanikolas|Serafeim Zanikolas]] - ([[http://qa.debian.org/developer.php?login=serzan@hellug.gr|all packages]]) - comment: before NMUing please send me a direct email and wait 24 hours for a reply
+ 1. [[SergioTalensOliag|Sergio Talens-Oliag]] - ([[http://qa.debian.org/developer.php?login=sto|all packages]])
+ 1. Siegfried-A. Gevatter - ([[http://qa.debian.org/developer.php?login=rainct@ubuntu.com|all packages]])
+ 1. [[SimonJosefsson|Simon Josefsson]] - ([[http://qa.debian.org/developer.php?login=simon@josefsson.org|all packages]])
+ 1. [[SimonMcVittie|Simon McVittie]] - ([[http://qa.debian.org/developer.php?login=smcv|all packages]]) - except: ie. co-maintained - co-maintainers welcome
+ 1. Søren Boll Overgaard - ([[http://qa.debian.org/developer.php?login=boll|all packages]]) - Comaintainers welcome
+ 1. Stefan Fritsch - ([[http://qa.debian.org/developer.php?login=sf|all packages]]) - except: ie. Co-maintained
+ 1. Stefan Potyra - ([[http://qa.debian.org/developer.php?login=sistpoty@ubuntu.com|all packages]])
+ 1. [[StefanoZacchiroli|Stefano Zacchiroli]] - ([[http://qa.debian.org/developer.php?login=zack|all packages]] - except: Co-maintained
+ 1. [[SteinarGunderson|Steinar H. Gunderson]] - ([[http://qa.debian.org/developer.php?login=sesse|all packages]]) - except: pkgsync - except: amoeba - except: the ones I'm also upstream for
+ 1. [[SteveMcIntyre|Steve McIntyre]] - [[http://qa.debian.org/developer.php?login=93sam|all packages]] - except: cvs - except: cdrtools - except: debian-cd - except: Co-maintained - Comaintainers welcome
+ 1. Steve M. Robbins - ([[http://qa.debian.org/developer.php?login=smr|all packages]]) - except: Co-maintained - Comaintainers welcome
+ 1. [[SvenMueller|Sven Mueller]] - [[http://qa.debian.org/developer.php?login=sven|all packages]] - except co-maintained - Comaintainers welcome
+ 1. [[SylvainLeGall|Sylvain Le Gall]] - [[http://qa.debian.org/developer.php?login=gildor|all packages]] - except: Co-maintained
+ 1. [[SylvainThénault|Sylvain Thénault]] - [[http://qa.debian.org/developer.php?login=sylvain.thenault@logilab.fr|all packages]]
+ 1. [[Sylvestre Ledru]] - [[http://qa.debian.org/developer.php?login=sylvestre%20ledru|all packages]] - Comaintainers welcome
+ 1. Ted Percival - ([[http://qa.debian.org/developer.php?login=ted@midg3t.net|all packages]]) - Comaintainers welcome
+ 1. [[ThadeuCascardo|T:hadeu Lima de Souza Cascardo]] - [[http://qa.debian.org/developer.php?login=cascardo@minaslivre.org|all packages]]
+ 1. Thijs Kinkhorst - ([[http://qa.debian.org/developer.php?login=thijs|all packages]])
+ 1. Thom May - [[http://qa.debian.org/developer.php?login=thom|all packages]] - except: Co-maintained
+ 1. [[ThomasGirard|Thomas Girard]] - [[http://qa.debian.org/developer.php?login=thomas.g.girard@free.fr|all packages]] - except: co-maintained - Co-maintainers welcome
+ 1. Thomas Goirand - [[http://qa.debian.org/developer.php?login=zigo|all packages]] - except: co-maintained - Co-maintainers welcome, and intl (because it would often breaks sync with Git)
+ 1. [[ThomasPreudhomme]] - ([[http://qa.debian.org/developer.php?login=robotux@celest.fr|all packages]]) - Comaintainers welcome
+ 1. [[ThorstenGlaser|Thorsten “mirabilos” Glaser]] - kwalletcli libbsd-arc4random-perl php-htmlpurifier pidgin-openpgp(orphaned) rs - only listed packages - check with me on Freenode IRC (/msg memoserv send mirabilos ping) but if I don’t answer within an hour, go ahead
+ 1. [[TimoLindfors|Timo Juhani Lindfors]] - ([[http://qa.debian.org/developer.php?login=timo.lindfors@iki.fi|all packages]]) - check: omhacks (must test on openmoko) - check: qi (must test on openmoko) - comment: Comaintainers welcome
+ 1. [[Timo Jyrinki]] - ([[http://qa.debian.org/developer.php?login=timo@debian.org|all packages]]) - Comaintainers welcome 
+ 1. [[tklauser|Tobias Klauser]] - ([[http://qa.debian.org/developer.php?login=tklauser@distanz.ch|all packages]]) - Comaintainers welcome
+ 1. Tobias Quathamer - ([[http://qa.debian.org/developer.php?login=toddy|all packages]]) - except: iso-codes - Comaintainers welcome
+ 1. [[ToddTroxell|Todd Troxell]] - ([[http://qa.debian.org/developer.php?login=ttroxell|all packages]]) - Comaintainers welcome
+ 1. Tommi Vainikainen - ([[http://qa.debian.org/developer.php?login=tvainika+thv%2Bdebian%40iki.fi|all packages]])
+ 1. Tony Mancill - ([[http://qa.debian.org/developer.php?login=tmancill|all packages]]) - Comaintainers welcome.
+ 1. [[TorstenLandschoff|Torsten Landschoff]] - ([[http://qa.debian.org/developer.php?login=torsten|all packages]]) - Comaintainers welcome
+ 1. [[TorstenWerner|Torsten Werner]] - ([[http://qa.debian.org/developer.php?login=twerner|all packages]]) - Comaintainers welcome
+ 1. [[Trent W. Buck]] - ([[http://qa.debian.org/developer.php?login=trentbuck@gmail.com|all packages]]) - Comaintainers welcome
+ 1. [[TristanSeligmann|Tristan Seligmann]] - ([[http://qa.debian.org/developer.php?login=mithrandi@debian.org|all packages]]) - check: python-cryptography sensitive because of security concerns - comment: I try to respond quickly to communication about my packages even when I'm short on time to work on them
+ 1. Uwe Kleine-König - ([[http://qa.debian.org/developer.php?login=ukleinek@debian.org|all packages]]) - comment: git pull requests for your NMU welcome
+ 1. [[VarunHiremath|Varun Hiremath]] - ([[http://qa.debian.org/developer.php?login=varun|all packages]]) - Comaintainers welcome
+ 1. [[VictorSeva|Victor Seva]] - ([[http://qa.debian.org/developer.php?login=linuxmaniac@torreviejawireless.org|all packages]]) - Comaintainers welcome
+ 1. [[VictorCuadradoJuan|Victor Cuadrado Juan]] - ([[http://qa.debian.org/developer.php?login=me@viccuad.me|all packages]]) - comment: please note that most of them are already team maintained
+ 1. [[VinceMulhollon|Vince Mulhollon]] - ([[http://qa.debian.org/developer.php?login=vlm@debian.org|all packages]]) - Comaintainers welcome - check: simh be careful to remove copyright violations from the upstream
+ 1. Vincent Danjean - ([[http://qa.debian.org/developer.php?login=vdanjean@debian.org|all packages]])
+ 1. W. Martin Borgert - ([[http://qa.debian.org/developer.php?login=debacle|all packages]]) - Please use package VCS!, co-maintainers welcome
+ 1. William Pitcock - ([[http://qa.debian.org/developer.php?login=nenolod@sacredspiral.co.uk|all packages]]) - except: co-maintained - Comaintainers welcome
+ 1. Wookey - ([[http://qa.debian.org/developer.php?login=wookey|all packages]]) - comment: Yes, please fix my packages :)
+ 1. [[XiyueDeng|Xiyue Deng]] - ([[http://qa.debian.org/developer.php?login=manphiz-guest@users.alioth.debian.org|all packages]]) - comment: Co-maintained for GNOME ask on #debian-gnome@OFTC or debian-gtk-gnome@lists.d.o first - Co-maintainers welcome
+ 1. [[Appaji|Y Giridhar Appaji Nag]] - ([[http://qa.debian.org/developer.php?login=appaji@debian.org|all packages]]) - comment: As applicable, check with co-maintainers and commit the fixes to the package VCS - Co-maintainers are welcome.
+ 1. [[Appaji|Y Giridhar Appaji Nag]] - ([[http://qa.debian.org/developer.php?login=giridhar@appaji.net|all packages]]) - comment: As applicable, check with co-maintainers and commit the fixes to the package VCS - Co-maintainers are welcome.
+ 1. Yuri D'Elia - ([[http://qa.debian.org/developer.php?login=wavexx@thregr.org|all packages]]) - co-maintainers welcome
+ 1. [[ZakElep|Zak B. Elep]] - ([[http://qa.debian.org/developer.php?login=zakame@spunge.org|all packages]])
+(Reminder: Please keep the alphabetical according to first and last name.)
+
+----
+## This page is referenced from "LowNMU" PTS pages, like http://packages.qa.debian.org/m/moin.html
+CategoryPermalink

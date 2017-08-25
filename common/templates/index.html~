@@ -1,0 +1,165 @@
+<!--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Debian Package Tracking System</title>
+    <style type="text/css">
+      .footer{position:absolute;bottom:0;width:100%;height:100px; text-align:center;}
+    </style>
+  </head>
+  <body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#800080" alink="#FF0000" onload="javascript:onLoad();">
+    <div align="center">
+      <a href="https://www.debian.org/"><img src="https://www.debian.org/logos/openlogo-nd-50.png" border="0" hspace="0" vspace="0" alt=""></a>
+      <a href="https://www.debian.org/"><img src="https://www.debian.org/Pics/debian.png" border="0" hspace="0" vspace="0" alt="Debian Project"></a>
+    </div>
+    <br>
+    <table bgcolor="#DF0451" border="0" width="100%" cellpadding="0" cellspacing="0" summary="">
+      <tr>
+	<td valign="top">
+	  <img src="https://www.debian.org/Pics/red-upperleft.png" align="left" border="0" hspace="0" vspace="0" alt="" width="15" height="16">
+	</td>
+	<td rowspan="2" align="center">
+	  <font color="#FFFF00"><big><big>Debian Package Tracking System</big></big></font>
+	</td>
+	<td valign="top">
+	  <img src="https://www.debian.org/Pics/red-upperright.png" align="right" border="0" hspace="0" vspace="0" alt="" width="16" height="16">
+	</td>
+      </tr>
+      <tr>
+	<td valign="bottom">
+	  <img src="https://www.debian.org/Pics/red-lowerleft.png" align="left" border="0" hspace="0" vspace="0" alt="" width="16" height="16">
+	</td>
+	<td valign="bottom">
+	  <img src="https://www.debian.org/Pics/red-lowerright.png" align="right" border="0" hspace="0" vspace="0" alt="" width="15" height="16">
+	</td>
+      </tr>
+    </table>
+    <table border="0" width="100%" cellpadding="5" cellspacing="0">
+      <tr>
+	<td valign="top" width="70%">
+	  <p>The Package Tracking System lets you follow
+	    almost everything related to the life of a package. It's of
+	    interest for co-maintainers, advanced users, QA members, ...</p>
+	  
+	  <p>
+		
+	    <form method="post" action="/search" >
+	      Debian source package: <input type="text" name="src" />
+	      <input type="submit" value="Go" />
+	      <input type=hidden value="{{ next or '' }}" name=next>
+	    </form>
+
+		 <p style="font-family:verdana;color:red">{{get_flashed_messages()[0]}}</p>
+	  </p>
+
+       
+	  <p>
+	    <b>Documentation:</b><br/> To learn everything you need to know about
+	    the Package Tracking System, please read
+	    <a href="#">its
+	      documentation</a>.
+	  </p>
+
+	  <p>
+	    <b>Contact Information:</b><br/>
+	    If you have questions or comments about the PTS, please contact
+	    <a href="mailto:peishichao@outlook.com">the
+	      maintainers</a>
+	  </p>
+
+	</td>
+      </tr>
+    </table>
+    <hr/>
+
+   	 <div class="footer">
+			 <p>Made by Peishichao.</p>
+			 <p>Copyright © 2017-2018 <a>ISCAS</a></p>
+        </div>
+
+  </body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Debian Package Tracker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link href="https://tracker.debian.org/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="https://tracker.debian.org/static/css/octicons.css" rel="stylesheet" media="screen">
+        <link href="https://tracker.debian.org/static/css/style.css" rel="stylesheet" media="screen">
+        
+
+        
+        
+    </head>
+    <body>
+        
+        <header class="page-header">
+            <div class="container-fluid">
+                
+		<div class="row">
+		<div class="col-xs-12 text-xs-center">
+		    <div class="pull-xs-left">
+<a href="/"><img src="https://tracker.debian.org/static/img/logo.png" alt="Debian Package Tracker"></a>
+</div>
+		    <div class="pull-xs-right">
+		    
+		    
+    <span>|</span>
+    <span><a id="subscriptions" href="{{ url_for('subscribe_information',email = session.get('email')) }}">subscriptions </a></span>
+
+
+		    
+		    </div>
+		    
+		    <h1>Debian Package Tracker</h1>
+		    
+		</div>
+		</div>
+                
+            </div>
+        </header>
+        
+
+	
+<div class="introduction">
+    <div class="container">
+	<p class="lead m-b-0">This service lets you follow the evolution
+	of Debian both with email updates and a web interface.</p>
+    </div>
+</div>
+
+<div class="container">
+    <h3>Lookup package information</h3>
+    <p>
+        <div class="text-xs-left"><form class="form-inline" id="package-search-form" action="/search" method="post"><div class="form-group"><label class="m-r-1" for="package-search-input">Enter a Debian package name: </label><input type="text" class="form-control form-control-sm package-completion" name="src" id='package-search-input' placeholder="Jump to package..." autofocus='autofocus'></div><div class="form-group"><button type="submit" class="btn btn-default btn-sm">Go</button></div><input type=hidden value="{{ next or '' }}" name=next></form></div>
+
+    </p>
+     <p style="font-family:verdana;color:red">{{get_flashed_messages()[0]}}</p>
+
+</div>
+
+
+        <hr>
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="text-xs-center">
+                    
+                                        <div id="footer-title"><a href="https://www.debian.org">Debian</a> Package Tracker — <a href="https://deb.li/DTAuthors">Copyright</a> 2017-2018 ISCAS</div>
+
+                    
+                </div>
+            </div>
+        </footer>
+
+
+        
+    </body>
+</html>
+
